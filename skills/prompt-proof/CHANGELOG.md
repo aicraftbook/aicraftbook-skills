@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 (2026-10-22)
+
+- New rules: quote prompt text and code exactly, check the order of sections before describing it, report nothing as present that cannot be quoted, and do not state how a provider ranks message roles from memory.
+- New final step: check every issue against the original prompt before answering. Tests are labelled proposed (not run).
+- A second independent evaluation (2026-10-22) found factual slips in 8 of 12 runs with 1.0.2; on the same frozen tasks 1.1.0 had 2 of 12 (4 of 12 without the skill).
+
 ## 1.0.2 (2026-10-22)
 
 - Documentation only: README rewritten as a full reference (install per agent, permissions, examples, troubleshooting, test results). SKILL.md and references unchanged.

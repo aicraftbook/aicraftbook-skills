@@ -2,22 +2,11 @@
 
 Estimate what an AI feature or automation will cost to run. An AI Craftbook skill that estimates the monthly running cost of an AI feature, agent or automation from its workload, with every assumption, the arithmetic and a low-to-high range.
 
-This plugin packages one AI Craftbook skill, `cost-compass` 1.0.2, for Claude Code and Cursor. It contains the skill's instructions and reference files only: no MCP servers, hooks, commands or scripts. The same skill is in [aicraftbook/aicraftbook-skills](https://github.com/aicraftbook/aicraftbook-skills/tree/main/skills/cost-compass); both copies come from one approved release (fingerprint `d06782dd7c74`).
+This plugin packages one AI Craftbook skill, `cost-compass` 1.0.2, for Claude Code and Cursor. It contains the skill's instructions and reference files only: no MCP servers, hooks, commands or scripts. They are byte-identical to the [released skill](https://github.com/aicraftbook/aicraftbook-skills/tree/main/skills/cost-compass) (release fingerprint `d06782dd7c74`); its README, changelog and test results are there.
 
 ## Install
 
-Claude Code:
-
-```bash
-claude plugin marketplace add aicraftbook/aicraftbook-skills
-claude plugin install cost-compass@aicraftbook
-```
-
-Any agent supported by the Skills CLI:
-
-```bash
-npx skills add aicraftbook/aicraftbook-skills --skill cost-compass
-```
+Add it from Anthropic's plugin directory once listed, or in Claude Code run `/plugin marketplace add aicraftbook/aicraftbook-skills`, then `/plugin install cost-compass@aicraftbook`. Other agents: see the [install guide](https://aicraftbook.com/skills/cost-compass#install).
 
 ## Who it is for
 

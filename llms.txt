@@ -14,7 +14,7 @@ Website: https://aicraftbook.com/skills
 - [Flow Medic](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/flow-medic/README.md): Diagnose a failed automation run from its error and logs. Version 1.0.2. Guide: https://aicraftbook.com/skills/flow-medic
 - [Guide Proof](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/guide-proof/README.md): Check that a setup guide can actually be followed. Version 1.1.1. Guide: https://aicraftbook.com/skills/guide-proof
 - [MCP Mechanic](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/mcp-mechanic/README.md): Set up and fix MCP servers without exposing secrets. Version 1.0.1. Guide: https://aicraftbook.com/skills/mcp-mechanic
-- [Prompt Proof](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/prompt-proof/README.md): Find weak spots in a prompt and write tests for it. Version 1.0.2. Guide: https://aicraftbook.com/skills/prompt-proof
+- [Prompt Proof](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/prompt-proof/README.md): Find weak spots in a prompt and write tests for it. Version 1.1.0. Guide: https://aicraftbook.com/skills/prompt-proof
 - [Source Sieve](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/source-sieve/README.md): Check every claim in a draft against its sources. Version 1.1.2. Guide: https://aicraftbook.com/skills/source-sieve
 
 ## Install and use

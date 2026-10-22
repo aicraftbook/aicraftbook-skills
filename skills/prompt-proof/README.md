@@ -7,7 +7,7 @@ app or automation. It ranks the prompt's weak spots by impact, returns a revised
 intent, and writes test inputs with what a correct response must and must not do. It is for builders
 putting a model step into n8n, Make, Zapier or their own code.
 
-Version 1.0.2 · License MIT · Publisher AI Craftbook · Docs: https://aicraftbook.com/skills/prompt-proof
+Version 1.1.0 · License MIT · Publisher AI Craftbook · Docs: https://aicraftbook.com/skills/prompt-proof
 
 ## What does Prompt Proof do?
 
@@ -67,7 +67,7 @@ cp -R aicraftbook-skills/skills/prompt-proof your-project/.claude/skills/
 ```
 
 You can also download the zip from the [docs page](https://aicraftbook.com/skills/prompt-proof). It
-unzips to a folder with the version in its name (for example `prompt-proof-v1.0.2`). Copy it so the
+unzips to a folder with the version in its name (for example `prompt-proof-v1.1.0`). Copy it so the
 folder is named `prompt-proof`. Then start a new session.
 
 ### Claude apps (claude.ai and Claude Desktop)

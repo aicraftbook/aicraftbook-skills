@@ -1,0 +1,2010 @@
+{
+  "skill": "prompt-proof",
+  "date": "2026-10-22-b",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/prompt-proof/evals/independent-runs/2026-10-22-b/frozen",
+    "sha256": "2358d870bd17b2a5c29a5baec7b1a6f8868a8cc20d01b57604a612aa18d1915c",
+    "freezeRecord": "skills/prompt-proof/evals/independent-runs/2026-10-22-b/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "2460924a28b6417066b1d41c9485d07e0d4fec0102341177695b178c9aa1a140"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanCombined": 0.82,
+      "meanRubric": 0.781,
+      "meanCheckFraction": 0.858,
+      "falseClaimRuns": 4,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 45765.917,
+      "meanCostUsd": 0.158
+    },
+    "skill": {
+      "n": 12,
+      "meanCombined": 0.952,
+      "meanRubric": 0.938,
+      "meanCheckFraction": 0.967,
+      "falseClaimRuns": 2,
+      "skillInvocationRate": 1,
+      "meanDurationMs": 53371.667,
+      "meanCostUsd": 0.117
+    }
+  },
+  "perTask": {
+    "P1-rag-help-answer": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.938,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 31824,
+        "meanCostUsd": 0.056
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 56126.5,
+        "meanCostUsd": 0.124
+      }
+    },
+    "P2-codegen-patch-bot": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.938,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 84059.5,
+        "meanCostUsd": 0.178
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 56279.5,
+        "meanCostUsd": 0.127
+      }
+    },
+    "P3-review-classifier": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.675,
+        "meanRubric": 0.75,
+        "meanCheckFraction": 0.6,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 32445,
+        "meanCostUsd": 0.267
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.938,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 58389.5,
+        "meanCostUsd": 0.127
+      }
+    },
+    "P4-multirole-german-input": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.95,
+        "meanRubric": 1,
+        "meanCheckFraction": 0.9,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 82747.5,
+        "meanCostUsd": 0.259
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 62339,
+        "meanCostUsd": 0.114
+      }
+    },
+    "P5-meeting-summary-no-context": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.688,
+        "meanRubric": 0.625,
+        "meanCheckFraction": 0.75,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 19551,
+        "meanCostUsd": 0.131
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 27063.5,
+        "meanCostUsd": 0.062
+      }
+    },
+    "P6-clean-draft-reply": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.732,
+        "meanRubric": 0.563,
+        "meanCheckFraction": 0.9,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 23968.5,
+        "meanCostUsd": 0.054
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.775,
+        "meanRubric": 0.75,
+        "meanCheckFraction": 0.8,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 60032,
+        "meanCostUsd": 0.146
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "P1-rag-help-answer",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "68670dbdb3",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 38798,
+      "numTurns": 4,
+      "costUsd": 0.0578003,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6348,
+        "cacheRead": 22463,
+        "output": 3015
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-forum-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-guess-vs-context-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-empty-retrieval",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-citation-format",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags forum injection worsened by 'follow it exactly'; delimits, treats chunks as data, ranks official first; pipeline notes say the prompt alone isn't enough."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies the guess-vs-context-only conflict and empty-string context; the revision says to state what can't be confirmed and refer to Support."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Notes the front end only links [doc:ID]; the revision mandates the exact [doc:ID] format using header IDs, plus a validation suggestion."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Roughly ranked and intent kept, but the test cases are listed without must/must-not expectations, and the partial-coverage case is missing."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "P1-rag-help-answer",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "bc1afbb268",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 24850,
+      "numTurns": 4,
+      "costUsd": 0.0548597,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6343,
+        "cacheRead": 22457,
+        "output": 2723
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-forum-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-guess-vs-context-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-empty-retrieval",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-citation-format",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags forum injection worsened by 'follow it exactly'; delimits, treats material as data, ranks official sources; says prompt reduces but doesn't remove risk."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the only-context vs best-guess conflict and the empty-context case; the revision says to state the gap and escalate to support."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Notes the front end links only [doc:ID]; the revision requires the exact [doc:ID] format from chunk headers and forbids invented IDs."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Intent is preserved, but issues aren't ranked by impact (injection is third). Test inputs are listed without must/must-not expectations."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "P1-rag-help-answer",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "937653ad1e",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 56299,
+      "numTurns": 8,
+      "costUsd": 0.1228462,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15754,
+        "cacheRead": 25582,
+        "output": 5726
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-forum-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-guess-vs-context-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-empty-retrieval",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-citation-format",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags forum-post injection amplified by 'follow it exactly'; adds tags, a data-not-instructions rule and source ranking; says the prompt alone is insufficient."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the only-context vs best-guess conflict and empty retrieval; the revision gives a do-not-guess fallback and an exact empty-context reply."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Notes the front end links only [doc:ID]; the revision specifies [doc:ID] from the chunk header, with an example, and bans invented IDs."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Issues ranked by impact, intent preserved, and tests have must/must-not columns covering forum injection, empty context and uncovered questions."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "P1-rag-help-answer",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "644afa21d1",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 55954,
+      "numTurns": 8,
+      "costUsd": 0.1251799,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15767,
+        "cacheRead": 25599,
+        "output": 5954
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-forum-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-guess-vs-context-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-empty-retrieval",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-citation-format",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags forum-post injection amplified by 'follow it exactly'; wraps context in tags as data, prefers official sources, says prompt only reduces risk."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags only-context vs best-guess conflict and empty retrieval; revision gives explicit not-found answer, partial-answer handling and support referral."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Notes front end links only [doc:ID]; revision specifies exact format from header IDs, restricts to present IDs and forbids other formats."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Issues ranked by impact, intent preserved, tests have must/must-not including forum injection and empty context; partial coverage handled in prompt."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "P2-codegen-patch-bot",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "adcfd03cb7",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 87145,
+      "numTurns": 6,
+      "costUsd": 0.18973879999999999,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 13476,
+        "cacheRead": 32888,
+        "output": 13253
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-issue-body-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-diff-only-vs-explanation",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-tests-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-do-whatever-flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranks injection first and links open label triggering, 'Do whatever the issue asks', and CI secrets. Says the prompt alone can't fix it; lists path allow-list, secretless CI and maintainer-only label."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Finds the git apply break caused by 'explain your changes' with no diff-only rule. Specifies diff-only with a/b paths and hunk headers, and the tests enforce a bare diff."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers the test-rule contradiction, vague 'minimal'/'best practices', empty file context, large files and unfixable issues, and proposes a NO_PATCH sentinel."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "No revised prompt, only an offer to write v4. The tests clearly state required and forbidden behaviour: workflow edit, env exfiltration, empty file, test edits."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "P2-codegen-patch-bot",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "d7976cb179",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 80974,
+      "numTurns": 6,
+      "costUsd": 0.16626649999999998,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 12651,
+        "cacheRead": 32865,
+        "output": 11236
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-issue-body-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-diff-only-vs-explanation",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-tests-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-do-whatever-flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranks injection as critical, citing raw title/body, 'do whatever', and CI secrets. Says wording can't fix it; lists label restriction, no-secret CI, review."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies git apply vs prose/fences and the missing diff-only rule. Recommends diff-only plus a NO_PATCH sentinel restricted to the target file path."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers the test-rule contradiction, vague rules, empty file, large-file fragility, and missing decline path for unfixable issues."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Tests clearly state required and forbidden behaviors, including workflow edits, env exfiltration, empty file and test-edit trap. No revised prompt written; v4 only offered."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "P2-codegen-patch-bot",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "0cb8e6766a",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 56531,
+      "numTurns": 8,
+      "costUsd": 0.12717230000000002,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15930,
+        "cacheRead": 25703,
+        "output": 6087
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-issue-body-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-diff-only-vs-explanation",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-tests-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-do-whatever-flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranks injection #1 with secrets in CI, says prompt can't remove the risk, and lists label restriction, no-secrets CI and approval before CI."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags explanation vs git apply conflict; revision requires diff-only, no fences, exact a/ b/ headers for file_path."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers test-file conflict, vague minimal/best practices, empty file, non-bug issues and long-file diff issues."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Revision keeps the intent. Tests state must/must-not for workflow edits, secret exfiltration, empty file and test-change requests."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "P2-codegen-patch-bot",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "59d660484e",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 56028,
+      "numTurns": 8,
+      "costUsd": 0.1266313,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15925,
+        "cacheRead": 25693,
+        "output": 6035
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-issue-body-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-diff-only-vs-explanation",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-tests-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-do-whatever-flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Injection is ranked #1, tied to the open label permission, 'Do whatever' and CI secrets. It says prompt changes only reduce risk and lists outside workflow controls."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies that the whole response goes to git apply with no diff instruction, plus the explanation conflict; revision requires diff-only output with exact a/ b/ paths."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers the test-file vs tests-pass conflict, vague 'minimal' and 'best practices', empty file, long files, and unfixable or non-actionable issues."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Revision keeps minimal single-file fixes; tests give must/must-not for CI/workflow edits, env exfiltration, empty file, and test-edit conflict."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "P3-review-classifier",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "fa3b5b9d29",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 36263,
+      "numTurns": 8,
+      "costUsd": 0.2789969,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 57693,
+        "cacheRead": 82489,
+        "output": 3996
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-mixed-not-in-consumer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-shipping-delivery-overlap",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-blank-star-rating",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-rating-rule-vs-text",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-present",
+          "pass": false,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.6,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Identifies the missing 'mixed' key, the KeyError that drops the review, removes mixed from the prompt and flags the alternative code change."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the Shipping/Delivery overlap, ties it to the courier decision, defines both categories and suggests merging them; CATEGORIES is unchanged."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Handles blank rating and notes parse fragility, but keeps the rigid 1–2 negative rule overriding the text without flagging it. Colons in values are missed."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Untrusted text is ranked 4th, delimited and treated as data, and the two outputs are kept, but no tests with must/must-not expectations are given."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [
+        "Says a reply with 'Sentiment:' in a different case breaks the parse; parse() splits on the colon and never checks the key, so only the value's case matters."
+      ],
+      "combined": 0.675
+    },
+    {
+      "task": "P3-review-classifier",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "2a93fde4b2",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 28627,
+      "numTurns": 7,
+      "costUsd": 0.2547528,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 55671,
+        "cacheRead": 22668,
+        "output": 2979
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-mixed-not-in-consumer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-shipping-delivery-overlap",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-blank-star-rating",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-rating-rule-vs-text",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-present",
+          "pass": false,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.6,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Identifies mixed→KeyError→dropped with correct line refs; removes mixed and flags the SENTIMENTS code change if kept."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags Shipping/Delivery overlap tied to courier decisions; defines split, suggests merging, asks team to confirm definitions."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Handles blank rating and notes parse fragility, but reinforces the rigid 1–2→negative override instead of flagging it; colon issue missed."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Injection noted at sensible rank, delimited as data, two outputs kept; evaluation lacks explicit must/must-not expectations."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.675
+    },
+    {
+      "task": "P3-review-classifier",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "6ef48e646a",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 56171,
+      "numTurns": 8,
+      "costUsd": 0.1214016,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15837,
+        "cacheRead": 25616,
+        "output": 5548
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-mixed-not-in-consumer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-shipping-delivery-overlap",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-blank-star-rating",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-rating-rule-vs-text",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-present",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Identifies mixed→KeyError→review dropped, ranks it high, and recommends adding \"mixed\": 0 in code, with removal offered as an alternative."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the Shipping/Delivery overlap, ties it to courier decisions, defines both in the revision and asks which category should hold courier issues."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Covers the empty rating and case/extra-line fragility. It does not criticise the 1–2 star override and reinforces it instead. Colon-split risk is not mentioned."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Review is delimited with tags and marked as data, ranked medium. Same two outputs are kept. Tests have Must/Must-not columns."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "P3-review-classifier",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "c4601cb35b",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 60608,
+      "numTurns": 8,
+      "costUsd": 0.13329030000000003,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15744,
+        "cacheRead": 25523,
+        "output": 6775
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-mixed-not-in-consumer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-shipping-delivery-overlap",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-blank-star-rating",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-rating-rule-vs-text",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-present",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Identifies mixed→KeyError→silent drop, ranks it high, and flags the needed code change, proposing \"mixed\": 0 for confirmation."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the Shipping/Delivery overlap, ties it to the courier decision, and adds definitions with a tiebreak. Categories unchanged, so CATEGORIES needs no change."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Handles empty rating and parse case/extra-line fragility. Doesn't treat the rating override as a problem; it reinforces it (T3 mis-click→negative). Colons in values not raised."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Untrusted review delimited and treated as data, ranked medium (#4). Same two outputs kept. Tests have must/must-not columns."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "P4-multirole-german-input",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "66446e3763",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 101305,
+      "numTurns": 7,
+      "costUsd": 0.3743928,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 56073,
+        "cacheRead": 64388,
+        "output": 14365
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-language-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-discount-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-page-in-assistant-role",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-german-injection-recognised",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Finds both conflicts and says the winner is up to the model. Marks the language rule as a guess to confirm and the 15% removal as an owner decision."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Treats the sample as a jailbreak and says the customer message cannot change rules in any language. Tests cover German, Turkish, Polish, English and German-with-English-page cases."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags fetched page text presented as the assistant's own words and moves it into a delimited <linked_page> block labelled untrusted."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Calls immediate book_slot the consequence amplifier ('four live bookings') and says the prompt is not a security boundary, so the backend must enforce limits."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Revised prompt keeps the booking assistant, has single language and discount rules, and flags the loyalty offer and language choice for the owner."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Calls the assistant-role turn 'the highest-trust position in the conversation'; the system and developer roles carry higher authority than assistant turns."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "P4-multirole-german-input",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "2df16ec083",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 64190,
+      "numTurns": 6,
+      "costUsd": 0.14326679999999997,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 11621,
+        "cacheRead": 23408,
+        "output": 9443
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-language-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-discount-conflict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-page-in-assistant-role",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-german-injection-recognised",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Finds both conflicts. Discount resolution is stated as an assumption and the owner is asked to confirm; the language choice follows the customer base, with the German default flagged as an assumption."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies the German injection: ignore instructions, bulk Saturday bookings, 100% discount. Treats the customer message as data. Tests cover German, Turkish, Polish, English and mixed cases."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the assistant-role page text as indirect injection and role confusion. Moves it into a delimited <untrusted_page_text> block in the user turn."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Says the immediate book_slot raises impact and that prompt wording can't prevent attacks. Puts confirmation, limits and the session customer_id in the backend, with backend tests."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Revised prompt keeps the booking assistant and resolves the language and discount conflicts explicitly. The discount decision is marked for owner confirmation."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 0.9
+    },
+    {
+      "task": "P4-multirole-german-input",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "1446489e32",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 73788,
+      "numTurns": 5,
+      "costUsd": 0.1298545,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 9211,
+        "cacheRead": 13325,
+        "output": 9167
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-language-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-discount-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-page-in-assistant-role",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-german-injection-recognised",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Finds both conflicts, says no priority is given, and puts both to the author as questions. It keeps English and no-discount as stated assumptions."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies the German sample as injection and treats the customer message as data. Tests use the real German sample, German discount and language cases, and a German confirmation."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Notes the page text is in an assistant-role message and reads as the assistant's own words. Moves it into a tagged data block in the user message."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rates the immediate book_slot as high impact. Says prompt wording reduces but does not remove the risk, and requires confirmation, caps and id checks in code."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Revision keeps the persona and booking, resolves both conflicts conservatively, and explicitly marks them as owner decisions with alternative wording."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "P4-multirole-german-input",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "82c39b6362",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 50890,
+      "numTurns": 5,
+      "costUsd": 0.0981986,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 9212,
+        "cacheRead": 13326,
+        "output": 6001
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-language-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-discount-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-page-in-assistant-role",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-german-injection-recognised",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Finds both conflicts, says which wins is undefined, states its choice, and asks the owner about language and discount."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies the German sample as injection (override, bulk booking, 100% discount) and treats it as data. Tests cover German, Polish and German-with-English-page cases."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags fetched text in an assistant-role turn as appearing trusted. Moves it into a delimited, untrusted <linked_page> block in the user message."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rates unconfirmed immediate booking as high risk. Says the prompt doesn't remove the risk and lists code-level controls: confirmation, caps, session customer_id."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Revision keeps the booking assistant, resolves both conflicts explicitly, and raises them as owner questions."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Test inputs T1 ('Samstag, 8. November') and T4 ('Samstag 9.11.') name Saturdays that fall on Sunday and Monday in November 2026; T3's 2026-11-07 shows the intended year."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "P5-meeting-summary-no-context",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "279621f7b5",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 18192,
+      "numTurns": 5,
+      "costUsd": 0.2172067,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 47678,
+        "cacheRead": 63627,
+        "output": 2012
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-asks-or-assumes-consumer",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-invented-owners-dates",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-empty-or-no-actions",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-invented-consumer-fact",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Offers JSON if output feeds code, but never states that the consumer is unknown or names its assumption. Asserts 'easy to parse' without justifying it."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Calls forced owner/deadline fabrication the biggest risk. Revision requires 'Unassigned' and 'No deadline stated' and forbids guessing."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Covers delimiting, no-action-items case, and vague 'thorough but brief'. Omits prompt injection, speaker labels, and empty or very short transcripts."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Revision keeps the intent of action items with owner and deadline. No test cases or must/must-not expectations provided."
+        }
+      ],
+      "rubricScore": 0.625,
+      "falseClaims": [],
+      "combined": 0.688
+    },
+    {
+      "task": "P5-meeting-summary-no-context",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "3aaa9cadc2",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 20910,
+      "numTurns": 3,
+      "costUsd": 0.0456229,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6355,
+        "cacheRead": 22409,
+        "output": 1795
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-asks-or-assumes-consumer",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-invented-owners-dates",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-empty-or-no-actions",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-invented-consumer-fact",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Picks a markdown table and 'easy to parse' framing without stating the consumer is unknown; offering JSON instead only partly addresses it."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Clearly flags fabrication risk; revision adds 'Unassigned'/'Not specified' fallbacks and a never-invent rule."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Covers delimiting, no-action-items and 'thorough but brief'; empty/very short transcripts and speaker labels not addressed."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Revision preserves intent well, but no test cases or must/must-not expectations are provided."
+        }
+      ],
+      "rubricScore": 0.625,
+      "falseClaims": [
+        "Wrapping the transcript in <transcript> tags means it 'can't be mistaken for instructions'. Tags reduce prompt-injection risk but do not guarantee it."
+      ],
+      "combined": 0.688
+    },
+    {
+      "task": "P5-meeting-summary-no-context",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "ec293f5b93",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 30239,
+      "numTurns": 4,
+      "costUsd": 0.0639504,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8416,
+        "cacheRead": 13284,
+        "output": 2895
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-asks-or-assumes-consumer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-invented-owners-dates",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-empty-or-no-actions",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-invented-consumer-fact",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly assumes a human reader, notes format becomes High if parsed, and asks the user to confirm consumer before moving to JSON."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Rates the forced owner/deadline fabrication risk High; revision requires 'Unassigned' and 'Not stated' and forbids guessing."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers undelimited transcript/injection, empty transcript, no action items, and the vague 'thorough but brief'; speaker labels not mentioned but core covered."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Revision keeps owner/deadline intent; tests have must/must-not for no owner, no actions, and empty transcript."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "P5-meeting-summary-no-context",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "20a77a767a",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 23888,
+      "numTurns": 4,
+      "costUsd": 0.060722200000000004,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8414,
+        "cacheRead": 13282,
+        "output": 2573
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-asks-or-assumes-consumer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-invented-owners-dates",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-empty-or-no-actions",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-invented-consumer-fact",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly assumes a human reader, possibly pasted into a tracker, and notes parsing would raise stakes; asks about the exact format needed."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Rates forced owner/deadline as High fabrication risk; revision mandates 'Unassigned'/'Not stated' and forbids guessing."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers undelimited transcript and injection, empty transcript, no-action meetings, and contradictory 'thorough but brief'. Speaker labels not mentioned."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Revision keeps action items with owner and deadline; tests give must/must-not for no owner, no actions, empty transcript and injection."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "P6-clean-draft-reply",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "3607c34a5b",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 28967,
+      "numTurns": 5,
+      "costUsd": 0.0628625,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 8193,
+        "cacheRead": 33145,
+        "output": 2676
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-acknowledges-solid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-do-not-ship",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-missing-output-rule",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-alarmist-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-notes-existing-safeguards",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Opens by calling the prompt in good shape. Credits human review, no tools, the injection guard, schema match and data placement. Invents no high-impact problems."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Suggestions are sensible and minor in substance. But three, including the example facts, are labelled 'Fix before rollout', which presents them as blockers."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "No wholesale rewrite. Offers only targeted edits that keep the intent and existing rules."
+        },
+        {
+          "id": "R4",
+          "score": 0,
+          "reason": "No regression test set or must/must-not expectations provided."
+        }
+      ],
+      "rubricScore": 0.625,
+      "falseClaims": [],
+      "combined": 0.813
+    },
+    {
+      "task": "P6-clean-draft-reply",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "5c269a4c0f",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 18970,
+      "numTurns": 3,
+      "costUsd": 0.0457405,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6766,
+        "cacheRead": 13085,
+        "output": 1736
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-acknowledges-solid",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-no-do-not-ship",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-missing-output-rule",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-alarmist-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-notes-existing-safeguards",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Says nothing blocks rollout and names key safeguards, but fabricates a 'definite fix' (stray </output>) and omits the JSON schema/validator match."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Most suggestions are minor and relevant (example facts, partial coverage). The invented tag issue is presented as a must-fix before rollout."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Offers targeted edits only. Keeps intent and all existing rules, and asks for preferences on ambiguous items."
+        },
+        {
+          "id": "R4",
+          "score": 0,
+          "reason": "No regression test set or must/must-not expectations provided."
+        }
+      ],
+      "rubricScore": 0.5,
+      "falseClaims": [
+        "There is a stray `</output>` tag on line 39 of draft-reply-prompt.txt. The file contains no such tag."
+      ],
+      "combined": 0.65
+    },
+    {
+      "task": "P6-clean-draft-reply",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "cd9585f383",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 57208,
+      "numTurns": 8,
+      "costUsd": 0.1455322,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 16717,
+        "cacheRead": 46982,
+        "output": 7395
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-acknowledges-solid",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-no-do-not-ship",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-missing-output-rule",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-alarmist-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-notes-existing-safeguards",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Says nothing blocks rollout and notes no-tools/human review/data rule, but 'ready with fixes' with six Medium issues overstates the problems."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Suggestions are relevant and called non-blocking, but most are labelled Medium, including residual injection, rather than minor."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Revision keeps every existing rule, the example, the schema and the intent; changes are additive clarifications."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Ten concrete tests with must/must-not columns cover refund, injection, empty email, out-of-KB question and example leak."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.775
+    },
+    {
+      "task": "P6-clean-draft-reply",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "2d79bff771",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 62856,
+      "numTurns": 8,
+      "costUsd": 0.1470128,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 16318,
+        "cacheRead": 25588,
+        "output": 7917
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-acknowledges-solid",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-no-do-not-ship",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-missing-output-rule",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-alarmist-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-notes-existing-safeguards",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Finds nothing High-impact and credits human review and no tools, but rates five issues Medium and calls the prompt 'ready with fixes'."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Valid minor points, but several are inflated to Medium (injection, sign-off), Q1 is labelled a rollout blocker, and one issue is invented."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Revision keeps every rule and the draft-only, KB-grounded, needs_human intent; changes are additive clarifications."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Nine concrete tests with must/must-not columns: refund, injection, empty, not-covered, non-English and format."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [
+        "Issue #8 claims a stray `</output>` tag at line 39; the prompt contains no such tag, and the revision summary says it was removed."
+      ],
+      "combined": 0.775
+    }
+  ]
+}

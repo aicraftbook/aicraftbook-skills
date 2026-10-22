@@ -175,7 +175,7 @@ Summarise the email in <email> in one line for the team channel.
 
 **Signs.** The same rule stated several times; all-caps emphasis (CRITICAL, MUST, NEVER EVER); rules
 nobody can explain; old rules for features that no longer exist; a long reference document placed after
-the question; a role description longer than the task.
+the question (check the actual order first: if documents already come before the question, this sign does not apply); a role description longer than the task.
 
 **Why it matters.** Anthropic notes that newer models respond strongly to the system prompt and that
 aggressive emphasis written for older models can now cause over-triggering; it suggests normal

@@ -2,22 +2,11 @@
 
 Draft the first reply to a new real-estate lead. An Agent Skill that drafts a first SMS and email to a new real estate lead from the lead's own fields, for you to review and send.
 
-This plugin packages one AI Craftbook skill, `first-reply` 1.2.0, for Claude Code and Cursor. It contains the skill's instructions and reference files only: no MCP servers, hooks, commands or scripts. The same skill is in [aicraftbook/aicraftbook-skills](https://github.com/aicraftbook/aicraftbook-skills/tree/main/skills/first-reply); both copies come from one approved release (fingerprint `6b3dcf7ff0f4`).
+This plugin packages one AI Craftbook skill, `first-reply` 1.2.0, for Claude Code and Cursor. It contains the skill's instructions and reference files only: no MCP servers, hooks, commands or scripts. They are byte-identical to the [released skill](https://github.com/aicraftbook/aicraftbook-skills/tree/main/skills/first-reply) (release fingerprint `6b3dcf7ff0f4`); its README, changelog and test results are there.
 
 ## Install
 
-Claude Code:
-
-```bash
-claude plugin marketplace add aicraftbook/aicraftbook-skills
-claude plugin install first-reply@aicraftbook
-```
-
-Any agent supported by the Skills CLI:
-
-```bash
-npx skills add aicraftbook/aicraftbook-skills --skill first-reply
-```
+Add it from Anthropic's plugin directory once listed, or in Claude Code run `/plugin marketplace add aicraftbook/aicraftbook-skills`, then `/plugin install first-reply@aicraftbook`. Other agents: see the [install guide](https://aicraftbook.com/skills/first-reply#install).
 
 ## Who it is for
 

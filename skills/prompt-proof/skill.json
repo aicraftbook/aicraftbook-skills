@@ -3,7 +3,7 @@
   "displayName": "Prompt Proof",
   "subtitle": "Find weak spots in a prompt and write tests for it",
   "title": "Prompt Proof",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "license": "MIT",
   "maintainer": "AI Craftbook",
   "status": "released",

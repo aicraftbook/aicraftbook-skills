@@ -16,7 +16,9 @@ Find the weak spots in a prompt before real users do, fix them without changing 
 5. **Be honest about injection.** Delimiters, data policies and output checks reduce the risk; they do not remove it. Never say a prompt is "injection-proof" or that a fix "prevents" injection. Say which outside controls (output validation in code, least privilege, human approval) still matter.
 6. **No claims you cannot back.** You have not run the prompt. Do not say the revision "works", "is tested" or "fixes" behaviour; say what it is designed to do and which test would show it.
 7. **Model-neutral unless told.** Use plain techniques that work across providers. Mention a provider feature (structured outputs, tool results, prompt caching) only when the user names that provider, and call it optional.
-8. **Ask at most two questions up front**, and only if the answer would change a High-impact issue. Otherwise review with stated assumptions.
+8. **Facts about the prompt must be exact.** Quote text and code character for character, never from memory or as a paraphrase in quote marks. State the order of sections, tags or messages only after checking it. Do not report something as present (a stray tag, a missing field, a rule) unless you can quote it, or as missing unless you searched for it.
+9. **No provider rules from memory.** How a platform ranks system, developer and user messages, or which roles exist, differs between providers and changes. Describe what this prompt does with its roles; say a ranking "depends on the provider" unless the user named one and you are sure. Never cite this skill or its reference files as an authority to the user.
+10. **Ask at most two questions up front**, and only if the answer would change a High-impact issue. Otherwise review with stated assumptions.
 
 ## Step 1: Map how the prompt is used
 
@@ -62,6 +64,10 @@ Then check the revision against every rule the original had. Nothing the author 
 
 Use [references/test-template.md](references/test-template.md). Write 6 to 10 cases covering, at minimum: one normal input, one empty input, one unexpected input (wrong language, off-topic or several requests), one injection attempt in each untrusted variable, one case for each conflict you resolved, and one that checks the output format. For each case give the input values, what a correct response **must** do, what it **must not** do, and how to check it (code check or a yes/no grader question).
 
+## Step 6: Check every claim before you answer
+
+Go through the issues table and the summary once more against the original prompt. For each issue: find the quoted words in the prompt (drop or correct the issue if they are not there exactly); confirm any order or position you describe; confirm the fix you describe is the one in the revised prompt. Call the tests **proposed tests**: you have not run them.
+
 ## Output format
 
 1. **Summary**: two sentences. What the prompt is for, and whether it is ready, ready with fixes, or not ready.
@@ -69,5 +75,5 @@ Use [references/test-template.md](references/test-template.md). Write 6 to 10 ca
 3. **Issues**: a table with # | Impact | Type | Where (quoted) | Problem | Fix. High first.
 4. **Revised prompt**: the full prompt in one code block, ready to paste, variables unchanged.
 5. **What changed**: one line per change, each tied to an issue number. Then one line: **Intent kept**, listing the author's rules that are still present.
-6. **Tests**: the table from the template.
+6. **Proposed tests**: the table from the template (not run).
 7. **Assumptions and questions for the author**.

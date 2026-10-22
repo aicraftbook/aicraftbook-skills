@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T17:07:14.627Z",
+  "generated": "2026-10-22T17:17:31.091Z",
   "site": "https://aicraftbook.com",
   "repo": "https://github.com/aicraftbook/aicraftbook-skills",
   "pending": {},
@@ -101,13 +101,13 @@
     "prompt-proof": {
       "displayName": "Prompt Proof",
       "subtitle": "Find weak spots in a prompt and write tests for it",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "status": "released",
-      "fingerprint": "e8740847b6ce0f65a64923a61c9a736729263b31994efa2dbc84fa4f3c3e1413",
+      "fingerprint": "bdf78f16295b24c763031cc96d101be46163fe281d04a24e193154435301134d",
       "sitePath": "/skills/prompt-proof",
       "download": {
-        "url": "https://aicraftbook.com/kits/prompt-proof-v1.0.2.zip",
-        "sha256": "c17f65dcaa2b1d2137bac627b7c84e93003c0a9bb53943ab0eaedcc85007d0de"
+        "url": "https://aicraftbook.com/kits/prompt-proof-v1.1.0.zip",
+        "sha256": "89ab009384f9ad14187f5e6d9b9c2891a0fee38a9c5ea51155ecfbf30856f524"
       }
     },
     "source-sieve": {

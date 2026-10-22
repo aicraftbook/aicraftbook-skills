@@ -2,22 +2,11 @@
 
 Set up and fix MCP servers without exposing secrets. An AI Craftbook skill that adds and fixes MCP servers in Claude Code, Claude Desktop and Cursor without ever handling your secrets.
 
-This plugin packages one AI Craftbook skill, `mcp-mechanic` 1.0.1, for Claude Code and Cursor. It contains the skill's instructions and reference files only: no MCP servers, hooks, commands or scripts. The same skill is in [aicraftbook/aicraftbook-skills](https://github.com/aicraftbook/aicraftbook-skills/tree/main/skills/mcp-mechanic); both copies come from one approved release (fingerprint `3f9748d5327f`).
+This plugin packages one AI Craftbook skill, `mcp-mechanic` 1.0.1, for Claude Code and Cursor. It contains the skill's instructions and reference files only: no MCP servers, hooks, commands or scripts. They are byte-identical to the [released skill](https://github.com/aicraftbook/aicraftbook-skills/tree/main/skills/mcp-mechanic) (release fingerprint `3f9748d5327f`); its README, changelog and test results are there.
 
 ## Install
 
-Claude Code:
-
-```bash
-claude plugin marketplace add aicraftbook/aicraftbook-skills
-claude plugin install mcp-mechanic@aicraftbook
-```
-
-Any agent supported by the Skills CLI:
-
-```bash
-npx skills add aicraftbook/aicraftbook-skills --skill mcp-mechanic
-```
+Add it from Anthropic's plugin directory once listed, or in Claude Code run `/plugin marketplace add aicraftbook/aicraftbook-skills`, then `/plugin install mcp-mechanic@aicraftbook`. Other agents: see the [install guide](https://aicraftbook.com/skills/mcp-mechanic#install).
 
 ## Who it is for
 

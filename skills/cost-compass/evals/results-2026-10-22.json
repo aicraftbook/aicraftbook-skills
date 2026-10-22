@@ -1,0 +1,208 @@
+{
+  "skill": "cost-compass",
+  "date": "2026-10-22",
+  "model": "sonnet",
+  "repeats": 1,
+  "method": "Each task run headless with Claude Code in a fresh empty folder, tools limited to Skill, Read, Glob; no MCP servers; project settings only. Baseline has no skill; the skill run has the skill in .claude/skills/. Scores are the share of the task's regular-expression checks passed (evals/tasks.json). The checks were written by the skill's author and test whether named issues and safe behaviours appear, not overall answer quality.",
+  "claudeCodeVersion": "2.1.303 (Claude Code)",
+  "baseline": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.4761904761904762,
+    "meanOutputTokens": 1019,
+    "meanDurationMs": 12208,
+    "skillInvokedRuns": 1,
+    "byTask": {
+      "chatbot-no-prices": {
+        "meanScore": 0.5714285714285714,
+        "runs": 1
+      },
+      "email-extraction-given-prices": {
+        "meanScore": 0.42857142857142855,
+        "runs": 1
+      },
+      "voice-agent-missing-sms-price": {
+        "meanScore": 0.42857142857142855,
+        "runs": 1
+      }
+    }
+  },
+  "withSkill": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.8571428571428571,
+    "meanOutputTokens": 2429,
+    "meanDurationMs": 22949,
+    "skillInvokedRuns": 3,
+    "byTask": {
+      "chatbot-no-prices": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "email-extraction-given-prices": {
+        "meanScore": 0.5714285714285714,
+        "runs": 1
+      },
+      "voice-agent-missing-sms-price": {
+        "meanScore": 1,
+        "runs": 1
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "chatbot-no-prices",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "no-invented-token-price",
+        "history-resent",
+        "system-prompt-every-turn",
+        "caching-lever"
+      ],
+      "failed": [
+        "no-dollar-total",
+        "asks-for-prices",
+        "range"
+      ],
+      "score": 0.5714285714285714,
+      "skillInvoked": true,
+      "durationMs": 17219,
+      "inputTokens": 4,
+      "outputTokens": 1381,
+      "cacheReadTokens": 10592,
+      "costUsdEstimate": 0.0371812,
+      "turns": 2,
+      "answerFile": "evals/runs/2026-10-22/chatbot-no-prices-baseline-1.md"
+    },
+    {
+      "task": "chatbot-no-prices",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "no-invented-token-price",
+        "no-dollar-total",
+        "asks-for-prices",
+        "history-resent",
+        "system-prompt-every-turn",
+        "caching-lever",
+        "range"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 18928,
+      "inputTokens": 4,
+      "outputTokens": 1951,
+      "cacheReadTokens": 10828,
+      "costUsdEstimate": 0.0527088,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-22/chatbot-no-prices-skill-1.md"
+    },
+    {
+      "task": "email-extraction-given-prices",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "retry-total",
+        "no-batch-for-urgent",
+        "no-other-token-price"
+      ],
+      "failed": [
+        "input-line",
+        "output-line",
+        "shows-tokens",
+        "range"
+      ],
+      "score": 0.42857142857142855,
+      "skillInvoked": false,
+      "durationMs": 8073,
+      "inputTokens": 2,
+      "outputTokens": 609,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.028391,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/email-extraction-given-prices-baseline-1.md"
+    },
+    {
+      "task": "email-extraction-given-prices",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "retry-total",
+        "range",
+        "no-batch-for-urgent",
+        "no-other-token-price"
+      ],
+      "failed": [
+        "input-line",
+        "output-line",
+        "shows-tokens"
+      ],
+      "score": 0.5714285714285714,
+      "skillInvoked": true,
+      "durationMs": 20744,
+      "inputTokens": 4,
+      "outputTokens": 2236,
+      "cacheReadTokens": 10877,
+      "costUsdEstimate": 0.0551517,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-22/email-extraction-given-prices-skill-1.md"
+    },
+    {
+      "task": "voice-agent-missing-sms-price",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "history-growth",
+        "output-line",
+        "sms-count"
+      ],
+      "failed": [
+        "minutes-line",
+        "sms-blank",
+        "no-invented-sms-price",
+        "driver"
+      ],
+      "score": 0.42857142857142855,
+      "skillInvoked": false,
+      "durationMs": 11332,
+      "inputTokens": 2,
+      "outputTokens": 1067,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.033031000000000005,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/voice-agent-missing-sms-price-baseline-1.md"
+    },
+    {
+      "task": "voice-agent-missing-sms-price",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "minutes-line",
+        "history-growth",
+        "output-line",
+        "sms-blank",
+        "sms-count",
+        "no-invented-sms-price",
+        "driver"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 29175,
+      "inputTokens": 6,
+      "outputTokens": 3100,
+      "cacheReadTokens": 21414,
+      "costUsdEstimate": 0.0816014,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-22/voice-agent-missing-sms-price-skill-1.md"
+    }
+  ]
+}

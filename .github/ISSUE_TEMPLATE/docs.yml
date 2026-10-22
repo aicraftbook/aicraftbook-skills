@@ -1,0 +1,18 @@
+name: Documentation error
+description: A README, example or link is wrong, unclear or out of date.
+labels: [documentation]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: File or page
+      description: For example "skills/cost-compass/README.md" or a URL.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: If a fact is wrong, link the official documentation that shows the correct behaviour.
+    validations:
+      required: true

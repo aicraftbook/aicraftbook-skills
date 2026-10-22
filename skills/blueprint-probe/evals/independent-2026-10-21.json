@@ -1,0 +1,3123 @@
+{
+  "skill": "blueprint-probe",
+  "date": "2026-10-21",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/blueprint-probe/evals/independent-runs/2026-10-21/frozen",
+    "sha256": "9fbf157cfdf526d13da0c41549b1a9da338c84b2cb53ba5a00c0cc2f0af5a3a7",
+    "freezeRecord": "skills/blueprint-probe/evals/independent-runs/2026-10-21/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "04d158f3e9279810838031f6c3cb5654d3c46b68683f36d111ffcd7cb7005c5b"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanRecall": 1,
+      "meanSeverityOkRate": 0.9,
+      "totalFalsePositives": 0,
+      "meanFalsePositivesPerRun": 0,
+      "tablePresentRate": 0,
+      "cleanBlockers": 6,
+      "cleanMajors": 5,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 22413.75,
+      "meanCostUsd": 0.046
+    },
+    "skill": {
+      "n": 12,
+      "meanRecall": 1,
+      "meanSeverityOkRate": 1,
+      "totalFalsePositives": 0,
+      "meanFalsePositivesPerRun": 0,
+      "tablePresentRate": 1,
+      "cleanBlockers": 0,
+      "cleanMajors": 9,
+      "skillInvocationRate": 1,
+      "meanDurationMs": 28478.833,
+      "meanCostUsd": 0.067
+    }
+  },
+  "perTask": {
+    "B1-stripe-thankyou": {
+      "baseline": {
+        "n": 3,
+        "meanRecall": 1,
+        "meanSeverityOkRate": 0.889,
+        "totalFalsePositives": 0,
+        "meanFalsePositivesPerRun": 0,
+        "tablePresentRate": 0,
+        "cleanBlockers": 0,
+        "cleanMajors": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 26805,
+        "meanCostUsd": 0.051
+      },
+      "skill": {
+        "n": 3,
+        "meanRecall": 1,
+        "meanSeverityOkRate": 1,
+        "totalFalsePositives": 0,
+        "meanFalsePositivesPerRun": 0,
+        "tablePresentRate": 1,
+        "cleanBlockers": 0,
+        "cleanMajors": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 28569,
+        "meanCostUsd": 0.068
+      }
+    },
+    "B2-support-autopilot": {
+      "baseline": {
+        "n": 3,
+        "meanRecall": 1,
+        "meanSeverityOkRate": 0.944,
+        "totalFalsePositives": 0,
+        "meanFalsePositivesPerRun": 0,
+        "tablePresentRate": 0,
+        "cleanBlockers": 0,
+        "cleanMajors": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 21208.667,
+        "meanCostUsd": 0.042
+      },
+      "skill": {
+        "n": 3,
+        "meanRecall": 1,
+        "meanSeverityOkRate": 1,
+        "totalFalsePositives": 0,
+        "meanFalsePositivesPerRun": 0,
+        "tablePresentRate": 1,
+        "cleanBlockers": 0,
+        "cleanMajors": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 28695.333,
+        "meanCostUsd": 0.07
+      }
+    },
+    "B3-lead-enrichment": {
+      "baseline": {
+        "n": 3,
+        "meanRecall": 1,
+        "meanSeverityOkRate": 0.867,
+        "totalFalsePositives": 0,
+        "meanFalsePositivesPerRun": 0,
+        "tablePresentRate": 0,
+        "cleanBlockers": 0,
+        "cleanMajors": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 18135,
+        "meanCostUsd": 0.043
+      },
+      "skill": {
+        "n": 3,
+        "meanRecall": 1,
+        "meanSeverityOkRate": 1,
+        "totalFalsePositives": 0,
+        "meanFalsePositivesPerRun": 0,
+        "tablePresentRate": 1,
+        "cleanBlockers": 0,
+        "cleanMajors": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 28200,
+        "meanCostUsd": 0.065
+      }
+    },
+    "B4-weekly-digest-clean": {
+      "baseline": {
+        "n": 3,
+        "meanRecall": null,
+        "meanSeverityOkRate": null,
+        "totalFalsePositives": 0,
+        "meanFalsePositivesPerRun": 0,
+        "tablePresentRate": 0,
+        "cleanBlockers": 6,
+        "cleanMajors": 5,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 23506.333,
+        "meanCostUsd": 0.047
+      },
+      "skill": {
+        "n": 3,
+        "meanRecall": null,
+        "meanSeverityOkRate": null,
+        "totalFalsePositives": 0,
+        "meanFalsePositivesPerRun": 0,
+        "tablePresentRate": 1,
+        "cleanBlockers": 0,
+        "cleanMajors": 9,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 28451,
+        "meanCostUsd": 0.065
+      }
+    }
+  },
+  "perFlaw": {
+    "B1-F1": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B1-F2": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B1-F3": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B1-F4": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B1-F5": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B1-F6": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B2-F1": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B2-F2": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B2-F3": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B2-F4": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B2-F5": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B2-F6": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B3-F1": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B3-F2": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B3-F3": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B3-F4": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "B3-F5": {
+      "baseline": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "skill": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    }
+  },
+  "runs": [
+    {
+      "task": "B1-stripe-thankyou",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "c9446eb848",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 24913,
+      "numTurns": 2,
+      "costUsd": 0.0485452,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6411,
+        "cacheRead": 13032,
+        "output": 2159
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B1-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker 3: lastNode response causes Stripe timeouts/retries and duplicate emails; dedupe on event.id."
+        },
+        {
+          "id": "B1-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker 1: no Stripe-Signature verification, so anyone can POST fake events and relay email."
+        },
+        {
+          "id": "B1-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker 2: full object with phone/address/payment details goes to OpenAI and company-wide sheet."
+        },
+        {
+          "id": "B1-F4",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "Should fix: customer-controlled fields allow prompt injection; model invents items or promises."
+        },
+        {
+          "id": "B1-F5",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "Should fix: hardcoded Bearer key inline; use n8n credential so it's not exported."
+        },
+        {
+          "id": "B1-F6",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker 3: errorWorkflow null, no retries; failures silent. Add alerting and retry-on-fail."
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 0.667,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "No Stripe signature verification; open relay for spoofed emails",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Full PII object sent to OpenAI and company-wide sheet",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Duplicate emails from retries; silent failures with no error workflow",
+          "severity": "blocker",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B1-stripe-thankyou",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "a0d97ad252",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 24273,
+      "numTurns": 2,
+      "costUsd": 0.051527,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6409,
+        "cacheRead": 13030,
+        "output": 2458
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B1-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #2: Stripe retries with lastNode cause duplicate emails; dedupe on event.id, respond onReceived."
+        },
+        {
+          "id": "B1-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #1: webhook doesn't verify Stripe-Signature; anyone can POST fake payloads triggering emails."
+        },
+        {
+          "id": "B1-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #3: full object with phone, address, payment details sent to OpenAI and company-wide sheet."
+        },
+        {
+          "id": "B1-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #5: LLM output unreviewed, prompt injection via customer fields, hallucinated promises."
+        },
+        {
+          "id": "B1-F5",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "Should fix #8: API key hardcoded in Authorization header; use n8n credential."
+        },
+        {
+          "id": "B1-F6",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "Should fix #6: errorWorkflow null, no retries, failures silent; add retries and alerting workflow."
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "No Stripe signature verification on webhook",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Stripe retries plus lastNode response cause duplicate emails; no dedupe",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Full Stripe object sent to OpenAI and company-wide sheet",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No event-type filter; line items/email may be missing from payload",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Unreviewed LLM output to customers; prompt injection risk",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No error handling, retries or alerting",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Logging chained after email; failures lose records or cause resends",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "API key hardcoded in node; gpt-4o overkill",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Gmail unsuitable for transactional email; deliverability and limits",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B1-stripe-thankyou",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "619086bc3c",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 31229,
+      "numTurns": 2,
+      "costUsd": 0.0530975,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6414,
+        "cacheRead": 13035,
+        "output": 2613
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B1-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #2: Stripe retries, lastNode timeout, at-least-once delivery; dedupe on event.id"
+        },
+        {
+          "id": "B1-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #1: no auth; verify Stripe-Signature HMAC on raw body"
+        },
+        {
+          "id": "B1-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #3: full object to OpenAI and company-wide sheet; send only name and items"
+        },
+        {
+          "id": "B1-F4",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "Should fix #7: LLM output unreviewed; invented offers, injection via customer fields; fallback template"
+        },
+        {
+          "id": "B1-F5",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #4: hardcoded Bearer key in node; use n8n credential"
+        },
+        {
+          "id": "B1-F6",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Must fix #5: errorWorkflow null, no retries; add retry/backoff and alerting workflow"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "No webhook authentication / Stripe signature verification",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Stripe retries plus lastNode response cause duplicate emails",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Full PII sent to OpenAI and company-wide sheet; bad columns mapping",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Hardcoded API key in node parameters",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No error handling, retries, or alerting",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Step order risks duplicates or lost records; log first",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "LLM output emailed unreviewed; constrain prompt, add fallback",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Line items and customer_details may be missing from event",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Gmail weak sender for transactional mail",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B1-stripe-thankyou",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "1291c89fe4",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 30096,
+      "numTurns": 5,
+      "costUsd": 0.06865689999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9583,
+        "cacheRead": 24929,
+        "output": 2782
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "14 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B1-F1",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "No idempotency; Stripe retries, lastNode worsens timeouts; dedupe on event.id; duplicate emails and rows."
+        },
+        {
+          "id": "B1-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "No Stripe-Signature verification; anyone with URL can trigger emails to any address."
+        },
+        {
+          "id": "B1-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Full object to company-wide sheet and to OpenAI; allow-list first name and items only."
+        },
+        {
+          "id": "B1-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Unvalidated model text straight to customers; hallucinations; drafts/sample-review; injection via customer fields."
+        },
+        {
+          "id": "B1-F5",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "API key hardcoded in workflow JSON; leaks into exports/version control; use n8n credential."
+        },
+        {
+          "id": "B1-F6",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "errorWorkflow null; no retries, timeouts, alerting; OpenAI failure means silent missed email."
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Full Stripe object logged to company-wide sheet",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Whole Stripe object incl. PII sent to OpenAI",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No Stripe-Signature webhook verification",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Unvalidated LLM output sent directly to customers",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "API key hardcoded in workflow headers",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No idempotency; retries cause duplicate emails and rows",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No error handling, retries, or alerting",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No event-type filter on webhook",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Prompt injection via customer-controlled fields",
+          "severity": "major",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B1-stripe-thankyou",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "69266151be",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 30031,
+      "numTurns": 5,
+      "costUsd": 0.0671487,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9591,
+        "cacheRead": 24927,
+        "output": 2628
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "13 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B1-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Stripe retries webhooks; lastNode delays response; retry sends second email and second sheet row; check event ID."
+        },
+        {
+          "id": "B1-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Nothing verifies the Stripe signature; anyone can post fake event and email any address."
+        },
+        {
+          "id": "B1-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Full object with phone, address, payment details to company-wide sheet (Blocker) and OpenAI (Major)."
+        },
+        {
+          "id": "B1-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Model output goes to customers with no validation; prompt-injection path; suggests drafts with human approval."
+        },
+        {
+          "id": "B1-F5",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "API key written into node; would sit in export and version control; use n8n credentials."
+        },
+        {
+          "id": "B1-F6",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "errorWorkflow null, failure unnoticed; set alerting error workflow and bounded retries with backoff."
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "No idempotency; Stripe retries cause duplicate emails and rows",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No Stripe signature verification on webhook",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Unvalidated LLM output sent to customers; prompt injection path",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Full Stripe object with PII logged to company-wide sheet",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Full Stripe object including PII sent to OpenAI",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No error workflow, retries, or alerting",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Sheet logging depends on email success",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "API key hardcoded in node header",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No missing-email check or Gmail sending-limit handling",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B1-stripe-thankyou",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "6952a01c04",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 25580,
+      "numTurns": 5,
+      "costUsd": 0.0667987,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9603,
+        "cacheRead": 24947,
+        "output": 2588
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "13 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B1-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Stripe retries, lastNode worsens; no idempotency; dedupe on event.id; respond onReceived"
+        },
+        {
+          "id": "B1-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "No signature check; verify Stripe-Signature header against endpoint secret"
+        },
+        {
+          "id": "B1-F3",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "Model gets phone, address, payment details; sheet gets full object; map only name/items"
+        },
+        {
+          "id": "B1-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Unvalidated model text to customers; invented discounts; line-item injection; validate or approve"
+        },
+        {
+          "id": "B1-F5",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "API key inline in node; use n8n credentials, never in exported JSON"
+        },
+        {
+          "id": "B1-F6",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "errorWorkflow null; failures silent; set error workflow, capped retry, alerting"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "No Stripe webhook signature verification",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No idempotency; retries cause duplicate emails and rows",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Unvalidated LLM output emailed directly to customers",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "API key hardcoded inline in node header",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Full PII/payment details sent to OpenAI",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Full Stripe object logged to company-wide sheet",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No error workflow, retries, or alerting",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Serial chain: model failure blocks order logging",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Missing customer email not handled before send",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B2-support-autopilot",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "1f1ec830c8",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 22864,
+      "numTurns": 2,
+      "costUsd": 0.0424293,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6032,
+        "cacheRead": 13033,
+        "output": 1699
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B2-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking issue 1: attacker email text drives agent holding refund/send/CRM/delete tools; attachments too"
+        },
+        {
+          "id": "B2-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking 3: refunds unbounded, any amount; Blocking 4: no human review"
+        },
+        {
+          "id": "B2-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Main Stripe key full access, remove delete_email (blocking); send_email/update_crm restrictions in other problems"
+        },
+        {
+          "id": "B2-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking 4: no logging; 'add logging later' means first incident can't be investigated"
+        },
+        {
+          "id": "B2-F5",
+          "found": "yes",
+          "severity_given": "unrated",
+          "evidence": "Other problems: auto-replies, bounces cause mail loops; filter Auto-Submitted, rate-limit per sender"
+        },
+        {
+          "id": "B2-F6",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking 2: From header not authentication; spoofed sender gets customer's full record"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 0.833,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Prompt injection from email body and attachments",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "From-address identity spoofable, enables data exfiltration",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Unbounded refunds using full-access main Stripe secret key",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No human review and no logging",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "delete_email unnecessary, destroys evidence",
+          "severity": "blocker",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B2-support-autopilot",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "5af563564d",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 18553,
+      "numTurns": 2,
+      "costUsd": 0.0411589,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6027,
+        "cacheRead": 13029,
+        "output": 1574
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B2-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #1: email body/attachments drive agent with refund/email/edit tools; injection examples given."
+        },
+        {
+          "id": "B2-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #3: refunds have no amount cap; Critical #5: no review step, actions execute immediately."
+        },
+        {
+          "id": "B2-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #3/#4: full Stripe key, send_email to any address; High #6/#7: delete_email, update_crm."
+        },
+        {
+          "id": "B2-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #5: no logging means you can't reconstruct what happened; log from day one."
+        },
+        {
+          "id": "B2-F5",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "High #8: replying to auto-replies/bounces causes loops; skip Auto-Submitted/bulk headers; throttling in #10."
+        },
+        {
+          "id": "B2-F6",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #2: identity is the forgeable From header; attacker impersonates customer, gets their data."
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Prompt injection gives anyone control of the tools",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Identity based on forgeable From header",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Unbounded issue_refund with full-access Stripe key",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "send_email to any address enables exfiltration/phishing",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No review step and no logging",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "delete_email destroys evidence",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "update_crm can write any field; persistent injection",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Replying to every message causes loops and abuse",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Vague 'fully resolve' prompt; no escalation for sensitive cases",
+          "severity": "major",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B2-support-autopilot",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "01473c0090",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 22209,
+      "numTurns": 2,
+      "costUsd": 0.042559700000000006,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6037,
+        "cacheRead": 13037,
+        "output": 1710
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B2-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #1: untrusted email/attachments drive agent with refund/email/CRM tools; injection examples given."
+        },
+        {
+          "id": "B2-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #2: refund any amount; hard cap, above cap to human; #7 no human review."
+        },
+        {
+          "id": "B2-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #2,3,5: full Stripe key, send to any address, delete_email, unrestricted update_crm."
+        },
+        {
+          "id": "B2-F4",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "High #6: no logging; log inputs, tool calls, arguments, outputs from day one."
+        },
+        {
+          "id": "B2-F5",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "High #8: auto-replies/bounces cause loops; filter headers, rate-limit per sender, loop breaker."
+        },
+        {
+          "id": "B2-F6",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Critical #4: From header spoofable; spoofed sender gets another customer's data; check SPF/DKIM."
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Prompt injection from untrusted email with no guard",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "id_note": "",
+          "finding": "issue_refund unbounded, uses full-access Stripe key",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "send_email to any address enables exfiltration/phishing",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Identity from spoofable From header exposes customer data",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "delete_email and unrestricted update_crm",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No logging or audit trail",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No human review for risky actions",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Replying to every message causes loops and spam",
+          "severity": "major",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B2-support-autopilot",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "b557e620ab",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 27961,
+      "numTurns": 5,
+      "costUsd": 0.06956789999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9200,
+        "cacheRead": 24559,
+        "output": 3030
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "17 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B2-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Injection row: email can say 'refund order X $5,000' or 'email full customer record to attacker'."
+        },
+        {
+          "id": "B2-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Amount unlimited, cap in code; Human approval blocker: refunds happen with no review."
+        },
+        {
+          "id": "B2-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Restricted Stripe key, send only to sender, field allow-list, drop delete_email."
+        },
+        {
+          "id": "B2-F4",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "Operability: 'Logging: none planned'; log every run, tool calls, arguments; must be in v1."
+        },
+        {
+          "id": "B2-F5",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "No filter for auto-replies/bounces, loops; one reply per thread, daily send cap."
+        },
+        {
+          "id": "B2-F6",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Identity row: From can be spoofed; verify SPF/DKIM/DMARC or require verification."
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Prompt injection drives destructive tools",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "id": "",
+          "finding": "Full-access Stripe key, unlimited refund amount",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No human approval for refunds, email, CRM writes",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Spoofable From address used as identity",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Data exfiltration via send_email to any address",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Auto-reply/bounce mail loops, no send cap",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Open-ended agent instead of classify-then-template",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Model output not validated against schema/ownership",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "delete_email destroys evidence, unnecessary",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No logging, alerts, owner, pause switch",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No duplicate protection or idempotency, no error path",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Goal of no human/under one minute rules out safety",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Full emails and CRM records sent to model vendor",
+          "severity": "major",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B2-support-autopilot",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "e86fcc7cae",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 31728,
+      "numTurns": 5,
+      "costUsd": 0.0720865,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9197,
+        "cacheRead": 24565,
+        "output": 3283
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "17 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B2-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Prompt injection blocker: email body/attachments go straight to tool-holding agent; 'refund order X', 'send customer list'."
+        },
+        {
+          "id": "B2-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blockers: 'executed immediately, no review'; any-amount refunds; hard cap in code plus human approval."
+        },
+        {
+          "id": "B2-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Restricted refund-only Stripe key, reply-only send_email, trimmed CRM fields, remove delete_email; all blockers."
+        },
+        {
+          "id": "B2-F4",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "'Logging: none planned for v1' rated Major; log tool calls, arguments, approver."
+        },
+        {
+          "id": "B2-F5",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Loops blocker: auto-replies, bounces, own mail re-trigger; filter headers, per-sender daily cap."
+        },
+        {
+          "id": "B2-F6",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Identity blocker: From is trivially spoofed; verify with order number plus code."
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Prompt injection via email content driving tool-holding agent",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Full-access Stripe key, uncapped refunds",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Identity from spoofable From address",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Data exfiltration via send_email to any address plus full CRM",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No human approval; actions executed immediately",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Reply loops from auto-replies, bounces, own mail; no cap",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "delete_email irreversible and unnecessary; remove it",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No logging or audit trail",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No retries/idempotency; possible double refunds",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No structured output validation or unsure path",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Autonomous agent poor fit; fixed pipeline better",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Full CRM PII sent to LLM vendor and Zapier",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Success criteria unattainable safely; reframe goal",
+          "severity": "major",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B2-support-autopilot",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "4918d38a45",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 26397,
+      "numTurns": 5,
+      "costUsd": 0.0685767,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9197,
+        "cacheRead": 24567,
+        "output": 2932
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "17 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B2-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker: prompt injection; any sender can write 'refund order X'; model can't distinguish instructions"
+        },
+        {
+          "id": "B2-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker human approval 'executed immediately, no review'; refund any amount, cap in code, approval threshold"
+        },
+        {
+          "id": "B2-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Full-access Stripe key \u2192 restricted key; send_email any address; remove delete_email; named CRM fields"
+        },
+        {
+          "id": "B2-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker operability: 'Logging: none for v1'; log tool calls, arguments, approver; launch requirement"
+        },
+        {
+          "id": "B2-F5",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Auto-replies loop; filter Auto-Submitted/Precedence headers; rate-limit replies per sender; hard run cap"
+        },
+        {
+          "id": "B2-F6",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker identity: From addresses spoofable; check SPF/DKIM/DMARC; require verification"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Prompt injection from email body/attachments driving tools",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "id_note": "",
+          "finding": "Full-access Stripe key, unlimited refund amount",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "send_email to any address enables PII exfiltration",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Spoofable From address used for identity",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No human approval; actions executed immediately",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Mail loops from replying to every message; no rate limit",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No logging or audit trail",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "delete_email irreversible and unnecessary",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No validation of tool arguments before execution",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No idempotency; retries can double refund or email",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No error path or human fallback queue",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Full CRM record and attachments sent to model vendor",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Open-ended agent used where fixed workflow fits",
+          "severity": "major",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B3-lead-enrichment",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "b4fe63327c",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 22145,
+      "numTurns": 2,
+      "costUsd": 0.04476140000000001,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6105,
+        "cacheRead": 13034,
+        "output": 1903
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B3-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker 1: filter none pulls all ~12,000 rows every run; nothing marks rows enriched; overlap in #8"
+        },
+        {
+          "id": "B3-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker 2: first run makes 12,000 calls vs 600/hr; recommends throttle, batch cap, 429 backoff"
+        },
+        {
+          "id": "B3-F3",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "High #5: 48M tokens/run, frontier model for extraction; suggests Code node and small model"
+        },
+        {
+          "id": "B3-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker #3 overwrites reps' edits; High #6 split('\\n') parsing fragile, use validated JSON"
+        },
+        {
+          "id": "B3-F5",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "High #7 single VPS, SQLite, no backups; Medium #9 no monitoring/alerting"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Reprocesses every row every 5 minutes",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Exceeds vendor 600/hr rate limit immediately",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Overwrites sales reps' manual edits",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Row updates lack stable key; row positions may shift",
+          "severity": "blocker",
+          "defensible": false
+        },
+        {
+          "finding": "Frontier model cost out of proportion",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Fragile split('\\n') parsing of LLM output",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Single VPS, SQLite, no backups",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Overlapping runs process same rows",
+          "severity": "major",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B3-lead-enrichment",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "0e7a607ea1",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 13837,
+      "numTurns": 2,
+      "costUsd": 0.039335499999999995,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6106,
+        "cacheRead": 13035,
+        "output": 1360
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B3-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking #1: reads all 12k rows every run, no enriched marker; overlapping runs also noted"
+        },
+        {
+          "id": "B3-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking #2: exceeds 600/hr limit; add batch cap, delay, 429 backoff"
+        },
+        {
+          "id": "B3-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking #3: largest model, ~4k tokens/lead, 48M tokens/run; use small model"
+        },
+        {
+          "id": "B3-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking #4 on overwriting rep edits; fragile split parsing listed as smaller issue"
+        },
+        {
+          "id": "B3-F5",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocking #5: SQLite single VPS, no backups; 'sales will tell us' is not monitoring"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Reprocesses all rows every run, no enriched marker",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Exceeds vendor 600 req/hr limit, no throttling or backoff",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Unbounded LLM cost from largest model on 4k-token inputs",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Step 5 overwrites sales reps' manual edits",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No backups and no monitoring on single VPS with SQLite",
+          "severity": "blocker",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B3-lead-enrichment",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "9a04490eea",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 18423,
+      "numTurns": 3,
+      "costUsd": 0.045691300000000004,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6197,
+        "cacheRead": 22313,
+        "output": 1866
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "B3-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker #1: no filter, all 12,000 rows every run, nothing marks lead enriched; overlap noted separately"
+        },
+        {
+          "id": "B3-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blocker #2: 600/hr quota exhausted immediately, 429s, needs batch cap and backoff"
+        },
+        {
+          "id": "B3-F3",
+          "found": "yes",
+          "severity_given": "unrated",
+          "evidence": "Cost section: largest model oversized, 4k-token input wasteful, cost multiplied by reprocessing"
+        },
+        {
+          "id": "B3-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Blockers #3 and #4: overwrites reps' edits; newline split fragile, use validated JSON"
+        },
+        {
+          "id": "B3-F5",
+          "found": "yes",
+          "severity_given": "unrated",
+          "evidence": "Reliability: SQLite single VPS no backups; 'sales will tell us' means silent failures"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 0.6,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "No filter; all 12,000 rows reprocessed every 5 minutes",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Enrichment API 600/hr quota cannot support volume; no backoff",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Step 5 overwrites columns reps edit by hand",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "LLM output newline parsing is fragile, no validation",
+          "severity": "blocker",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B3-lead-enrichment",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "821680d822",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 28921,
+      "numTurns": 5,
+      "costUsd": 0.0676611,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9294,
+        "cacheRead": 24631,
+        "output": 2801
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "16 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B3-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Every run processes every row... re-enriched every 5 minutes; also notes runs can overlap"
+        },
+        {
+          "id": "B3-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "12,000 rows against 600 requests/hour; cap batch, backoff, handle 429s explicitly"
+        },
+        {
+          "id": "B3-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Frontier model \u00d7 4,000 tokens \u00d7 12,000 \u00d7 288 runs; use small model, spend cap"
+        },
+        {
+          "id": "B3-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Overwrites rep-edited columns (Blocker); split('\\n') parsing unvalidated, request JSON schema (Major)"
+        },
+        {
+          "id": "B3-F5",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "monitoring: none flagged; SQLite on one VPS, no backups, back up DB"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Reprocesses all rows every run, no done marker",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Vendor 600/hour limit exceeded, no throttling or 429 handling",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Overwrites rep hand-edited columns",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Unbounded LLM cost with frontier model and full JSON",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "LLM unnecessary for name/size extraction",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Newline-split parsing without validation",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Overlapping runs, no locking or idempotency",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No error path for API/bad email failures",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No monitoring or alerting",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Single VPS SQLite without backups",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Prompt injection via third-party enrichment JSON",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B3-lead-enrichment",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "37c53635eb",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 29216,
+      "numTurns": 4,
+      "costUsd": 0.0590984,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 7613,
+        "cacheRead": 13184,
+        "output": 2732
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "12 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B3-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Every run re-enriches all rows, no 'already done' check; runs will overlap; filter on Enriched_at empty"
+        },
+        {
+          "id": "B3-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "3.46M calls vs 600/hour limit; cap rows per run; 429 backoff in separate major row"
+        },
+        {
+          "id": "B3-F3",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Cost unbounded (blocker row); largest model for trivial extraction, use small model, trim 4k tokens"
+        },
+        {
+          "id": "B3-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Overwrites rep-edited columns (blocker); newline split with no validation shifts columns (major)"
+        },
+        {
+          "id": "B3-F5",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "SQLite single VPS no backups (blocker); monitoring none, add error-workflow alert (major)"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Reprocesses all rows every run; exceeds quota, overlapping runs, unbounded cost",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Update Row overwrites columns reps edit by hand",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "SQLite on single VPS with no backups",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "No 429 handling or backoff; one bad row fails run",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Free-text output split on newlines without validation",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Largest frontier model used for simple extraction",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No monitoring or alerting; owner is a team",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Lead emails sent to vendor and LLM; confirm DPAs",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B3-lead-enrichment",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "fdb85cd1eb",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 26463,
+      "numTurns": 5,
+      "costUsd": 0.0691507,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9294,
+        "cacheRead": 24627,
+        "output": 2950
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "15 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "B3-F1",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "Every run processes all rows... Nothing marks a row as done; overlapping runs flagged separately as Major"
+        },
+        {
+          "id": "B3-F2",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "600 requests/hour = 50 per run; first run exceeds; add backoff, cap rows, stop on 429"
+        },
+        {
+          "id": "B3-F3",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "Largest frontier model for trivial extraction; full 4k-token JSON; budget alert suggested"
+        },
+        {
+          "id": "B3-F4",
+          "found": "yes",
+          "severity_given": "blocker",
+          "evidence": "split('\\n') parsing unvalidated (Major); overwrites rep edits, silent data loss (Blocker)"
+        },
+        {
+          "id": "B3-F5",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "monitoring none flagged Major; SQLite no backups single VPS flagged Major"
+        }
+      ],
+      "recall": 1,
+      "severityOkRate": 1,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": null,
+      "cleanMajors": null,
+      "cleanIndefensibleBlockerMajor": null,
+      "blockerMajorFindings": [
+        {
+          "finding": "Every run reprocesses all ~12,000 rows; no done marker",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Vendor 600/hour limit exceeded; no backoff or cap",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Overwrites rep-edited columns, silent data loss",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Overlapping runs cause duplicate calls and write races",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Newline-split parsing of model output with no validation",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "No monitoring or alerting; failures surface via sales",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "SQLite on single VPS with no backups",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Largest frontier model used for trivial extraction",
+          "severity": "major",
+          "defensible": true
+        },
+        {
+          "finding": "Full ~4k-token JSON sent per lead; mostly irrelevant",
+          "severity": "major",
+          "defensible": true
+        }
+      ]
+    },
+    {
+      "task": "B4-weekly-digest-clean",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "e0515e7777",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 22231,
+      "numTurns": 2,
+      "costUsd": 0.047493099999999996,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6113,
+        "cacheRead": 13031,
+        "output": 2173
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "idempotency-key-stored-after-post-double-post",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "Item 9: key stored after post; post succeeds, store fails, retry duplicates. Listed under 'Worth tightening'."
+        },
+        {
+          "id": "timezone-iso-week-edge-cases",
+          "found": "partial",
+          "severity_given": "major",
+          "evidence": "Item 4 asks to define date field and UTC week boundary; ISO-week edge cases not discussed."
+        },
+        {
+          "id": "pagination-cap",
+          "found": "partial",
+          "severity_given": "major",
+          "evidence": "Item 3 covers partial page failures and total-count check, not an unbounded pagination cap."
+        },
+        {
+          "id": "dm-lost-if-lead-away",
+          "found": "no",
+          "severity_given": "n/a",
+          "evidence": "No mention of lead absence or a backup recipient."
+        }
+      ],
+      "recall": null,
+      "severityOkRate": null,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": 0,
+      "cleanMajors": 5,
+      "cleanIndefensibleBlockerMajor": 5,
+      "blockerMajorFindings": [
+        {
+          "finding": "Missed run is silent if n8n down at trigger time",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Raw ticket payloads persist 30 days in execution history",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Partial paginated fetch could aggregate incomplete data",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Ambiguous closed-ticket and week definitions",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Zero or tiny weeks unhandled, null median",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B4-weekly-digest-clean",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "63cfb6a272",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 26168,
+      "numTurns": 2,
+      "costUsd": 0.0471598,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6122,
+        "cacheRead": 13038,
+        "output": 2136
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "post-then-store-double-post",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "Item 5: key stored after post; crash between sends duplicate DM; acceptable for single-recipient DM."
+        },
+        {
+          "id": "timezone-iso-week-edge-cases",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "Item 6: 'Previous ISO week' should use defined timezone; cron UTC, helpdesk may not."
+        },
+        {
+          "id": "pagination-cap",
+          "found": "no",
+          "severity_given": "n/a",
+          "evidence": "Discusses partial fetch failure and offset drift, not an unbounded page loop or cap."
+        },
+        {
+          "id": "dm-lead-away",
+          "found": "no",
+          "severity_given": "n/a",
+          "evidence": "Item 4 covers digest never running, not the lead being absent."
+        }
+      ],
+      "recall": null,
+      "severityOkRate": null,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": 3,
+      "cleanMajors": 0,
+      "cleanIndefensibleBlockerMajor": 2,
+      "blockerMajorFindings": [
+        {
+          "finding": "Execution history retains raw ticket/customer data for 30 days",
+          "severity": "blocker",
+          "defensible": true
+        },
+        {
+          "finding": "Partial paginated fetch could produce wrong digest",
+          "severity": "blocker",
+          "defensible": false
+        },
+        {
+          "finding": "Numeric output check too strict and not strict enough",
+          "severity": "blocker",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B4-weekly-digest-clean",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "b1db7629fe",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 22120,
+      "numTurns": 2,
+      "costUsd": 0.04540079999999999,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6110,
+        "cacheRead": 13028,
+        "output": 1965
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": false,
+          "detail": "0 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": false
+        }
+      ],
+      "planted": [
+        {
+          "id": "post-then-store-double-post",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "Small window where post succeeds but key write fails, causing duplicate DM; accept as risk."
+        },
+        {
+          "id": "timezone-iso-week-edge-cases",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "State which timezone 'previous ISO week' uses; closed-at vs created-at; reopened tickets."
+        },
+        {
+          "id": "pagination-cap",
+          "found": "partial",
+          "severity_given": "minor",
+          "evidence": "Covers partial page failure and Retry-After, but no page or total cap."
+        },
+        {
+          "id": "lead-away-dm-goes-nowhere",
+          "found": "no",
+          "severity_given": "n/a",
+          "evidence": "No mention of lead absence or a backup recipient."
+        }
+      ],
+      "recall": null,
+      "severityOkRate": null,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": false,
+      "cleanBlockers": 3,
+      "cleanMajors": 0,
+      "cleanIndefensibleBlockerMajor": 3,
+      "blockerMajorFindings": [
+        {
+          "finding": "Raw ticket payloads retained in n8n execution history for 30 days",
+          "severity": "blocker",
+          "defensible": false
+        },
+        {
+          "finding": "Number-in-aggregates check rejects legitimate derived or reformatted values",
+          "severity": "blocker",
+          "defensible": false
+        },
+        {
+          "finding": "LLM API failure not routed to template fallback",
+          "severity": "blocker",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B4-weekly-digest-clean",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "171bcd393b",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 26562,
+      "numTurns": 5,
+      "costUsd": 0.06617050000000001,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9289,
+        "cacheRead": 24625,
+        "output": 2654
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "11 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "key-stored-after-post-double-post",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "Key is stored after the post... a crash between the two has the same effect."
+        },
+        {
+          "id": "timezone-iso-week-edge-cases",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "ISO-week boundary and timezone are not defined (07:00 UTC Monday vs. tickets closed late Sunday)"
+        },
+        {
+          "id": "pagination-cap",
+          "found": "partial",
+          "severity_given": "major",
+          "evidence": "Covers retries running out mid-pagination, not a missing page cap or runaway loop."
+        },
+        {
+          "id": "dm-lead-away",
+          "found": "no",
+          "severity_given": "n/a",
+          "evidence": "No mention of lead absence or a backup recipient."
+        }
+      ],
+      "recall": null,
+      "severityOkRate": null,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": 0,
+      "cleanMajors": 4,
+      "cleanIndefensibleBlockerMajor": 4,
+      "blockerMajorFindings": [
+        {
+          "finding": "Partial pagination failure could aggregate an incomplete week",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Key stored after post can cause a double-post",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Missed cron run produces no alert",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Number check doesn't verify numbers are tied to the right metric",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B4-weekly-digest-clean",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "7945c7a7e6",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 27069,
+      "numTurns": 5,
+      "costUsd": 0.0670641,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 9322,
+        "cacheRead": 24641,
+        "output": 2730
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "12 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "key-stored-after-post-double-post",
+          "found": "yes",
+          "severity_given": "major",
+          "evidence": "Key stored after post; if Slack succeeds but key write fails, re-run sends duplicate."
+        },
+        {
+          "id": "timezone-iso-week-edge-cases",
+          "found": "partial",
+          "severity_given": "minor",
+          "evidence": "Median needs rules for business hours and timezone (ISO week boundary is UTC)."
+        },
+        {
+          "id": "pagination-cap",
+          "found": "partial",
+          "severity_given": "major",
+          "evidence": "Truncated fetch produces wrong digest; check that pagination finished cleanly."
+        },
+        {
+          "id": "dm-lead-away",
+          "found": "no",
+          "severity_given": "n/a",
+          "evidence": "Only assumes lead's DM is sole destination; no absence/backup recipient concern raised."
+        }
+      ],
+      "recall": null,
+      "severityOkRate": null,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": 0,
+      "cleanMajors": 3,
+      "cleanIndefensibleBlockerMajor": 3,
+      "blockerMajorFindings": [
+        {
+          "finding": "No automatic re-run after retry exhaustion; relies on someone noticing alert",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Key stored after post can cause duplicate DM",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Empty or truncated fetch yields confident digest with wrong numbers",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    },
+    {
+      "task": "B4-weekly-digest-clean",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "ffda55cc81",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 31722,
+      "numTurns": 4,
+      "costUsd": 0.0609376,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 7613,
+        "cacheRead": 13176,
+        "output": 2916
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "table_present",
+          "pass": true,
+          "detail": "10 table lines"
+        },
+        {
+          "id": "uses_blocker_major_minor",
+          "pass": true
+        }
+      ],
+      "planted": [
+        {
+          "id": "nit-key-stored-after-post-double-post",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "Crash after Slack post before key stored causes duplicate DM; store key as pending first."
+        },
+        {
+          "id": "nit-timezone-iso-week-edge-cases",
+          "found": "yes",
+          "severity_given": "minor",
+          "evidence": "How 'previous ISO week' handles timezone (UTC vs helpdesk) unspecified; closed vs created."
+        },
+        {
+          "id": "nit-pagination-cap",
+          "found": "partial",
+          "severity_given": "major",
+          "evidence": "Raises partial page failure after retries, not an unbounded pagination cap."
+        },
+        {
+          "id": "nit-lead-away-dm-goes-nowhere",
+          "found": "partial",
+          "severity_given": "minor",
+          "evidence": "Mentions lead noticing missing digest and naming an owner; not lead absence."
+        }
+      ],
+      "recall": null,
+      "severityOkRate": null,
+      "falsePositives": [],
+      "falsePositiveCount": 0,
+      "tablePresent": true,
+      "cleanBlockers": 0,
+      "cleanMajors": 2,
+      "cleanIndefensibleBlockerMajor": 2,
+      "blockerMajorFindings": [
+        {
+          "finding": "n8n execution history retains raw Step 1 ticket payload for 30 days",
+          "severity": "major",
+          "defensible": false
+        },
+        {
+          "finding": "Pagination page failure after retries could yield partial aggregate",
+          "severity": "major",
+          "defensible": false
+        }
+      ]
+    }
+  ],
+  "method": {
+    "summary": "Tasks, fixtures, rubrics and answer keys written from skill.json + README.md only, then frozen (sha256 in FREEZE.txt) before any run. Each run: headless `claude -p` (Claude Code 2.1.303), model sonnet (claude-sonnet-5-5), cwd = fresh mkdtemp dir with the fixture copied in, tools limited to Skill,Read,Glob,Grep(,Edit,Write for MCP Mechanic), --setting-sources project, --strict-mcp-config with no servers, --no-session-persistence. Baseline: no skill. Skill: skills/<slug>/ minus evals/ copied to <tmp>/.claude/skills/<slug>/. Same prompt both conditions, 3 repeats per task per condition, interleaved order. No Bash, no web, no MCP.",
+    "permissions": "Run in --permission-mode bypassPermissions with deny rules on Edit/Write under /Users, ~, /Library, /Applications, /etc, /opt, /usr, /Volumes, /private/tmp, /private/etc and on Read under /Users and ~. Reason: under acceptEdits, headless Claude Code refuses writes to .mcp.json as a protected config file, which would have failed every MCP file task for reasons unrelated to the skill (found in aborted attempt 1, archived under independent-runs/2026-10-21/aborted-attempt-1/). Outside-dir write attempts are also detected from the tool-call stream.",
+    "grading": "Deterministic checks in web/scripts/eval-independent.ts (JSON parse, structure, secret strings, file locations, tool-call targets). Judgement items by a separate blind grader: `claude -p --model opus --tools \"\"`, one answer at a time, condition label removed, skill names and the word 'skill' redacted, order shuffled by a seeded hash. Grader prompts and raw outputs are in independent-runs/2026-10-21/grader/<blindId>.json; blind-mapping.json maps ids to runs.",
+    "agentRuns": "54 scored runs. Aborted attempt 1 used about 13 further agent invocations (7 completed, 6 killed); none are scored. Total agent invocations about 67, a little over the ~60 budget, plus 54 grader calls."
+  },
+  "keyFindings": [
+    "Skill invoked in 12/12 skill runs; 0 in baseline.",
+    "Planted-flaw recall was 1.0 in BOTH conditions (17 planted flaws x 3 repeats each). The planted flaws were too obvious to separate the conditions; recall does not show a skill benefit.",
+    "False positives (claims contradicting the design text): 0 in both conditions, as judged by the blind grader.",
+    "Output format: findings table with blocker/major/minor in 12/12 skill runs, 0/12 baseline runs (the README's promised format).",
+    "Severity calibration on planted flaws (given severity >= key minimum): skill 1.0, baseline 0.9 (baseline sometimes left items unrated or rated hardcoded key / LLM-to-customer as minor).",
+    "Clean blueprint B4: baseline answers framed 6 items as 'fix before building' (mapped to blocker; grader judged 5 of 6 not defensible) plus 5 majors; skill gave 0 blockers but 9 majors, and the grader judged none of the 9 needed major. The skill avoids blocker inflation but still over-rates on a clean design.",
+    "Both conditions rate most planted flaws as blocker, so severity is not very discriminating in either."
+  ],
+  "limitations": [
+    "One agent model (sonnet), 3 repeats per blueprint per condition.",
+    "Recall hit the ceiling for both conditions: the planted flaws were textbook and well within the base model's reach, so this test cannot show whether the skill finds subtler flaws.",
+    "Blueprints are synthetic and written by the evaluator.",
+    "Baseline answers do not use blocker/major/minor; the grader mapped their labels ('Critical', 'fix before building', etc.) onto that scale, so baseline severity numbers, especially B4 blockers, depend on that mapping.",
+    "False positives and defensibility are judged by a same-vendor model (opus); the grader found zero false positives everywhere, which may be lenient.",
+    "Only one clean blueprint."
+  ],
+  "comparisonWithAuthors": "Authors' results-2026-10-21.json: 3 tasks x 3 repeats, regex checks written by the author: baseline 0.889 vs skill 1.0. This independent run does not reproduce a recall gap: both conditions found every planted flaw. The measurable differences here are format (table with severities) and somewhat better severity calibration, with fewer blocker-level false alarms on the clean design but more majors."
+}

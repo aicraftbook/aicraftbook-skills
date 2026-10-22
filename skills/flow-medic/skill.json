@@ -1,0 +1,44 @@
+{
+  "name": "flow-medic",
+  "displayName": "Flow Medic",
+  "subtitle": "Diagnose a failed automation run from its error and logs",
+  "title": "Flow Medic",
+  "version": "1.0.2",
+  "license": "MIT",
+  "maintainer": "AI Craftbook",
+  "status": "released",
+  "supportedAgents": [
+    "claude-code",
+    "claude-desktop",
+    "cursor"
+  ],
+  "installMethods": [
+    "copy folder to ~/.claude/skills/ or .claude/skills/",
+    "Upload the folder as a zip in Claude apps: Customize > Skills (upload not tried by us)"
+  ],
+  "permissions": {
+    "files": "Reads its own reference files and any log or export file the user points at. Writes nothing.",
+    "shell": "None. It does not run, re-run or fetch anything named in the logs. Bundles no scripts.",
+    "network": "None required.",
+    "mcp": "None."
+  },
+  "sitePath": "/skills/flow-medic",
+  "created": "2026-10-21",
+  "updated": "2026-10-22",
+  "nameCheck": {
+    "name": "Flow Medic",
+    "id": "flow-medic",
+    "checkedAt": "2026-10-22",
+    "conflicts": [],
+    "notes": [
+      "GitHub repo Rohan-Saxena644/FlowMedic (0 stars)"
+    ],
+    "sources": [
+      "GitHub code search (SKILL.md frontmatter, verified)",
+      "GitHub repositories",
+      "npm",
+      "PyPI",
+      "AI Craftbook catalogue"
+    ]
+  }
+}

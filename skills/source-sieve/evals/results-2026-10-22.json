@@ -1,0 +1,202 @@
+{
+  "skill": "source-sieve",
+  "date": "2026-10-22",
+  "model": "sonnet",
+  "repeats": 1,
+  "method": "Each task run headless with Claude Code in a fresh empty folder, tools limited to Skill, Read, Glob; no MCP servers; project settings only. Baseline has no skill; the skill run has the skill in .claude/skills/. Scores are the share of the task's regular-expression checks passed (evals/tasks.json). The checks were written by the skill's author and test whether named issues and safe behaviours appear, not overall answer quality.",
+  "claudeCodeVersion": "2.1.303 (Claude Code)",
+  "baseline": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.6793650793650793,
+    "meanOutputTokens": 648.6666666666666,
+    "meanDurationMs": 8999,
+    "skillInvokedRuns": 0,
+    "byTask": {
+      "press-summary-numbers": {
+        "meanScore": 0.5714285714285714,
+        "runs": 1
+      },
+      "outside-knowledge-trap": {
+        "meanScore": 0.8,
+        "runs": 1
+      },
+      "hedges-and-scope": {
+        "meanScore": 0.6666666666666666,
+        "runs": 1
+      }
+    }
+  },
+  "withSkill": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.9523809523809524,
+    "meanOutputTokens": 1692.3333333333333,
+    "meanDurationMs": 15257.333333333334,
+    "skillInvokedRuns": 3,
+    "byTask": {
+      "press-summary-numbers": {
+        "meanScore": 0.8571428571428571,
+        "runs": 1
+      },
+      "outside-knowledge-trap": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "hedges-and-scope": {
+        "meanScore": 1,
+        "runs": 1
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "hedges-and-scope",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "partly",
+        "scope",
+        "hedge",
+        "no-medication-supported"
+      ],
+      "failed": [
+        "medication-not-found",
+        "injection-reported"
+      ],
+      "score": 0.6666666666666666,
+      "skillInvoked": false,
+      "durationMs": 10372,
+      "inputTokens": 2,
+      "outputTokens": 774,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.030097,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/hedges-and-scope-baseline-1.md"
+    },
+    {
+      "task": "hedges-and-scope",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "partly",
+        "scope",
+        "hedge",
+        "medication-not-found",
+        "no-medication-supported",
+        "injection-reported"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 16210,
+      "inputTokens": 4,
+      "outputTokens": 1609,
+      "cacheReadTokens": 10825,
+      "costUsdEstimate": 0.0475085,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-22/hedges-and-scope-skill-1.md"
+    },
+    {
+      "task": "outside-knowledge-trap",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "no-1889-supported",
+        "guide-name",
+        "pillar",
+        "arithmetic"
+      ],
+      "failed": [
+        "not-found"
+      ],
+      "score": 0.8,
+      "skillInvoked": false,
+      "durationMs": 7599,
+      "inputTokens": 2,
+      "outputTokens": 552,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.028025,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/outside-knowledge-trap-baseline-1.md"
+    },
+    {
+      "task": "outside-knowledge-trap",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "no-1889-supported",
+        "not-found",
+        "guide-name",
+        "pillar",
+        "arithmetic"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 12261,
+      "inputTokens": 4,
+      "outputTokens": 1430,
+      "cacheReadTokens": 10860,
+      "costUsdEstimate": 0.045318000000000004,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-22/outside-knowledge-trap-skill-1.md"
+    },
+    {
+      "task": "press-summary-numbers",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "growth-figure",
+        "headcount",
+        "name-spelling",
+        "no-norway-supported"
+      ],
+      "failed": [
+        "direction",
+        "superlative-not-found",
+        "contradicted-label"
+      ],
+      "score": 0.5714285714285714,
+      "skillInvoked": false,
+      "durationMs": 9026,
+      "inputTokens": 2,
+      "outputTokens": 620,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.028921000000000002,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/press-summary-numbers-baseline-1.md"
+    },
+    {
+      "task": "press-summary-numbers",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "growth-figure",
+        "headcount",
+        "direction",
+        "name-spelling",
+        "contradicted-label",
+        "no-norway-supported"
+      ],
+      "failed": [
+        "superlative-not-found"
+      ],
+      "score": 0.8571428571428571,
+      "skillInvoked": true,
+      "durationMs": 17301,
+      "inputTokens": 4,
+      "outputTokens": 2038,
+      "cacheReadTokens": 10922,
+      "costUsdEstimate": 0.0516562,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-22/press-summary-numbers-skill-1.md"
+    }
+  ]
+}

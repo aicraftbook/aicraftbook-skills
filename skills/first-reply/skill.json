@@ -1,0 +1,52 @@
+{
+  "name": "first-reply",
+  "displayName": "First Reply",
+  "subtitle": "Draft the first reply to a new real-estate lead",
+  "title": "First Reply",
+  "version": "1.1.1",
+  "license": "MIT",
+  "maintainer": "AI Craftbook",
+  "status": "released",
+  "supportedAgents": [
+    "claude-code",
+    "claude-desktop",
+    "codex-cli",
+    "gemini-cli",
+    "vscode-copilot"
+  ],
+  "installMethods": [
+    "curl the SKILL.md into a skills folder",
+    "copy folder to ~/.claude/skills/"
+  ],
+  "permissions": {
+    "files": "Reads only what the user pastes or points to.",
+    "shell": "None. Bundles no scripts.",
+    "network": "None.",
+    "mcp": "Can use a CRM MCP server the user has connected, to list new leads; never sends messages."
+  },
+  "sitePath": "/skills/first-reply",
+  "created": "2026-10-21",
+  "updated": "2026-10-22",
+  "previousNames": [
+    "lead-follow-up-drafter"
+  ],
+  "nameCheck": {
+    "name": "First Reply",
+    "id": "first-reply",
+    "checkedAt": "2026-10-21",
+    "conflicts": [],
+    "notes": [
+      "GitHub repo newnob6/first-reply (0 stars)",
+      "GitHub repo anishmanchanda/First-Reply (0 stars)",
+      "GitHub repo GBR-RL/first-reply (0 stars)",
+      "GitHub repo BiLalAhmed01/FirstReply (0 stars)"
+    ],
+    "sources": [
+      "GitHub code search (SKILL.md frontmatter, verified)",
+      "GitHub repositories",
+      "npm",
+      "PyPI",
+      "AI Craftbook catalogue"
+    ]
+  }
+}

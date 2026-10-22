@@ -1,0 +1,2272 @@
+{
+  "skill": "prompt-proof",
+  "date": "2026-10-21",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/prompt-proof/evals/independent-runs/2026-10-21/frozen",
+    "sha256": "1261a21e425b1690a5a6e7b9fb2388538d96e6a6fa5c79d76a7722e30e2942b8",
+    "freezeRecord": "skills/prompt-proof/evals/independent-runs/2026-10-21/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "c49c4e7493f70a2f60a0500bbc5639b66ecaf2aba5dd90558c8fb71e1f2162b2"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanCombined": 0.797,
+      "meanRubric": 0.697,
+      "meanCheckFraction": 0.896,
+      "falseClaimRuns": 4,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 21443.083,
+      "meanCostUsd": 0.103
+    },
+    "skill": {
+      "n": 12,
+      "meanCombined": 0.936,
+      "meanRubric": 0.914,
+      "meanCheckFraction": 0.958,
+      "falseClaimRuns": 2,
+      "skillInvocationRate": 1,
+      "meanDurationMs": 51552.167,
+      "meanCostUsd": 0.114
+    }
+  },
+  "perTask": {
+    "T1-support-bot": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.87,
+        "meanRubric": 0.806,
+        "meanCheckFraction": 0.933,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 17933.667,
+        "meanCostUsd": 0.044
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.986,
+        "meanRubric": 0.972,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 37441,
+        "meanCostUsd": 0.082
+      }
+    },
+    "T2-invoice-extraction-template": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.884,
+        "meanRubric": 0.833,
+        "meanCheckFraction": 0.933,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 21885,
+        "meanCostUsd": 0.212
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 38388,
+        "meanCostUsd": 0.088
+      }
+    },
+    "T3-sms-lead-agent": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.775,
+        "meanRubric": 0.75,
+        "meanCheckFraction": 0.8,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 20590.333,
+        "meanCostUsd": 0.045
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.959,
+        "meanRubric": 0.917,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 71526.333,
+        "meanCostUsd": 0.147
+      }
+    },
+    "T4-ticket-triage-clean": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.658,
+        "meanRubric": 0.4,
+        "meanCheckFraction": 0.917,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 25363.333,
+        "meanCostUsd": 0.11
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.8,
+        "meanRubric": 0.767,
+        "meanCheckFraction": 0.833,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 58853.333,
+        "meanCostUsd": 0.139
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "T1-support-bot",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "2b1030dee6",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16922,
+      "numTurns": 3,
+      "costUsd": 0.0438456,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6123,
+        "cacheRead": 13056,
+        "output": 1804
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-length-vs-steps-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-refund-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-json-output-missing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Identifies both the missing JSON output and the injection via the raw customer message after 'follow instructions'. Ranks them as the top two blockers."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Finds both conflicts clearly: 40 words vs every step, and offer refund vs never promise refunds."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Covers concise, emojis, escalate, empty input, language and plan. Off-topic requests are not addressed explicitly; only unanswerable questions are."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rewrite keeps the intent and specifies exact JSON with reply/escalate. It gives concrete escalation triggers and moves customer text to the user turn."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "Only offers to draft test cases. Gives no inputs or expected must/must-not behaviors."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Doesn't claim injection is made impossible. Recommends a code fallback and an empty-message check in code."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "T1-support-bot",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "ec3e3db7e5",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 20190,
+      "numTurns": 3,
+      "costUsd": 0.0465858,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6123,
+        "cacheRead": 13058,
+        "output": 2078
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-length-vs-steps-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-refund-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-json-output-missing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Finds both the missing JSON output rule and the raw customer-message injection after 'Follow the customer's instructions', and ranks them as the top two."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Finds both conflicts: under 40 words vs. listing every step, and offering a refund vs. never promising one."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers 'concise when appropriate', emojis, undefined escalation, empty messages, Spanish/German, off-topic requests and missing {{plan}} guidance."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rewrite keeps the intent, gives the exact JSON schema and concrete escalation triggers, and moves the customer text to the user message."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Lists suitable test inputs but doesn't say what a correct response must or must not do for each."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Never claims injection is eliminated, recommends JSON validation in code, and notes the rewrite is untested."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-support-bot",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "1a503df312",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16689,
+      "numTurns": 3,
+      "costUsd": 0.0412082,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6131,
+        "cacheRead": 13062,
+        "output": 1537
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-length-vs-steps-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-refund-conflict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-json-output-missing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Finds both the missing JSON format and the injection right after 'Follow the customer's instructions'. Ranks them top two, JSON first, with justification."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Clearly identifies both conflicts, 40 words vs complete steps and offer refund vs never promise, with concrete resolutions."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers concise, emojis, escalation criteria, empty message, Spanish/German and plan usage. Off-topic is only touched via competitors/legal guardrails."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Gives fix snippets: JSON schema, user-turn move, escalation criteria, refund wording. No full revised prompt; it offers to draft one later."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "No test inputs with expected must/must-not behaviors are provided."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "No claim that injection is fully prevented. Suggests structured output for reliability. No overclaims."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.775
+    },
+    {
+      "task": "T1-support-bot",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "e49824ce6f",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 39202,
+      "numTurns": 5,
+      "costUsd": 0.082591,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8648,
+        "cacheRead": 13310,
+        "output": 4666
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-length-vs-steps-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-refund-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-json-output-missing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Finds both the JSON output gap and the injection after 'Follow the customer's instructions', rates both High, and gives clear reasons."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Finds both conflicts, 40 words vs every step and offer refund vs never promise, quotes them, and fixes each."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers concise, emoji and escalate ambiguities, plus empty, Spanish/German, off-topic and plan handling."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Revised prompt keeps the intent, wraps the message in tags as data, sets exact JSON with reply/escalate, and lists concrete escalation criteria."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Ten tests cover empty input, injection, angry refund demand, multi-step, Spanish and German, each with must/must-not and checks."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Says tags reduce injection risk but don't remove it; recommends JSON validation, human review and the user-message channel."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T1-support-bot",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "c9e9c53f5f",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 34970,
+      "numTurns": 5,
+      "costUsd": 0.08321119999999999,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8653,
+        "cacheRead": 13312,
+        "output": 4726
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-length-vs-steps-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-refund-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-json-output-missing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Both injection (obedience line, no delimiters, end of prompt) and missing JSON contract found, ranked top two as High."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Both conflicts identified with quoted text: 40-word limit vs complete steps, and offer refund vs never promise refunds."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers escalate/concise/emoji vagueness, empty input, Spanish/German, off-topic, and unused {{plan}} with concrete fixes."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Revised prompt keeps intent, tags customer text as data, specifies exact JSON shape, and lists concrete escalation triggers."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Ten tests incl. empty, German, angry refund, injection, long procedure, off-topic, each with must/must-not and checks."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "States prompt wording only reduces injection risk; recommends code-side output validation and refund-language flagging."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T1-support-bot",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "dfd90f62e9",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 38151,
+      "numTurns": 5,
+      "costUsd": 0.0808969,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8647,
+        "cacheRead": 13309,
+        "output": 4497
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-length-vs-steps-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-refund-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-json-output-missing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Identifies both the missing JSON output contract and the injection risk, ranks them as the top two, and explains the consequences."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags both conflicts: 40 words vs every step, and offering refunds vs never promising them. Resolves each clearly."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Covers concise/escalate ambiguity, empty input, Spanish/German, off-topic and unused plan. Never flags 'use emojis sparingly' as lacking criteria."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Keeps intent, delimits the customer message as data, specifies exact JSON with reply/escalate, and lists concrete escalation triggers."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Ten tests cover empty input, injection, angry refund, multi-step, Spanish and German, each with must/must-not criteria."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "States explicitly that tags reduce but don't remove injection risk; recommends JSON validation and refund-promise scanning in code."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-invoice-extraction-template",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "f71f636cc4",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 24811,
+      "numTurns": 4,
+      "costUsd": 0.2136663,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 47043,
+        "cacheRead": 13063,
+        "output": 2418
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-auto-approval-risk",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-reasoning-vs-json-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-missing-value-and-format-rules",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Opening names the payment trigger as the biggest problem. Explains injection-driven approval and recommends removing the field in favor of deterministic checks plus human sign-off."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags raw untrusted text in the system prompt with no boundaries. Recommends labeled tags, user-role placement and an ignore-embedded-instructions rule."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Identifies the reasoning vs only-JSON conflict that breaks parsing. Resolves it with a notes field in the JSON or structured output."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Covers types, formats, nulls, empty attachment, non-invoice emails, multiple invoices and mismatches. Misses credit notes and Net 30 due_date ambiguity."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Strong revised template with delimiters, schema, null rules and a review path. Test inputs are only mentioned, not given with must/must-not expectations."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Doesn't claim injection is solved. Requires downstream vendor, duplicate and threshold checks, and states it is untested."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T2-invoice-extraction-template",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "ac965672de",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 17012,
+      "numTurns": 4,
+      "costUsd": 0.2077683,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 47041,
+        "cacheRead": 13063,
+        "output": 1829
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-auto-approval-risk",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-reasoning-vs-json-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-missing-value-and-format-rules",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranks approved_for_payment as top blocker, cites auto-scheduling and injection, and recommends deterministic downstream approval or human review."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags undelimited untrusted text in the system prompt; recommends tags, moving it to the user turn, and a data-only rule."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Identifies the reasoning vs JSON-only conflict breaking the parser; fixes with structured outputs or a notes field inside JSON."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers ISO dates, numeric total, ISO 4217, nulls, Net 30, non-invoices, empty attachment, multiple invoices and email/attachment conflicts. Misses credit notes."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "No revised template, only an offer to write one. Test categories are listed but without must/must-not expectations."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "No claim that injection becomes impossible; recommends downstream validation, vendor allowlist, amount thresholds and duplicate checks."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-invoice-extraction-template",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "933b220e0b",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 23832,
+      "numTurns": 6,
+      "costUsd": 0.21598810000000002,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 47459,
+        "cacheRead": 73461,
+        "output": 1879
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-auto-approval-risk",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-reasoning-vs-json-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-injection-found",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-missing-value-and-format-rules",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranked first as a blocker. Explains the injection risk and recommends removing the field in favor of deterministic workflow checks with human fallback."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Notes untrusted text isn't fenced. Recommends tags, a data-only rule and moving inputs to the user message, and gives an injection example."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Identifies the reasoning vs JSON-only conflict breaking the parser. Resolves it with a reasoning field inside the JSON or structured outputs."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Covers types, formats, null rules, empty attachment, non-invoices, credit notes and multiple invoices. Misses email/attachment conflicts and Net 30 due_date ambiguity."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "Only offers to rewrite. No revised template and no test inputs with expectations."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "No claims that injection becomes impossible. Lists downstream checks: vendor master match, duplicates, bank detail changes, amount plausibility."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.775
+    },
+    {
+      "task": "T2-invoice-extraction-template",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "b4738bba91",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 40010,
+      "numTurns": 4,
+      "costUsd": 0.08144699999999999,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8447,
+        "cacheRead": 13310,
+        "output": 4632
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-auto-approval-risk",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-reasoning-vs-json-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-missing-value-and-format-rules",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Listed first as High: model decides payment from sender text, auto-schedules. Fixes field to false and moves approval to code or a human."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags unmarked raw variables. Adds tags and a data-not-instructions rule. Notes email/PDF mismatches including bank details."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Spots the reasoning vs JSON-only conflict breaking the parser. Resolves it with a reasoning field inside the JSON."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers types, formats, null, non-invoice, empty, multiple invoices and source conflicts. Credit notes and Net 30 are not addressed explicitly."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Revised prompt keeps intent and adds tags, schema, null rules and is_invoice path. Ten tests with must/must-not, though no Net 30 case."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "States delimiters only lower risk. Lists downstream controls (vendor master, duplicates, bank details, approval thresholds) and notes tests weren't run."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-invoice-extraction-template",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "39e00c6976",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 30732,
+      "numTurns": 4,
+      "costUsd": 0.0700952,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8449,
+        "cacheRead": 13312,
+        "output": 3496
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-auto-approval-risk",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-reasoning-vs-json-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-missing-value-and-format-rules",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Listed first and in summary; injection can flip approval and move money; fixes approval to false, recommends deterministic rules or human approval."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags raw untrusted variables with no delimiters or data rule; revision adds tags, data-only rule, and handling for embedded instructions/bank changes."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Identifies reasoning-vs-JSON-only conflict breaking the parser; resolves with audit_notes field inside the JSON."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers types/formats, ISO currency, null, empty attachment, non-invoice, multiple invoices, email/PDF conflicts; misses credit notes and Net 30 due_date."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Revised template keeps intent with tags, schema, null and not_an_invoice rules; nine tests with must/must-not, though no Net 30 case."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Says delimiters reduce but don't remove injection risk; recommends code validation, vendor/amount checks; notes prompt is untested."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-invoice-extraction-template",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "8ff6146d33",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 44422,
+      "numTurns": 6,
+      "costUsd": 0.11220269999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14900,
+        "cacheRead": 25207,
+        "output": 5007
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-auto-approval-risk",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-reasoning-vs-json-only",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-injection-found",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-missing-value-and-format-rules",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Listed first as High; explains outsider text can flip approval and trigger auto-payment; forces false and moves approval to code or human sign-off."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags undelimited untrusted email/OCR text with no data policy; adds tags and a policy; injection tests cover a total change."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Identifies the reasoning-vs-JSON-only conflict that breaks the parser; resolves it with an audit_notes field inside the JSON."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers types, ISO formats, nulls, empty attachment, non-invoice, multiple invoices and conflicts; misses credit notes and Net 30 explicitly."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Revised template keeps intent with delimiters, schema, null rules and no-invoice path; nine tests with must/must-not; no Net 30 test."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Says delimiters lower but don't remove injection risk; lists vendor match, duplicate checks, human approval; notes the prompt is untested."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T3-sms-lead-agent",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "c4efb6084c",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 22517,
+      "numTurns": 3,
+      "costUsd": 0.047644900000000004,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6099,
+        "cacheRead": 22369,
+        "output": 2100
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-confidential-notes-leak",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-send-sms-any-number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-transparency-conflict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-opt-out-handling",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.6,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Top blocker: floor price and divorce leak via the transparency rule and injection. Says 'do not share' won't hold, remove the data, drop commission, notes seller duties."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags spam relay, harassment and consent risk for third parties. Recommends restricting send_sms to {{lead_phone}} in code, or routing to a human."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers transparency vs. 'do not share', deceptive AI-denial rule, and 'book as many showings' without confirmation, date/time or availability rules."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Covers STOP/opt-out, human escalation and unanswerable questions. Misses empty or emoji-only, wrong-number and abusive messages."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "No revised prompt and no test inputs with must/must-not expectations; it only offers to rewrite."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "No claim that injection becomes impossible. Repeatedly stresses code-level enforcement for send_sms, STOP handling and the booking gate."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [
+        "States as fact that California and other states' bot-disclosure laws 'apply to this kind of use'. Applicability to an SMS assistant is uncertain and jurisdiction-dependent."
+      ],
+      "combined": 0.675
+    },
+    {
+      "task": "T3-sms-lead-agent",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "69f56d8163",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 18849,
+      "numTurns": 2,
+      "costUsd": 0.0445173,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 5991,
+        "cacheRead": 13053,
+        "output": 1924
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-confidential-notes-leak",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-send-sms-any-number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-transparency-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-opt-out-handling",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranks the confidential notes as blocker #1, links them to the 'answer every question' line, says 'do not share' isn't a control, and recommends removing them."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags spam, harassment and consent exposure from send_sms; recommends restricting it in code to {{lead_phone}} or handing off to a human."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers transparency vs 'do not share' and the AI-denial rule. Addresses 'book as many showings' with confirmation, availability and error handling."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Covers STOP, human handoff, upset leads and out-of-scope questions. Misses empty or emoji-only texts, wrong-number messages and abusive messages."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "No revised prompt is provided, only offered. No test inputs with must or must-not expectations."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Explicitly says the prompt alone isn't enough and calls for code-side enforcement: allow-list, rate limits, booking caps."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [
+        "Says California requires bots to disclose 'when sincerely asked'. California's BOT Act requires disclosure in certain sales or political contexts rather than on request; the 'when asked' standard matches Utah's law."
+      ],
+      "combined": 0.875
+    },
+    {
+      "task": "T3-sms-lead-agent",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "b8d595ed32",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 20405,
+      "numTurns": 2,
+      "costUsd": 0.0418014,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 5992,
+        "cacheRead": 13054,
+        "output": 1652
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-confidential-notes-leak",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-send-sms-any-number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-transparency-conflict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-opt-out-handling",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranked first; ties floor price, divorce, and commission to the transparency instruction; says 'do not share' is weak; recommends removal; notes fiduciary duty."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags spam, harassment, TCPA consent and cost abuse; recommends restricting send_sms to {{lead_phone}} in code or requiring human approval."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers transparency vs do-not-share, deceptive AI denial with disclosure risk, and the showings-maximizing goal; asks to confirm time and avoid double-booking."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Covers STOP, lookup failures and human handoff; misses empty or emoji-only texts, wrong-number and abusive messages."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "No revised prompt and no test inputs with expectations; only offers to draft one."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "No claim that injection is solved; stresses code-level allowlist, validation and rate limits; defers legal points to counsel."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.775
+    },
+    {
+      "task": "T3-sms-lead-agent",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "02cbc52842",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 55135,
+      "numTurns": 6,
+      "costUsd": 0.1250348,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14911,
+        "cacheRead": 25688,
+        "output": 6281
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-confidential-notes-leak",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-send-sms-any-number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-transparency-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-opt-out-handling",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranks the notes as top issues, says 'do not share' is not a control, recommends removing them, and notes the duty to sellers."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Flags the spam, harassment and consent risk well, but the fix allows one arbitrary extra number instead of the lead's own number or human approval."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers the transparency vs confidentiality and AI-denial conflicts, disclosure rules, and booking without confirmation or availability checks."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers STOP, wrong number, empty input, unknown listings and tool errors, with agent handoff; abusive or emoji-only texts are omitted."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Good revised prompt and tests, but it keeps the confidential notes in the prompt, which the answer key says is not a fix."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Calls the rewrite a mitigation only and lists code-level controls: remove notes, rate limits, slot validation, STOP enforcement."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [
+        "Describes lookup_listing as an 'MCP-style' tool, which the file does not support."
+      ],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-sms-lead-agent",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "d60da8d17a",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 98509,
+      "numTurns": 6,
+      "costUsd": 0.180631,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14885,
+        "cacheRead": 25090,
+        "output": 11857
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-confidential-notes-leak",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-send-sms-any-number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-transparency-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-opt-out-handling",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranks notes leak first, cites the transparency conflict and seller duty, and says the best fix is removing the notes since a model holding secrets can leak them."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags spam/phishing relay and non-consenting recipients; limits content, count and recipients, and enforces an allow-list and rate limits in code."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers transparency vs do-not-share, transparency vs AI denial (deception, disclosure rules), and booking goal lacking confirmation/availability rules."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Handles STOP, empty/photo-only, abusive/off-topic, unanswerable advice, and handoff to agent; wrong-number not explicit but covered broadly."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Strong delimiting, tool limits, opt-out and tests, but the revised prompt still contains the floor price, divorce and commission notes."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "States tags reduce but don't remove risk; lists code-level controls, logging, rate limits, and says tests don't replace them."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T3-sms-lead-agent",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "b061bc7d1c",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 60935,
+      "numTurns": 7,
+      "costUsd": 0.1359621,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 15123,
+        "cacheRead": 37741,
+        "output": 7168
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-confidential-notes-leak",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-send-sms-any-number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-transparency-conflict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-opt-out-handling",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Ranks the seller notes first, removes them from the prompt, says 'do not share' can't prevent leaks, and notes harm to clients. Commission covered too."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags spam, harassment and TCPA consent risk and the injection channel. Restricts send_sms to {{lead_phone}}, enforced in tool code."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers transparency vs do-not-share, the AI-denial deception and disclosure rules, and the unbounded booking goal without confirmation or availability rules."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers STOP opt-out, empty conversation, human hand-off, out-of-scope questions and other languages. Misses abusive and wrong-number texts, which is minor."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "The revision keeps the intent, removes the secrets, delimits the variables, constrains tools and adds opt-out. Tests have clear must/must-not columns and cover the key cases."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Says delimiters reduce but don't remove risk. Lists code-level controls: recipient check, STOP handling, rate limits, logging and human sampling."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "'These tests show how the prompt handled these inputs in one run' implies the tests were executed, but no tests were run.",
+        "Calls the 'answer every question… completely' rule the 'more recent' instruction, but it appears before the internal notes in the prompt.",
+        "'What changed' says the assistant 'never denies that they exist', but the revised prompt says 'Do not say or imply that such information exists.' The two are inconsistent."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T4-ticket-triage-clean",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "0deef9fa2a",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 25861,
+      "numTurns": 3,
+      "costUsd": 0.054270900000000004,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6748,
+        "cacheRead": 22369,
+        "output": 2503
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-false-missing-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-false-missing-empty",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-positive-verdict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0,
+          "reason": "Never says the prompt is well built; lists ten fixes framed as breaking validation or ambiguity, which implies major rework."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "No claims that core sections are missing, but schema, header-leak and example-3 complaints inflate non-problems into defects."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Raises real nits ('und', mixed language, hacked account), but ranks them high-impact rather than minor."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "No revision given; suggestions are targeted but push expansion (new categories, precedence order, 3–4 more examples)."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "No test inputs with must/must-not expectations are provided."
+        }
+      ],
+      "rubricScore": 0.3,
+      "falseClaims": [
+        "Claims there is no rule for undeterminable language, though unreadable input is handled with 'und'; only mixed-language tickets are actually unspecified.",
+        "Treats the documentation header as likely sent to the model; the file clearly separates it with '---' and calls it integration notes.",
+        "Presents 'und' and the schema sketch as 'likely to break validation' without evidence of the actual validator."
+      ],
+      "combined": 0.525
+    },
+    {
+      "task": "T4-ticket-triage-clean",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "131a44b62a",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 27107,
+      "numTurns": 5,
+      "costUsd": 0.2240846,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 47943,
+        "cacheRead": 63506,
+        "output": 2595
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-false-missing-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-false-missing-empty",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-positive-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Calls the prompt solid but then lists seven numbered 'fixes' ranked by importance. That implies more than minor changes are needed."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Does not claim injection handling, output format, empty-input handling, definitions or examples are missing, and does not invent example conflicts."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Raises real concrete nits (und, mixed language, hacked account), but presents them as ranked fixes rather than minor, and adds scope like structured outputs and new categories."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Offers a v4 with new routing categories, a tiebreak order, extra examples and example tags. Somewhat more than targeted edits."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "No test inputs with must or must-not expectations, only an offer to build 15–20 labeled tickets later."
+        }
+      ],
+      "rubricScore": 0.5,
+      "falseClaims": [],
+      "combined": 0.75
+    },
+    {
+      "task": "T4-ticket-triage-clean",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "4075d35567",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 23122,
+      "numTurns": 3,
+      "costUsd": 0.0505841,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6744,
+        "cacheRead": 22361,
+        "output": 2136
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-false-missing-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-false-missing-empty",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-positive-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-with-must-not",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Calls the prompt solid, but labels three items 'likely to cause real failures' and proposes eleven fixes, which overstates how much change is needed."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Doesn't claim core sections are missing, but presents the pseudo-schema notation and the </ticket> spoofing as likely real failures."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Raises the real nits ('und', mixed-language, compromised account), but ranks some highly and surrounds them with scope-expanding suggestions."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Gives no revision. The suggested new categories, priority cases and rules would expand a prompt that already works."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "No test inputs with must or must-not expectations."
+        }
+      ],
+      "rubricScore": 0.4,
+      "falseClaims": [
+        "The '|' output notation is presented as a likely real failure, but it is a clear format spec that models handle reliably.",
+        "Claims the 'JSON schema below' is absent, but the output format below is that schema description.",
+        "Rates </ticket> spoofing as a likely real failure, although the prompt already treats ticket text as data."
+      ],
+      "combined": 0.7
+    },
+    {
+      "task": "T4-ticket-triage-clean",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "c023e0a893",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 62553,
+      "numTurns": 7,
+      "costUsd": 0.14533290000000001,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15594,
+        "cacheRead": 25149,
+        "output": 8043
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-false-missing-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-false-missing-empty",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-positive-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Says 'ready with fixes' and credits injection and empty-input handling, but four Medium issues overstate how much change is needed."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Doesn't claim any core element is missing, and invents no example conflicts. Tag spoofing is a hardening point, not a claim that injection handling is absent."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Issues are real and concrete ('und', mixed language, hacked account, password ambiguity), but four are ranked Medium rather than minor."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Revision is targeted: the original structure is kept, small wording additions are made, and one example is added. The author's intent is preserved."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Tests have must/must-not expectations covering injection, empty input, multi-category, all-caps URGENT and non-English (mixed Spanish)."
+        }
+      ],
+      "rubricScore": 0.8,
+      "falseClaims": [],
+      "combined": 0.9
+    },
+    {
+      "task": "T4-ticket-triage-clean",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "7e033cdf19",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 44444,
+      "numTurns": 7,
+      "costUsd": 0.121059,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15598,
+        "cacheRead": 25150,
+        "output": 5614
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-false-missing-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-false-missing-empty",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-positive-verdict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Says 'ready with fixes' and praises the structure, but flags five Medium issues, which overstates the work needed on a clean prompt."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "No claims of missing core sections. But it calls example 3 'bad' and rates delimiter breakout and quote-breaking as Medium, which inflates speculative concerns."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Some real nits (tiebreak, edge cases), but most are rated Medium. Misses 'und' not being ISO 639-1, mixed-language tickets and hacked accounts."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Keeps structure, categories, criteria and examples. Edits are targeted sentence additions and intent is explicitly preserved."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Ten tests with must/must-not cover injection, tag breakout, empty, multi-category, URGENT and non-English."
+        }
+      ],
+      "rubricScore": 0.7,
+      "falseClaims": [],
+      "combined": 0.725
+    },
+    {
+      "task": "T4-ticket-triage-clean",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "3e2d73ad3f",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 69563,
+      "numTurns": 7,
+      "costUsd": 0.1494532,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 15599,
+        "cacheRead": 25152,
+        "output": 8453
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-false-missing-injection",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-false-missing-empty",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-positive-verdict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-no-injection-overclaim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-tests-with-must-not",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Says 'ready with fixes' with no High issues, but frames four gaps as Medium. It never states that the prompt is already well built."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Does not claim injection handling, output format, empty-input handling, definitions or examples are missing. The Charged-twice example is correctly left unflagged."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Issues are real and concrete ('und', mixed language, compromise, tie-break), but four are rated Medium rather than low or minor."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Keeps the original structure with targeted edits plus one added example. The author's intent is explicitly preserved."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Ten tests with must and must-not expectations cover injection, the closing-tag trick, empty input, the tie-break, URGENT and German."
+        }
+      ],
+      "rubricScore": 0.8,
+      "falseClaims": [],
+      "combined": 0.775
+    }
+  ]
+}

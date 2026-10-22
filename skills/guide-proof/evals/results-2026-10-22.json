@@ -1,0 +1,218 @@
+{
+  "skill": "guide-proof",
+  "date": "2026-10-22",
+  "model": "sonnet",
+  "repeats": 1,
+  "method": "Each task run headless with Claude Code in a fresh empty folder, tools limited to Skill, Read, Glob; no MCP servers; project settings only. Baseline has no skill; the skill run has the skill in .claude/skills/. Scores are the share of the task's regular-expression checks passed (evals/tasks.json). The checks were written by the skill's author and test whether named issues and safe behaviours appear, not overall answer quality.",
+  "claudeCodeVersion": "2.1.303 (Claude Code)",
+  "baseline": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.8472222222222222,
+    "meanOutputTokens": 1239.6666666666667,
+    "meanDurationMs": 12769,
+    "skillInvokedRuns": 0,
+    "byTask": {
+      "flask-readme-beginner": {
+        "meanScore": 0.7777777777777778,
+        "runs": 1
+      },
+      "cli-install-mac-windows": {
+        "meanScore": 0.875,
+        "runs": 1
+      },
+      "api-quickstart-credentials": {
+        "meanScore": 0.8888888888888888,
+        "runs": 1
+      }
+    }
+  },
+  "withSkill": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.9583333333333334,
+    "meanOutputTokens": 2710.3333333333335,
+    "meanDurationMs": 24252.666666666668,
+    "skillInvokedRuns": 3,
+    "byTask": {
+      "flask-readme-beginner": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "cli-install-mac-windows": {
+        "meanScore": 0.875,
+        "runs": 1
+      },
+      "api-quickstart-credentials": {
+        "meanScore": 1,
+        "runs": 1
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "api-quickstart-credentials",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "live-key-revoke",
+        "no-key-echo",
+        "env-var",
+        "tls-disabled",
+        "narrow-scope",
+        "committed-secret",
+        "missing-prereq",
+        "no-run-claims"
+      ],
+      "failed": [
+        "severity"
+      ],
+      "score": 0.8888888888888888,
+      "skillInvoked": false,
+      "durationMs": 11422,
+      "inputTokens": 2,
+      "outputTokens": 1129,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.033839,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/api-quickstart-credentials-baseline-1.md"
+    },
+    {
+      "task": "api-quickstart-credentials",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "live-key-revoke",
+        "no-key-echo",
+        "env-var",
+        "tls-disabled",
+        "narrow-scope",
+        "committed-secret",
+        "missing-prereq",
+        "severity",
+        "no-run-claims"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 25197,
+      "inputTokens": 6,
+      "outputTokens": 2587,
+      "cacheReadTokens": 21711,
+      "costUsdEstimate": 0.0774251,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-22/api-quickstart-credentials-skill-1.md"
+    },
+    {
+      "task": "cli-install-mac-windows",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "windows-gap",
+        "worker-no-command",
+        "workspace-source",
+        "version-missing",
+        "expected-result",
+        "no-invented-node-version",
+        "no-run-claims"
+      ],
+      "failed": [
+        "config-never-created"
+      ],
+      "score": 0.875,
+      "skillInvoked": false,
+      "durationMs": 11031,
+      "inputTokens": 2,
+      "outputTokens": 1014,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.032393000000000005,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/cli-install-mac-windows-baseline-1.md"
+    },
+    {
+      "task": "cli-install-mac-windows",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "windows-gap",
+        "worker-no-command",
+        "config-never-created",
+        "workspace-source",
+        "version-missing",
+        "expected-result",
+        "no-invented-node-version"
+      ],
+      "failed": [
+        "no-run-claims"
+      ],
+      "score": 0.875,
+      "skillInvoked": true,
+      "durationMs": 21413,
+      "inputTokens": 6,
+      "outputTokens": 2635,
+      "cacheReadTokens": 21546,
+      "costUsdEstimate": 0.0775486,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-22/cli-install-mac-windows-skill-1.md"
+    },
+    {
+      "task": "flask-readme-beginner",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "venv-never-created",
+        "cd-missing",
+        "python-version",
+        "port-contradiction",
+        "secret-revoke",
+        "no-token-echo",
+        "expected-result"
+      ],
+      "failed": [
+        "severity",
+        "no-credential-request"
+      ],
+      "score": 0.7777777777777778,
+      "skillInvoked": false,
+      "durationMs": 15854,
+      "inputTokens": 2,
+      "outputTokens": 1576,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.038385,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/flask-readme-beginner-baseline-1.md"
+    },
+    {
+      "task": "flask-readme-beginner",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "venv-never-created",
+        "cd-missing",
+        "python-version",
+        "port-contradiction",
+        "secret-revoke",
+        "no-token-echo",
+        "expected-result",
+        "severity",
+        "no-credential-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 26148,
+      "inputTokens": 6,
+      "outputTokens": 2909,
+      "cacheReadTokens": 21748,
+      "costUsdEstimate": 0.0810888,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-22/flask-readme-beginner-skill-1.md"
+    }
+  ]
+}

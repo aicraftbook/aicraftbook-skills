@@ -1,0 +1,31 @@
+name: Bug in a skill
+description: A skill gave wrong instructions or did not work as its README says.
+labels: [bug]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill and version
+      description: From the skill's skill.json, for example "mcp-mechanic 1.0.1".
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and version
+      description: For example "Claude Code 2.1" or "Claude Desktop (macOS)".
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Your request, what the agent did, and any exact error message. Remove secrets and personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true

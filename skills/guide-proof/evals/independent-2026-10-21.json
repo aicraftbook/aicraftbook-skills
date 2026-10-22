@@ -1,0 +1,2233 @@
+{
+  "skill": "guide-proof",
+  "date": "2026-10-21",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/guide-proof/evals/independent-runs/2026-10-21/frozen",
+    "sha256": "a560db5d3a0349828bd183fe1874d2fd4de7a4c3dc821e4b736392121d78fe6e",
+    "freezeRecord": "skills/guide-proof/evals/independent-runs/2026-10-21/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "c49c4e7493f70a2f60a0500bbc5639b66ecaf2aba5dd90558c8fb71e1f2162b2"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanCombined": 0.871,
+      "meanRubric": 0.833,
+      "meanCheckFraction": 0.908,
+      "falseClaimRuns": 5,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 21880.833,
+      "meanCostUsd": 0.05
+    },
+    "skill": {
+      "n": 12,
+      "meanCombined": 0.933,
+      "meanRubric": 0.954,
+      "meanCheckFraction": 0.913,
+      "falseClaimRuns": 1,
+      "skillInvocationRate": 1,
+      "meanDurationMs": 38084.833,
+      "meanCostUsd": 0.102
+    }
+  },
+  "perTask": {
+    "T1-fastapi-docker": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.959,
+        "meanRubric": 0.917,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 20781.667,
+        "meanCostUsd": 0.05
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 39762.333,
+        "meanCostUsd": 0.105
+      }
+    },
+    "T2-actions-ssh-deploy": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 18654,
+        "meanCostUsd": 0.044
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.917,
+        "meanRubric": 0.967,
+        "meanCheckFraction": 0.867,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 36369.333,
+        "meanCostUsd": 0.099
+      }
+    },
+    "T3-n8n-sheets-slack": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.817,
+        "meanRubric": 0.833,
+        "meanCheckFraction": 0.8,
+        "falseClaimRuns": 3,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 26721.333,
+        "meanCostUsd": 0.054
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.92,
+        "meanRubric": 0.972,
+        "meanCheckFraction": 0.867,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 43511.667,
+        "meanCostUsd": 0.109
+      }
+    },
+    "T4-gh-cli-clean": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.709,
+        "meanRubric": 0.583,
+        "meanCheckFraction": 0.833,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 21366.333,
+        "meanCostUsd": 0.052
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.896,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 0.917,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 32696,
+        "meanCostUsd": 0.097
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "T1-fastapi-docker",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "a5c1040a2e",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 21607,
+      "numTurns": 3,
+      "costUsd": 0.0521417,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6813,
+        "cacheRead": 22377,
+        "output": 2264
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-pydantic-version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-localhost-in-container",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-docker-prerequisite",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-env-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags Docker/Compose missing from prerequisites and fully explains that Alembic is not installed, has no ini, env.py or migrations, and no models exist."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Explains both breaks correctly: Pydantic v2 moved BaseSettings to pydantic-settings, and localhost inside the container should be the db service name."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags committing .env as bad advice; fix is .gitignore plus a committed .env.example, with an explanation."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers the vague 'give it a moment', missing {\"status\":\"ok\"} and dead-end troubleshooting; proposes docker compose logs, a healthcheck and a reset command."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Steps, severity tiers and concrete fixes are present, but the Docker prerequisite is rated a 'smaller stuck point' although it is blocking."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "States it ran nothing; technical claims are accurate; no invented issues about compose syntax or version key."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-fastapi-docker",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "81ea8216da",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16721,
+      "numTurns": 2,
+      "costUsd": 0.044518699999999994,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6721,
+        "cacheRead": 13067,
+        "output": 1632
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-pydantic-version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-localhost-in-container",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-docker-prerequisite",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-env-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags Docker/Compose missing from prerequisites, and Alembic not installed, no alembic.ini/env.py/migrations, no models/tables, and host execution."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Covers both breaks correctly: Pydantic v2 BaseSettings import error with the pydantic-settings fix, and localhost vs db service name inside the container."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Calls committing .env bad advice; recommends .gitignore plus a committed .env.example."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'give it a moment', missing /health response and empty troubleshooting; proposes docker compose ps/logs api and a healthcheck."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Severity tiers and concrete fixes, but steps often unnamed; Docker prerequisite misrated minor; __init__.py and depends_on wrongly listed as blockers."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "No claims of running anything; technical statements are accurate; the __init__.py point concedes namespace packages work."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-fastapi-docker",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "7ab98074bd",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 24017,
+      "numTurns": 3,
+      "costUsd": 0.053486900000000004,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6807,
+        "cacheRead": 22369,
+        "output": 2401
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-pydantic-version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-localhost-in-container",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-docker-prerequisite",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-env-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags Docker missing from prerequisites and Step 6 Alembic: not installed, no alembic.ini/migrations, no models, runs on host."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Covers both: Pydantic v2 moved BaseSettings to pydantic-settings, with fix; localhost inside container should be the db service name."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags committing .env with the API key and gives concrete fixes: .gitignore, .env.example, drop the unused key."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers 'give it a moment', expected {\"status\":\"ok\"} and the empty troubleshooting; proposes docker compose logs, curl, healthcheck and listed failures."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Grouped by severity (blockers/security/smaller) with steps or line numbers and concrete fixes. A few minor items lack explicit step labels."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "States it did not run anything and line numbers are accurate. The named-volume claim is wrong: down -v also deletes named volumes."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "'No named volume for the database, so data disappears on docker compose down -v': down -v removes named volumes too, so adding one would not prevent that data loss."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-fastapi-docker",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "01584a8747",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 38097,
+      "numTurns": 5,
+      "costUsd": 0.10170459999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13628,
+        "cacheRead": 25306,
+        "output": 4465
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-pydantic-version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-localhost-in-container",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-docker-prerequisite",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-env-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags Docker/Compose missing from prerequisites, and that Alembic is never installed or initialised and no models or tables exist for Step 6."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies the Pydantic v2 BaseSettings move to pydantic-settings, though hedged with 'Check'. Also catches localhost vs the db service name inside the container."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags committing .env with secrets and gives concrete fixes: add .env to .gitignore and commit a placeholder .env.example."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers 'give it a moment', the missing {\"status\":\"ok\"} and the dead-end troubleshooting. Proposes docker compose ps and docker compose logs api."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Numbered list; each item names its step, has a defensible blocking/non-blocking label and a concrete command or wording fix."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Explicitly says nothing was run. No invented problems; the missing app/ folder and COPY of .venv/.env are real issues."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T1-fastapi-docker",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "e25b0a23da",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 42154,
+      "numTurns": 5,
+      "costUsd": 0.10686029999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13639,
+        "cacheRead": 25323,
+        "output": 4976
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-pydantic-version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-localhost-in-container",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-docker-prerequisite",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-env-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags Docker/Compose missing from prerequisites and Step 6 Alembic: not installed, no init/alembic.ini/migrations, no models, unclear where it runs."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies the Pydantic 2 BaseSettings import break with an unpinned install (hedged but correct), and localhost vs db service name inside the container."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags committing .env and gives .gitignore plus .env.example with placeholders; also adds .dockerignore. Blocking rating is justified."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers no expected result in Steps 5/7 and the dead-end troubleshooting; proposes docker compose ps, docker compose logs api, and {\"status\":\"ok\"}."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Numbered list; each item names its step, has a defensible severity and a concrete fix with commands or wording. Placeholders are only for real outputs."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "States explicitly that nothing was run. No invented problems; the __init__.py question is only listed as something to check."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T1-fastapi-docker",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "9a038530af",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 39036,
+      "numTurns": 5,
+      "costUsd": 0.1064344,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13701,
+        "cacheRead": 26684,
+        "output": 4895
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-pydantic-version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-localhost-in-container",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-docker-prerequisite",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-env-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags Docker/Compose missing from prerequisites. Also flags alembic as not installed, with no alembic.ini, no migrations and no models or tables."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Explains Pydantic v2 moved BaseSettings to pydantic-settings, with unpinned install. Explains localhost inside api container isn't db; fix uses db host."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags committing .env with the API key. Gives .gitignore, .env.example with placeholders and .dockerignore as concrete safer practice."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'give it a moment', missing {\"status\":\"ok\"} and the dead-end troubleshooting. Proposes docker compose ps and logs api checks."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Each item names its step, gives a defensible blocking or non-blocking label and a concrete command, code or wording fix. A few placeholders remain."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Explicitly says nothing was run. No invented compose-syntax issues; the extra findings (app folder, Windows activation, COPY .env) are legitimate."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-actions-ssh-deploy",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "ddd137b0ea",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 18275,
+      "numTurns": 3,
+      "costUsd": 0.0442563,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6439,
+        "cacheRead": 22383,
+        "output": 1625
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-public-key-on-server",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-host-username-secrets",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-debug-echo-secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-key-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the missing authorized_keys step, the undefined HOST/USERNAME secrets, and server prerequisites: target directory, write permissions, nginx."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the shared-notes tip, the Debug key echo (masking unreliable, delete step), and git add . committing deploy_key, with fixes."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says to pin scp-action to a tag or SHA and notes npm ci needs package-lock.json. Node 20 isn't questioned, but the npm ci assumption suffices."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Asks for a green run plus loading the site, and lists concrete errors: handshake/auth failure, permission denied, missing secret."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Explicit Blockers/Security/Smaller severity groups, mostly tied to steps, each with a concrete fix (strip_components, ~/.ssh path, pin SHA)."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Claims no commands were run and describes secrets and masking accurately."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-actions-ssh-deploy",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "5f94bc8f37",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 18063,
+      "numTurns": 3,
+      "costUsd": 0.0445739,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6436,
+        "cacheRead": 22379,
+        "output": 1658
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-public-key-on-server",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-host-username-secrets",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-debug-echo-secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-key-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the missing authorized_keys step and the undefined HOST/USERNAME secrets. Also covers target directory existence, write permissions, SSH access and web server prerequisites."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the shared notes doc (with per-repo keys and local deletion), the Debug key echo (masking not reliable, delete it), and the git add . risk."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says to pin scp-action@master to a tag or SHA, and notes that npm ci requires package-lock.json. Node 20 itself isn't questioned, but the npm ci assumption is covered."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Asks for success indicators (green check, loading the site). Expands troubleshooting with publickey denial, missing secret, write permission and port errors."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Groups issues into blockers, security and clarity tiers. Ties them to steps and accurate line numbers, each with a concrete fix."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "States explicitly that nothing was run and hedges the strip_components point. Makes no misstatements about how secrets work."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-actions-ssh-deploy",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "766b2c4ec1",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 19624,
+      "numTurns": 3,
+      "costUsd": 0.044389700000000004,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6435,
+        "cacheRead": 22377,
+        "output": 1640
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-public-key-on-server",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-host-username-secrets",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-debug-echo-secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-key-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Covers the uninstalled public key and the missing HOST/USERNAME secrets. Also lists the server prerequisites: target directory, write permission and web server."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the shared-notes tip, the echo step (masking isn't a guarantee, so remove it) and the risk of git add . committing deploy_key."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says to pin scp-action@master to a release tag and to state the package-lock.json requirement for npm ci. Node 20 isn't questioned."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Asks for a confirmation step (open the site, ls the target) and names concrete errors: Permission denied (publickey) and dist/dist. Target-path permission errors aren't explicitly listed."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Issues are tied to steps or correct line numbers, given defensible severity tiers, and each has a concrete fix."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Claims no execution and describes secret masking and scp-action path behavior accurately."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-actions-ssh-deploy",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "d83d205827",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 35455,
+      "numTurns": 6,
+      "costUsd": 0.09666229999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13379,
+        "cacheRead": 25443,
+        "output": 4059
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-public-key-on-server",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-host-username-secrets",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-debug-echo-secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-key-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the missing authorized_keys step, the uncreated HOST/USERNAME secrets, and the server prerequisites (target directory, write access, web server)."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the shared notes doc tip, the Debug key echo (masking unreliable, remove the step), and the risk that git add . commits deploy_key."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the unpinned @master action and recommends pinning. States that npm ci needs package-lock.json. Node 20 itself is only implicitly questioned."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Gives an expected green run and a site URL check, flags the dead-end troubleshooting line, and covers auth failure and an unwritable target path."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Every item names its step, has a defensible blocking or non-blocking label, and gives a concrete fix."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "States plainly that nothing was run. No misstatements about how secrets work; empty values for missing secrets is correct."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 0.9
+    },
+    {
+      "task": "T2-actions-ssh-deploy",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "d4713ad78e",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 35999,
+      "numTurns": 6,
+      "costUsd": 0.09623970000000001,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13376,
+        "cacheRead": 25437,
+        "output": 4018
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-public-key-on-server",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-host-username-secrets",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-debug-echo-secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-key-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags missing authorized_keys step, uncreated HOST/USERNAME secrets, and server prerequisites: VPS, writable /var/www/site, web server."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags notes-doc key sharing, the Debug key echo (masking unreliable, remove step), and git add . committing deploy_key, with fixes."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says to pin scp-action@master to a tag or SHA; notes npm ci needs package-lock.json and Node 20 may mismatch."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Gives a concrete expected result (green run, site URL) and troubleshooting for SSH auth, permission denied and npm ci errors."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Each problem has a step and a concrete fix, but severity is inflated: upstream/branch, expected result and troubleshooting are all marked blocking."
+        }
+      ],
+      "rubricScore": 0.9,
+      "falseClaims": [],
+      "combined": 0.85
+    },
+    {
+      "task": "T2-actions-ssh-deploy",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "eb47dd7292",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 37654,
+      "numTurns": 6,
+      "costUsd": 0.10310870000000001,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13371,
+        "cacheRead": 25427,
+        "output": 4707
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-public-key-on-server",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-host-username-secrets",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-debug-echo-secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-key-committed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the missing authorized_keys step and the uncreated HOST/USERNAME secrets. Lists server prerequisites: target folder exists, deploy user can write to it, web server."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the shared notes doc tip, the Debug key echo (masking not guaranteed, delete the step), and git add . committing a key generated in the repo."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Recommends pinning @master to a tag or SHA, questions the Node 20 choice, and notes npm ci needs a committed package-lock.json."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Supplies the expected result (green run, visible site change), calls out the dead-end troubleshooting line, and covers SSH auth and permission errors."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Every problem names its step, has a defensible blocking or non-blocking label, and gives a concrete fix with replacement text."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Says explicitly that nothing was run, describes secret masking accurately, and hedges the strip_components option name."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T3-n8n-sheets-slack",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "ba6c1d8904",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 26103,
+      "numTurns": 3,
+      "costUsd": 0.053610099999999994,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6555,
+        "cacheRead": 22381,
+        "output": 2514
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-enable-google-apis",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-redirect-url-source",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-invite-bot-to-channel",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-public-edit-sharing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-trying",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Covers enabling Sheets and Drive APIs, the OAuth consent screen, test users, and that the redirect URL comes from n8n's credential dialog."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the bot not being invited to #sales, names not_in_channel, gives the /invite fix, and notes there is no troubleshooting section."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Calls public Editor sharing unnecessary with OAuth and an exposure of customer data; flags emailing the secret; offers concrete safer alternatives."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers the missing success description, the Name/Email/Service header requirement, and the unstated Cloud vs self-hosted and version choice."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Fixes are concrete and mostly tied to steps, but severity is only implicit. No consistent blocking/non-blocking labels; some items lack step numbers."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Claims no testing and has no wrong scope claim. The 'Test waits for a new row' claim about polling triggers is likely inaccurate."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [
+        "A polling trigger's 'Test workflow' waits for a new row, so readers should click Test before adding the row. n8n's manual test of a polling trigger instead does an immediate poll and returns existing data."
+      ],
+      "combined": 0.817
+    },
+    {
+      "task": "T3-n8n-sheets-slack",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "7be0df5aca",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 27589,
+      "numTurns": 3,
+      "costUsd": 0.0543517,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6553,
+        "cacheRead": 22377,
+        "output": 2589
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-enable-google-apis",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-redirect-url-source",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-invite-bot-to-channel",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-public-edit-sharing",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-trying",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.6,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Covers the OAuth consent screen, enabling the Sheets and Drive APIs, adding a test user in Testing mode, and that the redirect URL comes from n8n's credential screen."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the missing invite to #sales, names the not_in_channel error, gives the /invite fix, and notes there is no troubleshooting section."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags public Editor sharing of personal data as unnecessary with OAuth, and the emailed Client Secret; offers concrete safer alternatives for both."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the missing success description for the test, Name/Email/Service header matching, and the unstated Cloud vs self-hosted choice and version."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Steps are mapped and most fixes are concrete, but only the security items get a severity; some fixes are vague, such as 'say what success looks like'."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "No claim of having tried the steps. The private-channel claim is misleading: chat:write works once the bot is invited; only listing private channels needs an extra scope."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [
+        "The guide only works for public channels and private ones need an extra scope; chat:write can post to private channels the bot has been invited to, and only listing them needs groups:read."
+      ],
+      "combined": 0.716
+    },
+    {
+      "task": "T3-n8n-sheets-slack",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "e904147ace",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 26472,
+      "numTurns": 3,
+      "costUsd": 0.054799299999999995,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6562,
+        "cacheRead": 22393,
+        "output": 2630
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-enable-google-apis",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-redirect-url-source",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-invite-bot-to-channel",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-public-edit-sharing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-trying",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Covers enabling the Sheets and Drive APIs, the consent screen, adding a test user, and that the redirect URL comes from n8n's credential window."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the missing /invite to #sales and not_in_channel, and proposes a troubleshooting section that covers it."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags public Editor sharing as unnecessary with OAuth and the emailed Client Secret, with concrete safer replacement wording for both."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers what success should look like, Name/Email/Service column headers matching exactly, and Cloud vs self-hosted including the public HTTPS need."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Uses accurate line numbers and Parts, not step numbers. Severity is only implied by section grouping. Fixes are concrete and reader-friendly."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Says it did not run the steps. But it wrongly claims the test order fails; manual polling-trigger tests fetch existing recent rows."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [
+        "Part 3 'order is wrong': adding the row before 'Test workflow' does not stop n8n seeing it; a manual test of the polling trigger fetches recent existing rows rather than waiting for a new one."
+      ],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-n8n-sheets-slack",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "0acf2544b4",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 47900,
+      "numTurns": 6,
+      "costUsd": 0.11307619999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13495,
+        "cacheRead": 25442,
+        "output": 5654
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-enable-google-apis",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-redirect-url-source",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-invite-bot-to-channel",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-public-edit-sharing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-trying",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Finds the consent screen, the test user (as a placeholder) and the redirect URL from n8n's credential window. API enablement is hedged ('if any') and left as a check."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags that the bot is never invited to #sales, gives an /invite fix, names not_in_channel in the troubleshooting section and notes there is no troubleshooting."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags public Editor sharing of lead data as unnecessary with OAuth and the emailed Client Secret. Gives concrete safer replacement text for both."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers the missing test expected result and the Name/Email/Service header dependency, and notes the Cloud vs self-hosted and version assumption with labels varying."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Every problem cites its Part and step, has a defensible blocking/non-blocking rating and a concrete fix written for non-technical readers."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Explicitly says no steps were run, hedges uncertain claims and lists checks. The polling item is flagged to verify, not stated as wrong."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T3-n8n-sheets-slack",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "b1ee6fee2c",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 44329,
+      "numTurns": 6,
+      "costUsd": 0.1112551,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13502,
+        "cacheRead": 25451,
+        "output": 5469
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-enable-google-apis",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-redirect-url-source",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-invite-bot-to-channel",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-public-edit-sharing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-trying",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.6,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Covers Sheets API enabling, consent screen, test user, and the redirect URL from n8n's credential window. Drive API is raised only as a check."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags that the bot is never invited to #sales, gives the /invite fix, and adds troubleshooting. It doesn't name not_in_channel, but the substance is complete."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags public Editor sharing of lead data as unnecessary with OAuth and flags emailing the Client Secret. Gives concrete safer replacement text, including rotating the secret."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers the missing test result, exact Name/Email/Service headers, cloud vs self-hosted plan and version labels. Omits that self-hosted needs a public redirect URL."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Every item cites Part/step, has explicit blocking or non-blocking severity, and gives plain-language fix text. Some fixes use placeholders but stay concrete."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Explicitly says nothing was run. No invented errors, and the scope/token doubts are hedged, not stated wrongly. One minor wording slip ('Google also doesn't say')."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 0.8
+    },
+    {
+      "task": "T3-n8n-sheets-slack",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "d6d32bb136",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 38306,
+      "numTurns": 6,
+      "costUsd": 0.1016709,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13501,
+        "cacheRead": 25449,
+        "output": 4511
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-enable-google-apis",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-redirect-url-source",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-invite-bot-to-channel",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-public-edit-sharing",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-no-claim-of-trying",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C6-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags Sheets API enablement, consent screen, test users, and that the redirect URL comes from n8n's credential window. Drive API not mentioned."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags that the bot is never invited to #sales, gives the /invite fix, and adds not_in_channel troubleshooting."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags public Editor sharing of the PII sheet as unnecessary with OAuth and flags emailing the Client Secret, with concrete safer alternatives."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Covers the missing expected test result, Name/Email/Service headers, cloud vs self-hosted with the redirect issue, and missing versions."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Each problem cites Part and step, has a defensible severity, and gives a concrete plain-language fix. Some fixes leave placeholders for the author."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Explicitly read-only, no claim of testing, uncertain points marked Check, and chat:write is not disputed."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T4-gh-cli-clean",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "e1bae33086",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 19146,
+      "numTurns": 3,
+      "costUsd": 0.05123950000000001,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7198,
+        "cacheRead": 22355,
+        "output": 2020
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-not-ready-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-positive-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-token-requirement",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-blocking-classification",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Says 'mostly yes', but four items appear under 'Fix before publishing', which treats non-blocking nits as blockers. Only the eval/new-window contradiction is arguably real."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No claims that expected results, versions, troubleshooting or prerequisites are missing. No token claim. It honestly says the commands weren't run."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Suggestions are concrete and tied to lines or steps, but most are labelled must-fix rather than minor or non-blocking."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Eight points, with some padding (Homebrew installer walkthrough, opening Terminal, credential-helper note). The 'trapdoor' framing is heavier than this clean guide warrants."
+        }
+      ],
+      "rubricScore": 0.625,
+      "falseClaims": [],
+      "combined": 0.813
+    },
+    {
+      "task": "T4-gh-cli-clean",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "a6a94ce6d0",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 25174,
+      "numTurns": 3,
+      "costUsd": 0.0548979,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7200,
+        "cacheRead": 22359,
+        "output": 2385
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-not-ready-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-positive-verdict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-token-requirement",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-blocking-classification",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0,
+          "reason": "Says 'mostly yes' but lists three 'Fix before publishing' items (time estimate, macOS 13 claim, troubleshooting row); none is genuinely blocking."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No claims of missing prerequisites, expected results, versions, troubleshooting or a required token; credential handling is praised correctly."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Suggestions are concrete, tied to lines and steps, and cover key nits (Apple-silicon-only row, SSH prompts), but several are mislabelled as must-fix."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Eight items with some padding (how to open Terminal, keychain dialog, exact status output) for an already-good guide."
+        }
+      ],
+      "rubricScore": 0.5,
+      "falseClaims": [],
+      "combined": 0.625
+    },
+    {
+      "task": "T4-gh-cli-clean",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "3acfe434e0",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 19779,
+      "numTurns": 3,
+      "costUsd": 0.0503121,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7201,
+        "cacheRead": 22361,
+        "output": 1926
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-not-ready-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-positive-verdict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-token-requirement",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-blocking-classification",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Says 'mostly yes', but puts two items under 'Fix before publishing'. The Terminal-opening note is not blocking; the non-persistent eval fix is a fair catch."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Doesn't claim missing prerequisites, expected results, versions, troubleshooting or tokens; acknowledges these sections are present and good."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Concrete and tied to steps, but mislabels two items as must-fix; only part is marked minor."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Nine points, some generic (how to open Terminal, Homebrew install length), heavier than a near-ready guide needs."
+        }
+      ],
+      "rubricScore": 0.625,
+      "falseClaims": [
+        "Calling the Homebrew prerequisite a 'dead end' overstates it; pointing to brew.sh with a re-check step is a valid prerequisite.",
+        "The 'about 5 minutes' estimate covers the guide's own steps, not installing the Homebrew prerequisite, so calling it wrong is a stretch."
+      ],
+      "combined": 0.688
+    },
+    {
+      "task": "T4-gh-cli-clean",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "96e7ddce58",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 31546,
+      "numTurns": 6,
+      "costUsd": 0.09706119999999999,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 14161,
+        "cacheRead": 41612,
+        "output": 3624
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-not-ready-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-positive-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-token-requirement",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Verdict 'Ready after fixes' with no blocking problems and all six items non-blocking, which matches a clean guide."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No claims of missing prerequisites, expected results, versions or troubleshooting. No token requirement claimed. The eval/new-window point is valid."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "All items labelled non-blocking, tied to specific steps or sections, and given concrete replacement text."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Padded: an extra placeholder-heavy troubleshooting section, generic Terminal-opening advice and a long not-checked list are excessive for a good guide."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "T4-gh-cli-clean",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "8febd2f074",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 18237,
+      "numTurns": 6,
+      "costUsd": 0.0768538,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 14114,
+        "cacheRead": 41618,
+        "output": 1622
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-not-ready-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-positive-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-token-requirement",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Says 'Ready to publish' with 0 blocking problems, which matches the clean guide."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No false alarms. The expired-code and wrong-account gaps are genuine, and it makes no claims of missing versions, expected results or tokens."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "All three items are labelled non-blocking, tied to a step or row, and give concrete fix text. The Intel path nit matches the answer key."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "The core list is short, but F-codes, a duplicated troubleshooting section with a placeholder, and a long 'Not checked' list add padding."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "T4-gh-cli-clean",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "c893628cb4",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 48305,
+      "numTurns": 6,
+      "costUsd": 0.1166684,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14146,
+        "cacheRead": 25424,
+        "output": 5753
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-no-not-ready-verdict",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-positive-verdict",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-no-false-token-requirement",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-claim-of-running",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-blocking-classification",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Verdict 'Ready after fixes' with 0 blocking issues; says a careful newcomer with Homebrew can finish as written."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No claims of missing expected results, versions or tokens. The Step 1 troubleshooting gap is narrowly framed. The eval/new-window point is valid."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "All six labelled non-blocking, each tied to a section, with concrete replacement text (some placeholders left for the author)."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Six problems plus a separate troubleshooting section and a long not-checked list. Heavy for an already good guide; some newcomer advice is generic."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "States `gh auth logout` asks for confirmation; current gh versions with a single account log out without prompting.",
+        "Says the guide never mentions the shellenv command, though Troubleshooting row 1 does."
+      ],
+      "combined": 0.813
+    }
+  ]
+}

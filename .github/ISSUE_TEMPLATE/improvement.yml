@@ -1,0 +1,17 @@
+name: Improvement to a skill
+description: Suggest a clearer instruction, a better example or a new evaluation task.
+labels: [enhancement]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your suggestion
+      description: What should change, and a real case where the current skill falls short.
+    validations:
+      required: true

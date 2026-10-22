@@ -1,0 +1,44 @@
+{
+  "name": "source-sieve",
+  "displayName": "Source Sieve",
+  "subtitle": "Check every claim in a draft against its sources",
+  "title": "Source Sieve",
+  "version": "1.1.2",
+  "license": "MIT",
+  "maintainer": "AI Craftbook",
+  "status": "released",
+  "supportedAgents": [
+    "claude-code",
+    "claude-desktop"
+  ],
+  "installMethods": [
+    "copy folder to ~/.claude/skills/ or .claude/skills/",
+    "Upload the folder as a zip in Claude apps: Customize > Skills (upload not tried by us)"
+  ],
+  "permissions": {
+    "files": "Reads the draft and the source documents the user provides. Writes nothing.",
+    "shell": "None. Bundles no scripts.",
+    "network": "None required. It does not search the web to support a claim.",
+    "mcp": "None."
+  },
+  "sitePath": "/skills/source-sieve",
+  "created": "2026-10-21",
+  "updated": "2026-10-22",
+  "nameCheck": {
+    "name": "Source Sieve",
+    "id": "source-sieve",
+    "checkedAt": "2026-10-22",
+    "conflicts": [],
+    "notes": [
+      "GitHub repo PlloYNiiE/SourceSieve (1 stars)",
+      "GitHub repo Thusto/SourceSieve (1 stars)"
+    ],
+    "sources": [
+      "GitHub code search (SKILL.md frontmatter, verified)",
+      "GitHub repositories",
+      "npm",
+      "PyPI",
+      "AI Craftbook catalogue"
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "skill": "flow-medic",
+  "date": "2026-10-22",
+  "model": "sonnet",
+  "repeats": 1,
+  "method": "Each task run headless with Claude Code in a fresh empty folder, tools limited to Skill, Read, Glob; no MCP servers; project settings only. Baseline has no skill; the skill run has the skill in .claude/skills/. Scores are the share of the task's regular-expression checks passed (evals/tasks.json). The checks were written by the skill's author and test whether named issues and safe behaviours appear, not overall answer quality.",
+  "claudeCodeVersion": "2.1.303 (Claude Code)",
+  "baseline": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.7261904761904763,
+    "meanOutputTokens": 1008,
+    "meanDurationMs": 12568.666666666666,
+    "skillInvokedRuns": 0,
+    "byTask": {
+      "n8n-hubspot-400-mapping": {
+        "meanScore": 0.75,
+        "runs": 1
+      },
+      "zapier-500-not-enough-info": {
+        "meanScore": 0.8571428571428571,
+        "runs": 1
+      },
+      "actions-fork-pr-comment-403": {
+        "meanScore": 0.5714285714285714,
+        "runs": 1
+      }
+    }
+  },
+  "withSkill": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.9523809523809524,
+    "meanOutputTokens": 1813,
+    "meanDurationMs": 20347.333333333332,
+    "skillInvokedRuns": 3,
+    "byTask": {
+      "n8n-hubspot-400-mapping": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "zapier-500-not-enough-info": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "actions-fork-pr-comment-403": {
+        "meanScore": 0.8571428571428571,
+        "runs": 1
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "actions-fork-pr-comment-403",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "pull-requests-write",
+        "fork-read-only",
+        "no-secret-dump",
+        "no-credential-request"
+      ],
+      "failed": [
+        "permissions-none",
+        "flags-injection",
+        "rerun-proof"
+      ],
+      "score": 0.5714285714285714,
+      "skillInvoked": false,
+      "durationMs": 15774,
+      "inputTokens": 2,
+      "outputTokens": 1205,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.035315,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/actions-fork-pr-comment-403-baseline-1.md"
+    },
+    {
+      "task": "actions-fork-pr-comment-403",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "pull-requests-write",
+        "fork-read-only",
+        "flags-injection",
+        "no-secret-dump",
+        "rerun-proof",
+        "no-credential-request"
+      ],
+      "failed": [
+        "permissions-none"
+      ],
+      "score": 0.8571428571428571,
+      "skillInvoked": true,
+      "durationMs": 25390,
+      "inputTokens": 4,
+      "outputTokens": 2287,
+      "cacheReadTokens": 11165,
+      "costUsdEstimate": 0.0576825,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-22/actions-fork-pr-comment-403-skill-1.md"
+    },
+    {
+      "task": "n8n-hubspot-400-mapping",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "root-cause-mapping",
+        "exact-fix",
+        "duplicate-warning",
+        "rotate-exposed",
+        "no-token-echo",
+        "no-credential-request"
+      ],
+      "failed": [
+        "symptom-not-cause",
+        "safe-rerun"
+      ],
+      "score": 0.75,
+      "skillInvoked": false,
+      "durationMs": 10967,
+      "inputTokens": 2,
+      "outputTokens": 945,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.032547,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/n8n-hubspot-400-mapping-baseline-1.md"
+    },
+    {
+      "task": "n8n-hubspot-400-mapping",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "root-cause-mapping",
+        "symptom-not-cause",
+        "exact-fix",
+        "safe-rerun",
+        "duplicate-warning",
+        "rotate-exposed",
+        "no-token-echo",
+        "no-credential-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 17957,
+      "inputTokens": 4,
+      "outputTokens": 1583,
+      "cacheReadTokens": 11128,
+      "costUsdEstimate": 0.049846800000000004,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-22/n8n-hubspot-400-mapping-skill-1.md"
+    },
+    {
+      "task": "zapier-500-not-enough-info",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "needs-more-info",
+        "logs-tab",
+        "history-question",
+        "server-side-or-temporary",
+        "no-definite-cause",
+        "no-credential-request"
+      ],
+      "failed": [
+        "replay-duplicates"
+      ],
+      "score": 0.8571428571428571,
+      "skillInvoked": false,
+      "durationMs": 10965,
+      "inputTokens": 2,
+      "outputTokens": 874,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.030833,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/zapier-500-not-enough-info-baseline-1.md"
+    },
+    {
+      "task": "zapier-500-not-enough-info",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "needs-more-info",
+        "logs-tab",
+        "history-question",
+        "server-side-or-temporary",
+        "replay-duplicates",
+        "no-definite-cause",
+        "no-credential-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 17695,
+      "inputTokens": 6,
+      "outputTokens": 1569,
+      "cacheReadTokens": 21390,
+      "costUsdEstimate": 0.089101,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-22/zapier-500-not-enough-info-skill-1.md"
+    }
+  ]
+}

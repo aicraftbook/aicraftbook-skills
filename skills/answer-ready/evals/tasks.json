@@ -1,0 +1,156 @@
+{
+  "skill": "answer-ready",
+  "description": "Three pages with planted structure problems. Checks are case-insensitive regular expressions on the final answer. The promise check fails any answer that says a change will raise rankings, traffic or citations, while allowing negated disclaimers.",
+  "tasks": [
+    {
+      "id": "heat-pump-vague-page",
+      "prompt": "Make this page ready for AI Overviews and ChatGPT search. Here is the full page text.\n\nTitle: Our Thoughts on Heat Pumps\nH1: Our Thoughts on Heat Pumps\n\nChoosing a heating system is one of the biggest decisions a homeowner makes. We've been in the business since 2009 and have seen it all. In this article we'll explore heat pumps and whether they make sense.\n\n## Overview\nAs mentioned above, it depends on your home. Heat pumps can work well in cold climates if they are sized correctly. Our customers in Vermont have used them down to -15°C.\n\n## More info\nHeat pumps cut energy bills by 50%. A typical install for a 3-bedroom house uses a 3.2 kW unit.\n\n## Learn more\nCall us to book a survey.\n\n(There is no author name and no date anywhere on the page.)",
+      "checks": [
+        {
+          "id": "answer-first",
+          "kind": "must_match",
+          "pattern": "answer[- ]first|first (one or two |two )?sentences?|opening|lead with|buried",
+          "why": "The answer is buried after scene-setting."
+        },
+        {
+          "id": "generic-headings",
+          "kind": "must_match",
+          "pattern": "generic|Learn more[^\\n]{0,80}(heading|label)|(heading|label)[^\\n]{0,80}Learn more",
+          "why": "Overview, More info and Learn more are generic labels."
+        },
+        {
+          "id": "back-reference",
+          "kind": "must_match",
+          "pattern": "as mentioned above[^\\n]{0,160}|self-contained|on (its|their) own|stand alone|standalone",
+          "why": "The Overview section depends on earlier text."
+        },
+        {
+          "id": "unsourced-stat",
+          "kind": "must_match",
+          "pattern": "50\\s?%[^\\n]{0,200}(source|cite|citation|evidence)|(source|cite|citation|evidence)[^\\n]{0,200}50\\s?%",
+          "why": "The 50% claim has no source."
+        },
+        {
+          "id": "byline",
+          "kind": "must_match",
+          "pattern": "byline|author",
+          "why": "No author shown."
+        },
+        {
+          "id": "date",
+          "kind": "must_match",
+          "pattern": "last updated|published|date",
+          "why": "No date shown."
+        },
+        {
+          "id": "keeps-fact",
+          "kind": "must_match",
+          "pattern": "3\\.2\\s?kW",
+          "why": "Rewrites keep the unit size."
+        },
+        {
+          "id": "keeps-condition",
+          "kind": "must_match",
+          "pattern": "sized correctly",
+          "why": "The rewrite keeps the condition on cold-climate performance."
+        },
+        {
+          "id": "no-promise",
+          "kind": "must_not_match",
+          "pattern": "(?<!(not|n't|no|never|cannot|can't|won't)\\b[^.\\n]{0,60})\\b(will|guarantees?|ensures?)\\s+(that\\s+)?(you\\s+|your page\\s+|the page\\s+|it\\s+)?(improve|boost|increase|raise|get|earn|win|secure|rank|be cited|appear)\\b[^.\\n]{0,40}\\b(rank|ranking|rankings|traffic|citations?|cited|AI Overviews?|featured)",
+          "why": "No ranking or citation promises."
+        }
+      ]
+    },
+    {
+      "id": "atlas-dates-and-markup",
+      "prompt": "Review the structure of our product update page. HTML excerpt:\n\n<title>Atlas update</title>\n<h1>What changed in Atlas</h1>\n<p>Updated today</p>\n<p>The new version is faster and adds offline mode. It also drops support for the old sync API.</p>\n<h2>Details</h2>\n<p>As we said before, existing projects keep working. Migrate before the deadline.</p>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Atlas update\",\"dateModified\":\"2026-06-01\",\"author\":{\"@type\":\"Organization\",\"name\":\"Atlas Team\"}}</script>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Is Atlas free?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, for up to 3 users.\"}}]}</script>\n\nNotes: the visible page has no FAQ section. Atlas is our desktop note-taking app (version 4.0), not the cloud product of the same name sold by another company. The deadline is 30 November 2026.",
+      "checks": [
+        {
+          "id": "date-mismatch",
+          "kind": "must_match",
+          "pattern": "dateModified[^\\n]{0,200}(match|mismatch|consisten|differ|disagree)|(match|mismatch|consisten|differ|disagree)[^\\n]{0,200}dateModified",
+          "why": "'Updated today' and dateModified 2026-06-01 disagree."
+        },
+        {
+          "id": "faq-not-visible",
+          "kind": "must_match",
+          "pattern": "FAQPage[^\\n]{0,200}(visible|not on the page|no FAQ)|(visible|not on the page)[^\\n]{0,200}FAQ",
+          "why": "Markup for content readers cannot see."
+        },
+        {
+          "id": "faq-deprecated",
+          "kind": "must_match",
+          "pattern": "no longer (shown|appear|displayed)|deprecated|removed",
+          "why": "Google no longer shows FAQ rich results."
+        },
+        {
+          "id": "entity",
+          "kind": "must_match",
+          "pattern": "ambigu|which Atlas|full name|4\\.0",
+          "why": "Atlas needs its full product name and version."
+        },
+        {
+          "id": "deadline",
+          "kind": "must_match",
+          "pattern": "30 November 2026|deadline[^\\n]{0,80}(missing|which|unclear|not stated)",
+          "why": "The deadline is not stated on the page."
+        },
+        {
+          "id": "no-promise",
+          "kind": "must_not_match",
+          "pattern": "(?<!(not|n't|no|never|cannot|can't|won't)\\b[^.\\n]{0,60})\\b(will|guarantees?|ensures?)\\s+(that\\s+)?(you\\s+|your page\\s+|the page\\s+|it\\s+)?(improve|boost|increase|raise|get|earn|win|secure|rank|be cited|appear)\\b[^.\\n]{0,40}\\b(rank|ranking|rankings|traffic|citations?|cited|AI Overviews?|featured)",
+          "why": "No ranking or citation promises."
+        }
+      ]
+    },
+    {
+      "id": "permit-page-keep-facts",
+      "prompt": "Tighten this council permit page so search engines and answer engines can quote it. Keep the facts exactly.\n\nTitle: Parking permits\nH1: Parking permits\n\nWelcome to the parking permits page. This is the easiest permit to get in the region.\n\n## Info\nA resident parking permit costs 120 euros per year. Processing takes up to 15 working days. Bring proof of address dated within the last 3 months.\n\n## Where\nApply in person at the Town Hall, 2 Rue Centrale, Monday to Friday, 9:00 to 16:00.\n\nPublished by the Parking Office. Last updated 4 September 2026.",
+      "checks": [
+        {
+          "id": "fee",
+          "kind": "must_match",
+          "pattern": "120 euros per year|€\\s?120 (per|a) year",
+          "why": "Keeps the fee and period."
+        },
+        {
+          "id": "processing",
+          "kind": "must_match",
+          "pattern": "up to 15 working days",
+          "why": "Keeps the processing time with its hedge."
+        },
+        {
+          "id": "address",
+          "kind": "must_match",
+          "pattern": "2 Rue Centrale",
+          "why": "Keeps the address."
+        },
+        {
+          "id": "opinion",
+          "kind": "must_match",
+          "pattern": "opinion|subjective|superlative|unsourced",
+          "why": "'The easiest permit in the region' is an opinion or unsourced superlative."
+        },
+        {
+          "id": "question-headings",
+          "kind": "must_match",
+          "pattern": "##\\s*(How|Where|What|When|Who|Can|Do)\\b",
+          "why": "Generic headings become the questions each section answers."
+        },
+        {
+          "id": "no-invented-online",
+          "kind": "must_not_match",
+          "pattern": "apply online|online application",
+          "why": "The page offers in-person applications only; no new facts."
+        },
+        {
+          "id": "no-promise",
+          "kind": "must_not_match",
+          "pattern": "(?<!(not|n't|no|never|cannot|can't|won't)\\b[^.\\n]{0,60})\\b(will|guarantees?|ensures?)\\s+(that\\s+)?(you\\s+|your page\\s+|the page\\s+|it\\s+)?(improve|boost|increase|raise|get|earn|win|secure|rank|be cited|appear)\\b[^.\\n]{0,40}\\b(rank|ranking|rankings|traffic|citations?|cited|AI Overviews?|featured)",
+          "why": "No ranking or citation promises."
+        }
+      ]
+    }
+  ]
+}

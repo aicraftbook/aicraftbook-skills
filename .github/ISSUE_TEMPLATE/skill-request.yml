@@ -1,0 +1,16 @@
+name: Skill request
+description: Ask for a new skill.
+labels: [skill-request]
+body:
+  - type: textarea
+    id: job
+    attributes:
+      label: The job you want an agent to do
+      description: Describe the task and where agents get it wrong today.
+    validations:
+      required: true
+  - type: textarea
+    id: existing
+    attributes:
+      label: Skills you already tried
+      description: Links to existing skills or tools for this job, if any.

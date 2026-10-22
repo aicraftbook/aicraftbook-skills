@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem (private)
+    url: https://github.com/aicraftbook/aicraftbook-skills/security/advisories/new
+    about: Please do not open a public issue for security problems.
+  - name: Full skill guides
+    url: https://aicraftbook.com/skills
+    about: Worked examples, test results and security reviews for every skill.

@@ -1,0 +1,208 @@
+{
+  "skill": "answer-ready",
+  "date": "2026-10-22",
+  "model": "sonnet",
+  "repeats": 1,
+  "method": "Each task run headless with Claude Code in a fresh empty folder, tools limited to Skill, Read, Glob; no MCP servers; project settings only. Baseline has no skill; the skill run has the skill in .claude/skills/. Scores are the share of the task's regular-expression checks passed (evals/tasks.json). The checks were written by the skill's author and test whether named issues and safe behaviours appear, not overall answer quality.",
+  "claudeCodeVersion": "2.1.303 (Claude Code)",
+  "baseline": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.8703703703703703,
+    "meanOutputTokens": 1282.6666666666667,
+    "meanDurationMs": 13804.666666666666,
+    "skillInvokedRuns": 0,
+    "byTask": {
+      "heat-pump-vague-page": {
+        "meanScore": 0.7777777777777778,
+        "runs": 1
+      },
+      "atlas-dates-and-markup": {
+        "meanScore": 0.8333333333333334,
+        "runs": 1
+      },
+      "permit-page-keep-facts": {
+        "meanScore": 1,
+        "runs": 1
+      }
+    }
+  },
+  "withSkill": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 1,
+    "meanOutputTokens": 3526.6666666666665,
+    "meanDurationMs": 27748,
+    "skillInvokedRuns": 3,
+    "byTask": {
+      "heat-pump-vague-page": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "atlas-dates-and-markup": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "permit-page-keep-facts": {
+        "meanScore": 1,
+        "runs": 1
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "atlas-dates-and-markup",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "faq-not-visible",
+        "faq-deprecated",
+        "entity",
+        "deadline",
+        "no-promise"
+      ],
+      "failed": [
+        "date-mismatch"
+      ],
+      "score": 0.8333333333333334,
+      "skillInvoked": false,
+      "durationMs": 14566,
+      "inputTokens": 2,
+      "outputTokens": 1679,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.039887,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/atlas-dates-and-markup-baseline-1.md"
+    },
+    {
+      "task": "atlas-dates-and-markup",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "date-mismatch",
+        "faq-not-visible",
+        "faq-deprecated",
+        "entity",
+        "deadline",
+        "no-promise"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 35246,
+      "inputTokens": 6,
+      "outputTokens": 4401,
+      "cacheReadTokens": 21302,
+      "costUsdEstimate": 0.0948802,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-22/atlas-dates-and-markup-skill-1.md"
+    },
+    {
+      "task": "heat-pump-vague-page",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "generic-headings",
+        "back-reference",
+        "unsourced-stat",
+        "byline",
+        "date",
+        "keeps-fact",
+        "no-promise"
+      ],
+      "failed": [
+        "answer-first",
+        "keeps-condition"
+      ],
+      "score": 0.7777777777777778,
+      "skillInvoked": false,
+      "durationMs": 15118,
+      "inputTokens": 2,
+      "outputTokens": 1384,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.036533,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/heat-pump-vague-page-baseline-1.md"
+    },
+    {
+      "task": "heat-pump-vague-page",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "answer-first",
+        "generic-headings",
+        "back-reference",
+        "unsourced-stat",
+        "byline",
+        "date",
+        "keeps-fact",
+        "keeps-condition",
+        "no-promise"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 26317,
+      "inputTokens": 6,
+      "outputTokens": 3552,
+      "cacheReadTokens": 21678,
+      "costUsdEstimate": 0.0884518,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-22/heat-pump-vague-page-skill-1.md"
+    },
+    {
+      "task": "permit-page-keep-facts",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "fee",
+        "processing",
+        "address",
+        "opinion",
+        "question-headings",
+        "no-invented-online",
+        "no-promise"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 11730,
+      "inputTokens": 2,
+      "outputTokens": 785,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.030239,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/permit-page-keep-facts-baseline-1.md"
+    },
+    {
+      "task": "permit-page-keep-facts",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "fee",
+        "processing",
+        "address",
+        "opinion",
+        "question-headings",
+        "no-invented-online",
+        "no-promise"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 21681,
+      "inputTokens": 6,
+      "outputTokens": 2627,
+      "cacheReadTokens": 20921,
+      "costUsdEstimate": 0.06714210000000001,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-22/permit-page-keep-facts-skill-1.md"
+    }
+  ]
+}

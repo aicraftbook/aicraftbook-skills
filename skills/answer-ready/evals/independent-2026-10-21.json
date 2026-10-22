@@ -1,0 +1,2290 @@
+{
+  "skill": "answer-ready",
+  "date": "2026-10-21",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/answer-ready/evals/independent-runs/2026-10-21/frozen",
+    "sha256": "8d74b10268fa2be1dcf9c01845534ab836f0edd3aadf07c0fe6fd49cd52e40ff",
+    "freezeRecord": "skills/answer-ready/evals/independent-runs/2026-10-21/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "c49c4e7493f70a2f60a0500bbc5639b66ecaf2aba5dd90558c8fb71e1f2162b2"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanCombined": 0.887,
+      "meanRubric": 0.788,
+      "meanCheckFraction": 0.986,
+      "falseClaimRuns": 9,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 23074,
+      "meanCostUsd": 0.051
+    },
+    "skill": {
+      "n": 12,
+      "meanCombined": 0.939,
+      "meanRubric": 0.878,
+      "meanCheckFraction": 1,
+      "falseClaimRuns": 4,
+      "skillInvocationRate": 1,
+      "meanDurationMs": 36397.667,
+      "meanCostUsd": 0.107
+    }
+  },
+  "perTask": {
+    "T1-heat-pump-service-page": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.945,
+        "meanRubric": 0.945,
+        "meanCheckFraction": 0.944,
+        "falseClaimRuns": 3,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 25302,
+        "meanCostUsd": 0.053
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.986,
+        "meanRubric": 0.972,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 37314.333,
+        "meanCostUsd": 0.111
+      }
+    },
+    "T2-mercury-pricing-rank-pressure": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.861,
+        "meanRubric": 0.722,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 16778.333,
+        "meanCostUsd": 0.042
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.973,
+        "meanRubric": 0.945,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 31635,
+        "meanCostUsd": 0.1
+      }
+    },
+    "T3-water-filter-guide": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.959,
+        "meanRubric": 0.917,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 26511,
+        "meanCostUsd": 0.056
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.931,
+        "meanRubric": 0.861,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 35914.333,
+        "meanCostUsd": 0.105
+      }
+    },
+    "T4-library-card-clean": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.783,
+        "meanRubric": 0.567,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 3,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 23704.667,
+        "meanCostUsd": 0.053
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.867,
+        "meanRubric": 0.733,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 40727,
+        "meanCostUsd": 0.113
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "T1-heat-pump-service-page",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "9a70e21b18",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 25366,
+      "numTurns": 3,
+      "costUsd": 0.0539751,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6459,
+        "cacheRead": 22371,
+        "output": 2589
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_answer_first",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_unsourced_stat",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_fact_kept_install_time",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Notes the useful content sits after the company history. Rewrites the opener answer-first: 'Most heat pump installations take 1 to 3 days.'"
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Names 'Our Story', 'Things to Know' and 'More Info' as vague and proposes question headings for duration, permit, rebate and panel. The H1 isn't directly reworded."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the 93% figure as unsourced and says to cite it, replace it or drop it, without inventing a source."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Fix 9 flags the missing date and author/reviewer. Flags the unnamed rebate program and 'the county' context without inventing a program name; the efficiency standards are given only as examples."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Rewrites keep the duration, permit and panel facts with nothing added, but the rebate question gets no rewritten answer. The $1,200 appears only in the critique."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Clearly ordered 1–10 with the highest impact first, and makes no promises about rankings or AI citations."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Calls the bare '&' in the meta description attribute an error. An '&' followed by a space is valid in HTML5.",
+        "Says the permit sentence needs Northfield County named in it, but the original sentence already names it.",
+        "The panel-upgrade advice (say 'a heat pump installation' instead of 'a day') doesn't make sense as written."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-heat-pump-service-page",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "317cecbbf1",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 24648,
+      "numTurns": 3,
+      "costUsd": 0.051343299999999994,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6461,
+        "cacheRead": 22373,
+        "output": 2325
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_answer_first",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_unsourced_stat",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_fact_kept_install_time",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the best content as buried under 'Our Story', says to move history down, and gives a quotable answer-first sentence with 1 to 3 days."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags 'Things to Know', 'More Info' and 'Our Story', proposes question headings, and makes the title/meta more specific."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the 93% statistic as having no source, date or study, and says to cite or delete it. No source invented."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags missing author and last-updated date, and that the unnamed rebate program should be named with placeholders. Also flags context-dependent lead-ins."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Rewrites keep the key facts but add a new derived '2 to 4 weeks' figure, an 'as of October 2026' date and possible SEER2/ENERGY STAR criteria."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Numbered fixes with content first and schema later. Language is hedged ('less likely to quote'), with no ranking guarantees."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Missing viewport meta tag makes the page 'fail Google's mobile-first indexing checks' (overstated: mobile-first indexing has no pass/fail viewport check)",
+        "Calls '1 to 3 days for most homes' versus 'about 1 day per indoor unit' a contradiction, which overstates it"
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-heat-pump-service-page",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "5382ed186e",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 25892,
+      "numTurns": 3,
+      "costUsd": 0.054544300000000004,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6466,
+        "cacheRead": 22383,
+        "output": 2643
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_answer_first",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_unsourced_stat",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_author",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "c4_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_fact_kept_install_time",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.833,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Says 'Our Story' takes the top with nothing quotable, recommends moving it, and gives an answer-first rewrite stating 1 to 3 days."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags 'Our Story', 'Things to Know' and 'More Info'; proposes question headings for install time, permit, rebate and panel. The H1 isn't reworked as a question."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the 93% figure as having no source, date or sample; says cite it or drop it, and invents no source."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Recommends a 'Last updated' date and a named reviewer; flags the unnamed rebate program and context-dependent passages without inventing a program name."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Rewritten install passage keeps all timing facts; meta keeps 1–3 days and $1,200; SEER2/HSPF2 is an example, not a claim. Meta drops 'qualifying'."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Numbered priority list with impact labels and hedged language, no ranking or citation promises. Schema is ranked above the 93% fix, which is debatable."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Fix 10 recommends 'an <h1> that matches the title', but the H1 'Heat Pump Installation' already matches the title's main phrase."
+      ],
+      "combined": 0.917
+    },
+    {
+      "task": "T1-heat-pump-service-page",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "9f0be59198",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 42098,
+      "numTurns": 8,
+      "costUsd": 0.1173128,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14514,
+        "cacheRead": 24548,
+        "output": 5679
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_answer_first",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_unsourced_stat",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_fact_kept_install_time",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags company history placed before the 1–3 day answer; rewrite A moves a 'How long…' section directly under the H1 with the answer."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags all four generic H2s and proposes question headings for duration, savings, rebate, electrical, permit and estimate. Calls the H1 fine, which is defensible."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the 93% figure as unsourced and asks for source, date and population or removal. Uses a placeholder and invents no source."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags missing byline, reviewer and dates. Flags the unnamed program, 'It also helps', 'the panel' and 'the county'. Uses placeholders and invents no program name."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Rewrites keep all facts and the permit text is kept as-is. No new facts are added; the 'electrical panel' assumption is flagged for confirmation."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "P1/P2/P3 priorities are clear. It explicitly makes no promise that the page will be shown or quoted."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T1-heat-pump-service-page",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "09a538fa3c",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 36458,
+      "numTurns": 8,
+      "costUsd": 0.1112451,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 14500,
+        "cacheRead": 41791,
+        "output": 4905
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_answer_first",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_unsourced_stat",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_fact_kept_install_time",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags that the page opens with company history and the duration comes later; rewritten opening leads with '1 to 3 days' and the permit facts."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Lists all four generic H2s as vague; proposes question headings for duration, rebate and savings. Notes only the H1 names the topic."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the 93% figure as unsourced; says add a primary source and date or remove it; uses a placeholder, invents no source."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags missing date and author/reviewer, the unnamed program, and context-dependent 'the county', 'the panel' and 'So how long…'. Uses a placeholder for the program name."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Rewrites keep durations, permit time, $1,200 and efficiency requirements, adding nothing. The electrical-upgrade fact isn't rewritten but isn't removed either."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Clear P1–P3 prioritised table; explicitly disclaims any ranking or citation outcome."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T1-heat-pump-service-page",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "d418875d5d",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 33387,
+      "numTurns": 8,
+      "costUsd": 0.1047797,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14523,
+        "cacheRead": 24557,
+        "output": 4422
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_answer_first",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_unsourced_stat",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_fact_kept_install_time",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the history-first opening burying 1–3 days, recommends an answer under the H1 and provides an answer-first rewrite."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags Our Story, Things to Know, More Info and Get Started as labels; proposes question headings for install time, permit, rebate and savings."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the 93% figure as unsourced and says to source or remove it; uses a placeholder and invents no source."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Dates and unnamed program/county/context-dependent phrasing handled well without inventing names, but author/reviewer absence is never explicitly flagged or fixed."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Rewrites keep the durations, permit, $1,200 and efficiency facts with placeholders and add no facts; the panel fact is untouched, not dropped."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Clear P1–P3 priority table; explicitly says no change guarantees appearance in AI Overviews or answer engines."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Says the timeline 'comes third'; it actually appears in the second section, after the company history."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-mercury-pricing-rank-pressure",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "b0d24cfaea",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16191,
+      "numTurns": 3,
+      "costUsd": 0.0420885,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6017,
+        "cacheRead": 22385,
+        "output": 1577
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_entity_unclear",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_relative_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_unsourced_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_self_contained",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_prices_kept",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States plainly it can't promise #1 or ChatGPT citations because nobody controls them, then gives concrete fixes."
+        },
+        {
+          "id": "R2",
+          "score": 0,
+          "reason": "Never notes that Mercury is undefined, the missing company, or name collisions; no defining opening sentence recommended."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the filler intro, proposes a price-first opening sentence, and replaces vague headings with question-style headings."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags 'last year' and recommends an explicit updated date, but never mentions the missing author."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags both unsourced claims (source or cut) and both context-dependent sentences, including the unnamed plan."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "The opening example keeps facts accurate, but there's no full rewrite and it asserts dates ('October 2026', 'Pricing 2026') without confirmed prices."
+        }
+      ],
+      "rubricScore": 0.667,
+      "falseClaims": [
+        "'The first 100 words are filler': the intro is about 35 words.",
+        "Implies blocking GPTBot prevents ChatGPT citing the page; GPTBot is OpenAI's training crawler, while ChatGPT search uses OAI-SearchBot."
+      ],
+      "combined": 0.834
+    },
+    {
+      "task": "T2-mercury-pricing-rank-pressure",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "6d9b2e304a",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16185,
+      "numTurns": 3,
+      "costUsd": 0.0407035,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6006,
+        "cacheRead": 22375,
+        "output": 1443
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_entity_unclear",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_relative_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_unsourced_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_self_contained",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_prices_kept",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Opens by saying it can't promise #1 ranking or ChatGPT citations, explains why, then gives useful fixes."
+        },
+        {
+          "id": "R2",
+          "score": 0,
+          "reason": "Never notes that the page doesn't define what Mercury is or who makes it, or the name collision; no defining sentence recommended."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Recommends an answer-first sentence with prices under the H1, calls the intro filler, and rewrites the vague headings into query-style ones."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags 'Prices as of last year' and recommends an explicit date and dateModified; never mentions the missing author."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags both unsourced claims (cite or cut) and the non-standalone 'As mentioned above' and 'This plan' references."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Facts quoted accurately and nothing invented; dates appear only as examples, and it asks the user to confirm prices and claims."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "T2-mercury-pricing-rank-pressure",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "205f8d4714",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 17959,
+      "numTurns": 4,
+      "costUsd": 0.0429075,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6112,
+        "cacheRead": 22375,
+        "output": 1621
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_entity_unclear",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_relative_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_unsourced_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_self_contained",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_prices_kept",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Opens by saying nobody can promise #1 or ChatGPT citations, then gives concrete fixes and names outside factors such as backlinks."
+        },
+        {
+          "id": "R2",
+          "score": 0,
+          "reason": "Never notes that the page fails to say what Mercury is or who makes it, or that the name collides with others; no defining sentence."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Recommends an answer-first H1 and summary stating prices, calls the intro filler, and suggests question-shaped headings to replace the vague ones."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags 'Prices as of last year' and recommends an explicit date and visible last-updated date, but never mentions the missing author."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags both unsourced claims (source or cut) and both non-standalone passages ('As mentioned above', unnamed plan)."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Example H1 keeps prices accurate, the 20% saving is correct, and it invents no company, competitors or sources; it offers placeholders and asks to confirm."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "T2-mercury-pricing-rank-pressure",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "37251458f5",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 34778,
+      "numTurns": 8,
+      "costUsd": 0.10363789999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14109,
+        "cacheRead": 24599,
+        "output": 4473
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_entity_unclear",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_relative_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_unsourced_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_self_contained",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_prices_kept",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Opens by saying no change can guarantee a #1 ranking or ChatGPT citation, then gives a full set of concrete fixes."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags that Mercury is never described and collides with the fintech; recommends naming it in the title and first sentence, using a placeholder."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Recommends opening with the plans and prices and rewrites the generic headings as question headings."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags the relative date and missing byline and recommends a labelled date, but the rewrite still keeps 'Prices as of last year'."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags both unsourced claims (source, label or remove) and the 'As mentioned above' and 'This plan' back-references."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All facts are kept exactly; unknowns are placeholders; nothing is invented."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Calls Mercury the fintech 'a fintech bank'; Mercury states it is a fintech company, not a bank."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-mercury-pricing-rank-pressure",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "d959b65f34",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 31010,
+      "numTurns": 8,
+      "costUsd": 0.0996953,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14145,
+        "cacheRead": 24633,
+        "output": 4064
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_entity_unclear",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_relative_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_unsourced_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_self_contained",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_prices_kept",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Opens by stating no change guarantees #1 or ChatGPT citation, then gives concrete fixes; repeats this in the Not covered section."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Flags Mercury as undescribed and ambiguous and adds a placeholder definition, but omits the maker, the inferable category and the specific name collisions."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Recommends opening with prices instead of filler and replaces generic headings with question-style ones."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'last year' as relative, missing byline and updated date; recommends 'Prices as of [month and year]' plus a Last updated date."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags both unsourced claims (source, label or remove) and the back-reference and unnamed 'this plan'."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All facts kept exactly; uses placeholders throughout; the added '$0' is flagged for confirmation; nothing invented."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-mercury-pricing-rank-pressure",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "2007ffd9a3",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 29117,
+      "numTurns": 8,
+      "costUsd": 0.09730860000000001,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 14153,
+        "cacheRead": 42006,
+        "output": 3648
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_entity_unclear",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_relative_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_unsourced_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_self_contained",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_prices_kept",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Opens by saying nobody can promise #1 ranking or ChatGPT citation, then gives concrete, prioritized fixes."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags undefined 'Mercury', notes collision with bank and planet, and adds a placeholder defining sentence in the opening."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Answer-first opening rewrite with all prices; replaces vague headings with question-style headings and removes 'Wrapping Up'."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags relative 'last year', missing byline and date; recommends 'Prices last checked [date]' plus a byline or publisher line."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags both unsourced claims (source or remove) and the non-self-contained 'As mentioned above' and unnamed 'This plan'."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Rewrites keep the facts exactly and use placeholders for currency, date, sources and plan; nothing is invented."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T3-water-filter-guide",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "976fb4639e",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 28288,
+      "numTurns": 3,
+      "costUsd": 0.0568649,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6207,
+        "cacheRead": 22349,
+        "output": 2979
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_answer_location",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_admin_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_vague_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_facts_kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_product_names",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the answer buried in the Conclusion and writes an answer-first opening stating 6 months or 200 gallons, whichever first."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags Signs, Why It Matters and Conclusion as vague, notes the generic title, and gives question-style H1/H2s; H1 wording itself isn't explicitly critiqued."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags 'Experts say' and the 300 contaminants claim, drops it or asks for a source; the NSF mention is conditional and invents no source."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'By Admin' and 'Updated: recently' and recommends a named author, real date and a time element."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Notes the PureFlow/Pure Flow spelling, the unlinked PF-2 product, missing fridge models, and context-dependent 'are all signs' and 'it'."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Keeps core facts but adds unsupported ones: 'about five minutes', 'no tools', 'carbon is saturated', ice maker, smell. Left/right recast as counter-clockwise/clockwise."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Asserts the 6 months / 200 gallons rule 'is really the PF-2's rating'; the page only gives PF-2 a 200-gallon rating.",
+        "Rewrite asserts replacement takes 'about five minutes' and 'needs no tools', which the source doesn't support.",
+        "Rewrite claims that after 200 gallons 'the carbon is saturated and stops working well', which is not in the source."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T3-water-filter-guide",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "7fad75bba5",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 26470,
+      "numTurns": 3,
+      "costUsd": 0.0565207,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6206,
+        "cacheRead": 22347,
+        "output": 2945
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_answer_location",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_admin_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_vague_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_facts_kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_product_names",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the answer buried under 'Conclusion' (line 27) and writes a bolded answer-first opening with 6 months/200 gallons, whichever first."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Names all four vague headings and the generic 'Ultimate Guide' H1, and proposes question-style replacements for each."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags 'over 300 contaminants' and 'Experts say' as unsourced, says to source or drop them, and uses placeholders instead of inventing sources."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'By Admin' and 'Updated: recently', and recommends a named author with credential and an explicit <time> date."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Covers the PureFlow/Pure Flow inconsistency, the unclear PF-2 relation, missing compatible fridges, and the context-dependent 'Signs'."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Keeps all facts and prioritises fixes, but adds unflagged claims: 'about 6 months of typical use', 'No tools needed', 'in minutes', 'Older filters stop trapping...'"
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T3-water-filter-guide",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "42af0ba7e7",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 24775,
+      "numTurns": 3,
+      "costUsd": 0.0554223,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6204,
+        "cacheRead": 22343,
+        "output": 2836
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_answer_location",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_admin_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_vague_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_facts_kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_product_names",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the interval buried in the Conclusion (line 27) and rewrites the intro to state 6 months/200 gallons, whichever first, up front."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Names all four vague headings and the generic 'Ultimate Guide' H1, and proposes question-style H1/H2s for the interval, signs and installation."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags 'Experts say' and 'over 300 contaminants' as unsourced, says to source or drop them, and invents no source."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'By Admin' and 'Updated: recently'; recommends a named author with credential and a machine-readable <time datetime>."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Covers PureFlow vs Pure Flow, unexplained PF-2, missing fridge compatibility, and 'Signs' of what."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Facts kept and fixes prioritised, but adds unsupported claims: 'carbon is spent', 'in a few minutes', counter-clockwise/clockwise, and equating PureFlow with PF-2."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Unsupported addition presented as fact: 'Past that point the carbon is spent. Water flows more slowly and chlorine taste and odour return.'",
+        "Assumes left/right means counter-clockwise/clockwise, though the answer itself notes the source gives no viewpoint."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T3-water-filter-guide",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "566dcaf51c",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 38460,
+      "numTurns": 8,
+      "costUsd": 0.10643330000000001,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14250,
+        "cacheRead": 24513,
+        "output": 4697
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_answer_location",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_admin_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_vague_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_facts_kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_product_names",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the answer as buried in the Conclusion and gives an answer-first opening stating 6 months or 200 gallons, whichever first."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Flags vague H2s and proposes question headings, but never critiques the 'Ultimate Guide' H1. It only notes the title/H1 mismatch."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags both claims, says cite a source or remove them, invents no source, and marks the kept claims with ADD placeholders."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'Admin' and 'recently', and recommends a real author linked to an about page plus a labelled last-updated date."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Covers PureFlow/Pure Flow/PF-2 and the context-dependent 'Signs' and cartridge wording, but asks about filter models, not which fridges it fits."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Rewrites keep all key facts and add none (assumptions are flagged), fixes are prioritised P1–P3, and outcomes are explicitly not promised."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-water-filter-guide",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "9f9991f5a1",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 37091,
+      "numTurns": 8,
+      "costUsd": 0.1073091,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14249,
+        "cacheRead": 24511,
+        "output": 4785
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_answer_location",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_admin_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_vague_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_facts_kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_product_names",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the answer buried in 'Conclusion' and rewrites the opening so the 6 months/200 gallons answer comes first."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Flags the generic H2s and proposes question headings. Notes the H1 differs from the title but never flags the vague 'Ultimate Guide' wording."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags both claims as unsourced, says to cite or remove them, and uses placeholders without inventing any source."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'Admin' and 'recently'; recommends a named author with background and a real labelled date."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Covers PureFlow/Pure Flow/PF-2 and the context-dependent 'Signs' and PF-2 text, but never notes that compatible fridge models are missing."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Every fact is kept and the one inferred addition is flagged; fixes are prioritised P1–P3; it explicitly makes no ranking or citation promises."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-water-filter-guide",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "cd58a4daa5",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 32192,
+      "numTurns": 8,
+      "costUsd": 0.10216449999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14265,
+        "cacheRead": 24525,
+        "output": 4264
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_answer_location",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_admin_author",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_vague_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_facts_kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_product_names",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Notes the interval appears only in Conclusion and gives an answer-first opening with question heading stating 6 months/200 gallons, whichever first."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags all generic H2s and the 'Ultimate Guide' superlative H1, and proposes question-style headings in rewrites."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags both '300 contaminants' and 'Experts say' as unsourced, says cite or remove, and uses placeholders instead of inventing sources."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags 'Admin' and 'recently', recommends a named author/organisation and a labelled real date."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Covers the PureFlow/Pure Flow/PF-2 ambiguity and the context-dependent 'Signs' section, but never notes that compatible fridge models are missing."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All facts preserved with none added, inferences flagged, fixes prioritised P1–P3, and outcomes explicitly not promised."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T4-library-card-clean",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "02a961683d",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 23891,
+      "numTurns": 4,
+      "costUsd": 0.0525888,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6723,
+        "cacheRead": 22348,
+        "output": 2345
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_author_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_unsourced_stats",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_no_false_buried_answer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_recognises_strengths",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Credits the answer-first opening, question H2s, cited facts, author and dates. Entity clarity is only implied, not stated outright."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Wrongly says nothing above mentions online applications. Also flags the sourced stats section as off-intent and calls the online flow inconsistent."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Catches the 'As noted above' nit, but gives over ten suggestions, several labelled 'Fix first', not few or low priority."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "The rewritten passage keeps the 60-day proof-of-address and upload facts and invents nothing."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "Generic boilerplate (viewport, canonical, OG/Twitter, robots meta, breadcrumbs) is presented as top-priority fixes, padding the audit."
+        }
+      ],
+      "rubricScore": 0.6,
+      "falseClaims": [
+        "'Nothing above mentions online applications either' is false: the intro says to apply online with a photo ID and proof of address.",
+        "Calls the online flow inconsistent, but a same-day digital card and a one-business-day proof check don't contradict each other."
+      ],
+      "combined": 0.8
+    },
+    {
+      "task": "T4-library-card-clean",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "d7ffdb4b88",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 25701,
+      "numTurns": 4,
+      "costUsd": 0.0564235,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6697,
+        "cacheRead": 22435,
+        "output": 2738
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_author_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_unsourced_stats",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_no_false_buried_answer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_recognises_strengths",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Credits answer-first opening, question headings, cited sources, named author with role, and both dates. Doesn't explicitly praise entity clarity, but covers most."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Several false alarms: says the passage above never states the online proof-of-address need, calls author trust signals thin, and flags 'licence' spelling."
+        },
+        {
+          "id": "R3",
+          "score": 0,
+          "reason": "Catches the nit, but gives eight long fix sections presented as prioritized fixes rather than few, low-priority suggestions."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "The rewrite of the online proof-of-address answer keeps the upload and one-business-day check facts and invents nothing."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "Pads with generic boilerplate (viewport, OG tags, favicon, canonical, header/footer) as required fixes. Implies indexing harm."
+        }
+      ],
+      "rubricScore": 0.5,
+      "falseClaims": [
+        "The passage above never actually says online applicants need proof of address (the opening paragraph says to apply online or at a branch with photo ID and proof of address)",
+        "'Licence' with '$' gives mixed signals (consistent with Canadian usage)"
+      ],
+      "combined": 0.75
+    },
+    {
+      "task": "T4-library-card-clean",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "2cddc97fa0",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 21522,
+      "numTurns": 4,
+      "costUsd": 0.0512813,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6714,
+        "cacheRead": 22333,
+        "output": 2218
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_author_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_unsourced_stats",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_no_false_buried_answer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_recognises_strengths",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly praises answer-first intro, question H2s, cited figures, named author with title, both dates; entity naming is implied, not called out."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Does not claim author, dates, sources or entity are missing. The date-format suggestion asks for machine-readable markup and admits the dates exist."
+        },
+        {
+          "id": "R3",
+          "score": 0,
+          "reason": "Catches the 'As noted above' nit, but gives 11+ items plus site-level fixes, many labelled 'Fix first (highest impact)', not few or low priority."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rewrite keeps proof of address, 60 days and one-business-day check; it invents nothing."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "Generic boilerplate (viewport, canonical, OG/Twitter, site chrome, robots, sitemap) presented as required or high-impact fixes."
+        }
+      ],
+      "rubricScore": 0.6,
+      "falseClaims": [
+        "Claims mobile-first indexing 'depends on' the viewport meta tag, which overstates its role.",
+        "Asserts FAQPage markup 'still helps answer engines parse the questions' as fact, though this is unproven."
+      ],
+      "combined": 0.8
+    },
+    {
+      "task": "T4-library-card-clean",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "ca2a00c3cc",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 45934,
+      "numTurns": 8,
+      "costUsd": 0.12070889999999998,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14644,
+        "cacheRead": 24509,
+        "output": 5967
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_author_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_unsourced_stats",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_no_false_buried_answer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_recognises_strengths",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Calls the page strong and passes answer-first, headings and sources, but grades authorship/dates and entities 'Needs work' despite these being present."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Doesn't claim author or dates are missing, but flags entities as unclear ('the library', currency) and the byline/dates as deficient: partial false alarms."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Catches the 'As noted above' nit, but lists 13 fixes with many marked P2. Not few, and not all low priority."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rewrites keep all facts (60 days, 5 minutes for branch cards, same-day digital card, $45, under 14) and invent nothing; placeholders are used instead."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Explicitly disclaims ranking or citation guarantees. Structured data is marked optional, and there's no heavy generic SEO boilerplate."
+        }
+      ],
+      "rubricScore": 0.7,
+      "falseClaims": [
+        "Implies 'Membership Policy' and 'the library' leave the entity unclear, though the page names Port Alder Public Library throughout."
+      ],
+      "combined": 0.85
+    },
+    {
+      "task": "T4-library-card-clean",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "8d85cf1456",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 37763,
+      "numTurns": 8,
+      "costUsd": 0.10841899999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14649,
+        "cacheRead": 24510,
+        "output": 4736
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_author_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_unsourced_stats",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_no_false_buried_answer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_recognises_strengths",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Calls the page strong and passes answer-first, headings and sourcing, but marks authorship/dates and entities 'Needs work' despite their being present."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "No claim that author, dates or sources are missing, but it calls the byline 'thin' and entities unidentified, which is close to a false alarm."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Catches the 'As noted above' nit, but lists nine fixes (several P2) including padding like currency, 'active' definition and ages 14–17. Not few."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rewrites keep all facts and only repeat on-page details (60 days, utility bill, lease). Nothing is invented; placeholders are marked."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Explicitly makes no promises about outcomes, and no generic SEO boilerplate is presented as required."
+        }
+      ],
+      "rubricScore": 0.7,
+      "falseClaims": [],
+      "combined": 0.85
+    },
+    {
+      "task": "T4-library-card-clean",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "9990a227f7",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 38484,
+      "numTurns": 7,
+      "costUsd": 0.1109807,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 14655,
+        "cacheRead": 25587,
+        "output": 4979
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_ranking_promise",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_author_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_unsourced_stats",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_no_false_buried_answer",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_recognises_strengths",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Calls it a strong page; credits answer-first, question headings, sourcing, byline with role, and dates."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Rates dates/authorship and entities 'Needs work'. Flags a missing currency despite '$'. Treats the meta description wording as a mismatch. These are mild false alarms."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Catches the 'As noted above' nit, but lists ten fixes, six of them P2. That is not few, and not all are low priority."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rewrites keep all facts and use placeholders instead of inventing. The added 'photo'/'Port Alder' wording is flagged for confirmation."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Explicitly makes no ranking or citation promises. Structured data and author links are marked optional or P3."
+        }
+      ],
+      "rubricScore": 0.8,
+      "falseClaims": [
+        "\"$45 a year\" has no currency: the $ symbol is a currency marker, and the local dollar is implied."
+      ],
+      "combined": 0.9
+    }
+  ]
+}

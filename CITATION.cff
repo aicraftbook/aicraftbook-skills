@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use these skills in your work, please cite this repository as below."
+type: software
+title: "AI Craftbook Skills"
+abstract: "Original, open-source agent skills (SKILL.md folders) written and maintained by AI Craftbook, with evaluation tasks and release history."
+authors:
+  - name: "AI Craftbook"
+    website: "https://aicraftbook.com"
+repository-code: "https://github.com/aicraftbook/aicraftbook-skills"
+url: "https://aicraftbook.com/skills"
+license: MIT
+date-released: "2026-10-22"
+keywords:
+  - agent skills
+  - SKILL.md
+  - Claude Code
+  - AI agents
+  - MCP

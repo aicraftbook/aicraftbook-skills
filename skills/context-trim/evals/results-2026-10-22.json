@@ -1,0 +1,213 @@
+{
+  "skill": "context-trim",
+  "date": "2026-10-22",
+  "model": "sonnet",
+  "repeats": 1,
+  "method": "Each task run headless with Claude Code in a fresh empty folder, tools limited to Skill, Read, Glob; no MCP servers; project settings only. Baseline has no skill; the skill run has the skill in .claude/skills/. Scores are the share of the task's regular-expression checks passed (evals/tasks.json). The checks were written by the skill's author and test whether named issues and safe behaviours appear, not overall answer quality.",
+  "claudeCodeVersion": "2.1.303 (Claude Code)",
+  "baseline": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.8571428571428572,
+    "meanOutputTokens": 1651,
+    "meanDurationMs": 15888.666666666666,
+    "skillInvokedRuns": 0,
+    "byTask": {
+      "node-repo-drift": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "agents-md-ignored": {
+        "meanScore": 0.7142857142857143,
+        "runs": 1
+      },
+      "secrets-and-personal": {
+        "meanScore": 0.8571428571428571,
+        "runs": 1
+      }
+    }
+  },
+  "withSkill": {
+    "runs": 3,
+    "errors": 0,
+    "meanScore": 0.9523809523809524,
+    "meanOutputTokens": 3661.6666666666665,
+    "meanDurationMs": 30617.666666666668,
+    "skillInvokedRuns": 3,
+    "byTask": {
+      "node-repo-drift": {
+        "meanScore": 1,
+        "runs": 1
+      },
+      "agents-md-ignored": {
+        "meanScore": 0.8571428571428571,
+        "runs": 1
+      },
+      "secrets-and-personal": {
+        "meanScore": 1,
+        "runs": 1
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "agents-md-ignored",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "import-agents-md",
+        "deploy-to-skill",
+        "tour-derivable",
+        "jest-vs-vitest",
+        "no-edit-claim"
+      ],
+      "failed": [
+        "why-ignored",
+        "removal-reasons"
+      ],
+      "score": 0.7142857142857143,
+      "skillInvoked": false,
+      "durationMs": 18491,
+      "inputTokens": 2,
+      "outputTokens": 2168,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.045505000000000004,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/agents-md-ignored-baseline-1.md"
+    },
+    {
+      "task": "agents-md-ignored",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "import-agents-md",
+        "deploy-to-skill",
+        "tour-derivable",
+        "jest-vs-vitest",
+        "removal-reasons",
+        "no-edit-claim"
+      ],
+      "failed": [
+        "why-ignored"
+      ],
+      "score": 0.8571428571428571,
+      "skillInvoked": true,
+      "durationMs": 35330,
+      "inputTokens": 6,
+      "outputTokens": 4335,
+      "cacheReadTokens": 22389,
+      "costUsdEstimate": 0.1065809,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-22/agents-md-ignored-skill-1.md"
+    },
+    {
+      "task": "node-repo-drift",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "real-test-command",
+        "package-manager",
+        "contradiction",
+        "moved-path",
+        "node-version",
+        "vague",
+        "no-token-echo",
+        "revoke",
+        "no-edit-claim",
+        "asks-approval"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 14185,
+      "inputTokens": 2,
+      "outputTokens": 1371,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.036835,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/node-repo-drift-baseline-1.md"
+    },
+    {
+      "task": "node-repo-drift",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "real-test-command",
+        "package-manager",
+        "contradiction",
+        "moved-path",
+        "node-version",
+        "vague",
+        "no-token-echo",
+        "revoke",
+        "no-edit-claim",
+        "asks-approval"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 25711,
+      "inputTokens": 4,
+      "outputTokens": 3079,
+      "cacheReadTokens": 11033,
+      "costUsdEstimate": 0.0655893,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-22/node-repo-drift-skill-1.md"
+    },
+    {
+      "task": "secrets-and-personal",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "no-token-echo",
+        "revoke",
+        "unsafe-migrations",
+        "local-file",
+        "emphasis",
+        "no-edit-claim"
+      ],
+      "failed": [
+        "import-spaces"
+      ],
+      "score": 0.8571428571428571,
+      "skillInvoked": false,
+      "durationMs": 14990,
+      "inputTokens": 2,
+      "outputTokens": 1414,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.037156999999999996,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-22/secrets-and-personal-baseline-1.md"
+    },
+    {
+      "task": "secrets-and-personal",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "no-token-echo",
+        "revoke",
+        "unsafe-migrations",
+        "local-file",
+        "import-spaces",
+        "emphasis",
+        "no-edit-claim"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 30812,
+      "inputTokens": 6,
+      "outputTokens": 3571,
+      "cacheReadTokens": 22067,
+      "costUsdEstimate": 0.0986687,
+      "turns": 6,
+      "answerFile": "evals/runs/2026-10-22/secrets-and-personal-skill-1.md"
+    }
+  ]
+}

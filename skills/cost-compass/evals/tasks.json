@@ -1,0 +1,45 @@
+{
+  "skill": "cost-compass",
+  "description": "Three workload descriptions. Checks look for correct arithmetic on given prices, for hidden cost drivers being counted, for missing prices being left blank, or for a forbidden behaviour such as an invented price. Case-insensitive regular expressions on the final answer.",
+  "tasks": [
+    {
+      "id": "chatbot-no-prices",
+      "prompt": "We're adding a customer support chatbot to our SaaS app using a Claude model through the API. We expect about 3,000 conversations a month, 5 back-and-forth turns each. The system prompt with our help-centre content is about 6,000 tokens. Customer messages are short, maybe 60 tokens, and replies are around 200 tokens. Roughly how much will this cost us per month?",
+      "checks": [
+        { "id": "no-invented-token-price", "kind": "must_not_match", "pattern": "\\$\\s?\\d+(\\.\\d+)?\\s*(per|/)\\s*(1M|1 ?K|million|thousand|M|MTok)\\b", "why": "No prices were given; none may be supplied from memory." },
+        { "id": "no-dollar-total", "kind": "must_not_match", "pattern": "\\$\\s?\\d[\\d,]*(\\.\\d+)?\\s*(per month|a month|/\\s*mo(nth)?\\b|monthly)", "why": "A total needs prices the user has not given." },
+        { "id": "asks-for-prices", "kind": "must_match", "pattern": "PRICE NEEDED|pricing page|confirm (the )?(current )?price", "why": "Missing prices are left blank and requested." },
+        { "id": "history-resent", "kind": "must_match", "pattern": "history|earlier turns|previous turns|re-?sen[dt]|accumulat|grows", "why": "Each turn re-sends the conversation so far." },
+        { "id": "system-prompt-every-turn", "kind": "must_match", "pattern": "(every|each) (turn|call|request)[\\s\\S]{0,120}(system prompt|6,000|6000)|(system prompt|6,000|6000)[\\s\\S]{0,120}(every|each) (turn|call|request)", "why": "The 6,000-token system prompt is billed on every turn." },
+        { "id": "caching-lever", "kind": "must_match", "pattern": "cach", "why": "A large static system prompt is the obvious caching candidate." },
+        { "id": "range", "kind": "must_match", "pattern": "\\blow\\b[\\s\\S]{0,400}\\bhigh\\b", "why": "Gives a low and high case." }
+      ]
+    },
+    {
+      "id": "email-extraction-given-prices",
+      "prompt": "Can you estimate the monthly cost of our invoice email automation? It processes about 40,000 emails a month. Each email gets one model call that extracts the fields as JSON: about 1,800 input tokens and 150 output tokens per call. Our model costs $1.50 per million input tokens and $6.00 per million output tokens. About 3% of calls fail our JSON check and get re-run once. Results go to Google Sheets and Slack, both on plans we already pay for, so ignore those. Emails have to be processed within a minute of arriving.",
+      "checks": [
+        { "id": "input-line", "kind": "must_match", "pattern": "\\$\\s?108(\\.00)?\\b", "why": "40,000 x 1,800 = 72,000,000 tokens x $1.50 / 1M = $108.00." },
+        { "id": "output-line", "kind": "must_match", "pattern": "\\$\\s?36(\\.00)?\\b", "why": "40,000 x 150 = 6,000,000 tokens x $6.00 / 1M = $36.00." },
+        { "id": "retry-total", "kind": "must_match", "pattern": "148\\.32", "why": "$144.00 x 1.03 = $148.32." },
+        { "id": "shows-tokens", "kind": "must_match", "pattern": "72,000,000|72M|72 million|72\\.0 ?M", "why": "Shows the token arithmetic." },
+        { "id": "range", "kind": "must_match", "pattern": "\\blow\\b[\\s\\S]{0,400}\\bhigh\\b", "why": "Gives a low and high case." },
+        { "id": "no-batch-for-urgent", "kind": "must_match", "pattern": "batch[\\s\\S]{0,200}(not (suitable|an option|possible|fit)|can'?t|cannot|within a minute|24 hours|delay|latency)|(within a minute|latency|delay)[\\s\\S]{0,200}batch", "why": "Batch would cut cost but breaks the one-minute requirement; say so." },
+        { "id": "no-other-token-price", "kind": "must_not_match", "pattern": "\\$\\s?(?!(1\\.50|1\\.5|6|6\\.00|0\\.75|3|3\\.00|0\\.15|0\\.60|0\\.6)\\s*(per|/))\\d+(\\.\\d+)?\\s*(per|/)\\s*(1M|1 ?million|million|MTok|M tokens)\\b", "why": "Only the user's prices (and plainly derived ones) may appear as per-token rates." }
+      ]
+    },
+    {
+      "id": "voice-agent-missing-sms-price",
+      "prompt": "Estimate the monthly cost of our AI phone receptionist. About 1,200 calls a month, averaging 4 minutes. The voice platform charges $0.05 per minute and our phone carrier $0.01 per minute. Each call has 12 model turns. Every turn sends the 2,500-token system prompt plus the whole conversation so far; each caller utterance is about 150 tokens and each model reply about 60 tokens. The model costs $0.90 per million input tokens and $4.50 per million output tokens. About 40% of calls end in a booking, and we send the caller a confirmation text message for each booking.",
+      "checks": [
+        { "id": "minutes-line", "kind": "must_match", "pattern": "\\$\\s?288(\\.00)?\\b", "why": "1,200 x 4 = 4,800 minutes x $0.06 = $288.00." },
+        { "id": "history-growth", "kind": "must_match", "pattern": "45,?660|54,?792,?000|54\\.79|\\$\\s?49\\.31", "why": "Turn k input = 2,650 + (k-1) x 210; 45,660 tokens per call; 54.792M a month; $49.31." },
+        { "id": "output-line", "kind": "must_match", "pattern": "864,?000|0\\.864|\\$\\s?3\\.89", "why": "1,200 x 12 x 60 = 864,000 output tokens = $3.89." },
+        { "id": "sms-blank", "kind": "must_match", "pattern": "PRICE NEEDED|(SMS|text)[\\s\\S]{0,120}(not given|missing|unknown|need (the|your)|provide|blank)", "why": "The SMS price was not given and must stay blank." },
+        { "id": "sms-count", "kind": "must_match", "pattern": "\\b480\\b", "why": "40% of 1,200 calls = 480 confirmation texts." },
+        { "id": "no-invented-sms-price", "kind": "must_not_match", "pattern": "\\$\\s?\\d+(\\.\\d+)?\\s*(per|/|a|each)\\s*(SMS|text|message|segment)", "why": "No SMS price was given; none may be invented." },
+        { "id": "driver", "kind": "must_match", "pattern": "minute[\\s\\S]{0,200}(largest|biggest|main|dominant|most of)|(largest|biggest|main|dominant|most of)[\\s\\S]{0,200}minute", "why": "Voice minutes, not tokens, drive the bill." }
+      ]
+    }
+  ]
+}

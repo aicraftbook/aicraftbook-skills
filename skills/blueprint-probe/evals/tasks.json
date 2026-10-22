@@ -1,0 +1,43 @@
+{
+  "skill": "blueprint-probe",
+  "description": "Three automation designs with planted problems. Each check looks for one planted problem being named, or for a forbidden behaviour. Case-insensitive regular expressions on the final answer.",
+  "tasks": [
+    {
+      "id": "lead-autoreply-sms",
+      "prompt": "Can you review this automation before I build it? A lead fills in the web form on my real-estate site. The form tool posts to an n8n webhook (it retries the webhook if it doesn't get a 200 within 5 seconds). n8n sends the lead's name, phone, email and free-text message to an LLM, which writes a friendly reply. n8n then immediately texts the reply to the lead's phone and emails it too. Finally it appends the full lead record and the reply to a Google Sheet that the whole office can see. We get about 2,000 leads a month.",
+      "checks": [
+        { "id": "human-approval", "kind": "must_match", "pattern": "human (approval|review|in the loop)|approv", "why": "Customer-facing sends with no check." },
+        { "id": "duplicates", "kind": "must_match", "pattern": "idempot|duplicate|dedup|twice", "why": "Webhook retries can double-send." },
+        { "id": "prompt-injection", "kind": "must_match", "pattern": "prompt[- ]injection|untrusted", "why": "Free-text message reaches the model." },
+        { "id": "pii", "kind": "must_match", "pattern": "\\bPII\\b|personal (data|information)|personally identifiable|privacy", "why": "Full lead records in a shared sheet." },
+        { "id": "sms-consent", "kind": "must_match", "pattern": "consent|opt[- ]?in|TCPA|opt[- ]?out", "why": "Texting leads has consent rules." },
+        { "id": "output-validation", "kind": "must_match", "pattern": "validat|schema|malformed|empty|fallback", "why": "Model output goes straight to customers." },
+        { "id": "no-invented-prices", "kind": "must_not_match", "pattern": "\\$\\s?\\d+(\\.\\d+)?\\s*(per|/)\\s*(1M|1K|million|thousand|M)\\s*(input |output )?tokens", "why": "No prices were given; none should be invented." },
+        { "id": "severity", "kind": "must_match", "pattern": "blocker", "why": "Findings are rated." }
+      ]
+    },
+    {
+      "id": "autonomous-support-agent",
+      "prompt": "Review my agent design. An AI agent reads every inbound support email for our online shop. It has three tools: issue a Stripe refund (up to $500 per call), update the customer record in our CRM, and send an email reply. It runs fully autonomously 24/7 so we don't need a support person. Is this production-ready?",
+      "checks": [
+        { "id": "injection-refunds", "kind": "must_match", "pattern": "prompt[- ]injection|untrusted", "why": "Emails can instruct the agent to refund." },
+        { "id": "approval", "kind": "must_match", "pattern": "human (approval|review|in the loop)|approv", "why": "Refunds are irreversible." },
+        { "id": "least-privilege", "kind": "must_match", "pattern": "least[- ]privilege|scope|restricted key|permission", "why": "Stripe key scope." },
+        { "id": "cap", "kind": "must_match", "pattern": "cap|limit|threshold|ceiling", "why": "Aggregate refund limit." },
+        { "id": "audit", "kind": "must_match", "pattern": "audit|log", "why": "Record of actions." },
+        { "id": "severity", "kind": "must_match", "pattern": "blocker", "why": "Findings are rated." }
+      ]
+    },
+    {
+      "id": "over-engineered-digest",
+      "prompt": "Here's my daily news digest pipeline, please review it. Five agents run in a chain every morning: Agent 1 fetches 40 RSS feeds. Agent 2 summarises each article. Agent 3 decides the category of each article - it's always one of 4 categories and the category is determined by which website the article came from. Agent 4 formats everything into Markdown with headings per category. Agent 5 posts the Markdown to a Slack channel.",
+      "checks": [
+        { "id": "category-lookup", "kind": "must_match", "pattern": "lookup|look-up|mapping|map\\b|rule|deterministic|dictionary|no (model|LLM) (is )?needed", "why": "Category by source is a lookup, not a model call." },
+        { "id": "template-format", "kind": "must_match", "pattern": "template|code|deterministic", "why": "Formatting is a template." },
+        { "id": "simplify", "kind": "must_match", "pattern": "fewer|simplif|consolidat|collapse|single|one (workflow|script|call|step)|remove", "why": "Too many agents." },
+        { "id": "failure-alert", "kind": "must_match", "pattern": "alert|notif|monitor|fail", "why": "Silent failure of a daily job." },
+        { "id": "cost", "kind": "must_match", "pattern": "cost|token", "why": "Calls per article add up." }
+      ]
+    }
+  ]
+}

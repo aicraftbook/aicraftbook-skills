@@ -1,0 +1,2312 @@
+{
+  "skill": "context-trim",
+  "date": "2026-10-21",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/context-trim/evals/independent-runs/2026-10-21/frozen",
+    "sha256": "4587df9504bf9027a067fd9449e5e9029667795adf785d4bac34b0041ea3a383",
+    "freezeRecord": "skills/context-trim/evals/independent-runs/2026-10-21/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "c49c4e7493f70a2f60a0500bbc5639b66ecaf2aba5dd90558c8fb71e1f2162b2"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanCombined": 0.936,
+      "meanRubric": 0.9,
+      "meanCheckFraction": 0.972,
+      "falseClaimRuns": 5,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 22273.583,
+      "meanCostUsd": 0.065
+    },
+    "skill": {
+      "n": 12,
+      "meanCombined": 0.993,
+      "meanRubric": 0.986,
+      "meanCheckFraction": 1,
+      "falseClaimRuns": 11,
+      "skillInvocationRate": 1,
+      "meanDurationMs": 29119.583,
+      "meanCostUsd": 0.101
+    }
+  },
+  "perTask": {
+    "T1-invoice-api": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.861,
+        "meanRubric": 0.833,
+        "meanCheckFraction": 0.889,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 25439,
+        "meanCostUsd": 0.073
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.973,
+        "meanRubric": 0.945,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 3,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 26807.667,
+        "meanCostUsd": 0.095
+      }
+    },
+    "T2-acme-site-agents": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 25461,
+        "meanCostUsd": 0.067
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 3,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 37746.333,
+        "meanCostUsd": 0.124
+      }
+    },
+    "T3-csv-tidy-cli": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.917,
+        "meanRubric": 0.833,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 22317.333,
+        "meanCostUsd": 0.065
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 29744.333,
+        "meanCostUsd": 0.101
+      }
+    },
+    "T4-md-slugify-clean": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.967,
+        "meanRubric": 0.933,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 3,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 15877,
+        "meanCostUsd": 0.053
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 3,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 22180,
+        "meanCostUsd": 0.085
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "T1-invoice-api",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "f140cbe74b",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 23859,
+      "numTurns": 10,
+      "costUsd": 0.0718766,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9982,
+        "cacheRead": 37026,
+        "output": 2823
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_format_check_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_controllers_path_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_vitest_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "c5_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_false_missing_lib",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.833,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Says format:check doesn't exist and there's no Prettier; replaces it with npm run lint, a real script."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says src/controllers/ doesn't exist and routers live in src/routes/; proposed file updated to match."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the contradiction and resolves it from code: named export invoicesRouter, imported by name in server.ts."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Says Jest is stale; repo uses Vitest with npm test and npm run test:watch; proposal updated."
+        },
+        {
+          "id": "R5",
+          "score": 0,
+          "reason": "Notes PAYMENTS_KEY is unused but deliberately keeps the key in the proposed file; no .env move or rotation advice."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Clear proposal awaiting approval with reasoned change list, no edit claims; but not shorter (adds content) and keeps the secret."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [
+        "\"The only check is npm run lint (ESLint)\": npm run typecheck is also a check script in package.json."
+      ],
+      "combined": 0.792
+    },
+    {
+      "task": "T1-invoice-api",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "2ae05ee197",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 26647,
+      "numTurns": 10,
+      "costUsd": 0.0753283,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 10130,
+        "cacheRead": 37023,
+        "output": 3109
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_format_check_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_controllers_path_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_vitest_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_false_missing_lib",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags that format:check doesn't exist and no Prettier is installed; replaces it with npm run lint before commits."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States src/controllers/ doesn't exist and routers are in src/routes/invoices.ts; layout updated accordingly."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Identifies the export-default contradiction and resolves it from code: named invoicesRouter, imported by name in server.ts."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags Jest as stale, cites vitest run and npm run test:watch, and updates commands."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Removes the key and points to a secret store, but doesn't recommend rotating it or using an untracked .env."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Accurate, presented as a proposal with a change table and no edit claims, but not shorter: added content makes it similar or longer."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T1-invoice-api",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "9b5f71d876",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 25811,
+      "numTurns": 10,
+      "costUsd": 0.07326719999999999,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9983,
+        "cacheRead": 36992,
+        "output": 2962
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_format_check_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_controllers_path_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_vitest_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "c5_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_false_missing_lib",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.833,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Says the format:check script and Prettier don't exist; replaces the step with npm run lint and offers to restore it if a formatter is added."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says src/controllers/ doesn't exist; endpoints live in src/routes/ (invoices.ts); proposal updated to match."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the export-default contradiction and resolves it from the code: named export invoicesRouter, imported by name in server.ts."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Identifies Jest as stale; repo uses Vitest; recommends npm test and npm run test:watch."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Flags the key and removes it from the proposal, but never mentions rotation or moving it to an untracked .env."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Concise, accurate proposal with a reason for each change; framed as awaiting approval; explicitly says no files were edited."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "\"The only checker is npm run lint\" — npm run typecheck also exists as a checker."
+      ],
+      "combined": 0.875
+    },
+    {
+      "task": "T1-invoice-api",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "0a88d959a5",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 28521,
+      "numTurns": 12,
+      "costUsd": 0.1004872,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 14498,
+        "cacheRead": 59752,
+        "output": 3650
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_format_check_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_controllers_path_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_vitest_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_false_missing_lib",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags the missing format:check script and absent Prettier dependency, and replaces it with the real lint and typecheck scripts."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States src/controllers/ doesn't exist, points to src/routes/invoices.ts, and the proposal uses src/routes/."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the contradiction and resolves it from the code: named export invoicesRouter, imported by name in server.ts."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Identifies Vitest from package.json scripts and the test imports, notes no jest dependency, and replaces the line with npm run test:watch."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the key, recommends revoking it if real, moves the value out of the file, and omits it from the proposal."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Proposal is shorter and accurate and awaits approval, but the removal list cites wrong CLAUDE.md line numbers, and the file-length claim is wrong."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "CLAUDE.md is 39 lines; it is about 31.",
+        "Several CLAUDE.md line references are off: format:check is line 10, not 9; Jest is line 11, not 8; db.ts is line 17, not 19; money.ts is line 18, not 20; the key section is lines 28-31, not 33-35.",
+        "Says it couldn't check .gitignore, but .gitignore was provided.",
+        "Says 'The file is checked in' while also stating this is not a git repo."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-invoice-api",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "0d52acb72d",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 29272,
+      "numTurns": 12,
+      "costUsd": 0.0912653,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 12040,
+        "cacheRead": 39493,
+        "output": 3914
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_format_check_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_controllers_path_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_vitest_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_false_missing_lib",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags that the format:check script is missing and no Prettier is installed; removes it and points to npm run lint."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says src/controllers/ doesn't exist and points to src/routes/invoices.ts."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the contradiction and resolves it from the code: invoicesRouter is a named export, imported by name."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Identifies vitest via the package.json scripts, notes Jest isn't installed, and substitutes npm test and npm run test:watch."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the key as a secret, advises revoking it and that git history keeps it, and uses only the variable name in the proposal."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Shorter, accurate proposal with reasoned removals and an approval request. But it labels four accurate lines 'Fix now' and cites several wrong line numbers."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Claims 9 Fix-now findings, but rows 6-9 are accurate lines needing no change.",
+        "CLAUDE.md line numbers are wrong: format:check is line 10, not 8; Jest is line 11, not 9-10; the contradiction is lines 22 vs 25, not 18 vs 22; zod is line 24, not 21; money.ts is line 18, not 24.",
+        "amount_cents INTEGER is at src/lib/db.ts:7, not line 6."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-invoice-api",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "05f9364b4c",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 22630,
+      "numTurns": 11,
+      "costUsd": 0.0939802,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 14293,
+        "cacheRead": 42522,
+        "output": 3254
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_format_check_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_controllers_path_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_vitest_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_false_missing_lib",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags format:check as a missing script with no Prettier installed, removes it, and offers npm run lint as the replacement."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States src/controllers/ does not exist and points to src/routes/invoices.ts; the proposal uses src/routes/."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Identifies the export default contradiction and resolves it from the code: invoicesRouter is a named export imported by name."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags Jest as wrong because the repo uses Vitest, and replaces it with npm test and npm run test:watch."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the key as a secret, moves it to the PAYMENTS_KEY env var, advises revoking it if real, and leaves it out of the proposal."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Shorter, accurate proposal with every removal listed and reasoned; awaits approval and claims no edits. Some CLAUDE.md line references are wrong."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "CLAUDE.md is described as 38 lines; it is about 31.",
+        "CLAUDE.md line numbers are off: format:check is about line 10, not 8; Jest is about 11, not 9; controllers is 16, not 15; export default is 25, not 21; clean code is 26, not 22; the key is 30, not 36.",
+        "The summary says 7 Fix now findings, but the table lists 6 Fix now items.",
+        "It asserts the file is checked in and in git history, but no git information was provided."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T2-acme-site-agents",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "12d7fec481",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 27721,
+      "numTurns": 11,
+      "costUsd": 0.0721685,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9100,
+        "cacheRead": 36625,
+        "output": 3209
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_e2e_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_posts_path",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_tslint_to_eslint",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_release_notes_elsewhere",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Notes there is no e2e script and no Playwright/Cypress, so the merge rule can't be followed. Removes it and asks whether a suite exists elsewhere."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Correctly says posts live in src/content/posts/*.md, citing POSTS_DIR in src/lib/posts.ts."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Identifies ESLint 9 flat config and npm run lint; says TSLint isn't installed and is deprecated."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the contradiction, removes the exception visibly, and explicitly asks for confirmation that this matches team policy."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the credential, recommends .env.local or a secret store, says rotate if real, notes DATABASE_URL is unused. Proposal has no password."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Moves release notes to CHANGELOG.md, gives a concise proposal with reasons for each removal, and states no files were changed."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-acme-site-agents",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "fd84a2e5ce",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 22476,
+      "numTurns": 9,
+      "costUsd": 0.0628448,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 8548,
+        "cacheRead": 24308,
+        "output": 2621
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_e2e_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_posts_path",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_tslint_to_eslint",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_release_notes_elsewhere",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States there is no e2e script or framework and removes the e2e merge requirement from the proposed version."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Correctly says posts live in src/content/posts/, citing POSTS_DIR in src/lib/posts.ts, and confirms the front matter is correct."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says tslint is absent and the repo uses ESLint via npm run lint and eslint.config.mjs; replaces it in the proposal."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the contradiction, picks 'no exception' and leaves the decision to the user."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the credential, says to rotate if real and use gitignored .env, notes nothing reads it, and omits it from the proposal."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Moves release notes to CHANGELOG.md, gives reasons for each removal, presents the version as a proposal and says no files were edited."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-acme-site-agents",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "c786b6166a",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 26186,
+      "numTurns": 9,
+      "costUsd": 0.0654542,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 8349,
+        "cacheRead": 24162,
+        "output": 2963
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_e2e_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_posts_path",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_tslint_to_eslint",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_release_notes_elsewhere",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Notes there's no e2e script and no Playwright/Cypress, so the merge rule can't be followed. Drops it and lists it as a user decision."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says posts are in src/content/posts/*.md, not content/blog, citing POSTS_DIR in src/lib/posts.ts:6. Confirms the front matter is correct."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says TSLint isn't installed and is deprecated. Repo uses ESLint 9 flat config in eslint.config.mjs, so the command should be npm run lint."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the contradiction, tells the user to pick one rule and recommends dropping the exception, so the choice is visible."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the credential, says remove it, put env vars in gitignored .env.local or .env.example, and rotate if it was ever real. Cleaned version has no password."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Says to move release notes to CHANGELOG.md. Cleaned version is shorter and accurate, each removal has a reason, and it's framed as a proposal with an offer to write it."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T2-acme-site-agents",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "9efd2230b2",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 41978,
+      "numTurns": 13,
+      "costUsd": 0.12501400000000001,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 17742,
+        "cacheRead": 46600,
+        "output": 4937
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_e2e_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_posts_path",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_tslint_to_eslint",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_release_notes_elsewhere",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Notes there's no e2e script or Playwright/Cypress, removes the command, and asks the user whether an e2e suite exists."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says content/blog is absent, cites POSTS_DIR at src/lib/posts.ts:6 and the existing src/content/posts file, and fixes the path."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags tslint as not installed with no config, points to ESLint 9 via package.json:10 and eslint.config.mjs, and replaces it with npm run lint."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Calls out the line 21 vs 23 contradiction, proposes the stricter rule, and explicitly asks the user to confirm."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the credential, recommends rotating it, keeps only the variable name in secret storage, omits the password from the proposal, and notes nothing reads it."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Moves release notes to CHANGELOG.md, gives a shorter accurate proposal, lists each removal with a reason, and says nothing was changed."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "The claim that Claude Code v2.1.277+ reads AGENTS.md when no CLAUDE.md exists, and stops if a CLAUDE.md is added, is version-specific and unsupported by anything in the repo.",
+        "It says the password 'is in history' while also stating the directory is not a git repo, which is inconsistent."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T2-acme-site-agents",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "7ddce8f4ea",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 35654,
+      "numTurns": 12,
+      "costUsd": 0.1245402,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 17593,
+        "cacheRead": 40122,
+        "output": 5014
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_e2e_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_posts_path",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_tslint_to_eslint",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_release_notes_elsewhere",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Notes there is no e2e script or Playwright/Cypress, removes the merge rule, and asks whether an e2e suite exists elsewhere."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies that content/blog is wrong and that posts are in src/content/posts per posts.ts:6; the proposal is corrected."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags tslint as absent from dependencies and points to eslint.config.mjs and npm run lint. Not mentioning deprecation is acceptable."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the line 21 vs 23 conflict, removes the copy-fix line pending an answer, and asks the user which rule wins."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the credential, advises rotating it if real, and keeps only the variable name; the proposal contains no password."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Moves release notes to CHANGELOG.md, gives a shorter proposal, lists removals with reasons, and states nothing was changed."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Claims Claude Code loads AGENTS.md when no CLAUDE.md exists 'v2.1.277 or later': an unsupported or fabricated version-specific claim.",
+        "Says 'I did not read the two page.tsx files', yet the verification log cites both files as evidence for src/app/.",
+        "The corrected totals (5 Fix now, 3 Should fix, 1 Optional) do not match the table: there are 2 Should fix items, with finding 8 being a note."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T2-acme-site-agents",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "b223c68c65",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 35607,
+      "numTurns": 12,
+      "costUsd": 0.12385320000000001,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 17562,
+        "cacheRead": 46592,
+        "output": 4893
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_e2e_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_posts_path",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_tslint_to_eslint",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_release_notes_elsewhere",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags that the e2e script doesn't exist and no Playwright/Cypress is present, removes it, and asks where e2e tests live."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Correctly points to src/content/posts per src/lib/posts.ts:6 and notes no content/ folder exists."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Notes tslint isn't installed, the repo uses ESLint 9 via eslint.config.mjs, TSLint is deprecated, and replaces it with npm run lint."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the contradiction, keeps an explicit exception in the proposal, and asks the user to confirm whether it stays."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the password, says to revoke and replace it, and the proposal keeps only the variable name. It also notes nothing reads DATABASE_URL."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Moves release notes to CHANGELOG.md, gives a shorter proposal, lists each removal with a reason, and states nothing was changed."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Cites package.json:24 for eslint; line 24 is @types/react and eslint is on line 25.",
+        "Says the password 'is in git history' while also stating there is no .git, so this is unverified.",
+        "Claims Claude Code 'v2.1.277 or later' reads AGENTS.md when no CLAUDE.md exists; this is an unsupported, likely fabricated version claim."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T3-csv-tidy-cli",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "cb34d7ed87",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 24036,
+      "numTurns": 8,
+      "costUsd": 0.0638249,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9364,
+        "cacheRead": 36729,
+        "output": 2268
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_release_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_entry_point",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_real_ci",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_node_version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Says there is no `npm run release` script (only test and lint) and that the entry point is bin/cli.js."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies GitHub Actions, the missing .travis.yml, the Node 20/22 matrix and engines >=20. Doesn't cite parseArgs or node --test, but the core point is covered."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Says zero-deps is false and lists all three deps, but never frames it as contradicting the chalk rule."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the duplicated performance rule, the vague 'best practices' rule and the README copy, and gives a reason for each."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Flags the token, advises revoking it, drops the ~/.npmrc advice and leaves it out of the proposal. Doesn't suggest an NPM_TOKEN env var or CI secret."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Gives a shorter, accurate proposal that keeps the tidy.js I/O rule, gives reasons for removals and states no edits were made."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-csv-tidy-cli",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "41f45121a2",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 21324,
+      "numTurns": 9,
+      "costUsd": 0.0647867,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9438,
+        "cacheRead": 36587,
+        "output": 2336
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_release_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_entry_point",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_real_ci",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_node_version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States that `npm run release` is absent (only test and lint exist) and that the entry point is bin/cli.js, not bin/csv-tidy.js."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags GitHub Actions instead of Travis, the 20/22 matrix and engines >=20 against Node 16. Omits the parseArgs/node --test evidence, but the core points are correct."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Says zero-deps is false and lists all three deps, but never names the contradiction with the chalk rule."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the duplicate performance rule, the vague best-practices rule and the README duplication, each with a reason, and proposes removal."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Removes the token, drops the ~/.npmrc advice and advises rotation, but never suggests an NPM_TOKEN env var or CI secret."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Shorter, accurate proposal that keeps the tidy.js I/O rule, gives reasons for removals and states clearly that no edit was made."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-csv-tidy-cli",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "25f5ee8239",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 21592,
+      "numTurns": 9,
+      "costUsd": 0.0662039,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9606,
+        "cacheRead": 36839,
+        "output": 2408
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_release_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_entry_point",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_real_ci",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_node_version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags both errors: `npm run release` is missing (only test and lint exist), and the entry point is bin/cli.js, not bin/csv-tidy.js."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags Travis vs GitHub Actions (ci.yml, Node 20/22) and Node 16 vs engines >=20. Doesn't cite parseArgs or node --test as evidence."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Says zero-deps is false and lists chalk, csv-parse, csv-stringify, but never names the contradiction with the 'use chalk' rule."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags the duplicated performance rule, the vague 'best practices' rule, and the README duplication, and replaces the copy with a pointer."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Removes the token, advises revoking it and checking history, drops the ~/.npmrc advice. Doesn't suggest an NPM_TOKEN env var or CI secret."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Shorter, accurate proposal that keeps the tidy.js I/O rule and gives reasons for removals. Clearly says it did not edit files."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-csv-tidy-cli",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "4586d92b2b",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 34279,
+      "numTurns": 13,
+      "costUsd": 0.1045444,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 15271,
+        "cacheRead": 43144,
+        "output": 3913
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_release_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_entry_point",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_real_ci",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_node_version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags npm run release as missing (only test/lint), and the verification log notes bin/csv-tidy.js is not found; the real entry is bin/cli.js."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Travis/.travis.yml absent, CI is GitHub Actions with Node 20/22; Node 16 contradicts engines >=20. Doesn't mention parseArgs/node --test."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Notes the zero-deps vs chalk contradiction and cites chalk, csv-parse and csv-stringify in package.json and imports in cli.js."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Removes the duplicate performance rules and 'best practices' as vague, and drops the README usage copy as a duplicate, with reasons."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the secret, says to revoke and replace it, use an env/CI secret store, drops the ~/.npmrc advice; the proposal has no token."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Shorter accurate proposal that keeps the tidy.js no-I/O rule, lists removals with reasons, asks approval and claims no edits."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T3-csv-tidy-cli",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "7737c62c73",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 27745,
+      "numTurns": 12,
+      "costUsd": 0.09897990000000001,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 15117,
+        "cacheRead": 39859,
+        "output": 3451
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_release_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_entry_point",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_real_ci",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_node_version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags that `npm run release` is missing (only test and lint exist) and corrects the entry point to bin/cli.js from package.json."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies GitHub Actions on Node 20/22, the missing .travis.yml, and Node 16 contradicting engines >=20. Does not mention parseArgs or node --test."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Lists chalk, csv-parse and csv-stringify, calls zero-deps wrong, notes the contradiction with the chalk rule, and offers the alternative reading."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Removes the duplicated performance lines and 'Follow best practices' as vague. Replaces the README copy with a pointer and gives reasons."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the secret, advises revoking it and using NPM_TOKEN, drops the ~/.npmrc advice, and leaves the token out of the proposal."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Shorter accurate proposal keeps the tidy.js no-I/O rule, lists removals with reasons, and states nothing has changed."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Summary claims 9 Fix-now and 1 Should-fix findings, but the table has 6 Fix now and 3 Should fix.",
+        "Asserts the token 'is in git history', which the provided material does not establish."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T3-csv-tidy-cli",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "6b80c8d79a",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 27209,
+      "numTurns": 12,
+      "costUsd": 0.0982486,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 15027,
+        "cacheRead": 43046,
+        "output": 3382
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_release_named",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_real_entry_point",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_real_ci",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_node_version",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_secret_handled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_no_edit_claim",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Flags that `npm run release` is not a script (only test and lint exist) and corrects the entry point to `bin/cli.js` per package.json bin."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Notes there is no .travis.yml, CI is GitHub Actions with Node 20/22, and Node 16 contradicts engines >=20. Doesn't mention parseArgs or node --test."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Calls the zero-deps rule false, lists chalk, csv-parse and csv-stringify, and notes it contradicts the chalk rule."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Flags both performance rules and 'best practices' as vague or duplicated, and replaces the README copy with a pointer, giving reasons."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags the token as a secret to revoke, drops the ~/.npmrc advice, suggests an NPM_TOKEN env var or CI secret, and keeps the token out of the proposal."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Shorter, accurate proposal that keeps the I/O rule, lists every removal with a reason, and says no files were changed."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "CLAUDE.md line numbers are wrong throughout: release is line 9, not 25; entry point 13, not 10; Node 16 14, not 11; Travis 15, not 12; zero deps 19, not 16; token and paste 28-29, not 29-30; performance rules 21 and 24, not 19 and 21; chalk 20, not 18.",
+        "Says the CLAUDE.md file is 47 lines; it is about 45.",
+        "Claims the token 'is in git history' without any evidence that the project is a git repo.",
+        "Counts 11 issues, but #10 duplicates #9 and #11 is a 'keep', not an issue.",
+        "The 'What loads' section has a garbled claim about '[redacted] [redacted]'s own docs' that isn't grounded in the provided files."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T4-md-slugify-clean",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "0fce852cc8",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15933,
+      "numTurns": 7,
+      "costUsd": 0.052239299999999995,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7795,
+        "cacheRead": 24473,
+        "output": 1860
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_bench",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_missing_watch",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_placeholder_not_secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_duplicate_found",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Concludes the file matches the repo after checking every command against package.json and every path, including CHANGELOG Unreleased and the -t example."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the duplicated 'Keep the public API in src/index.ts' rule and removes it in the proposed version."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "No false alarms. Says the duplicate is the only real problem, marks the other nits optional, and correctly reports no dependencies and no tokens."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Keeps every rule, including bench, CHANGELOG and dist. The only change is merging duplicates, and it says so."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Explicitly says the file was not edited and asks for approval before applying."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Says 'All five scripts' but lists six (test, test:watch, typecheck, lint, build, bench)."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T4-md-slugify-clean",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "430e2969e0",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16500,
+      "numTurns": 7,
+      "costUsd": 0.05489429999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7989,
+        "cacheRead": 24463,
+        "output": 2048
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_bench",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_missing_watch",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_placeholder_not_secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_duplicate_found",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Checks all commands against package.json and all paths against the repo, then concludes the file is accurate. Miscounts scripts as 'five' while listing six."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the duplicated 'Keep the public API in src/index.ts' rule and removes it in the rewrite."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "No false alarms. Placeholder and dependencies are correctly confirmed. The overlap and wording nits are minor, and issue 4 explicitly says nothing is wrong."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Rewrite keeps every accurate rule (bench, CHANGELOG, dist/), merges the overlap and drops only the duplicate. It says the same rules remain in fewer lines."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Explicitly says CLAUDE.md was not edited and offers to apply the change."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "'All five scripts exist' miscounts: six scripts are listed (test, test:watch, typecheck, lint, bench, build)."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T4-md-slugify-clean",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "dfb7a246ae",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15198,
+      "numTurns": 6,
+      "costUsd": 0.051328799999999994,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7824,
+        "cacheRead": 24408,
+        "output": 1758
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_bench",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_missing_watch",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_placeholder_not_secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_duplicate_found",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Concludes the file matches the repo after checking scripts, paths, the -t filter, dependencies and changelog. It miscounts the scripts as five instead of six."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies the duplicated 'Keep the public API in src/index.ts' rule and removes it in the proposal."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "The 'missing guidance' claim about createSlugger is a weak alarm: the semver rule already covers all exports. It is not labelled minor."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Keeps the bench, CHANGELOG and dist rules. But it is a full rewrite with unlisted changes (shortened description, dropped 'may change') and adds hardcoded export names."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "States explicitly that the file was not edited and asks whether to apply the change."
+        }
+      ],
+      "rubricScore": 0.8,
+      "falseClaims": [
+        "'All five scripts exist': package.json has six scripts, and CLAUDE.md references all six.",
+        "'Nothing says that createSlugger is part of the public API': CLAUDE.md says everything exported from src/index.ts is semver-covered, and createSlugger is exported there.",
+        "'it presumably de-duplicates slugs': the code visibly does this, so the hedge misreads available evidence.",
+        "Listing exported names 'so they can't drift unnoticed': hardcoding names in CLAUDE.md creates a new place that can drift."
+      ],
+      "combined": 0.9
+    },
+    {
+      "task": "T4-md-slugify-clean",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "29d1b90858",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 23915,
+      "numTurns": 10,
+      "costUsd": 0.09080289999999999,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 13833,
+        "cacheRead": 42849,
+        "output": 3117
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_bench",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_missing_watch",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_placeholder_not_secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_duplicate_found",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Concludes every command and path checks out against package.json and the repo; it left unicode test name and the transliterate option unchecked, but the overall conclusion is correct."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags line 27 as a duplicate of line 24 and proposes removing it."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "No false alarms. TOKEN_PLACEHOLDER is treated as a placeholder and no runtime deps is verified. The nits are labelled Optional."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Minimal diff that drops the duplicate and merges the semver sentence. Bench, CHANGELOG and dist rules are kept, and removals are listed with reasons."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "States nothing has been changed and asks for approval before writing."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Finding 3 cites CLAUDE.md:10 for the bench line; that text is on line 12 (line 10 is the typecheck/lint rule).",
+        "Claims it didn't read the test files or src/slugify.ts, yet it lists the test file names and src/index.ts exports, and all files were provided."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T4-md-slugify-clean",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "ab002957d3",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 21517,
+      "numTurns": 10,
+      "costUsd": 0.0890677,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 14085,
+        "cacheRead": 60277,
+        "output": 2668
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_bench",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_missing_watch",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_placeholder_not_secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_duplicate_found",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Verifies every command against package.json and every path; concludes the file is accurate. dist/ is marked not checked but correctly called build output."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies the repeated 'Keep the public API in src/index.ts' rule and proposes removing it. The cited line numbers are wrong."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "No false alarms. The placeholder, the no-dependencies rule and all commands are confirmed; the merge nit is labelled Optional."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Minimal diff: it removes the duplicate and merges the overlapping bullet, keeps the bench, CHANGELOG and dist rules, and gives reasons for each removal."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "States nothing has been changed and asks for approval before writing."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "CLAUDE.md is said to be 34 lines; it is about 27 lines.",
+        "Proposed file is said to be 31 lines; it is about 25 lines.",
+        "The duplicate is cited at CLAUDE.md:33 and :32; the actual lines are about 27 and 24.",
+        "The Layout public-API bullet is cited as line 21; it is about line 16."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "T4-md-slugify-clean",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "2c98629df9",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 21108,
+      "numTurns": 9,
+      "costUsd": 0.0746403,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 10684,
+        "cacheRead": 39683,
+        "output": 2792
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_no_edit_claim",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_no_false_missing_bench",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_no_false_missing_watch",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_placeholder_not_secret",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_duplicate_found",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Checked every command against package.json with correct line numbers, verified the paths, and concluded the file is accurate. Calling dist/ 'not checked' is reasonable."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identified the repeated 'Keep the public API in src/index.ts' rule and proposed removing the final bullet."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "No false alarms. TOKEN_PLACEHOLDER and runtime dependencies were handled correctly, and the overlap nit was labelled Optional."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Minimal diff: dropped the duplicate and merged the overlapping rule into Layout without losing content. Every removal is listed with a reason."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "States nothing has been changed and asks the user to approve, edit, or leave the file."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "CLAUDE.md is 27 lines, not 31, and the proposal is 25 lines, not 29.",
+        "Line references are off: the duplicate is at line 27, not ~28, and the Layout src/index.ts line is at 16, not ~20."
+      ],
+      "combined": 1
+    }
+  ]
+}

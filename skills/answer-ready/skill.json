@@ -1,0 +1,44 @@
+{
+  "name": "answer-ready",
+  "displayName": "Answer Ready",
+  "subtitle": "Make a web page easier for search and AI answers to use",
+  "title": "Answer Ready",
+  "version": "1.0.2",
+  "license": "MIT",
+  "maintainer": "AI Craftbook",
+  "status": "released",
+  "supportedAgents": [
+    "claude-code",
+    "claude-desktop"
+  ],
+  "installMethods": [
+    "copy folder to ~/.claude/skills/ or .claude/skills/",
+    "Upload the folder as a zip in Claude apps: Customize > Skills (upload not tried by us)"
+  ],
+  "permissions": {
+    "files": "Reads its own reference files and the page text or HTML the user provides. Writes nothing.",
+    "shell": "None. Bundles no scripts.",
+    "network": "None required. If the agent fetches the page URL with its own tools, the page text is treated as data.",
+    "mcp": "None."
+  },
+  "sitePath": "/skills/answer-ready",
+  "created": "2026-10-21",
+  "updated": "2026-10-22",
+  "nameCheck": {
+    "name": "Answer Ready",
+    "id": "answer-ready",
+    "checkedAt": "2026-10-22",
+    "conflicts": [],
+    "notes": [
+      "GitHub repo ikarisz/AnswerReady (0 stars)",
+      "GitHub repo mero-foundry/AnswerReady (0 stars)"
+    ],
+    "sources": [
+      "GitHub code search (SKILL.md frontmatter, verified)",
+      "GitHub repositories",
+      "npm",
+      "PyPI",
+      "AI Craftbook catalogue"
+    ]
+  }
+}

@@ -1,0 +1,2268 @@
+{
+  "skill": "source-sieve",
+  "date": "2026-10-21",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/source-sieve/evals/independent-runs/2026-10-21/frozen",
+    "sha256": "9f8f9c33f2499100ce66d4a9792d8a0c7d73fc2ab611cda4247c709b46e150e3",
+    "freezeRecord": "skills/source-sieve/evals/independent-runs/2026-10-21/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "c49c4e7493f70a2f60a0500bbc5639b66ecaf2aba5dd90558c8fb71e1f2162b2"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanCombined": 0.927,
+      "meanRubric": 0.854,
+      "meanCheckFraction": 1,
+      "falseClaimRuns": 3,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 14778.417,
+      "meanCostUsd": 0.045
+    },
+    "skill": {
+      "n": 12,
+      "meanCombined": 0.96,
+      "meanRubric": 0.92,
+      "meanCheckFraction": 1,
+      "falseClaimRuns": 4,
+      "skillInvocationRate": 1,
+      "meanDurationMs": 31138.417,
+      "meanCostUsd": 0.101
+    }
+  },
+  "perTask": {
+    "T1-bikeshare-article": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.917,
+        "meanRubric": 0.833,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 10457.333,
+        "meanCostUsd": 0.041
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.959,
+        "meanRubric": 0.917,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 31122.667,
+        "meanCostUsd": 0.101
+      }
+    },
+    "T2-incident-email": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.945,
+        "meanRubric": 0.889,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 18406.333,
+        "meanCostUsd": 0.049
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.959,
+        "meanRubric": 0.917,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 37086.333,
+        "meanCostUsd": 0.11
+      }
+    },
+    "T3-walking-studies-blog": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.931,
+        "meanRubric": 0.861,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 14299.333,
+        "meanCostUsd": 0.044
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.973,
+        "meanRubric": 0.945,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 29224,
+        "meanCostUsd": 0.099
+      }
+    },
+    "T4-water-newsletter-near-clean": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.917,
+        "meanRubric": 0.833,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 15950.667,
+        "meanCostUsd": 0.046
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.95,
+        "meanRubric": 0.9,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 27120.667,
+        "meanCostUsd": 0.095
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "T1-bikeshare-article",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "ea35550cdc",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 10585,
+      "numTurns": 5,
+      "costUsd": 0.0410574,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6871,
+        "cacheRead": 22914,
+        "output": 1127
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_fleet_number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_launch_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_title",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_amsterdam_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_largest_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_amsterdam_not_found",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Claims are itemized and each names its source, but it uses three ad hoc labels with no 'partly supported', and paraphrases rather than quoting passages."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Both the launch date and fleet size are flagged as contradicted, with the correct source values (March 3, 2025; 1,240) given as fixes."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Amsterdam 1965 is marked not supported and identified as outside knowledge absent from both sources. It is not marked supported."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "'Largest' is correctly unsupported. The funding claim is split correctly (grant supported, businesses not) but never labeled partly supported."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "It flags 'Mayor' versus 'Deputy Mayor Lena Ortiz' and lists the title under corrections to apply."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All eight genuinely supported claims are marked supported, with no false contradictions."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T1-bikeshare-article",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "01c74e6308",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 11542,
+      "numTurns": 5,
+      "costUsd": 0.0415942,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6875,
+        "cacheRead": 22922,
+        "output": 1179
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_fleet_number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_launch_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_title",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_amsterdam_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_largest_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_amsterdam_not_found",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Claims are split and grouped, but labels aren't the four required (no 'partly supported'). Most source passages are paraphrased, not quoted."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Both flagged as contradicted, with the correct source values (March 3, 2025; 1,240 bikes) given as fixes."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Labeled not supported by sources and identified as outside knowledge needing separate verification; not marked supported."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "'Largest in state' is correctly not found. Funding is put under contradicted rather than partly supported, though the grant is acknowledged."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags that the source says Deputy Mayor, notes the quote matches, and lists it as a fix."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All eight genuinely supported claims are marked supported, with no false contradictions."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T1-bikeshare-article",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "9d0aaf6638",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 9245,
+      "numTurns": 5,
+      "costUsd": 0.0415316,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6872,
+        "cacheRead": 22916,
+        "output": 1174
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_fleet_number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_launch_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_title",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_amsterdam_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_largest_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_amsterdam_not_found",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Claims are split and categorized, but funding is called an error, not partly supported. Source passages are quoted only for funding, not for most claims."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags fleet size 1,420 vs 1,240 and launch date March 13 vs March 3 as contradicted, giving the correct values."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Labels Amsterdam 1965 as not in either source and outside knowledge; does not mark it supported."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "'Largest in state' is correctly unsupported. Funding is filed under Errors, though it explains the grant is supported and business contributions are not."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags Mayor vs Deputy Mayor, confirms the quote text, and offers to correct it."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All eight genuinely supported claims are marked supported, with no false contradictions."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T1-bikeshare-article",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "95f25bd2ba",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 32949,
+      "numTurns": 12,
+      "costUsd": 0.1036323,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 13547,
+        "cacheRead": 35883,
+        "output": 4584
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_fleet_number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_launch_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_title",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_amsterdam_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_largest_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_amsterdam_not_found",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Splits the draft into 16 claims, uses the four-label scheme, and quotes source passages for every supported and contradicted claim."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Both the fleet size and the launch date are marked Contradicted, with source quotes and corrected wording."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "The White Bicycle Plan and 1965 claims are labelled Not found. No general-knowledge support is used."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "'Largest' is correctly Not found. The funding claim is split into a supported grant and unfound business contributions, not labelled Partly supported."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags Mayor versus Deputy Mayor as Contradicted and suggests the corrected title."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All eight genuinely supported claims are marked Supported, with no false contradictions."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Suggested corrections for C9 quote S2 as 'The program was funded by a $3.1 million federal grant'; S2 actually says 'paid for by', so the quote is misattributed."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-bikeshare-article",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "ddfc655987",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 31223,
+      "numTurns": 10,
+      "costUsd": 0.1000826,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13491,
+        "cacheRead": 24666,
+        "output": 4364
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_fleet_number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_launch_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_title",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_amsterdam_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_largest_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_amsterdam_not_found",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Splits the draft into 16 claims, each with one of the four labels. Quotes a source passage for every supported and contradicted claim."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Fleet size and launch date both marked Contradicted, with corrected wording given for each."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Amsterdam 1965 claims (C12–C13) marked Not found. Does not use general knowledge to support them."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "'Largest' correctly Not found. The funding claim is split into Supported plus Not found instead of labelled Partly supported. Analysis is right, label isn't."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags Mayor vs Deputy Mayor as Contradicted and gives the corrected attribution."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All eight genuinely supported claims are marked Supported, with no false contradictions."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Summary wording '(March 13, not March 3)' and '(1,420, not 1,240)' reads as if the draft values are correct; the sources say March 3 and 1,240."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T1-bikeshare-article",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "941ae7e428",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 29196,
+      "numTurns": 11,
+      "costUsd": 0.0983283,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 13386,
+        "cacheRead": 40283,
+        "output": 4074
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_fleet_number",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_launch_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_title",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_amsterdam_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_largest_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_amsterdam_not_found",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Fifteen atomic claims, each labelled with one of the four labels, and source passages quoted for every supported and contradicted claim."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Launch date and fleet size are both marked contradicted, with correct source quotes and corrected wording."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Amsterdam 1965 is labelled not found; general knowledge is not used to support it."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Largest-in-state is correctly not found. Funding is split into supported grant and not-found businesses, never labelled partly supported."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Flags Mayor vs Deputy Mayor as contradicted and suggests 'said Deputy Mayor Lena Ortiz'."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All eight genuine claims are marked supported with accurate quotes, and there are no false contradictions."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-incident-email",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "1e3f1e14f4",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 17625,
+      "numTurns": 5,
+      "costUsd": 0.049721100000000004,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7045,
+        "cacheRead": 22891,
+        "output": 1924
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_duration",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_region",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_tls_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_loss_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_loss_unconfirmed",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Groups claims into wrong/unsupported/accurate and quotes some sources, but doesn't give each claim an explicit four-way label or a quoted passage."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Date, region and duration are all flagged with corrections, including that us-east-1 was not affected and the 14:02–14:49 window."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Rejects the claim, cites not-yet-confirmed reconciliation due 2026-09-18, notes customer data is unmentioned, suggests honest wording."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Says neither source mentions TLS; notes the fact is accurate externally but doesn't treat it as supported."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Identifies these as action items due 2026-10-01, not completed work, and notes the missing '3 minutes' duration."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "All four supported claims are correctly marked accurate, with source detail."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "Says the postmortem 'says the opposite' of no orders lost; it only says loss is unconfirmed, not that orders were lost."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-incident-email",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "7b2bd74ffe",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 19274,
+      "numTurns": 5,
+      "costUsd": 0.048439899999999994,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7002,
+        "cacheRead": 22399,
+        "output": 1818
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_duration",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_region",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_tls_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_loss_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_loss_unconfirmed",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Splits the email into individual claims with line refs, but has no explicit supported/partly/contradicted/not-found labels and no verbatim source quotes."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags date, region and duration with corrections (2026-09-14, eu-west-1, 47 minutes from 14:02–14:49), and notes us-east-1 was unaffected."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Correctly rejects the claim, citing unconfirmed orders, the 09-18 reconciliation and silence on data; offers no replacement wording, only 'don't make this claim'."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Says neither source mentions TLS and doesn't treat the accurate IETF detail as support."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Identifies these as action items due 2026-10-01, not completed work, and notes '2% for 3 minutes'."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Marks 18%, the config-change cause, the 14:41 rollback and SLA credits as fine."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T2-incident-email",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "dce2326455",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 18320,
+      "numTurns": 5,
+      "costUsd": 0.0479971,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7011,
+        "cacheRead": 22411,
+        "output": 1770
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_duration",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_region",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_tls_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_loss_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_loss_unconfirmed",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Splits the email into claims and groups them as wrong, unsupported, or correct, citing sources. It rarely quotes source passages verbatim and doesn't use the four labels."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags the date, region and duration as contradicted, with corrections (Sept 14, eu-west-1, 47 minutes from 14:02 to 14:49) and notes us-east-1 was unaffected."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Rejects the claim: loss is unconfirmed and reconciliation results are due 2026-09-18. Notes customer data is unsupported and advises citing the result or removing the claim."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "States neither source mentions TLS and doesn't treat outside knowledge as support. Recommends cutting the paragraph."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Identifies these as action items due 2026-10-01, not completed work, and notes the omitted 'for 3 minutes'."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Marks the 18% failure rate, config-change cause, 14:41 rollback with recovery, and SLA credits as supported."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-incident-email",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "7b4858c812",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 36262,
+      "numTurns": 10,
+      "costUsd": 0.1083314,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13717,
+        "cacheRead": 24714,
+        "output": 5098
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_duration",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_region",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_tls_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_loss_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_loss_unconfirmed",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Email split into 16 claims, each labeled with one of the four categories and the source passage quoted."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Date, region and duration all labeled contradicted. Correct values cited (us-east-1 noted as unaffected) and corrected wording supplied."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Customer-data part labeled not found, but order loss labeled partly supported rather than contradicted or not found. Honest wording is suggested."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Both TLS 1.3 claims labeled not found. Answer says sources can't confirm them and does not use outside knowledge."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Canary and threshold both labeled partly supported as planned action items due 2026-10-01. Missing 'for 3 minutes' noted."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "18%, cache connection-pool cause, 14:41 rollback with recovery, and SLA credits all labeled supported."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-incident-email",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "db2f0d0482",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 38291,
+      "numTurns": 10,
+      "costUsd": 0.1118378,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13709,
+        "cacheRead": 24698,
+        "output": 5452
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_duration",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_region",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_tls_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_loss_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_loss_unconfirmed",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Seventeen atomic claims, each labeled with one of the four labels and given a quoted source passage or a searched-but-not-found note."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Date, region and duration all labeled contradicted. Corrected wording gives Sept 14, eu-west-1 and 47 minutes (14:02–14:49), and notes us-east-1 was unaffected."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Rejects the claim and suggests honest wording, but labels order loss 'Partly supported' rather than contradicted or not found. Customer data is correctly not found."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "TLS 1.3 and IETF 2018 claims both labeled Not found, with no outside knowledge used to support them."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Canary stage and threshold labeled partly supported as planned action items due 2026-10-01. Notes the missing 'for 3 minutes'."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "18%, config change to the connection-pool limit, 14:41 rollback with recovery, and SLA credits all labeled Supported."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T2-incident-email",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "0c2229b39f",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 36706,
+      "numTurns": 10,
+      "costUsd": 0.10931559999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13718,
+        "cacheRead": 24716,
+        "output": 5196
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_duration",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_date",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_region",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_tls_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_no_loss_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_loss_unconfirmed",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Splits the email into 16 claims, labels each with the four categories, and quotes the source passage for each."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Date, region and duration are all marked contradicted, with corrected wording; it notes us-east-1 was unaffected."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Rejects the claim and suggests honest wording, but labels order loss 'Partly supported' rather than contradicted or not found. Customer data is correctly not found."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Both TLS 1.3 claims are labeled not found; outside knowledge is not used."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Labeled partly supported as planned action items due 2026-10-01; it notes the missing 'for 3 minutes'."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "18%, the config-change cause, the 14:41 rollback and recovery, and SLA credits are all marked supported with quotes."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [
+        "The summary bullet 'The date (Sept 12, not Sept 14)' reverses the correction order used for the region, so it can read as if Sept 12 is correct. The claims table states it correctly."
+      ],
+      "combined": 0.959
+    },
+    {
+      "task": "T3-walking-studies-blog",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "82ab41a8fe",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15687,
+      "numTurns": 5,
+      "costUsd": 0.0448371,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6949,
+        "cacheRead": 22891,
+        "output": 1474
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_sample",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_effect",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_year",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_causation_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_who_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_sleep_not_supported",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Claims are split per line with draft and source quoted, but the four labels aren't applied consistently; it uses tables and 'correct'/'not verifiable' wording instead."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags 3,120 vs 312, 28% vs 18%, and 2023 vs February 2024, each with a correction."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags Northbridge vs Northgate University and gives the fix."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Sleep claim contradicted (no significant difference); 'prevents' flagged as observational association, 11% lower odds, >7,500 vs <4,000 comparison."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "WHO line placed under 'Not verifiable' as absent from sources; recollection mentioned but not marked supported."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Confirms walk protocol, no-change control, 4,120 Ferreira cohort and single-company caveat; randomised trial confirmed implicitly in the fix."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T3-walking-studies-blog",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "696582a260",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 13723,
+      "numTurns": 5,
+      "costUsd": 0.0441463,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6961,
+        "cacheRead": 22903,
+        "output": 1400
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_sample",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_effect",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_year",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_causation_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_who_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_sleep_not_supported",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Gives claim-by-claim tables quoting draft and source, but uses no consistent four-label scheme and skips several supported claims."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags 3,120 vs 312, 28% vs 18%, and 2023 vs February 2024, each with a correction."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags Northbridge vs Northgate University and gives the fix."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Sleep claim shown as contradicted; 'prevents' flagged as association only, with the 11% lower odds and the more-than-7,500 threshold."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Puts WHO claim under not verifiable from sources; mentions outside knowledge but does not mark it supported."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Confirms 4,120 desk workers and the single-company caveat; never marks the randomised design, walk regimen or control group as supported."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-walking-studies-blog",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "eecbb0bdb0",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 13488,
+      "numTurns": 5,
+      "costUsd": 0.043103100000000005,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6965,
+        "cacheRead": 22911,
+        "output": 1294
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_sample",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_effect",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_year",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_causation_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_who_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_sleep_not_supported",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Claims are quoted and paired with source text in tables, but the four labels aren't used and some claims are never itemised."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags 3,120 vs 312, 28% vs 18%, and 2023 vs February 2024, each with a correction."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags Northbridge vs Northgate University and gives the fix."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Sleep claim contradicted; 'prevents' flagged as observational association, 11% lower odds, more than 7,500 steps."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Says the WHO line is in neither source, declines to verify it from outside knowledge, suggests a citation."
+        },
+        {
+          "id": "R6",
+          "score": 0.5,
+          "reason": "Confirms 4,120 and single-company caveat; doesn't explicitly mark randomised design, walk regimen, or control group as supported."
+        }
+      ],
+      "rubricScore": 0.833,
+      "falseClaims": [],
+      "combined": 0.917
+    },
+    {
+      "task": "T3-walking-studies-blog",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "b9ad0a9787",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 29603,
+      "numTurns": 10,
+      "costUsd": 0.09970359999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13554,
+        "cacheRead": 24656,
+        "output": 4301
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_sample",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_effect",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_year",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_causation_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_who_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_sleep_not_supported",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Fifteen atomic claims, each with one of the four labels and a quoted source passage. The summary counts are internally consistent."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "3,120 vs 312 and 28% vs 18% are contradicted with corrections. The 2023 date is only 'Partly supported', though a correction is given."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Northbridge vs Northgate is labeled contradicted, quoted, and corrected."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Sleep claim is contradicted. The 7,500-steps claim is contradicted, noting 11% lower odds, association not cause, and >7,500 vs <4,000."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "WHO claim is labeled Not found after searching both sources, with advice to cite a source or cut it."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Randomised design, walk protocol, no-change control, 4,120 Ferreira cohort and single-company caveat are all marked Supported with quotes."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T3-walking-studies-blog",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "a5747b7630",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 25963,
+      "numTurns": 10,
+      "costUsd": 0.09686819999999999,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 13668,
+        "cacheRead": 40502,
+        "output": 3813
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_sample",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_effect",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_year",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_causation_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_who_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_sleep_not_supported",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Eighteen atomic claims, each with one of the four labels and a quoted source passage."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "312 vs 3,120, 18% vs 28%, and 2024 vs 2023 are all marked contradicted, with corrected wording."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Northbridge vs Northgate is marked contradicted and corrected."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Sleep claim contradicted; 'prevents' contradicted as an observational association with 11% lower odds; the more-than-7,500 threshold is noted."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "WHO claim is labelled not found; the fix is to cut it or cite a WHO source."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Randomisation, walk details, control group, 4,120 cohort and single-company caveat are all marked supported."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "T3-walking-studies-blog",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "57a1ce3dcc",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 32106,
+      "numTurns": 10,
+      "costUsd": 0.1019048,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13581,
+        "cacheRead": 24688,
+        "output": 4510
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_correct_sample",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_correct_effect",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_correct_year",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_causation_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_who_not_supported",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c6_sleep_not_supported",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Draft split into 14 claims, each given one of the four labels with a quoted source passage or an explicit 'None'."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "312 and 18% marked contradicted with fixes. The 2023 date is labelled Not found, not contradicted, though it is corrected to 2024."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "C4 marks Northbridge contradicted by Northgate University and gives the corrected wording."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Sleep claim contradicted. The 7,500-step claim is contradicted, citing observational design, 11% lower odds and the more-than-7,500 comparison."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "WHO claim labelled Not found in both sources. It suggests adding a source or cutting it, without using outside knowledge."
+        },
+        {
+          "id": "R6",
+          "score": 1,
+          "reason": "Randomised, walk protocol, 4,120 cohort and single-company caveat are supported. The C7 note confirms the control-group description matches."
+        }
+      ],
+      "rubricScore": 0.917,
+      "falseClaims": [],
+      "combined": 0.959
+    },
+    {
+      "task": "T4-water-newsletter-near-clean",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "1bdf82a48a",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16288,
+      "numTurns": 5,
+      "costUsd": 0.047058,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6800,
+        "cacheRead": 22460,
+        "output": 1760
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_name_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_rounding_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_one_in_three_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_late_2027_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_exact_numbers_not_flagged",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Splits the draft into 12 labelled claims with source sections, but mostly cites section names or figures rather than quoting the passages."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags Delgado-Marin vs Delgado-Martin as the error and gives the correction."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "$4.96M, 34% and 5–0 are marked supported. Late 2027 is 'slightly loose' with a completion-vs-opening note, which is acceptable."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "All exact figures are supported; the verdict says only the name needs changing. Minor tension: plant wording also appears under 'Changes to make'."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Relies only on the provided sources; adds no outside facts."
+        }
+      ],
+      "rubricScore": 0.9,
+      "falseClaims": [
+        "'Both sources spell it the same way': the annual report never mentions the chief engineer's name; only the board minutes do."
+      ],
+      "combined": 0.95
+    },
+    {
+      "task": "T4-water-newsletter-near-clean",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "dd51b5b937",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15878,
+      "numTurns": 5,
+      "costUsd": 0.0459774,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6729,
+        "cacheRead": 22394,
+        "output": 1681
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_name_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_rounding_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_one_in_three_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_late_2027_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_exact_numbers_not_flagged",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Claims are split, labelled and sourced, but most rows cite only a section name rather than quoting the passage relied on."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Finds the Delgado-Marin misspelling and gives the correction Delgado-Martin."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "$4.96M, 34% and 5–0 are supported. The late-2027 claim is partly supported with a note, which is acceptable."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "All exact figures are supported, but the verdict lists 'open' as a required second change, not only the name."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Uses only the provided sources; no outside facts."
+        }
+      ],
+      "rubricScore": 0.8,
+      "falseClaims": [
+        "'Both sources spell it Delgado-Martin': the annual report never mentions the chief engineer; only the minutes give the name."
+      ],
+      "combined": 0.9
+    },
+    {
+      "task": "T4-water-newsletter-near-clean",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "566eff15f2",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15686,
+      "numTurns": 5,
+      "costUsd": 0.0453516,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6730,
+        "cacheRead": 22396,
+        "output": 1618
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_name_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_rounding_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_one_in_three_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_late_2027_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_exact_numbers_not_flagged",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Splits and labels nine claims with section references and some cited figures, but mostly doesn't quote source passages verbatim."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags 'Delgado-Marin' as incorrect against the minutes' 'Delgado-Martin' and recommends the correction."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Marks $4.96M, 34%, and 5–0 as supported. Labels 'late 2027' partly supported with a short completion-versus-opening note, which is acceptable."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "All exact figures are supported, but 'Changes to make' lists four items, including the on-schedule attribution, so the verdict isn't cleanly accurate apart from the name."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Relies only on the provided sources. The staff-page check and current-date caveat are suggestions, not outside facts used as support."
+        }
+      ],
+      "rubricScore": 0.8,
+      "falseClaims": [],
+      "combined": 0.9
+    },
+    {
+      "task": "T4-water-newsletter-near-clean",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "3caa4129df",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 26391,
+      "numTurns": 10,
+      "costUsd": 0.0936753,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13436,
+        "cacheRead": 24693,
+        "output": 3745
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_name_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_rounding_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_one_in_three_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_late_2027_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_exact_numbers_not_flagged",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Twelve discrete claims, each labeled, with verbatim source passages quoted and located."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Finds Delgado-Marin vs Delgado-Martin in the minutes and gives corrected wording."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Treats nearly $5M, one in three, unanimous and late 2027 as supported or partly supported with notes; none contradicted."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Exact figures supported, but the verdict requires a second edit (open→completion), not 'accurate apart from name'."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Relies only on the provided sources; no outside facts used."
+        }
+      ],
+      "rubricScore": 0.9,
+      "falseClaims": [
+        "Summary says 'both sources have Delgado-Martin'; the annual report never mentions the Chief Engineer's name."
+      ],
+      "combined": 0.95
+    },
+    {
+      "task": "T4-water-newsletter-near-clean",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "c40615d6c2",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 27579,
+      "numTurns": 10,
+      "costUsd": 0.094634,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 13499,
+        "cacheRead": 35920,
+        "output": 3703
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_name_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_rounding_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_one_in_three_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_late_2027_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_exact_numbers_not_flagged",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Eleven discrete claims, each labeled, with quoted source passages and section references."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Flags Delgado-Marin vs Delgado-Martin as the needed fix and gives the corrected spelling."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "$4.96M, 34%, 5–0 unanimous all marked supported with notes; late 2027 marked partly supported, which the key allows."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "All exact figures are supported, but the verdict also asks for an 'open' to 'completion' rewording, so it is not 'accurate apart from the name'."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Relies only on S1 and S2; suggests external checks without asserting outside facts."
+        }
+      ],
+      "rubricScore": 0.9,
+      "falseClaims": [],
+      "combined": 0.95
+    },
+    {
+      "task": "T4-water-newsletter-near-clean",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "cb8949c2e0",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 3,
+      "durationMs": 27392,
+      "numTurns": 10,
+      "costUsd": 0.09521179999999999,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 13445,
+        "cacheRead": 24698,
+        "output": 3895
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "c1_name_flagged",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c2_rounding_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c3_one_in_three_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c4_late_2027_not_contradicted",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "c5_exact_numbers_not_flagged",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Eleven discrete claims, each labeled with a quoted source passage and a location."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Finds the Delgado-Marin vs Delgado-Martin misspelling and gives the corrected wording."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Treats $4.96M as nearly $5M, 34% as one in three and 5–0 as unanimous; Q4 2027 is partly supported with a note."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "All exact figures are supported, but the verdict says two things need changing, treating open vs completion as a required fix."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Relies only on S1 and S2; no outside facts are introduced."
+        }
+      ],
+      "rubricScore": 0.9,
+      "falseClaims": [],
+      "combined": 0.95
+    }
+  ]
+}

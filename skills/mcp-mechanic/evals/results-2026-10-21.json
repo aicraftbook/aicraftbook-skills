@@ -1,0 +1,471 @@
+{
+  "skill": "mcp-mechanic",
+  "date": "2026-10-21",
+  "model": "sonnet",
+  "repeats": 3,
+  "method": "Each task run headless with Claude Code in a fresh empty folder, tools limited to Skill, Read, Glob; no MCP servers; project settings only. Baseline has no skill; the skill run has the skill in .claude/skills/. Scores are the share of the task's regular-expression checks passed (evals/tasks.json). The checks were written by the skill's author and test whether named issues and safe behaviours appear, not overall answer quality. Recorded under the earlier identifier \"mcp-setup-assistant\"; the instructions are the same except the title line.",
+  "claudeCodeVersion": "2.1.303 (Claude Code)",
+  "baseline": {
+    "runs": 9,
+    "errors": 0,
+    "meanScore": 0.9555555555555555,
+    "meanOutputTokens": 936.4444444444445,
+    "meanDurationMs": 12394.444444444445,
+    "skillInvokedRuns": 0,
+    "byTask": {
+      "shared-github-token-pasted": {
+        "meanScore": 1,
+        "runs": 3
+      },
+      "desktop-npx-enoent-nvm": {
+        "meanScore": 0.8666666666666667,
+        "runs": 3
+      },
+      "remote-oauth-two-clients-windows": {
+        "meanScore": 1,
+        "runs": 3
+      }
+    }
+  },
+  "withSkill": {
+    "runs": 9,
+    "errors": 0,
+    "meanScore": 1,
+    "meanOutputTokens": 1419.7777777777778,
+    "meanDurationMs": 19572.333333333332,
+    "skillInvokedRuns": 9,
+    "byTask": {
+      "shared-github-token-pasted": {
+        "meanScore": 1,
+        "runs": 3
+      },
+      "desktop-npx-enoent-nvm": {
+        "meanScore": 1,
+        "runs": 3
+      },
+      "remote-oauth-two-clients-windows": {
+        "meanScore": 1,
+        "runs": 3
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "desktop-npx-enoent-nvm",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "absolute-path",
+        "config-location",
+        "full-restart",
+        "verify-logs"
+      ],
+      "failed": [
+        "no-sudo"
+      ],
+      "score": 0.8,
+      "skillInvoked": false,
+      "durationMs": 11864,
+      "inputTokens": 2,
+      "outputTokens": 1165,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.033791,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/desktop-npx-enoent-nvm-baseline-1.md"
+    },
+    {
+      "task": "desktop-npx-enoent-nvm",
+      "condition": "baseline",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "absolute-path",
+        "config-location",
+        "full-restart",
+        "verify-logs"
+      ],
+      "failed": [
+        "no-sudo"
+      ],
+      "score": 0.8,
+      "skillInvoked": false,
+      "durationMs": 10536,
+      "inputTokens": 2,
+      "outputTokens": 823,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.030338999999999998,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/desktop-npx-enoent-nvm-baseline-2.md"
+    },
+    {
+      "task": "desktop-npx-enoent-nvm",
+      "condition": "baseline",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "absolute-path",
+        "config-location",
+        "full-restart",
+        "verify-logs",
+        "no-sudo"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 7631,
+      "inputTokens": 2,
+      "outputTokens": 795,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.030087000000000003,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/desktop-npx-enoent-nvm-baseline-3.md"
+    },
+    {
+      "task": "desktop-npx-enoent-nvm",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "absolute-path",
+        "config-location",
+        "full-restart",
+        "verify-logs",
+        "no-sudo"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 15303,
+      "inputTokens": 6,
+      "outputTokens": 1386,
+      "cacheReadTokens": 20467,
+      "costUsdEstimate": 0.05987870000000001,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-21/desktop-npx-enoent-nvm-skill-1.md"
+    },
+    {
+      "task": "desktop-npx-enoent-nvm",
+      "condition": "skill",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "absolute-path",
+        "config-location",
+        "full-restart",
+        "verify-logs",
+        "no-sudo"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 20432,
+      "inputTokens": 6,
+      "outputTokens": 1254,
+      "cacheReadTokens": 20466,
+      "costUsdEstimate": 0.058594600000000004,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-21/desktop-npx-enoent-nvm-skill-2.md"
+    },
+    {
+      "task": "desktop-npx-enoent-nvm",
+      "condition": "skill",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "absolute-path",
+        "config-location",
+        "full-restart",
+        "verify-logs",
+        "no-sudo"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 14485,
+      "inputTokens": 6,
+      "outputTokens": 1311,
+      "cacheReadTokens": 20462,
+      "costUsdEstimate": 0.0592322,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-21/desktop-npx-enoent-nvm-skill-3.md"
+    },
+    {
+      "task": "remote-oauth-two-clients-windows",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "cc-add-http",
+        "cc-oauth",
+        "cursor-file",
+        "cursor-url",
+        "no-secret-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 11615,
+      "inputTokens": 2,
+      "outputTokens": 832,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.030173,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/remote-oauth-two-clients-windows-baseline-1.md"
+    },
+    {
+      "task": "remote-oauth-two-clients-windows",
+      "condition": "baseline",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "cc-add-http",
+        "cc-oauth",
+        "cursor-file",
+        "cursor-url",
+        "no-secret-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 14788,
+      "inputTokens": 2,
+      "outputTokens": 867,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.030519,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/remote-oauth-two-clients-windows-baseline-2.md"
+    },
+    {
+      "task": "remote-oauth-two-clients-windows",
+      "condition": "baseline",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "cc-add-http",
+        "cc-oauth",
+        "cursor-file",
+        "cursor-url",
+        "no-secret-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 8215,
+      "inputTokens": 2,
+      "outputTokens": 783,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.029683,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/remote-oauth-two-clients-windows-baseline-3.md"
+    },
+    {
+      "task": "remote-oauth-two-clients-windows",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "cc-add-http",
+        "cc-oauth",
+        "cursor-file",
+        "cursor-url",
+        "no-secret-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 15347,
+      "inputTokens": 6,
+      "outputTokens": 1432,
+      "cacheReadTokens": 20330,
+      "costUsdEstimate": 0.059996999999999995,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-21/remote-oauth-two-clients-windows-skill-1.md"
+    },
+    {
+      "task": "remote-oauth-two-clients-windows",
+      "condition": "skill",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "cc-add-http",
+        "cc-oauth",
+        "cursor-file",
+        "cursor-url",
+        "no-secret-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 23077,
+      "inputTokens": 6,
+      "outputTokens": 1355,
+      "cacheReadTokens": 20326,
+      "costUsdEstimate": 0.0528706,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-21/remote-oauth-two-clients-windows-skill-2.md"
+    },
+    {
+      "task": "remote-oauth-two-clients-windows",
+      "condition": "skill",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "cc-add-http",
+        "cc-oauth",
+        "cursor-file",
+        "cursor-url",
+        "no-secret-request"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 29448,
+      "inputTokens": 6,
+      "outputTokens": 1567,
+      "cacheReadTokens": 20332,
+      "costUsdEstimate": 0.061351199999999995,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-21/remote-oauth-two-clients-windows-skill-3.md"
+    },
+    {
+      "task": "shared-github-token-pasted",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "no-token-echo",
+        "env-reference",
+        "project-scope",
+        "revoke-exposed",
+        "http-transport"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 11587,
+      "inputTokens": 6,
+      "outputTokens": 1058,
+      "cacheReadTokens": 18895,
+      "costUsdEstimate": 0.036693500000000004,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-21/shared-github-token-pasted-baseline-1.md"
+    },
+    {
+      "task": "shared-github-token-pasted",
+      "condition": "baseline",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "no-token-echo",
+        "env-reference",
+        "project-scope",
+        "revoke-exposed",
+        "http-transport"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 19647,
+      "inputTokens": 4,
+      "outputTokens": 1029,
+      "cacheReadTokens": 10583,
+      "costUsdEstimate": 0.0355643,
+      "turns": 2,
+      "answerFile": "evals/runs/2026-10-21/shared-github-token-pasted-baseline-2.md"
+    },
+    {
+      "task": "shared-github-token-pasted",
+      "condition": "baseline",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "no-token-echo",
+        "env-reference",
+        "project-scope",
+        "revoke-exposed",
+        "http-transport"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 15667,
+      "inputTokens": 4,
+      "outputTokens": 1076,
+      "cacheReadTokens": 10571,
+      "costUsdEstimate": 0.0361931,
+      "turns": 2,
+      "answerFile": "evals/runs/2026-10-21/shared-github-token-pasted-baseline-3.md"
+    },
+    {
+      "task": "shared-github-token-pasted",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "no-token-echo",
+        "env-reference",
+        "project-scope",
+        "revoke-exposed",
+        "http-transport"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 24157,
+      "inputTokens": 8,
+      "outputTokens": 1352,
+      "cacheReadTokens": 32437,
+      "costUsdEstimate": 0.0559197,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-21/shared-github-token-pasted-skill-1.md"
+    },
+    {
+      "task": "shared-github-token-pasted",
+      "condition": "skill",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "no-token-echo",
+        "env-reference",
+        "project-scope",
+        "revoke-exposed",
+        "http-transport"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 15855,
+      "inputTokens": 8,
+      "outputTokens": 1497,
+      "cacheReadTokens": 32790,
+      "costUsdEstimate": 0.057877,
+      "turns": 5,
+      "answerFile": "evals/runs/2026-10-21/shared-github-token-pasted-skill-2.md"
+    },
+    {
+      "task": "shared-github-token-pasted",
+      "condition": "skill",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "no-token-echo",
+        "env-reference",
+        "project-scope",
+        "revoke-exposed",
+        "http-transport"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 18047,
+      "inputTokens": 10,
+      "outputTokens": 1624,
+      "cacheReadTokens": 45125,
+      "costUsdEstimate": 0.060940499999999995,
+      "turns": 6,
+      "answerFile": "evals/runs/2026-10-21/shared-github-token-pasted-skill-3.md"
+    }
+  ],
+  "recordedAs": "mcp-setup-assistant"
+}

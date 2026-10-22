@@ -1,0 +1,499 @@
+{
+  "skill": "blueprint-probe",
+  "date": "2026-10-21",
+  "model": "sonnet",
+  "repeats": 3,
+  "method": "Each task run headless with Claude Code in a fresh empty folder, tools limited to Skill, Read, Glob; no MCP servers; project settings only. Baseline has no skill; the skill run has the skill in .claude/skills/. Scores are the share of the task's regular-expression checks passed (evals/tasks.json). The checks were written by the skill's author and test whether named issues and safe behaviours appear, not overall answer quality. Recorded under the earlier identifier \"automation-architecture-review\"; the instructions are the same except the title line.",
+  "claudeCodeVersion": "2.1.303 (Claude Code)",
+  "baseline": {
+    "runs": 9,
+    "errors": 0,
+    "meanScore": 0.8888888888888888,
+    "meanOutputTokens": 1773.2222222222222,
+    "meanDurationMs": 20064.666666666668,
+    "skillInvokedRuns": 0,
+    "byTask": {
+      "lead-autoreply-sms": {
+        "meanScore": 0.8333333333333334,
+        "runs": 3
+      },
+      "autonomous-support-agent": {
+        "meanScore": 0.8333333333333334,
+        "runs": 3
+      },
+      "over-engineered-digest": {
+        "meanScore": 1,
+        "runs": 3
+      }
+    }
+  },
+  "withSkill": {
+    "runs": 9,
+    "errors": 0,
+    "meanScore": 1,
+    "meanOutputTokens": 2652.1111111111113,
+    "meanDurationMs": 30290.222222222223,
+    "skillInvokedRuns": 9,
+    "byTask": {
+      "lead-autoreply-sms": {
+        "meanScore": 1,
+        "runs": 3
+      },
+      "autonomous-support-agent": {
+        "meanScore": 1,
+        "runs": 3
+      },
+      "over-engineered-digest": {
+        "meanScore": 1,
+        "runs": 3
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "autonomous-support-agent",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "injection-refunds",
+        "approval",
+        "least-privilege",
+        "cap",
+        "audit"
+      ],
+      "failed": [
+        "severity"
+      ],
+      "score": 0.8333333333333334,
+      "skillInvoked": false,
+      "durationMs": 23689,
+      "inputTokens": 2,
+      "outputTokens": 1291,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.034927,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/autonomous-support-agent-baseline-1.md"
+    },
+    {
+      "task": "autonomous-support-agent",
+      "condition": "baseline",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "injection-refunds",
+        "approval",
+        "least-privilege",
+        "cap",
+        "audit"
+      ],
+      "failed": [
+        "severity"
+      ],
+      "score": 0.8333333333333334,
+      "skillInvoked": false,
+      "durationMs": 16261,
+      "inputTokens": 2,
+      "outputTokens": 1324,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.035209000000000004,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/autonomous-support-agent-baseline-2.md"
+    },
+    {
+      "task": "autonomous-support-agent",
+      "condition": "baseline",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "injection-refunds",
+        "approval",
+        "least-privilege",
+        "cap",
+        "audit"
+      ],
+      "failed": [
+        "severity"
+      ],
+      "score": 0.8333333333333334,
+      "skillInvoked": false,
+      "durationMs": 15452,
+      "inputTokens": 2,
+      "outputTokens": 1444,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.036441,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/autonomous-support-agent-baseline-3.md"
+    },
+    {
+      "task": "autonomous-support-agent",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "injection-refunds",
+        "approval",
+        "least-privilege",
+        "cap",
+        "audit",
+        "severity"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 40266,
+      "inputTokens": 6,
+      "outputTokens": 2941,
+      "cacheReadTokens": 20201,
+      "costUsdEstimate": 0.0658741,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-21/autonomous-support-agent-skill-1.md"
+    },
+    {
+      "task": "autonomous-support-agent",
+      "condition": "skill",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "injection-refunds",
+        "approval",
+        "least-privilege",
+        "cap",
+        "audit",
+        "severity"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 32541,
+      "inputTokens": 6,
+      "outputTokens": 2754,
+      "cacheReadTokens": 20206,
+      "costUsdEstimate": 0.0640646,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-21/autonomous-support-agent-skill-2.md"
+    },
+    {
+      "task": "autonomous-support-agent",
+      "condition": "skill",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "injection-refunds",
+        "approval",
+        "least-privilege",
+        "cap",
+        "audit",
+        "severity"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 24752,
+      "inputTokens": 4,
+      "outputTokens": 2462,
+      "cacheReadTokens": 10717,
+      "costUsdEstimate": 0.053395700000000004,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-21/autonomous-support-agent-skill-3.md"
+    },
+    {
+      "task": "lead-autoreply-sms",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "human-approval",
+        "duplicates",
+        "prompt-injection",
+        "pii",
+        "sms-consent",
+        "output-validation",
+        "no-invented-prices"
+      ],
+      "failed": [
+        "severity"
+      ],
+      "score": 0.875,
+      "skillInvoked": false,
+      "durationMs": 23165,
+      "inputTokens": 2,
+      "outputTokens": 2437,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.046615000000000004,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/lead-autoreply-sms-baseline-1.md"
+    },
+    {
+      "task": "lead-autoreply-sms",
+      "condition": "baseline",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "human-approval",
+        "duplicates",
+        "prompt-injection",
+        "pii",
+        "sms-consent",
+        "output-validation",
+        "no-invented-prices"
+      ],
+      "failed": [
+        "severity"
+      ],
+      "score": 0.875,
+      "skillInvoked": false,
+      "durationMs": 24870,
+      "inputTokens": 2,
+      "outputTokens": 2767,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.049947000000000005,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/lead-autoreply-sms-baseline-2.md"
+    },
+    {
+      "task": "lead-autoreply-sms",
+      "condition": "baseline",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "human-approval",
+        "duplicates",
+        "prompt-injection",
+        "sms-consent",
+        "output-validation",
+        "no-invented-prices"
+      ],
+      "failed": [
+        "pii",
+        "severity"
+      ],
+      "score": 0.75,
+      "skillInvoked": false,
+      "durationMs": 26842,
+      "inputTokens": 2,
+      "outputTokens": 2198,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.044261,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/lead-autoreply-sms-baseline-3.md"
+    },
+    {
+      "task": "lead-autoreply-sms",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "human-approval",
+        "duplicates",
+        "prompt-injection",
+        "pii",
+        "sms-consent",
+        "output-validation",
+        "no-invented-prices",
+        "severity"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 25111,
+      "inputTokens": 4,
+      "outputTokens": 2545,
+      "cacheReadTokens": 10784,
+      "costUsdEstimate": 0.054492399999999996,
+      "turns": 3,
+      "answerFile": "evals/runs/2026-10-21/lead-autoreply-sms-skill-1.md"
+    },
+    {
+      "task": "lead-autoreply-sms",
+      "condition": "skill",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "human-approval",
+        "duplicates",
+        "prompt-injection",
+        "pii",
+        "sms-consent",
+        "output-validation",
+        "no-invented-prices",
+        "severity"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 30648,
+      "inputTokens": 6,
+      "outputTokens": 2959,
+      "cacheReadTokens": 20358,
+      "costUsdEstimate": 0.0663938,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-21/lead-autoreply-sms-skill-2.md"
+    },
+    {
+      "task": "lead-autoreply-sms",
+      "condition": "skill",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "human-approval",
+        "duplicates",
+        "prompt-injection",
+        "pii",
+        "sms-consent",
+        "output-validation",
+        "no-invented-prices",
+        "severity"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 28280,
+      "inputTokens": 6,
+      "outputTokens": 2653,
+      "cacheReadTokens": 20351,
+      "costUsdEstimate": 0.0632691,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-21/lead-autoreply-sms-skill-3.md"
+    },
+    {
+      "task": "over-engineered-digest",
+      "condition": "baseline",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "category-lookup",
+        "template-format",
+        "simplify",
+        "failure-alert",
+        "cost"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 16250,
+      "inputTokens": 2,
+      "outputTokens": 1568,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.037833,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/over-engineered-digest-baseline-1.md"
+    },
+    {
+      "task": "over-engineered-digest",
+      "condition": "baseline",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "category-lookup",
+        "template-format",
+        "simplify",
+        "failure-alert",
+        "cost"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 18180,
+      "inputTokens": 2,
+      "outputTokens": 1576,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.037901000000000004,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/over-engineered-digest-baseline-2.md"
+    },
+    {
+      "task": "over-engineered-digest",
+      "condition": "baseline",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "category-lookup",
+        "template-format",
+        "simplify",
+        "failure-alert",
+        "cost"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": false,
+      "durationMs": 15873,
+      "inputTokens": 2,
+      "outputTokens": 1354,
+      "cacheReadTokens": 2570,
+      "costUsdEstimate": 0.035693,
+      "turns": 1,
+      "answerFile": "evals/runs/2026-10-21/over-engineered-digest-baseline-3.md"
+    },
+    {
+      "task": "over-engineered-digest",
+      "condition": "skill",
+      "repeat": 1,
+      "ok": true,
+      "passed": [
+        "category-lookup",
+        "template-format",
+        "simplify",
+        "failure-alert",
+        "cost"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 26680,
+      "inputTokens": 6,
+      "outputTokens": 2300,
+      "cacheReadTokens": 20290,
+      "costUsdEstimate": 0.059552999999999995,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-21/over-engineered-digest-skill-1.md"
+    },
+    {
+      "task": "over-engineered-digest",
+      "condition": "skill",
+      "repeat": 2,
+      "ok": true,
+      "passed": [
+        "category-lookup",
+        "template-format",
+        "simplify",
+        "failure-alert",
+        "cost"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 29633,
+      "inputTokens": 6,
+      "outputTokens": 2779,
+      "cacheReadTokens": 20301,
+      "costUsdEstimate": 0.0644321,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-21/over-engineered-digest-skill-2.md"
+    },
+    {
+      "task": "over-engineered-digest",
+      "condition": "skill",
+      "repeat": 3,
+      "ok": true,
+      "passed": [
+        "category-lookup",
+        "template-format",
+        "simplify",
+        "failure-alert",
+        "cost"
+      ],
+      "failed": [],
+      "score": 1,
+      "skillInvoked": true,
+      "durationMs": 34701,
+      "inputTokens": 6,
+      "outputTokens": 2476,
+      "cacheReadTokens": 20286,
+      "costUsdEstimate": 0.0613646,
+      "turns": 4,
+      "answerFile": "evals/runs/2026-10-21/over-engineered-digest-skill-3.md"
+    }
+  ],
+  "recordedAs": "automation-architecture-review"
+}

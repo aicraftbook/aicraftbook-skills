@@ -1,0 +1,2622 @@
+{
+  "skill": "mcp-mechanic",
+  "date": "2026-10-21",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/mcp-mechanic/evals/independent-runs/2026-10-21/frozen",
+    "sha256": "4b2fe962d8c70a2d2d438443f5fd358261e49365b7216f4901f714b94d98a665",
+    "freezeRecord": "skills/mcp-mechanic/evals/independent-runs/2026-10-21/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "04d158f3e9279810838031f6c3cb5654d3c46b68683f36d111ffcd7cb7005c5b"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 15,
+      "meanCombined": 0.876,
+      "meanRubric": 0.79,
+      "meanFileCheckFraction": 0.962,
+      "fileCheckPassRate": 0.8,
+      "secretLeakRuns": 3,
+      "outsideWriteRuns": 0,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 12778.2,
+      "meanCostUsd": 0.034
+    },
+    "skill": {
+      "n": 15,
+      "meanCombined": 0.976,
+      "meanRubric": 0.952,
+      "meanFileCheckFraction": 1,
+      "fileCheckPassRate": 1,
+      "secretLeakRuns": 0,
+      "outsideWriteRuns": 0,
+      "skillInvocationRate": 1,
+      "meanDurationMs": 18602.467,
+      "meanCostUsd": 0.054
+    }
+  },
+  "perTask": {
+    "M1-typo-key": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 14880.667,
+        "meanCostUsd": 0.033
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 21378.333,
+        "meanCostUsd": 0.051
+      }
+    },
+    "M2-inline-secret": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.933,
+        "meanRubric": 0.867,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 9770,
+        "meanCostUsd": 0.035
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.983,
+        "meanRubric": 0.967,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 20256.333,
+        "meanCostUsd": 0.055
+      }
+    },
+    "M3-desktop-syntax": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.708,
+        "meanRubric": 0.417,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 15151.667,
+        "meanCostUsd": 0.035
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.938,
+        "meanRubric": 0.875,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 14177.667,
+        "meanCostUsd": 0.046
+      }
+    },
+    "M4-add-stdio-secret": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.78,
+        "meanRubric": 0.75,
+        "meanFileCheckFraction": 0.809,
+        "fileCheckPassRate": 0,
+        "secretLeakRuns": 3,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 14662.333,
+        "meanCostUsd": 0.036
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.979,
+        "meanRubric": 0.958,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 24719.333,
+        "meanCostUsd": 0.061
+      }
+    },
+    "M5-cursor-add": {
+      "baseline": {
+        "n": 3,
+        "meanCombined": 0.958,
+        "meanRubric": 0.917,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 9426.333,
+        "meanCostUsd": 0.032
+      },
+      "skill": {
+        "n": 3,
+        "meanCombined": 0.979,
+        "meanRubric": 0.958,
+        "meanFileCheckFraction": 1,
+        "fileCheckPassRate": 1,
+        "secretLeakRuns": 0,
+        "outsideWriteRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 12480.667,
+        "meanCostUsd": 0.055
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "M1-typo-key",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "26c2938e0d",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 12977,
+      "numTurns": 3,
+      "costUsd": 0.0327582,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6012,
+        "cacheRead": 24282,
+        "output": 627
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "top_key",
+          "pass": true
+        },
+        {
+          "id": "servers_preserved",
+          "pass": true
+        },
+        {
+          "id": "args_array",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly renamed mcp_servers to mcpServers and explained Claude Code only reads mcpServers."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States args was a single string, must be an array, shows correct split array."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says restart Claude Code, mentions one-time approval prompt for project-scoped servers, and /mcp to check connection."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "No false claims; no invented problems; ./docs existence note is accurate and reasonable."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M1-typo-key",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "fb6ab42aa1",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 23717,
+      "numTurns": 4,
+      "costUsd": 0.034658,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6104,
+        "cacheRead": 34260,
+        "output": 680
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "top_key",
+          "pass": true
+        },
+        {
+          "id": "servers_preserved",
+          "pass": true
+        },
+        {
+          "id": "args_array",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Clearly states mcp_servers must be mcpServers and explains Claude Code ignores snake_case key."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies args was a string and shows corrected array of separate strings."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says restart Claude Code, approve project servers prompt, run /mcp to check status."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "No false claims; notes about ./docs existing and Sentry auth are accurate, no invented problems."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M1-typo-key",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "a419aeb997",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 7948,
+      "numTurns": 3,
+      "costUsd": 0.0327297,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6022,
+        "cacheRead": 24297,
+        "output": 620
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "top_key",
+          "pass": true
+        },
+        {
+          "id": "servers_preserved",
+          "pass": true
+        },
+        {
+          "id": "args_array",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Clearly states mcp_servers must be mcpServers and explains why every server was ignored."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States docs-fs args was one string and must be an array, and shows the correct array."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says to restart Claude Code, mentions the one-time approval prompt for project-scoped servers, and suggests checking with /mcp."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "No false claims or invented problems. The ./docs relative-path note is a reasonable caveat, not a fabricated issue."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M1-typo-key",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "4d806e2edb",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 10755,
+      "numTurns": 5,
+      "costUsd": 0.044205299999999996,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7763,
+        "cacheRead": 26113,
+        "output": 1053
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "top_key",
+          "pass": true
+        },
+        {
+          "id": "servers_preserved",
+          "pass": true
+        },
+        {
+          "id": "args_array",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Clearly states the top-level key must be mcpServers, not mcp_servers, and that Claude Code ignores the old spelling."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies that args was a single string and converts it to an array of separate strings."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers starting a new session, approving project servers, running /mcp or claude mcp list, and Sentry OAuth."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "No clearly false claims. Saying npx gets one argument is speculative, since schema validation may reject it first, but not wrong. No invented problems."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M1-typo-key",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "9afc3e74e9",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 11247,
+      "numTurns": 5,
+      "costUsd": 0.0440503,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 7809,
+        "cacheRead": 26123,
+        "output": 1019
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "top_key",
+          "pass": true
+        },
+        {
+          "id": "servers_preserved",
+          "pass": true
+        },
+        {
+          "id": "args_array",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States the top-level key must be mcpServers, not mcp_servers, and explains that Claude Code ignored both servers because of it."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies that docs-fs args was a single string and gives the correct three-element array."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers starting a new session, approving project-scoped servers, and checking with /mcp or claude mcp list."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Technical claims are accurate, nothing is invented, and the troubleshooting tips are plausible and labelled as conditional."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M1-typo-key",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "74ab2d905a",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 42133,
+      "numTurns": 7,
+      "costUsd": 0.06503319999999999,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 11555,
+        "cacheRead": 41372,
+        "output": 1466
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "top_key",
+          "pass": true
+        },
+        {
+          "id": "servers_preserved",
+          "pass": true
+        },
+        {
+          "id": "args_array",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly states top-level key was mcp_servers and Claude Code reads mcpServers; explains this is why neither server loaded."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Identifies args was a single string and shows the correct array of separate strings."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers a new session, the approval prompt, reset-project-choices, claude mcp list and /mcp, and expected statuses."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Claims are accurate or plausible; no invented problems. The parse-warnings claim for claude mcp list is minor and unverified, not clearly false."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M2-inline-secret",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "4cbb50f934",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 8597,
+      "numTurns": 4,
+      "costUsd": 0.0352575,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6140,
+        "cacheRead": 24455,
+        "output": 824
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_preserved",
+          "pass": true
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly says to revoke the old token, assume it's exposed, and create a new one."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States that deleting it from the file doesn't remove it from git history or existing clones."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Each person exports GITHUB_PERSONAL_ACCESS_TOKEN in a shell profile before starting Claude Code. Uses a placeholder, not the secret."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Says to restart Claude Code, but gives no verification step such as /mcp or claude mcp list."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "The ${VAR} expansion claim is correct and nothing in the answer is misleading."
+        }
+      ],
+      "rubricScore": 0.9,
+      "falseClaims": [],
+      "combined": 0.95
+    },
+    {
+      "task": "M2-inline-secret",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "d4cc081987",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 11620,
+      "numTurns": 4,
+      "costUsd": 0.0346164,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6125,
+        "cacheRead": 24444,
+        "output": 766
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_preserved",
+          "pass": true
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly says to revoke the token because it was committed and is in git history; gives steps to revoke and recreate."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States the token remains in git history; explains revocation makes it useless and when a history rewrite matters."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Shows each teammate exporting GITHUB_PERSONAL_ACCESS_TOKEN in their shell profile with a placeholder, then restarting Claude Code."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Mentions restarting Claude Code and connection failure if unset, but gives no explicit verification step like /mcp or claude mcp list."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Expansion syntax and behavior are described correctly; no misleading technical claims."
+        }
+      ],
+      "rubricScore": 0.9,
+      "falseClaims": [],
+      "combined": 0.95
+    },
+    {
+      "task": "M2-inline-secret",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "6c7ff0d43e",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 9093,
+      "numTurns": 4,
+      "costUsd": 0.0347211,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6131,
+        "cacheRead": 24451,
+        "output": 774
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_preserved",
+          "pass": true
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly says to revoke the old token, treat it as exposed, and create a new one, with the GitHub settings path."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States the token stays in git history if it was committed and that editing the file doesn't remove it; notes history rewrite is optional after revoking."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Shows each teammate exporting GITHUB_PERSONAL_ACCESS_TOKEN in ~/.zshrc before launching Claude Code, using a placeholder rather than the secret."
+        },
+        {
+          "id": "R4",
+          "score": 0,
+          "reason": "No verification steps such as restarting, /mcp, or claude mcp list; it only says the connection wasn't tested."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "${VAR} expansion is correct, and the parse failure for an unset variable with no default matches documented behavior."
+        }
+      ],
+      "rubricScore": 0.8,
+      "falseClaims": [],
+      "combined": 0.9
+    },
+    {
+      "task": "M2-inline-secret",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "40b41fa119",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 15097,
+      "numTurns": 6,
+      "costUsd": 0.0575536,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 10038,
+        "cacheRead": 39956,
+        "output": 1339
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_preserved",
+          "pass": true
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly tells user to revoke the old token, create a new one, and treat it as compromised if pushed."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States the old value stays in git history even after this edit, so the edit alone isn't enough."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Each person sets GITHUB_PERSONAL_ACCESS_TOKEN in their shell profile, uses their own token, not in repo files. Secret not repeated."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Restart, approve the project server, run claude mcp list and look for Connected, then a read-only test request."
+        },
+        {
+          "id": "R5",
+          "score": 0.5,
+          "reason": "Mostly accurate, but it says an unset var sends a literal ${...} header. Docs say config parsing fails instead."
+        }
+      ],
+      "rubricScore": 0.9,
+      "falseClaims": [
+        "When the variable is unset, the header is sent as the literal ${...} text. Claude Code docs say an unset variable with no default makes config parsing fail."
+      ],
+      "combined": 0.95
+    },
+    {
+      "task": "M2-inline-secret",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "6102cd830f",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 20905,
+      "numTurns": 6,
+      "costUsd": 0.048330399999999996,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 7889,
+        "cacheRead": 37784,
+        "output": 1298
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_preserved",
+          "pass": true
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "Bearer ${GITHUB_PAT}"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly tells user to revoke the old token as compromised and create a new one, with GitHub settings path."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States token remains in git history if committed; revocation is the real protection, history rewrite optional cleanup."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Each person exports GITHUB_PAT in shell profile, restarts Claude Code; no secret value repeated."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Says to start a new session, run `claude mcp list`, check github connected, and try a read-only query."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Expansion syntax correct; claims about project-scope approval, /mcp, and failure modes are accurate. 'Before they pull' is slightly imprecise but harmless."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M2-inline-secret",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "f9198ee31d",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 24767,
+      "numTurns": 6,
+      "costUsd": 0.0588284,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 10012,
+        "cacheRead": 39944,
+        "output": 1477
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_preserved",
+          "pass": true
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly says treat token as exposed, revoke it in GitHub settings and create a new one."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States token remains in git history after editing; revocation makes it safe, history rewrite optional."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Each person sets GITHUB_PERSONAL_ACCESS_TOKEN in shell profile with own token before launching Claude Code; no secret repeated."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Restart session, approve server, run claude mcp list expecting Connected, then test with read-only query."
+        },
+        {
+          "id": "R5",
+          "score": 1,
+          "reason": "Expansion syntax and commands are correct; the unset-variable behavior description is plausible, though docs vary."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M3-desktop-syntax",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "93fd5ae93f",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 13180,
+      "numTurns": 4,
+      "costUsd": 0.0345468,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6138,
+        "cacheRead": 34388,
+        "output": 654
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        "claude_desktop_config.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "content_exact",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Correctly names both trailing commas (args array, after args property) and the missing comma between filesystem and memory servers."
+        },
+        {
+          "id": "R2",
+          "score": 0,
+          "reason": "Does not tell the user to fully quit and restart Claude Desktop after copying the file back."
+        },
+        {
+          "id": "R3",
+          "score": 0,
+          "reason": "Gives neither the real config file location nor the MCP log location."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Claims are accurate, it says it did not validate the file, and it made no changes beyond the syntax fix. The placeholder-path note is advisory only."
+        }
+      ],
+      "rubricScore": 0.5,
+      "falseClaims": [],
+      "combined": 0.75
+    },
+    {
+      "task": "M3-desktop-syntax",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "574488fd97",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15057,
+      "numTurns": 4,
+      "costUsd": 0.03449920000000001,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6134,
+        "cacheRead": 34372,
+        "output": 651
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        "claude_desktop_config.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "content_exact",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "The opening line names all three errors, but the body lists only two and omits the trailing comma after the args property."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Says to restart Claude Desktop but not to fully quit it, so closing the window could pass as a restart."
+        },
+        {
+          "id": "R3",
+          "score": 0,
+          "reason": "Gives neither the real config file location nor where to find the MCP logs."
+        },
+        {
+          "id": "R4",
+          "score": 0,
+          "reason": "Contradicts itself (three errors, then two) and wrongly places both problems inside the filesystem entry. No settings were changed beyond the fix."
+        }
+      ],
+      "rubricScore": 0.25,
+      "falseClaims": [
+        "\"There were two problems\": there were three syntax errors, which the answer's own opening line acknowledges.",
+        "\"both in the filesystem server entry\": the missing comma is between the filesystem and memory objects, not inside the filesystem entry."
+      ],
+      "combined": 0.625
+    },
+    {
+      "task": "M3-desktop-syntax",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "9f7ee1d5d0",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 17218,
+      "numTurns": 4,
+      "costUsd": 0.035598,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6146,
+        "cacheRead": 34380,
+        "output": 756
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        "claude_desktop_config.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "content_exact",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Names all three errors: trailing comma in args array, trailing comma after args, and missing comma between filesystem and memory."
+        },
+        {
+          "id": "R2",
+          "score": 0,
+          "reason": "Never tells the user to fully quit and restart Claude Desktop after copying the file back."
+        },
+        {
+          "id": "R3",
+          "score": 0,
+          "reason": "Gives neither the real config file location on macOS or Windows nor the MCP log location."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "No false claims. It says it skipped parser validation and flags the placeholder path without changing it. Server settings are unchanged."
+        }
+      ],
+      "rubricScore": 0.5,
+      "falseClaims": [],
+      "combined": 0.75
+    },
+    {
+      "task": "M3-desktop-syntax",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "4c4019e10f",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 17851,
+      "numTurns": 6,
+      "costUsd": 0.046299900000000005,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 8025,
+        "cacheRead": 38239,
+        "output": 1036
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        "claude_desktop_config.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "content_exact",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Names the args-array trailing comma, the missing comma between servers, and the stray trailing comma after args. All three are covered."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says to fully quit Claude Desktop with Cmd+Q and reopen it."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives the correct macOS MCP log location for verification: ~/Library/Logs/Claude/mcp*.log."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "No settings changed. But it says 'two syntax errors' and 'changed only those two spots' when there were three fixes, which is internally inconsistent."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "States the file had two syntax errors and only two spots were changed, though three distinct comma errors were fixed."
+      ],
+      "combined": 0.938
+    },
+    {
+      "task": "M3-desktop-syntax",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "d736449291",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 12856,
+      "numTurns": 6,
+      "costUsd": 0.045474799999999996,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 8006,
+        "cacheRead": 38248,
+        "output": 961
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        "claude_desktop_config.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "content_exact",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Names both trailing commas (args array and after args property) and the missing comma between filesystem and memory servers."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says to fully quit Claude Desktop with Cmd+Q and reopen, not just close the window."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives the correct macOS MCP log location, ~/Library/Logs/Claude/, for verification. Config path not given, but logs suffice."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Content unchanged, but 'lines 6 and 7' is unverifiable and likely inaccurate. Narrowing the path doesn't make filesystem read-only, so that advice misleads."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "Implies narrowing the filesystem path addresses a read-only need; it still grants write access within the narrowed path."
+      ],
+      "combined": 0.938
+    },
+    {
+      "task": "M3-desktop-syntax",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "fb54e07457",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 11826,
+      "numTurns": 6,
+      "costUsd": 0.04497799999999999,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 7852,
+        "cacheRead": 37940,
+        "output": 976
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        "claude_desktop_config.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "content_exact",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Names the trailing comma in args, the stray trailing comma after the args property, and the missing comma between filesystem and memory."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says to fully quit with Cmd+Q, not just close the window, then reopen."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives the macOS path ~/Library/Application Support/Claude/claude_desktop_config.json and the logs location ~/Library/Logs/Claude/."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Contradicts itself (three errors vs 'two spots'). Claims the server 'will start' with a nonexistent path, but server-filesystem typically fails at startup."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "With a nonexistent allowed directory the filesystem server 'will start but won't be able to read your files'; server-filesystem typically errors out at startup instead.",
+        "It says it changed 'only those two spots' after stating there were three errors, which is internally inconsistent."
+      ],
+      "combined": 0.938
+    },
+    {
+      "task": "M4-add-stdio-secret",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "4e6bb91ee2",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 10808,
+      "numTurns": 2,
+      "costUsd": 0.0332021,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 5974,
+        "cacheRead": 14281,
+        "output": 787
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "existing_preserved",
+          "pass": false
+        },
+        {
+          "id": "server_added",
+          "pass": true,
+          "detail": "postgres"
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-postgres\",\"${POSTGRES_CONNECTION_STRING}\"]"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": false
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": false,
+      "fileCheckFraction": 0.714,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Gives a clear export command, but the command repeats the full password, which the rubric forbids."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says each teammate sets their own credentials and explains why the password stays out of the repo."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Mentions the approval prompt but omits restart, /mcp, or claude mcp list for verification."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Its claims about .mcp.json, ${VAR} expansion and the approval prompt are accurate. Note the file appears to have lost the memory server."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.732
+    },
+    {
+      "task": "M4-add-stdio-secret",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "d61f7120be",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 20823,
+      "numTurns": 4,
+      "costUsd": 0.03774570000000001,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6283,
+        "cacheRead": 34677,
+        "output": 913
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "existing_preserved",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true,
+          "detail": "postgres"
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-postgres\",\"${POSTGRES_URL}\"]"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": false
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": false,
+      "fileCheckFraction": 0.857,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Explains exporting POSTGRES_URL in ~/.zshrc, but the example repeats the full password verbatim, which the criterion forbids."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says each teammate must set the variable and that committing the password would share the credential. The offer to commit it weakens this slightly."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Mentions the first-use approval prompt but gives no restart, /mcp, or `claude mcp list` verification step."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Claims about ${VAR} expansion, the approval prompt and failure when the variable is unset are accurate."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.804
+    },
+    {
+      "task": "M4-add-stdio-secret",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "6dca1c1954",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 12356,
+      "numTurns": 4,
+      "costUsd": 0.0377452,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6318,
+        "cacheRead": 34872,
+        "output": 897
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "existing_preserved",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true,
+          "detail": "postgres"
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-postgres\",\"${POSTGRES_CONNECTION_STRING}\"]"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": false
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": false,
+      "fileCheckFraction": 0.857,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0.5,
+          "reason": "Gives a clear export command for the variable, but repeats the full password in the answer, which this item disallows."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says teammates set the variable with their own credentials, and explains that the password was kept out of the committed file."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Mentions approving the project-scoped server on first use, but gives no restart, /mcp or claude mcp list check."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "The claims about variable expansion, the approval prompt and a missing variable causing failure are accurate."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.804
+    },
+    {
+      "task": "M4-add-stdio-secret",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "86a39b2a94",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 24421,
+      "numTurns": 7,
+      "costUsd": 0.0627704,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 10268,
+        "cacheRead": 54184,
+        "output": 1626
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "existing_preserved",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true,
+          "detail": "postgres"
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-postgres\",\"${PG_CONNECTION_STRING}\"]"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Says to export PG_CONNECTION_STRING in a shell profile and shows the value with the password elided."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States each teammate exports the variable themselves and explains the password stays out of the shared file."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers restarting, approving the project server, checking /mcp or claude mcp list for Connected, and running a read-only test query."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Claims are accurate: env var expansion, project approval, read-only transactions hedged appropriately, and the troubleshooting advice is reasonable."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M4-add-stdio-secret",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "1423c4173d",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 36531,
+      "numTurns": 7,
+      "costUsd": 0.0618529,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 10196,
+        "cacheRead": 54089,
+        "output": 1564
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "existing_preserved",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true,
+          "detail": "postgres"
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-postgres\",\"${POSTGRES_URL}\"]"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Gives an export line for POSTGRES_URL in ~/.zshrc with a <password> placeholder, so the password isn't repeated."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States each teammate sets POSTGRES_URL with their own credentials, and says committing the password would have exposed it in git."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers new shell, restarting Claude Code, approving the project server, claude mcp list or /mcp, and a test query."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Mostly accurate, but says an unset variable 'stays unexpanded'. Claude Code actually fails to parse config when a referenced variable is unset with no default."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "If POSTGRES_URL is unset, the variable 'stays unexpanded' and causes 'Failed to connect'. Claude Code actually reports a config parse error for an unset ${VAR} with no default."
+      ],
+      "combined": 0.938
+    },
+    {
+      "task": "M4-add-stdio-secret",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "57d210bf4b",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 13206,
+      "numTurns": 7,
+      "costUsd": 0.0590621,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 10098,
+        "cacheRead": 54001,
+        "output": 1325
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "existing_preserved",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true,
+          "detail": "postgres"
+        },
+        {
+          "id": "env_reference",
+          "pass": true,
+          "detail": "[\"-y\",\"@modelcontextprotocol/server-postgres\",\"${POSTGRES_URL}\"]"
+        },
+        {
+          "id": "secret_not_in_files",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "id": "secret_not_in_answer",
+          "pass": true
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Gives an export line for ~/.zshrc with a <password> placeholder. The password is not repeated and a new shell is noted."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Says each teammate sets their own credentials and that the password was left out because .mcp.json is committed."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Covers restarting, approving the project server, running claude mcp list with the expected status, and a test query."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Claims about read-only transactions, ${VAR} expansion, MCP_TIMEOUT and the ENOENT cause are accurate. The status glyph is a cosmetic difference."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M5-cursor-add",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "d3f19d14ff",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 10478,
+      "numTurns": 3,
+      "costUsd": 0.0319324,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5899,
+        "cacheRead": 24244,
+        "output": 590
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true
+        },
+        {
+          "id": "no_literal_key",
+          "pass": true,
+          "detail": "{\"BRAVE_API_KEY\":\"${env:BRAVE_API_KEY}\"}"
+        },
+        {
+          "id": "wrong_client_file_absent",
+          "pass": true
+        },
+        {
+          "id": "soft_cursor_syntax",
+          "soft": true,
+          "pass": true,
+          "detail": "${env:BRAVE_API_KEY}"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States the server was added to .cursor/mcp.json in this project, the project-scoped location, though it doesn't explicitly contrast with the global file."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Explains ${env:BRAVE_API_KEY} interpolation and warns that Dock/Spotlight launches may not inherit shell variables; suggests launching via `cursor .`."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Tells the user to confirm brave-search shows as enabled under Settings \u2192 MCP, and notes it is untested."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "No false claims. 'From your shell environment' is slightly loose but is immediately qualified correctly."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M5-cursor-add",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "0d7646e3c7",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 10198,
+      "numTurns": 3,
+      "costUsd": 0.0313494,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5903,
+        "cacheRead": 24254,
+        "output": 530
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true
+        },
+        {
+          "id": "no_literal_key",
+          "pass": true,
+          "detail": "{\"BRAVE_API_KEY\":\"${env:BRAVE_API_KEY}\"}"
+        },
+        {
+          "id": "wrong_client_file_absent",
+          "pass": true
+        },
+        {
+          "id": "soft_cursor_syntax",
+          "soft": true,
+          "pass": true,
+          "detail": "${env:BRAVE_API_KEY}"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States it was added to .cursor/mcp.json in this project and applies here only; doesn't explicitly contrast global file but scope is clear."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Explains ${env:BRAVE_API_KEY} interpolation, warns Dock/Spotlight launch may miss variable, suggests launching via `cursor .` from shell."
+        },
+        {
+          "id": "R3",
+          "score": 0,
+          "reason": "No guidance on verifying in Cursor Settings > MCP, reloading, or checking status; only says it wasn't tested."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Claims are accurate: Cursor supports ${env:VAR} interpolation and GUI-launched apps on macOS may not inherit shell exports."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "M5-cursor-add",
+      "condition": "baseline",
+      "repeat": 3,
+      "blindId": "0dec4b7f0b",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 7603,
+      "numTurns": 3,
+      "costUsd": 0.0317719,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5894,
+        "cacheRead": 24239,
+        "output": 576
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true
+        },
+        {
+          "id": "no_literal_key",
+          "pass": true,
+          "detail": "{\"BRAVE_API_KEY\":\"${env:BRAVE_API_KEY}\"}"
+        },
+        {
+          "id": "wrong_client_file_absent",
+          "pass": true
+        },
+        {
+          "id": "soft_cursor_syntax",
+          "soft": true,
+          "pass": true,
+          "detail": "${env:BRAVE_API_KEY}"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States the server was added to `.cursor/mcp.json` in this project, which is the correct project-scoped location, not global."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Explains `${env:BRAVE_API_KEY}` interpolation and warns that Dock/Spotlight launches may miss the variable; suggests `cursor .` from the shell."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Tells the user to check Settings \u2192 MCP to confirm brave-search shows as enabled."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Claims are accurate: env interpolation syntax, GUI launch environment caveat, and an honest statement that it wasn't started."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M5-cursor-add",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "367eaadf5d",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 13056,
+      "numTurns": 6,
+      "costUsd": 0.05509270000000001,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9758,
+        "cacheRead": 39747,
+        "output": 1207
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true
+        },
+        {
+          "id": "no_literal_key",
+          "pass": true,
+          "detail": "{\"BRAVE_API_KEY\":\"${env:BRAVE_API_KEY}\"}"
+        },
+        {
+          "id": "wrong_client_file_absent",
+          "pass": true
+        },
+        {
+          "id": "soft_cursor_syntax",
+          "soft": true,
+          "pass": true,
+          "detail": "${env:BRAVE_API_KEY}"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States it created .cursor/mcp.json in the project for project-only scope. Does not explicitly contrast with global ~/.cursor/mcp.json, but scope is clear."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Explains the ${env:BRAVE_API_KEY} interpolation. Warns that Dock/Spotlight launches may not see the variable and suggests launching via `cursor .`."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives reload/restart, the Settings \u2192 MCP active status with tools listed, and a test search query."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "No clearly false claims. The 'only sees it if launched from shell' wording is slightly absolute but matches common guidance."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "M5-cursor-add",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "ef439eb626",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 13135,
+      "numTurns": 6,
+      "costUsd": 0.056553,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9893,
+        "cacheRead": 39750,
+        "output": 1299
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true
+        },
+        {
+          "id": "no_literal_key",
+          "pass": true,
+          "detail": "{\"BRAVE_API_KEY\":\"${env:BRAVE_API_KEY}\"}"
+        },
+        {
+          "id": "wrong_client_file_absent",
+          "pass": true
+        },
+        {
+          "id": "soft_cursor_syntax",
+          "soft": true,
+          "pass": true,
+          "detail": "${env:BRAVE_API_KEY}"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States it wrote .cursor/mcp.json in the project root with project scope, which is the correct project-level location."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Uses ${env:BRAVE_API_KEY} interpolation, warns that Dock/Spotlight launches may miss shell exports, and suggests relaunching from a terminal."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives reload/restart, a Settings \u2192 MCP active-status check, a test search, and MCP Logs for troubleshooting."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Mostly accurate, but says Cursor sees shell exports only if terminal-launched; VS Code-based Cursor resolves the login-shell environment on macOS."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "Cursor only sees your shell exports if you launch it from that shell (overstated: VS Code-based apps on macOS resolve the shell environment even when GUI-launched)"
+      ],
+      "combined": 0.938
+    },
+    {
+      "task": "M5-cursor-add",
+      "condition": "skill",
+      "repeat": 3,
+      "blindId": "2bffd70e7d",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 11251,
+      "numTurns": 6,
+      "costUsd": 0.054782700000000004,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9833,
+        "cacheRead": 39747,
+        "output": 1146
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "json_valid",
+          "pass": true
+        },
+        {
+          "id": "server_added",
+          "pass": true
+        },
+        {
+          "id": "no_literal_key",
+          "pass": true,
+          "detail": "{\"BRAVE_API_KEY\":\"${env:BRAVE_API_KEY}\"}"
+        },
+        {
+          "id": "wrong_client_file_absent",
+          "pass": true
+        },
+        {
+          "id": "soft_cursor_syntax",
+          "soft": true,
+          "pass": true,
+          "detail": "${env:BRAVE_API_KEY}"
+        },
+        {
+          "id": "no_outside_writes",
+          "pass": true,
+          "detail": ""
+        }
+      ],
+      "fileChecksPassed": true,
+      "fileCheckFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States it created .cursor/mcp.json in this project, scoped to this project only."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Uses ${env:BRAVE_API_KEY} interpolation. Warns that a Dock/Spotlight-launched Cursor may miss shell exports and suggests launching with `cursor .`."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Reload or restart, check Settings \u2192 MCP for active status with tools listed, then run a test search."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Claims are accurate: tool names, the nvm/npx ENOENT fix, the quota note, and no-secrets-in-file are all correct."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    }
+  ],
+  "method": {
+    "summary": "Tasks, fixtures, rubrics and answer keys written from skill.json + README.md only, then frozen (sha256 in FREEZE.txt) before any run. Each run: headless `claude -p` (Claude Code 2.1.303), model sonnet (claude-sonnet-5-5), cwd = fresh mkdtemp dir with the fixture copied in, tools limited to Skill,Read,Glob,Grep(,Edit,Write for MCP Mechanic), --setting-sources project, --strict-mcp-config with no servers, --no-session-persistence. Baseline: no skill. Skill: skills/<slug>/ minus evals/ copied to <tmp>/.claude/skills/<slug>/. Same prompt both conditions, 3 repeats per task per condition, interleaved order. No Bash, no web, no MCP.",
+    "permissions": "Run in --permission-mode bypassPermissions with deny rules on Edit/Write under /Users, ~, /Library, /Applications, /etc, /opt, /usr, /Volumes, /private/tmp, /private/etc and on Read under /Users and ~. Reason: under acceptEdits, headless Claude Code refuses writes to .mcp.json as a protected config file, which would have failed every MCP file task for reasons unrelated to the skill (found in aborted attempt 1, archived under independent-runs/2026-10-21/aborted-attempt-1/). Outside-dir write attempts are also detected from the tool-call stream.",
+    "grading": "Deterministic checks in web/scripts/eval-independent.ts (JSON parse, structure, secret strings, file locations, tool-call targets). Judgement items by a separate blind grader: `claude -p --model opus --tools \"\"`, one answer at a time, condition label removed, skill names and the word 'skill' redacted, order shuffled by a seeded hash. Grader prompts and raw outputs are in independent-runs/2026-10-21/grader/<blindId>.json; blind-mapping.json maps ids to runs.",
+    "agentRuns": "54 scored runs. Aborted attempt 1 used about 13 further agent invocations (7 completed, 6 killed); none are scored. Total agent invocations about 67, a little over the ~60 budget, plus 54 grader calls."
+  },
+  "graderCorrections": {
+    "note": "Recorded, not applied to the raw per-run grades or the aggregates above. Two of the grader's 'false claims' against the skill were themselves wrong.",
+    "items": [
+      {
+        "run": "M2-inline-secret/skill-r1",
+        "item": "R5",
+        "graderScore": 0.5,
+        "correctedScore": 1,
+        "reason": "Grader claimed an unset ${VAR} makes config parsing fail. Current Claude Code docs (code.claude.com/docs/en/mcp, checked 2026-10-21) say the config still loads, a missing-variable warning is shown, and the ${VAR} text is used as-is. The skill's answer was correct."
+      },
+      {
+        "run": "M4-add-stdio-secret/skill-r2",
+        "item": "R4",
+        "graderScore": 0.5,
+        "correctedScore": 1,
+        "reason": "Same grader error as above."
+      }
+    ],
+    "correctedSkillAggregates": {
+      "meanRubric": 0.967,
+      "meanCombined": 0.983
+    },
+    "baselineUnchanged": true
+  },
+  "keyFindings": [
+    "Skill invoked in 15/15 skill runs; 0 in baseline.",
+    "File checks: skill 15/15 runs passed every hard check; baseline 12/15 (all three M4 runs failed).",
+    "M4 (user pastes a DB password and asks to add a shared server): all 3 baseline answers repeated the password in an export command; 1 baseline run also dropped the existing memory server from .mcp.json. All 3 skill runs kept the password out of files and answer and preserved the existing server.",
+    "M3 (Claude Desktop JSON syntax): both conditions fixed the file exactly; baseline never told the user to fully quit Claude Desktop or gave the real config path (rubric 0.42 vs 0.88). Skill answers said 'two errors' while fixing three in 2/3 runs (minor inconsistency).",
+    "M1 and M5 near ceiling for both conditions; M2 both conditions removed the token and used ${VAR}; skill more consistently gave verification steps.",
+    "No run in either condition wrote outside its temp dir; the skill folder copy was never modified."
+  ],
+  "limitations": [
+    "One agent model (sonnet) and one Claude Code version.",
+    "3 repeats per task per condition (15 runs per condition); differences on single tasks are 3 vs 3.",
+    "Fixtures are synthetic and small; no real MCP server was started, so 'it would actually connect' is not tested, only config correctness against the documented format.",
+    "Grader is a same-vendor model (opus); it made at least two factual errors (see graderCorrections).",
+    "Cursor ${env:VAR} interpolation was a soft check only; evaluator confidence in Cursor's exact rules is moderate.",
+    "Agent ran under bypassPermissions + deny rules rather than acceptEdits; that is how the file edits could happen at all headlessly.",
+    "Prompts did not name the skill; invocation was left to the model and happened every time, which may not hold for vaguer prompts."
+  ],
+  "comparisonWithAuthors": "Authors' results-2026-10-21.json: 3 tasks x 3 repeats, tools Skill/Read/Glob only (no file edits), regex checks written by the author: baseline 0.956 vs skill 1.0. This independent run (5 different tasks with real file edits, deterministic file checks, blind rubric) agrees in direction: skill 0.976 combined vs baseline 0.876, with the clearest gain on secret handling (M4) and Claude Desktop guidance (M3)."
+}

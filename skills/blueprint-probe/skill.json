@@ -1,0 +1,45 @@
+{
+  "name": "blueprint-probe",
+  "displayName": "Blueprint Probe",
+  "subtitle": "Find the flaws in an AI automation before you build it",
+  "title": "Blueprint Probe",
+  "version": "1.0.1",
+  "license": "MIT",
+  "maintainer": "AI Craftbook",
+  "status": "released",
+  "supportedAgents": [
+    "claude-code",
+    "claude-desktop",
+    "cursor"
+  ],
+  "installMethods": [
+    "copy folder to ~/.claude/skills/ or .claude/skills/",
+    "zip upload in Claude apps (Settings > Capabilities > Skills)"
+  ],
+  "permissions": {
+    "files": "Reads its own checklist and any design file the user points at.",
+    "shell": "None. Bundles no scripts.",
+    "network": "None required.",
+    "mcp": "None."
+  },
+  "sitePath": "/skills/blueprint-probe",
+  "created": "2026-10-21",
+  "updated": "2026-10-22",
+  "previousNames": [
+    "automation-architecture-review"
+  ],
+  "nameCheck": {
+    "name": "Blueprint Probe",
+    "id": "blueprint-probe",
+    "checkedAt": "2026-10-21",
+    "conflicts": [],
+    "notes": [],
+    "sources": [
+      "GitHub code search (SKILL.md frontmatter, verified)",
+      "GitHub repositories",
+      "npm",
+      "PyPI",
+      "AI Craftbook catalogue"
+    ]
+  }
+}

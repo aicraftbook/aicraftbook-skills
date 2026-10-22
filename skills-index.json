@@ -1,0 +1,126 @@
+{
+  "generated": "2026-10-22T15:13:35.433Z",
+  "site": "https://aicraftbook.com",
+  "repo": "https://github.com/aicraftbook/aicraftbook-skills",
+  "pending": {},
+  "skills": {
+    "answer-ready": {
+      "displayName": "Answer Ready",
+      "subtitle": "Make a web page easier for search and AI answers to use",
+      "version": "1.0.2",
+      "status": "released",
+      "fingerprint": "6c6bef5a8e2bcebd99ba7d3c72cee297894fc62db832728c7cec8f2b492165f4",
+      "sitePath": "/skills/answer-ready",
+      "download": {
+        "url": "https://aicraftbook.com/kits/answer-ready-v1.0.2.zip",
+        "sha256": "d0376eec815eb88e79e4840b128759d99074ea3bf0ae9a25e2353bbea8f21584"
+      }
+    },
+    "blueprint-probe": {
+      "displayName": "Blueprint Probe",
+      "subtitle": "Find the flaws in an AI automation before you build it",
+      "version": "1.0.1",
+      "status": "released",
+      "fingerprint": "274da25a8dc099e1048deca53c7b4ccbe4154136422c3ceca592a0e8c9a3d1f1",
+      "sitePath": "/skills/blueprint-probe",
+      "download": {
+        "url": "https://aicraftbook.com/kits/blueprint-probe-v1.0.1.zip",
+        "sha256": "ec6a4db645e33805f2b2659d57986e3050a1349827079a602acbf6342d098e26"
+      }
+    },
+    "context-trim": {
+      "displayName": "Context Trim",
+      "subtitle": "Audit and tighten an agent's CLAUDE.md or AGENTS.md",
+      "version": "1.1.2",
+      "status": "released",
+      "fingerprint": "c9a06e4db7c5ad3b14e442419f4b25c9b4b2041a0ef6273831408537a82e9ea5",
+      "sitePath": "/skills/context-trim",
+      "download": {
+        "url": "https://aicraftbook.com/kits/context-trim-v1.1.2.zip",
+        "sha256": "3e19d511d62f316e7637af709d4471842fc8551ea351e19b57766c53de1d0a64"
+      }
+    },
+    "cost-compass": {
+      "displayName": "Cost Compass",
+      "subtitle": "Estimate what an AI feature or automation will cost to run",
+      "version": "1.0.2",
+      "status": "released",
+      "fingerprint": "d06782dd7c74b7ef60df03d64f1bfbf596276a126d29b89fd5f6f711a87fd42f",
+      "sitePath": "/skills/cost-compass",
+      "download": {
+        "url": "https://aicraftbook.com/kits/cost-compass-v1.0.2.zip",
+        "sha256": "58160e0debca1b7e68e62b457427e690d91e8117182d0f2625406d46b1a7dfe8"
+      }
+    },
+    "first-reply": {
+      "displayName": "First Reply",
+      "subtitle": "Draft the first reply to a new real-estate lead",
+      "version": "1.1.1",
+      "status": "released",
+      "fingerprint": "1c101ae6538c86537932633966d639205f548c39a0daa3ee0d6e6c23c0bc636a",
+      "sitePath": "/skills/first-reply",
+      "download": {
+        "url": "https://aicraftbook.com/skills/first-reply#skill-md"
+      }
+    },
+    "flow-medic": {
+      "displayName": "Flow Medic",
+      "subtitle": "Diagnose a failed automation run from its error and logs",
+      "version": "1.0.2",
+      "status": "released",
+      "fingerprint": "af1dea4e87193c1824b29905051d7e4eee7ebf6499da463e304414c531cd8937",
+      "sitePath": "/skills/flow-medic",
+      "download": {
+        "url": "https://aicraftbook.com/kits/flow-medic-v1.0.2.zip",
+        "sha256": "a348b839c854041ddbe63aa9b6e2b83f940dc5a3d7f27f0b823408bc258bd80f"
+      }
+    },
+    "guide-proof": {
+      "displayName": "Guide Proof",
+      "subtitle": "Check that a setup guide can actually be followed",
+      "version": "1.1.1",
+      "status": "released",
+      "fingerprint": "3cec9d7d189e778e94f1cd90ad78b76f2c2f506a0efa93204f73f44533f3fd27",
+      "sitePath": "/skills/guide-proof",
+      "download": {
+        "url": "https://aicraftbook.com/kits/guide-proof-v1.1.1.zip",
+        "sha256": "9e64265fcb6516dc8afcb8509f3c4acf9f86209f2d5ae0fb2db3ee600fa83bb6"
+      }
+    },
+    "mcp-mechanic": {
+      "displayName": "MCP Mechanic",
+      "subtitle": "Set up and fix MCP servers without exposing secrets",
+      "version": "1.0.1",
+      "status": "released",
+      "fingerprint": "3f9748d5327f28c16bc355b2715c27bb7aeb0581f317f6e77410a6f82a788c80",
+      "sitePath": "/skills/mcp-mechanic",
+      "download": {
+        "url": "https://aicraftbook.com/skills/mcp-mechanic#skill-md"
+      }
+    },
+    "prompt-proof": {
+      "displayName": "Prompt Proof",
+      "subtitle": "Find weak spots in a prompt and write tests for it",
+      "version": "1.0.2",
+      "status": "released",
+      "fingerprint": "e8740847b6ce0f65a64923a61c9a736729263b31994efa2dbc84fa4f3c3e1413",
+      "sitePath": "/skills/prompt-proof",
+      "download": {
+        "url": "https://aicraftbook.com/kits/prompt-proof-v1.0.2.zip",
+        "sha256": "c17f65dcaa2b1d2137bac627b7c84e93003c0a9bb53943ab0eaedcc85007d0de"
+      }
+    },
+    "source-sieve": {
+      "displayName": "Source Sieve",
+      "subtitle": "Check every claim in a draft against its sources",
+      "version": "1.1.2",
+      "status": "released",
+      "fingerprint": "24b62bdbbf213d88f5c0d26f60c0f471f7ab0138b77548a46ff335cb4e1eaf03",
+      "sitePath": "/skills/source-sieve",
+      "download": {
+        "url": "https://aicraftbook.com/kits/source-sieve-v1.1.2.zip",
+        "sha256": "011069b40c510c49adab4c0406279161e4652168793a66af91e67be29dafd482"
+      }
+    }
+  }
+}

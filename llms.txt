@@ -1,0 +1,34 @@
+# AI Craftbook Skills
+
+> Original, open-source agent skills (SKILL.md folders) written and maintained by AI Craftbook. MIT licensed. Each skill has a full guide, test results and security review at aicraftbook.com.
+
+Website: https://aicraftbook.com/skills
+
+## Skills
+
+- [Answer Ready](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/answer-ready/README.md): Make a web page easier for search and AI answers to use. Version 1.0.2. Guide: https://aicraftbook.com/skills/answer-ready
+- [Blueprint Probe](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/blueprint-probe/README.md): Find the flaws in an AI automation before you build it. Version 1.0.1. Guide: https://aicraftbook.com/skills/blueprint-probe
+- [Context Trim](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/context-trim/README.md): Audit and tighten an agent's CLAUDE.md or AGENTS.md. Version 1.1.2. Guide: https://aicraftbook.com/skills/context-trim
+- [Cost Compass](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/cost-compass/README.md): Estimate what an AI feature or automation will cost to run. Version 1.0.2. Guide: https://aicraftbook.com/skills/cost-compass
+- [First Reply](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/first-reply/README.md): Draft the first reply to a new real-estate lead. Version 1.1.1. Guide: https://aicraftbook.com/skills/first-reply
+- [Flow Medic](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/flow-medic/README.md): Diagnose a failed automation run from its error and logs. Version 1.0.2. Guide: https://aicraftbook.com/skills/flow-medic
+- [Guide Proof](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/guide-proof/README.md): Check that a setup guide can actually be followed. Version 1.1.1. Guide: https://aicraftbook.com/skills/guide-proof
+- [MCP Mechanic](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/mcp-mechanic/README.md): Set up and fix MCP servers without exposing secrets. Version 1.0.1. Guide: https://aicraftbook.com/skills/mcp-mechanic
+- [Prompt Proof](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/prompt-proof/README.md): Find weak spots in a prompt and write tests for it. Version 1.0.2. Guide: https://aicraftbook.com/skills/prompt-proof
+- [Source Sieve](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/source-sieve/README.md): Check every claim in a draft against its sources. Version 1.1.2. Guide: https://aicraftbook.com/skills/source-sieve
+
+## Install and use
+
+- [Install a skill](https://github.com/aicraftbook/aicraftbook-skills/blob/main/README.md#how-do-i-install-a-skill): copy the skill folder into ~/.claude/skills/ or upload the zip in the Claude apps.
+- [How skills are reviewed](https://github.com/aicraftbook/aicraftbook-skills/blob/main/README.md#how-are-skills-reviewed)
+
+## Project
+
+- [Contributing](https://github.com/aicraftbook/aicraftbook-skills/blob/main/CONTRIBUTING.md)
+- [Security policy](https://github.com/aicraftbook/aicraftbook-skills/blob/main/SECURITY.md)
+- [Changelog](https://github.com/aicraftbook/aicraftbook-skills/blob/main/CHANGELOG.md)
+- [Citation](https://github.com/aicraftbook/aicraftbook-skills/blob/main/CITATION.cff)
+
+## Optional
+
+- [llms-full.txt](https://github.com/aicraftbook/aicraftbook-skills/blob/main/llms-full.txt): every released skill's README and SKILL.md in one file.

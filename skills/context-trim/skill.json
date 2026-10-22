@@ -1,0 +1,43 @@
+{
+  "name": "context-trim",
+  "displayName": "Context Trim",
+  "subtitle": "Audit and tighten an agent's CLAUDE.md or AGENTS.md",
+  "title": "Context Trim",
+  "version": "1.1.2",
+  "license": "MIT",
+  "maintainer": "AI Craftbook",
+  "status": "released",
+  "supportedAgents": [
+    "claude-code",
+    "claude-desktop"
+  ],
+  "installMethods": [
+    "copy folder to ~/.claude/skills/ or .claude/skills/",
+    "Upload the folder as a zip in Claude apps: Customize > Skills (upload not tried by us)"
+  ],
+  "permissions": {
+    "files": "Reads instruction files (CLAUDE.md, AGENTS.md, rules) and the repository files that define commands, paths and versions. Writes instruction files only after the user approves the proposal.",
+    "shell": "None. It does not run the commands it checks. Bundles no scripts.",
+    "network": "None required.",
+    "mcp": "None."
+  },
+  "sitePath": "/skills/context-trim",
+  "created": "2026-10-21",
+  "updated": "2026-10-22",
+  "nameCheck": {
+    "name": "Context Trim",
+    "id": "context-trim",
+    "checkedAt": "2026-10-22",
+    "conflicts": [],
+    "notes": [
+      "GitHub repo stapesco/context-trim (1 stars)"
+    ],
+    "sources": [
+      "GitHub code search (SKILL.md frontmatter, verified)",
+      "GitHub repositories",
+      "npm",
+      "PyPI",
+      "AI Craftbook catalogue"
+    ]
+  }
+}

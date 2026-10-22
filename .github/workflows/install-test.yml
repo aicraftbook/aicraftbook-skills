@@ -1,0 +1,60 @@
+name: install-test
+# Installs every released skill from this public repository with the Skills CLI (the tool skills.sh uses),
+# in a clean runner, and checks the installed files against skills-index.json.
+# Telemetry is off, so these test installs are not counted on the skills.sh leaderboard.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 6 * * 1"
+permissions:
+  contents: read
+env:
+  SKILLS_CLI: skills@1.7.4
+  DISABLE_TELEMETRY: "1"
+  DO_NOT_TRACK: "1"
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Discovery lists every released skill
+        run: |
+          npx -y "$SKILLS_CLI" add "$GITHUB_REPOSITORY" --list > list.txt 2>&1
+          for s in $(node -e 'console.log(Object.keys(require("./skills-index.json").skills).join(" "))'); do
+            grep -q "$s" list.txt || { echo "::error::$s not discovered"; exit 1; }
+          done
+      - name: Project install for Claude Code, Cursor and Codex, one skill at a time
+        run: |
+          set -e
+          for s in $(node -e 'console.log(Object.keys(require("./skills-index.json").skills).join(" "))'); do
+            p="$RUNNER_TEMP/p-$s"; mkdir -p "$p"; git -C "$p" init -q
+            (cd "$p" && npx -y "$SKILLS_CLI" add "$GITHUB_REPOSITORY" --skill "$s" -a claude-code cursor codex -y > install.log 2>&1) || { cat "$p/install.log"; exit 1; }
+            node tools/install-check.mjs "$p" "$s" .claude/skills | tee -a results.jsonl
+          done
+      - name: Global install for Claude Code, then update check
+        run: |
+          set -e
+          export HOME="$RUNNER_TEMP/home"; mkdir -p "$HOME"
+          s=$(node -e 'console.log(Object.keys(require("./skills-index.json").skills)[0])')
+          npx -y "$SKILLS_CLI" add "$GITHUB_REPOSITORY" --skill "$s" -a claude-code -g -y
+          test -f "$HOME/.claude/skills/$s/SKILL.md"
+          npx -y "$SKILLS_CLI" update -g -y
+          test -f "$HOME/.claude/skills/$s/SKILL.md"
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Skills CLI install test ($SKILLS_CLI)" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"; cat results.jsonl >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true; echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: install-results
+          path: results.jsonl
+          if-no-files-found: ignore

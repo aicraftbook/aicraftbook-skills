@@ -1,0 +1,62 @@
+{
+  "name": "mcp-mechanic",
+  "displayName": "MCP Mechanic",
+  "subtitle": "Set up and fix MCP servers without exposing secrets",
+  "title": "MCP Mechanic",
+  "version": "1.0.1",
+  "license": "MIT",
+  "maintainer": "AI Craftbook",
+  "status": "released",
+  "supportedAgents": [
+    "claude-code",
+    "claude-desktop",
+    "cursor"
+  ],
+  "installMethods": [
+    "copy folder to ~/.claude/skills/ or .claude/skills/",
+    "zip upload in Claude apps (Settings > Capabilities > Skills)"
+  ],
+  "permissions": {
+    "files": "Reads its own reference files. Proposes config edits; writes only if the agent's own permissions allow and the user agrees.",
+    "shell": "Suggests commands such as claude mcp add and claude mcp list. Bundles no scripts.",
+    "network": "None required.",
+    "mcp": "Helps configure MCP servers; adds none itself."
+  },
+  "sitePath": "/skills/mcp-mechanic",
+  "created": "2026-10-21",
+  "updated": "2026-10-22",
+  "acknowledgedFindings": [
+    {
+      "ruleId": "AG002",
+      "file": "SKILL.md",
+      "reason": "Names the MCP config file paths of Cursor and Claude Desktop because configuring them is the skill's purpose. It tells the user where to edit; it does not change permissions, hooks or security settings."
+    },
+    {
+      "ruleId": "AG002",
+      "file": "references/clients.md",
+      "reason": "Names the MCP config file paths of Cursor and Claude Desktop because configuring them is the skill's purpose. It tells the user where to edit; it does not change permissions, hooks or security settings."
+    },
+    {
+      "ruleId": "AG002",
+      "file": "examples/requests.md",
+      "reason": "Names the MCP config file paths of Cursor and Claude Desktop because configuring them is the skill's purpose. It tells the user where to edit; it does not change permissions, hooks or security settings."
+    }
+  ],
+  "previousNames": [
+    "mcp-setup-assistant"
+  ],
+  "nameCheck": {
+    "name": "MCP Mechanic",
+    "id": "mcp-mechanic",
+    "checkedAt": "2026-10-21",
+    "conflicts": [],
+    "notes": [],
+    "sources": [
+      "GitHub code search (SKILL.md frontmatter, verified)",
+      "GitHub repositories",
+      "npm",
+      "PyPI",
+      "AI Craftbook catalogue"
+    ]
+  }
+}

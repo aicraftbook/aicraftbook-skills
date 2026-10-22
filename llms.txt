@@ -10,7 +10,7 @@ Website: https://aicraftbook.com/skills
 - [Blueprint Probe](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/blueprint-probe/README.md): Find the flaws in an AI automation before you build it. Version 1.0.1. Guide: https://aicraftbook.com/skills/blueprint-probe
 - [Context Trim](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/context-trim/README.md): Audit and tighten an agent's CLAUDE.md or AGENTS.md. Version 1.1.2. Guide: https://aicraftbook.com/skills/context-trim
 - [Cost Compass](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/cost-compass/README.md): Estimate what an AI feature or automation will cost to run. Version 1.0.2. Guide: https://aicraftbook.com/skills/cost-compass
-- [First Reply](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/first-reply/README.md): Draft the first reply to a new real-estate lead. Version 1.1.1. Guide: https://aicraftbook.com/skills/first-reply
+- [First Reply](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/first-reply/README.md): Draft the first reply to a new real-estate lead. Version 1.2.0. Guide: https://aicraftbook.com/skills/first-reply
 - [Flow Medic](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/flow-medic/README.md): Diagnose a failed automation run from its error and logs. Version 1.0.2. Guide: https://aicraftbook.com/skills/flow-medic
 - [Guide Proof](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/guide-proof/README.md): Check that a setup guide can actually be followed. Version 1.1.1. Guide: https://aicraftbook.com/skills/guide-proof
 - [MCP Mechanic](https://github.com/aicraftbook/aicraftbook-skills/blob/main/skills/mcp-mechanic/README.md): Set up and fix MCP servers without exposing secrets. Version 1.0.1. Guide: https://aicraftbook.com/skills/mcp-mechanic
@@ -19,7 +19,7 @@ Website: https://aicraftbook.com/skills
 
 ## Install and use
 
-- [Install a skill](https://github.com/aicraftbook/aicraftbook-skills/blob/main/README.md#how-do-i-install-a-skill): copy the skill folder into ~/.claude/skills/ or upload the zip in the Claude apps.
+- [Install a skill](https://github.com/aicraftbook/aicraftbook-skills/blob/main/README.md#how-do-i-install-a-skill): `npx skills add aicraftbook/aicraftbook-skills --skill <name>`, or copy the skill folder into ~/.claude/skills/, or upload the zip in the Claude apps.
 - [How skills are reviewed](https://github.com/aicraftbook/aicraftbook-skills/blob/main/README.md#how-are-skills-reviewed)
 
 ## Project

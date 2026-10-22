@@ -1,0 +1,24 @@
+{
+  "name": "aicraftbook",
+  "owner": {
+    "name": "AI Craftbook",
+    "url": "https://aicraftbook.com"
+  },
+  "plugins": [
+    {
+      "name": "cost-compass",
+      "source": "./plugins/cost-compass",
+      "description": "Estimate what an AI feature or automation will cost to run"
+    },
+    {
+      "name": "first-reply",
+      "source": "./plugins/first-reply",
+      "description": "Draft the first reply to a new real-estate lead"
+    },
+    {
+      "name": "mcp-mechanic",
+      "source": "./plugins/mcp-mechanic",
+      "description": "Set up and fix MCP servers without exposing secrets"
+    }
+  ]
+}

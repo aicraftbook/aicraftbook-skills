@@ -1,0 +1,20 @@
+{
+  "name": "mcp-mechanic",
+  "version": "1.0.1",
+  "description": "Set up and fix MCP servers without exposing secrets. An AI Craftbook skill that adds and fixes MCP servers in Claude Code, Claude Desktop and Cursor without ever handling your secrets.",
+  "author": {
+    "name": "AI Craftbook",
+    "url": "https://aicraftbook.com"
+  },
+  "homepage": "https://aicraftbook.com/skills/mcp-mechanic?utm_source=claude&utm_medium=referral&utm_campaign=mcp-mechanic",
+  "repository": "https://github.com/aicraftbook/aicraftbook-skills",
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "ai-craftbook",
+    "mcp",
+    "mechanic"
+  ],
+  "displayName": "MCP Mechanic",
+  "logo": "assets/logo.svg"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "cost-compass",
+  "version": "1.0.2",
+  "description": "Estimate what an AI feature or automation will cost to run. An AI Craftbook skill that estimates the monthly running cost of an AI feature, agent or automation from its workload, with every assumption, the arithmetic and a low-to-high range.",
+  "author": {
+    "name": "AI Craftbook",
+    "url": "https://aicraftbook.com"
+  },
+  "homepage": "https://aicraftbook.com/skills/cost-compass?utm_source=claude&utm_medium=referral&utm_campaign=cost-compass",
+  "repository": "https://github.com/aicraftbook/aicraftbook-skills",
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "ai-craftbook",
+    "cost",
+    "compass"
+  ],
+  "displayName": "Cost Compass",
+  "icon": "./assets/logo.svg",
+  "documentationUrl": "https://aicraftbook.com/skills/cost-compass?utm_source=claude&utm_medium=referral&utm_campaign=cost-compass",
+  "supportUrl": "https://github.com/aicraftbook/aicraftbook-skills/issues/new/choose"
+}

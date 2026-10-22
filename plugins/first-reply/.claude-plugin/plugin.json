@@ -1,0 +1,22 @@
+{
+  "name": "first-reply",
+  "version": "1.2.0",
+  "description": "Draft the first reply to a new real-estate lead. An Agent Skill that drafts a first SMS and email to a new real estate lead from the lead's own fields, for you to review and send.",
+  "author": {
+    "name": "AI Craftbook",
+    "url": "https://aicraftbook.com"
+  },
+  "homepage": "https://aicraftbook.com/skills/first-reply?utm_source=claude&utm_medium=referral&utm_campaign=first-reply",
+  "repository": "https://github.com/aicraftbook/aicraftbook-skills",
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "ai-craftbook",
+    "first",
+    "reply"
+  ],
+  "displayName": "First Reply",
+  "icon": "./assets/logo.svg",
+  "documentationUrl": "https://aicraftbook.com/skills/first-reply?utm_source=claude&utm_medium=referral&utm_campaign=first-reply",
+  "supportUrl": "https://github.com/aicraftbook/aicraftbook-skills/issues/new/choose"
+}

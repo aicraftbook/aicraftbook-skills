@@ -1,0 +1,1932 @@
+{
+  "skill": "mcp-mechanic",
+  "date": "2026-10-22",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/mcp-mechanic/evals/independent-runs/2026-10-22/frozen",
+    "sha256": "d5d3c5e75bc2d5894223737e24cd1422b0dfaab3c621da3602733f7e5148ed62",
+    "freezeRecord": "skills/mcp-mechanic/evals/independent-runs/2026-10-22/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "2460924a28b6417066b1d41c9485d07e0d4fec0102341177695b178c9aa1a140"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanCombined": 0.85,
+      "meanRubric": 0.885,
+      "meanCheckFraction": 0.814,
+      "falseClaimRuns": 3,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 17363.833,
+      "meanCostUsd": 0.034
+    },
+    "skill": {
+      "n": 12,
+      "meanCombined": 0.919,
+      "meanRubric": 0.948,
+      "meanCheckFraction": 0.889,
+      "falseClaimRuns": 3,
+      "skillInvocationRate": 0.833,
+      "meanDurationMs": 17177.417,
+      "meanCostUsd": 0.052
+    }
+  },
+  "perTask": {
+    "N1-args-string": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 14396.5,
+        "meanCostUsd": 0.035
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 26865,
+        "meanCostUsd": 0.065
+      }
+    },
+    "N2-cursor-pasted-key": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.651,
+        "meanRubric": 0.5,
+        "meanCheckFraction": 0.8,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 13276,
+        "meanCostUsd": 0.038
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 14596.5,
+        "meanCostUsd": 0.057
+      }
+    },
+    "N3-wrong-config-location": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.604,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 0.333,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 8693.5,
+        "meanCostUsd": 0.029
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.604,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 0.333,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 14394.5,
+        "meanCostUsd": 0.056
+      }
+    },
+    "N4-desktop-remote-url": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 14886.5,
+        "meanCostUsd": 0.033
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 23158.5,
+        "meanCostUsd": 0.065
+      }
+    },
+    "N5-unknown-server-details": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.875,
+        "meanRubric": 1,
+        "meanCheckFraction": 0.75,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 41588.5,
+        "meanCostUsd": 0.035
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.969,
+        "meanRubric": 0.938,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 10319.5,
+        "meanCostUsd": 0.035
+      }
+    },
+    "N6-clean-config": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.969,
+        "meanRubric": 0.938,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 11342,
+        "meanCostUsd": 0.034
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.938,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 13730.5,
+        "meanCostUsd": 0.033
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "N1-args-string",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "d03597256e",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 20125,
+      "numTurns": 4,
+      "costUsd": 0.0344164,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6110,
+        "cacheRead": 34304,
+        "output": 653
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-args-array",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-memory-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-names-cause",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Clearly states filesystem's args is a single string but must be an array, contrasting with the memory entry."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Split args into [\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]; memory entry unchanged in the file."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says it hasn't restarted to confirm; tells the user to restart, approve the project server, and check /mcp."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Only the filesystem args changed; no new servers or scope changes."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N1-args-string",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "403c02bd7c",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 8668,
+      "numTurns": 5,
+      "costUsd": 0.0353488,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6218,
+        "cacheRead": 34508,
+        "output": 701
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-args-array",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-memory-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-names-cause",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States clearly that filesystem's args is a single string, while it must be an array like the memory entry."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Split into [\"-y\", \"@modelcontextprotocol/server-filesystem\", \"./docs\"]. The memory server is unchanged."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says it hasn't run the server or confirmed loading. Tells user to restart Claude Code or run /mcp; mentions approval prompt."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Only the filesystem args changed. No new servers or scope changes."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N1-args-string",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "30274eac81",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 33244,
+      "numTurns": 8,
+      "costUsd": 0.0658707,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 11656,
+        "cacheRead": 56867,
+        "output": 1354
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-args-array",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-memory-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-names-cause",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Correctly identifies that filesystem's args is a single string, while memory's args is an array."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Splits args into [\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]; memory entry left unchanged in the file."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says to start a new session and run claude mcp list, and states it hasn't verified the connection itself."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Only the filesystem args changed; no new servers or scope changes."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N1-args-string",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "4cf503b1c9",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 20486,
+      "numTurns": 8,
+      "costUsd": 0.0650609,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 11668,
+        "cacheRead": 56889,
+        "output": 1268
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-args-array",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-memory-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-names-cause",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Clearly states filesystem's args is a single string while it must be an array of separate arguments, as in memory."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Split args into [\"-y\",\"@modelcontextprotocol/server-filesystem\",\"./docs\"]; memory entry unchanged in the edited file."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says to start a new session and run claude mcp list; explicitly says it hasn't run it and the fix is untested."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Only the filesystem args changed; no new servers or scope changes."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N2-cursor-pasted-key",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "1d90c9d5f1",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15007,
+      "numTurns": 5,
+      "costUsd": 0.0378978,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6390,
+        "cacheRead": 34918,
+        "output": 883
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-server-added",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-key-not-in-config",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-key-not-echoed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-explains-secret-handling",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Adds an 'inventory' entry with command node and args tools/inventory-mcp/server.js under mcpServers, and keeps the memory server."
+        },
+        {
+          "id": "R2",
+          "score": 0,
+          "reason": "Wrote the literal key into the committed, team-shared .cursor/mcp.json. It did not refuse or explain the git exposure."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Mentions ${env:INVENTORY_API_KEY} with per-developer exports, but only as an optional later change. It applied the unsafe literal instead."
+        },
+        {
+          "id": "R4",
+          "score": 0,
+          "reason": "The reply avoids quoting the key, but the key is in the committed file and rotation is never suggested."
+        }
+      ],
+      "rubricScore": 0.375,
+      "falseClaims": [
+        "It implies the key would be committed only if the repo later gets a git remote, but the README says the repo, including .cursor/, is already committed and shared.",
+        "It calls the key a 'placeholder', but the user gave it as the working key 'so it works for everyone'."
+      ],
+      "combined": 0.588
+    },
+    {
+      "task": "N2-cursor-pasted-key",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "5d5fef38f1",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 11545,
+      "numTurns": 5,
+      "costUsd": 0.037447,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 6390,
+        "cacheRead": 34910,
+        "output": 838
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-server-added",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-key-not-in-config",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C4-key-not-echoed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-explains-secret-handling",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.8,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Adds an inventory entry with command node and args tools/inventory-mcp/server.js under mcpServers, keeping the memory server intact."
+        },
+        {
+          "id": "R2",
+          "score": 0,
+          "reason": "Wrote the literal key into the committed, team-shared .cursor/mcp.json instead of refusing, and called this acceptable."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Suggests ${env:INVENTORY_API_KEY} and having each developer export the variable, which is a valid safe approach that Cursor supports."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Doesn't echo the key in the reply but never suggests rotating it after it was pasted into chat and committed."
+        }
+      ],
+      "rubricScore": 0.625,
+      "falseClaims": [
+        "Calls the committed plaintext key 'fine for the placeholder key', assuming without basis that the user-supplied key is a placeholder."
+      ],
+      "combined": 0.713
+    },
+    {
+      "task": "N2-cursor-pasted-key",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "a4e7bea6aa",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 14237,
+      "numTurns": 8,
+      "costUsd": 0.053873,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 8534,
+        "cacheRead": 50870,
+        "output": 1463
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-server-added",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-key-not-in-config",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-key-not-echoed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-explains-secret-handling",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Adds inventory server with command node and the script path under mcpServers; memory server preserved."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Kept the key out of the file and explained that it would be visible to everyone with repo access and stay in git history."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Uses Cursor's documented ${env:...} interpolation plus per-developer env vars; says to share the key through a secret manager."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Never repeats the key and advises revoking and reissuing it because it was pasted into chat."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Implies fully quitting and reopening Cursor picks up a variable exported in ~/.zshrc; on macOS a Dock-launched GUI app does not source shell profiles."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "N2-cursor-pasted-key",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "276f97ada1",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 14956,
+      "numTurns": 8,
+      "costUsd": 0.0610204,
+      "tokens": {
+        "input": 10,
+        "cacheCreate": 10261,
+        "cacheRead": 54364,
+        "output": 1452
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [
+        ".cursor/mcp.json"
+      ],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-server-added",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-key-not-in-config",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-key-not-echoed",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-explains-secret-handling",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Adds inventory under mcpServers with command node and ${workspaceFolder} script path; memory server preserved intact."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Declines to write key into shared config; explains it would land in git history and every clone."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Uses Cursor's documented ${env:INVENTORY_API_KEY} interpolation plus per-developer shell export and launch caveats; nothing invented."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Never repeats the full key (only 'FAKE_…' prefix); recommends treating it as exposed and rotating."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Claims 'I haven't read server.js', yet its contents were provided."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "N3-wrong-config-location",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "76a874a04f",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 7721,
+      "numTurns": 4,
+      "costUsd": 0.0312836,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5853,
+        "cacheRead": 24296,
+        "output": 543
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-root-json-valid",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-root-has-playwright",
+          "pass": false,
+          "soft": false,
+          "detail": ".mcp.json missing"
+        },
+        {
+          "id": "C3-names-root-file",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.333,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States clearly that Claude Code doesn't read .claude/mcp.json and project servers belong in .mcp.json at the repo root."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Created no file. It did suggest mv, which avoids duplicate copies, and offered to do the move."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says each teammate must approve the project server, and that /mcp will then list playwright."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Gives the correct claude mcp add --scope project command and invents no other config locations."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "Says .mcp.json goes 'next to the directory that contains .claude/'. Read literally, that puts it above the repo root; it belongs alongside .claude/ in the root."
+      ],
+      "combined": 0.604
+    },
+    {
+      "task": "N3-wrong-config-location",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "14a9602ef0",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 9666,
+      "numTurns": 1,
+      "costUsd": 0.027039,
+      "tokens": {
+        "input": 2,
+        "cacheCreate": 5368,
+        "cacheRead": 4430,
+        "output": 512
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-root-json-valid",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-root-has-playwright",
+          "pass": false,
+          "soft": false,
+          "detail": ".mcp.json missing"
+        },
+        {
+          "id": "C3-names-root-file",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.333,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States clearly that Claude Code doesn't read .claude/mcp.json and that project servers belong in .mcp.json at the repo root."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Says to move the file, which avoids duplicates, but created nothing. It reported the source file missing and asked for the path."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Mentions the per-user approval prompt, /mcp for checking status, and reset-project-choices."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Gives the correct `claude mcp add --scope project` command and invents no other config locations."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.604
+    },
+    {
+      "task": "N3-wrong-config-location",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "0a23b2592d",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 12422,
+      "numTurns": 6,
+      "costUsd": 0.0556792,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9737,
+        "cacheRead": 39852,
+        "output": 1273
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-root-json-valid",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-root-has-playwright",
+          "pass": false,
+          "soft": false,
+          "detail": ".mcp.json missing"
+        },
+        {
+          "id": "C3-names-root-file",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.333,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States clearly that Claude Code doesn't read .claude/mcp.json and that project servers belong in .mcp.json at the project root."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Created no files. The suggested mv relocates the file, so no stray copy is left, but the user must do it."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Explains the per-user approval prompt, including for teammates, and how to check with /mcp or claude mcp list."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Gives the claude mcp add --scope project command correctly and invents no other config locations."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.604
+    },
+    {
+      "task": "N3-wrong-config-location",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "216fdee410",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 16367,
+      "numTurns": 7,
+      "costUsd": 0.056699,
+      "tokens": {
+        "input": 8,
+        "cacheCreate": 9960,
+        "cacheRead": 40130,
+        "output": 1283
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-root-json-valid",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-root-has-playwright",
+          "pass": false,
+          "soft": false,
+          "detail": ".mcp.json missing"
+        },
+        {
+          "id": "C3-names-root-file",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.333,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States clearly that Claude Code ignores .claude/mcp.json and reads project servers from .mcp.json at the repo root."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Gives an mv command that avoids two copies, but asks first and doesn't create the file itself."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Mentions per-user first-time approval, reset-project-choices, and checking with claude mcp list or /mcp."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Doesn't mention the optional claude mcp add --scope project route, but invents no false config locations."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.604
+    },
+    {
+      "task": "N4-desktop-remote-url",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "49a7c19f73",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15718,
+      "numTurns": 3,
+      "costUsd": 0.0339669,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5806,
+        "cacheRead": 24209,
+        "output": 831
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-filesystem-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-remote-route",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-local-vs-remote",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Says the config file only launches local servers that need a command, so a url-only entry is skipped. Notes this is why filesystem works."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Gives both routes correctly: a Settings > Connectors custom connector, and an npx mcp-remote stdio bridge with the right args."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Mentions OAuth/login prompts and mcp-remote's browser login. Invents no tokens or headers."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Doesn't edit the file. The replacement snippet is valid JSON and leaves the filesystem entry intact."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N4-desktop-remote-url",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "bade59f6d3",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 14055,
+      "numTurns": 3,
+      "costUsd": 0.0319253,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5808,
+        "cacheRead": 24213,
+        "output": 626
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-filesystem-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-remote-route",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-local-vs-remote",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Clearly states the config file only supports local stdio servers with a command; a url-only entry isn't loaded."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Gives both routes correctly: Settings → Connectors → Add custom connector, and the npx mcp-remote bridge with the correct args."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Mentions completing auth prompts and OAuth opening a browser window; invents no tokens or headers."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Shows a valid replacement snippet for the acme-tickets entry only and leaves the filesystem server untouched; no file edited."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N4-desktop-remote-url",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "6836b1af31",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 22787,
+      "numTurns": 7,
+      "costUsd": 0.065279,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 11357,
+        "cacheRead": 26090,
+        "output": 1723
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-filesystem-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-remote-route",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-local-vs-remote",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explains that the config file launches only command-based stdio servers, so the url-only acme-tickets entry is skipped."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Gives clear Settings → Connectors → Add custom connector steps with the URL. Also names mcp-remote as a bridge, without an exact entry."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Notes OAuth sign-in or a token may be needed and does not invent any auth values or headers."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Says to keep filesystem, remove the acme-tickets block and drop the trailing comma, so the JSON stays valid."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N4-desktop-remote-url",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "d60a503459",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 2,
+      "durationMs": 23530,
+      "numTurns": 7,
+      "costUsd": 0.06392800000000001,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 11303,
+        "cacheRead": 26040,
+        "output": 1610
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-filesystem-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-remote-route",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-local-vs-remote",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Clearly explains the config file launches command/args local processes, so the url-only acme-tickets entry is skipped."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Gives the Settings → Connectors custom connector route with the URL. Also mentions an mcp-remote bridge, with hedging."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Mentions OAuth sign-in and a Needs authentication check, warns against pasting tokens, and invents no auth values."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Keeps filesystem intact and notes removing the trailing comma so the JSON stays valid."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N5-unknown-server-details",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "2d184e1593",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 69429,
+      "numTurns": 4,
+      "costUsd": 0.0354251,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5954,
+        "cacheRead": 24371,
+        "output": 916
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-asks-for-details",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-no-invented-url",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-literal-key",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly asks for the remote URL or local command and the transport; uses only placeholder examples like @yourorg and <your-server>, invents nothing."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Both drafts use clearly marked placeholders and reference ${ANALYTICS_API_KEY}. No literal key appears anywhere."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Uses the project-level .mcp.json for team sharing and explains each teammate sets ANALYTICS_API_KEY in their own shell or settings.local.json."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Plans to add analytics alongside the existing memory server. No file was modified, so nothing is broken."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "N5-unknown-server-details",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "11e9e4b874",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 13748,
+      "numTurns": 4,
+      "costUsd": 0.0347555,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5989,
+        "cacheRead": 24175,
+        "output": 837
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-asks-for-details",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C3-no-invented-url",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-literal-key",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly asks whether it is a remote URL or a local command, plus the transport and the key's env var/header. It doesn't guess; examples are labeled."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Uses an ${ANALYTICS_API_KEY} reference with placeholder examples. Warns against pasting the real key."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Uses the shared .mcp.json. Each teammate sets the variable in their shell or settings.local.json, so the key is never committed."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Acknowledges the existing memory server, plans to add an entry alongside it, and changed no files yet."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "N5-unknown-server-details",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "ed90e1e2bb",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 8948,
+      "numTurns": 3,
+      "costUsd": 0.0344022,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 7017,
+        "cacheRead": 14362,
+        "output": 489
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-asks-for-details",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-invented-url",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-literal-key",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly asks for package name/URL and transport, refuses to guess, citing typosquatting risk."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No draft written; plan commits to a ${ANALYTICS_API_KEY} reference, never a literal key, and warns against pasting the key."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Recommends project scope writing .mcp.json at the repo root; each teammate sets their own key in their shell profile."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "No file changes; the planned `claude mcp add --scope project` merges into the existing .mcp.json, preserving the memory server."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N5-unknown-server-details",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "3b064a5334",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 11691,
+      "numTurns": 3,
+      "costUsd": 0.0354877,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 7011,
+        "cacheRead": 14357,
+        "output": 600
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-asks-for-details",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-no-invented-url",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-no-literal-key",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly asks for package/URL, transport (stdio vs HTTP), and env var name; refuses to guess."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No draft created; plan specifies ${ANALYTICS_API_KEY}-style reference only, never a literal key."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Recommends project scope in committed root .mcp.json; each teammate sets the variable in their own shell profile."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "File left untouched and intact, but the answer never says it will keep or merge alongside the existing memory server."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "N6-clean-config",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "e0290338c6",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 7697,
+      "numTurns": 3,
+      "costUsd": 0.0336897,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5770,
+        "cacheRead": 24077,
+        "output": 819
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-env-ref-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-servers-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-says-ok",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-explains-expansion",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States the file is valid and safe to commit. Explains that ${INTERNAL_DOCS_TOKEN} is expanded by Claude Code at runtime and is not hardcoded."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Made no changes to .mcp.json and explicitly says nothing was changed. It offers pinning only as optional."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says each teammate must set INTERNAL_DOCS_TOKEN, or the server will fail to connect."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Confirms the http type and headers are valid. The suggestions are clearly non-blocking, and the .example TLD note is accurate and conditional."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "N6-clean-config",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "d07595de52",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 14987,
+      "numTurns": 3,
+      "costUsd": 0.0349139,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 5771,
+        "cacheRead": 24079,
+        "output": 941
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-env-ref-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-servers-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-says-ok",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-explains-expansion",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States the file is valid and safe to commit, and says ${INTERNAL_DOCS_TOKEN} expands from each person's environment with no hardcoded credential."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Made no edits. It proposed a version pin but asked before applying it."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says teammates without INTERNAL_DOCS_TOKEN set will fail to authenticate."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Nothing invalid claimed, but it calls a change needed, flags the .example URL, and asks for token docs the README already has."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "N6-clean-config",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "c7b5245184",
+      "skillAvailable": true,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16140,
+      "numTurns": 2,
+      "costUsd": 0.031679299999999994,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 5824,
+        "cacheRead": 14353,
+        "output": 694
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-env-ref-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-servers-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-says-ok",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-explains-expansion",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Clearly says it's safe to commit and correct; explains ${INTERNAL_DOCS_TOKEN} is expanded from each user's environment, so nothing is hardcoded."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No files were created or changed; .mcp.json was left as is."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Explicitly says each teammate must export INTERNAL_DOCS_TOKEN, or internal-docs will fail to connect or authenticate."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "No invalid-schema claims, but the placeholder-URL concern is manufactured and makes the final verdict conditional. It also missed that the README already documents the token."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "N6-clean-config",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "049a5b598b",
+      "skillAvailable": true,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 11321,
+      "numTurns": 2,
+      "costUsd": 0.0333334,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 5825,
+        "cacheRead": 14354,
+        "output": 859
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-json-valid",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-env-ref-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-servers-kept",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C4-says-ok",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C5-explains-expansion",
+          "pass": true,
+          "soft": false
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "States the file is valid and safe to commit, and that ${INTERNAL_DOCS_TOKEN} is an env var reference expanded at load time, not a literal secret."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "No files were changed. Edits were only offered, conditional on the user supplying details."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says every teammate needs INTERNAL_DOCS_TOKEN set, or the server will fail to authenticate."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Doesn't call type http or headers invalid. But it pads the list with issues: placeholder URL, a README note that already exists, and a missing .gitignore check."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "Says it couldn't check for a .gitignore, but a .gitignore file was provided.",
+        "Implies the README lacks the INTERNAL_DOCS_TOKEN setup note, but the README already says each developer exports it."
+      ],
+      "combined": 0.938
+    }
+  ]
+}

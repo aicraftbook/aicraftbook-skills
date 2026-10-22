@@ -1,0 +1,2017 @@
+{
+  "skill": "cost-compass",
+  "date": "2026-10-22",
+  "kind": "independent functional evaluation",
+  "frozenTasks": {
+    "path": "skills/cost-compass/evals/independent-runs/2026-10-22/frozen",
+    "sha256": "58577cabbd1d23d8868f4d91bec168c4b497821c9c9a9fe0b3c693168bd10d85",
+    "freezeRecord": "skills/cost-compass/evals/independent-runs/2026-10-22/FREEZE.txt"
+  },
+  "runner": {
+    "path": "web/scripts/eval-independent.ts",
+    "sha256": "2460924a28b6417066b1d41c9485d07e0d4fec0102341177695b178c9aa1a140"
+  },
+  "agentModel": "sonnet",
+  "graderModel": "opus",
+  "aggregates": {
+    "baseline": {
+      "n": 12,
+      "meanCombined": 0.766,
+      "meanRubric": 0.74,
+      "meanCheckFraction": 0.792,
+      "falseClaimRuns": 4,
+      "skillInvocationRate": 0,
+      "meanDurationMs": 17107.083,
+      "meanCostUsd": 0.08
+    },
+    "skill": {
+      "n": 12,
+      "meanCombined": 0.943,
+      "meanRubric": 0.885,
+      "meanCheckFraction": 1,
+      "falseClaimRuns": 2,
+      "skillInvocationRate": 0.833,
+      "meanDurationMs": 21123.417,
+      "meanCostUsd": 0.057
+    }
+  },
+  "perTask": {
+    "C1-rag-docs-assistant": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.907,
+        "meanRubric": 0.813,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 20607.5,
+        "meanCostUsd": 0.037
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.969,
+        "meanRubric": 0.938,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 23229,
+        "meanCostUsd": 0.067
+      }
+    },
+    "C2-nightly-batch-summariser-cached": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.626,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 0.375,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 17157,
+        "meanCostUsd": 0.121
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.938,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 21256,
+        "meanCostUsd": 0.058
+      }
+    },
+    "C3-agent-tool-calls-retries": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.907,
+        "meanRubric": 0.813,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 14868.5,
+        "meanCostUsd": 0.04
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 1,
+        "meanRubric": 1,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 25852,
+        "meanCostUsd": 0.074
+      }
+    },
+    "E1-big-vs-small-router": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.907,
+        "meanRubric": 0.813,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 15699,
+        "meanCostUsd": 0.037
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.907,
+        "meanRubric": 0.813,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 1,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 16838.5,
+        "meanCostUsd": 0.052
+      }
+    },
+    "M1-meeting-notes-no-prices-no-volume": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.438,
+        "meanRubric": 0.375,
+        "meanCheckFraction": 0.5,
+        "falseClaimRuns": 2,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 18888.5,
+        "meanCostUsd": 0.205
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.938,
+        "meanRubric": 0.875,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 1,
+        "meanDurationMs": 24346.5,
+        "meanCostUsd": 0.051
+      }
+    },
+    "T1-per-1k-mislabelled-as-per-1m": {
+      "baseline": {
+        "n": 2,
+        "meanCombined": 0.813,
+        "meanRubric": 0.75,
+        "meanCheckFraction": 0.875,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 15422,
+        "meanCostUsd": 0.041
+      },
+      "skill": {
+        "n": 2,
+        "meanCombined": 0.907,
+        "meanRubric": 0.813,
+        "meanCheckFraction": 1,
+        "falseClaimRuns": 0,
+        "skillInvocationRate": 0,
+        "meanDurationMs": 15218.5,
+        "meanCostUsd": 0.039
+      }
+    }
+  },
+  "runs": [
+    {
+      "task": "C1-rag-docs-assistant",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "8388cc2ed1",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 29586,
+      "numTurns": 4,
+      "costUsd": 0.036554100000000006,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6283,
+        "cacheRead": 22401,
+        "output": 917
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-system-prompt-every-call",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-output-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-vector-db-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-range",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Uses 2,900 input tokens per call: the 800-token system prompt, 2,000 chunk tokens and 100 question tokens. Gives 145M tokens and $290."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Lists all six paid lines with shown arithmetic. Total is $459.15, matching the key."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "States the chat model is about 94% ($430) and the rest about $29. Names fewer chunks and prompt caching as levers."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Uses only the test prices, but gives no low/expected/high range from varied assumptions."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "C1-rag-docs-assistant",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "50ae8e4c46",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 11629,
+      "numTurns": 4,
+      "costUsd": 0.037012500000000004,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6273,
+        "cacheRead": 22385,
+        "output": 967
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-system-prompt-every-call",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-output-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-vector-db-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-range",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Counts 800 + 2,000 + 100 = 2,900 tokens per call for all 50,000 calls: 145M tokens, $290."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "All six paid lines are itemized with arithmetic shown, totalling $459.15."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Shows the chat model is about 94% of cost and the rest is minor, but names only prompt caching as a lever."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Uses only the test prices. Gives per-10k scaling but no low/expected/high range across stated assumptions."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "C1-rag-docs-assistant",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "ff33410c6b",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 28376,
+      "numTurns": 5,
+      "costUsd": 0.0588465,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8567,
+        "cacheRead": 13305,
+        "output": 2324
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-system-prompt-every-call",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-output-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-vector-db-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-range",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Counts 800 + 5×400 + 100 = 2,900 tokens on every call, giving 145M input tokens and $290."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "All six paid lines are itemized with arithmetic shown, totaling $459.15, which matches the key."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says vector DB plus embeddings are about 6%, implying chat is about 94%. Names fewer chunks, answer cap and system-prompt caching as levers."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Low/expected/high range is driven by traffic, chunk size and output length, labeled as assumptions. Recomputed $320.72 and $699.30 correctly. Uses only test prices and flags the missing cache price."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "C1-rag-docs-assistant",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "43e8bd7f33",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 18082,
+      "numTurns": 7,
+      "costUsd": 0.0745547,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 12917,
+        "cacheRead": 25047,
+        "output": 2037
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C1-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-system-prompt-every-call",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-output-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-vector-db-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C1-range",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Counts 800 + 5×400 + 100 = 2,900 tokens on every call, giving 145M tokens and $290.00."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Includes all six paid lines with arithmetic shown, totalling $459.15, which matches the key."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Line table shows chat at $430 dominating and fixed costs as small. Names quantified levers: fewer chunks, answer cap, system-prompt caching."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Uses only the test prices, but explicitly declines to give a low/expected/high range."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "C2-nightly-batch-summariser-cached",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "5e590b66f7",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 20867,
+      "numTurns": 5,
+      "costUsd": 0.2052433,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 47287,
+        "cacheRead": 13073,
+        "output": 1478
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C2-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-uncached-input-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-output-line",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-cache-read-line",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-no-cache-comparison",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.5,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Separates cache write, cache reads and uncached transcripts, each at its own batch rate. Shown per night; monthly totals match the key."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Applies 50% to every line including write and reads; $15.986/night × 30 = $479.59, with workings shown."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Without caching $843.75/month; saving $364.16 (~43%), broken down per night and per month."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Notes transcripts (~$270) and output (~$169) dominate, but names no levers and gives no low/high range."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.688
+    },
+    {
+      "task": "C2-nightly-batch-summariser-cached",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "f878cc710c",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 13447,
+      "numTurns": 3,
+      "costUsd": 0.0371178,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6183,
+        "cacheRead": 13078,
+        "output": 1107
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C2-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-uncached-input-line",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-output-line",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-cache-read-line",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "C2-no-cache-comparison",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.25,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Separates uncached transcripts, cache reads, and one cache write per night, each at its own rate; nightly figures scale to 180M/270M/180K."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Applies 50% batch discount to all lines; nightly table shown; arrives at $479.59/month."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Without caching $843.75/month; saves $364.16, roughly 43%; arithmetic shown."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Says output and transcripts dominate remaining spend, but names no cost levers and gives no low/high range."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.563
+    },
+    {
+      "task": "C2-nightly-batch-summariser-cached",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "4466189583",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 20254,
+      "numTurns": 5,
+      "costUsd": 0.0573178,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8582,
+        "cacheRead": 13318,
+        "output": 2165
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C2-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-uncached-input-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-output-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-cache-read-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-cache-comparison",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Splits into 180M uncached, 270M cache reads and 180,000 cache writes, each priced at its own rate."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Applies 50% to every line including cache write and read; shows arithmetic; total $479.59 ($479.5875)."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Without caching $843.75; saves $364.16/month, 43% of bill and 90% of prefix cost."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Names transcript as largest line; levers are trimming transcripts and capping output. Omits fewer examples and declines a low/high range."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "C2-nightly-batch-summariser-cached",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "15a9e1bf75",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 22258,
+      "numTurns": 5,
+      "costUsd": 0.05892080000000001,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8563,
+        "cacheRead": 13308,
+        "output": 2333
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C2-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-uncached-input-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-output-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-cache-read-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C2-no-cache-comparison",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Separates cache writes (180,000), cache reads (270M) and uncached transcript input (180M), each priced at its own rate."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Applies 50% to every line including cache reads and writes; shows the arithmetic and reaches $479.59."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives $843.75 without caching, a saving of $364.16 a month, and 43%."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Names output and transcripts as main drivers with trimming levers. Omits fewer worked examples and explicitly gives no low/high range."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "C3-agent-tool-calls-retries",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "2a0d62bcad",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 13533,
+      "numTurns": 4,
+      "costUsd": 0.0402495,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6339,
+        "cacheRead": 22415,
+        "output": 1264
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C3-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-history-growth",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-search-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-retries-included",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-budget-verdict",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Correctly models history growth: 3,200/5,000/6,800/8,600 = 23,600 input tokens per run."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Includes 8,800 runs and 17,600 searches ($176), with clear arithmetic arriving at $436.48."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Says it fits with ~13% headroom, but the sensitivity figures are wrong. Omits tool-result size and turn count as risks."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Identifies search (~40%) and input as the biggest costs and mentions caching. Doesn't propose trimming tool results, cutting retries or reducing searches."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [
+        "At 8,000 tasks the break-even retry rate is about 24% (actually ~26%: 500/(8,000×0.0496)=1.26)",
+        "At a 10% retry rate volume could grow to roughly 10,200 tasks (actually ~9,160: 500/(1.1×0.0496))",
+        "Headroom covers about 13% more volume (actually ~14.6%: 63.52/436.48)"
+      ],
+      "combined": 0.875
+    },
+    {
+      "task": "C3-agent-tool-calls-retries",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "3301bb90ae",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16204,
+      "numTurns": 4,
+      "costUsd": 0.0398951,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6333,
+        "cacheRead": 22411,
+        "output": 1231
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C3-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-history-growth",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-search-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-retries-included",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-budget-verdict",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Correctly models history growth: 3,200/5,000/6,800/8,600 = 23,600 input tokens per run, with the reasoning explained."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Uses 8,800 runs and 2 searches per run ($176), and reaches $436.48 with per-run and monthly arithmetic shown."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says it fits with about $64 (13%) headroom and that ~15% volume growth or ~25% re-run rate would push it over $500."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Gives input (48%) and search (40%) shares and suggests prompt caching. Omits trimming tool results and cutting retries or searches as levers."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "The search tool's added tokens are called 'small', but each search returns a 1,500-token result that is re-sent on later turns. Search results account for about 7,500 of the 23,600 input tokens per run, roughly $66/month.",
+        "The ~25% re-run threshold is slightly low: at 25% the total is about $496, still under $500. The break-even rate is about 26%."
+      ],
+      "combined": 0.938
+    },
+    {
+      "task": "C3-agent-tool-calls-retries",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "a7da45b5f0",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 24041,
+      "numTurns": 5,
+      "costUsd": 0.0649437,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8626,
+        "cacheRead": 13317,
+        "output": 2910
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C3-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-history-growth",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-search-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-retries-included",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-budget-verdict",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Per-turn inputs of 3,200/5,000/6,800/8,600 are shown and summed to 23,600 per run, with re-sent history modeled correctly."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Uses 8,800 runs including retries and 17,600 searches costing $176. Arithmetic is shown and totals $436.48."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says it fits the expected case, gives a $370–$571 range, and names re-run rate, tool size and output as drivers that could exceed budget."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Names input ($207.68) and search ($176) as top lines. Covers caching, trimming tool results, cutting retries and cutting searches, with correct savings."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [],
+      "combined": 1
+    },
+    {
+      "task": "C3-agent-tool-calls-retries",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "96da801d09",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 1,
+      "durationMs": 27663,
+      "numTurns": 7,
+      "costUsd": 0.08357010000000001,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 12973,
+        "cacheRead": 25061,
+        "output": 2916
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "C3-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-history-growth",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-search-line",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-retries-included",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "C3-budget-verdict",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Models history growth correctly: 12,800 static plus 10,800 history gives 23,600 input tokens per run, not 4 x 3,200."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Counts 8,800 runs from 10% re-runs and 17,600 searches costing $176. Total is $436.48 with line-by-line arithmetic shown."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Says it fits with $63.52 (~13%) headroom. Gives break-even thresholds for retry rate (~26%) and volume (~9,160 tasks)."
+        },
+        {
+          "id": "R4",
+          "score": 1,
+          "reason": "Names input ($207.68) and search ($176) as top costs. Proposes prefix caching, resuming retries and trimming tool results."
+        }
+      ],
+      "rubricScore": 1,
+      "falseClaims": [
+        "Trimming savings omits that tool result 3 is re-sent on turn 4: cutting each result by 500 tokens saves 8,800 x 500 x 6 / 1M = $26.40, not $22.00.",
+        "A6 labels re-runs including searches as an assumption, but the design notes state it explicitly."
+      ],
+      "combined": 1
+    },
+    {
+      "task": "E1-big-vs-small-router",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "23758b5912",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 16283,
+      "numTurns": 3,
+      "costUsd": 0.0359497,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6076,
+        "cacheRead": 13077,
+        "output": 1033
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "E1-design-a",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-design-b",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-b-cheaper",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-savings",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-break-even",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Per-call input/output arithmetic shown; A = $1,500 and B = $75 + $300 = $375, all correct."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States B is cheaper by $1,125 (75%), with the small model explicitly charged on every review."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Break-even at 95% derived from the per-review formula; gives $15 per point and $675 at 40%."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Mentions small-model accuracy and flag-rate risk, but not confidence-flag calibration explicitly or escalation latency."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "E1-big-vs-small-router",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "10274724de",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15115,
+      "numTurns": 4,
+      "costUsd": 0.0377651,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6178,
+        "cacheRead": 22411,
+        "output": 1080
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "E1-design-a",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-design-b",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-b-cheaper",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-savings",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-break-even",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Correct per-call costs ($0.003+$0.002 input/output) give A=$1,500; B=$75 small plus $300 escalations=$375. Arithmetic shown."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States $1,125/month saving (75%) and that every review pays for the small model, including escalated ones."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Correct 95% break-even with formula; notes 100% overshoot of $75. No intermediate sensitivity example such as 40% -> $675."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags only small-model tagging quality; omits confidence-flag calibration and extra latency on escalated reviews."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "E1-big-vs-small-router",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "65d73dd10e",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 17151,
+      "numTurns": 5,
+      "costUsd": 0.052973599999999996,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8471,
+        "cacheRead": 13316,
+        "output": 1775
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "E1-design-a",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-design-b",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-b-cheaper",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-savings",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-break-even",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Correct line-by-line arithmetic: A $900+$600=$1,500; B $45+$30 small on all, $180+$120 escalations, totalling $375."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "States $1,125/month (75%) saving. Shows small model applied to all 180M tokens but never explicitly says escalated reviews pay both passes."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives B = $75 + f×$1,500, break-even at 95%, and a sensitivity table at 20/50/80/95%."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags small-model quality and confidently-wrong cases (calibration), but does not mention latency on escalated reviews."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "E1-big-vs-small-router",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "0619327028",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 16526,
+      "numTurns": 5,
+      "costUsd": 0.051021300000000006,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8468,
+        "cacheRead": 13313,
+        "output": 1581
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "E1-design-a",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-design-b",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-b-cheaper",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-savings",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "E1-break-even",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Both totals are correct ($1,500 and $375). Per-call input and output arithmetic is shown, so the $900/$600 split is implicit rather than stated."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States $1,125/month saving and 75% less. Explicitly charges the small model on all 300,000 reviews, escalated ones included."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives per-review formula $0.00025 + p×$0.005 with break-even at 95%. Sensitivity example: 45% gives $750, which is correct."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Covers small-model quality and confidence-flag reliability. Does not mention latency on escalated reviews."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [
+        "A5 labels 'no retry cost' as given, but neither file mentions retries; only caching and batch discounts are excluded."
+      ],
+      "combined": 0.938
+    },
+    {
+      "task": "M1-meeting-notes-no-prices-no-volume",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "425ad217e6",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 20682,
+      "numTurns": 4,
+      "costUsd": 0.2047836,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 46763,
+        "cacheRead": 22496,
+        "output": 1547
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "M1-no-invented-token-price",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-no-invented-monthly-total",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "M1-asks-volume",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-asks-prices",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "M1-transcript-length",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.5,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0,
+          "reason": "Gives a headline '$100/month, under $250' and specific per-MTok prices it cannot verify. It never says plainly that no number is possible."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Asks for meetings per month and offers to measure real transcripts. It doesn't ask which model or to confirm prices from the pricing page, or summary length."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Gives per-meeting token assumptions and a scenario table, which is somewhat usable. There is no explicit fill-in formula or worksheet."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags transcription, email, and longer meetings raising cost. It doesn't mention chunking or multiple calls for long transcripts."
+        }
+      ],
+      "rubricScore": 0.375,
+      "falseClaims": [
+        "Presents specific Anthropic list prices ($0.10/$0.50, $2/$10, $4/$20 per MTok) as current fact; these are unverified and likely invented",
+        "Headline '$100/month, almost certainly under $250' rests on an invented 2,000 meetings/month and can't be supported"
+      ],
+      "combined": 0.438
+    },
+    {
+      "task": "M1-meeting-notes-no-prices-no-volume",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "fc53ecc990",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 17095,
+      "numTurns": 4,
+      "costUsd": 0.2047084,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 46782,
+        "cacheRead": 22484,
+        "output": 1532
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "M1-no-invented-token-price",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-no-invented-monthly-total",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "M1-asks-volume",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-asks-prices",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "M1-transcript-length",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.5,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 0,
+          "reason": "Presents specific $/MTok rates as current list prices and gives a headline $30–$60/month total, even though volume and prices are unknown."
+        },
+        {
+          "id": "R2",
+          "score": 0.5,
+          "reason": "Asks for meeting count and whether transcripts exist. Does not ask for the chosen model, confirmed prices, transcript length or summary length."
+        },
+        {
+          "id": "R3",
+          "score": 0.5,
+          "reason": "Lists assumptions and a volume-sensitivity table but gives no explicit fill-in formula or worksheet the user can complete."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags transcription and email costs clearly. Notes long meetings and retries but not chunking or multiple calls per transcript."
+        }
+      ],
+      "rubricScore": 0.375,
+      "falseClaims": [
+        "Per-1M-token rates for Opus 5.5 ($4/$20), Sonnet 5.5 ($2/$10) and Haiku 5.5 ($0.10/$0.50) are presented as current list prices without verification.",
+        "Haiku per-meeting cost of ~$0.002 understates its own inputs, which give ~$0.003 (~$1.40 at 500 meetings).",
+        "SendGrid is said to cost about $0.10 per 1,000 emails; that is SES pricing, not SendGrid's plan pricing."
+      ],
+      "combined": 0.438
+    },
+    {
+      "task": "M1-meeting-notes-no-prices-no-volume",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "613e9f1cf0",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 29820,
+      "numTurns": 4,
+      "costUsd": 0.05273950000000001,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8001,
+        "cacheRead": 13275,
+        "output": 1940
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "M1-no-invented-token-price",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-no-invented-monthly-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-asks-volume",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-asks-prices",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-transcript-length",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Gives no prices or dollar total. Says plainly it can't give a figure without volume and model prices; price cells are left as placeholders."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Asks meetings/month, meeting length, chosen model and prices from the pricing page. Summary length is assumed (800) with a range rather than asked."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives a clear fill-in formula, a price sheet worksheet, token tables by volume and a low/expected/high range table."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags email cost. Never mentions transcription cost. Long transcripts are only an assumption (A6), with no chunking or multi-call warning."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "M1-meeting-notes-no-prices-no-volume",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "d036f73d7e",
+      "skillAvailable": true,
+      "skillInvoked": true,
+      "skillFilesRead": 0,
+      "durationMs": 18873,
+      "numTurns": 4,
+      "costUsd": 0.048414200000000004,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 8012,
+        "cacheRead": 13282,
+        "output": 1503
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "M1-no-invented-token-price",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-no-invented-monthly-total",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-asks-volume",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-asks-prices",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "M1-transcript-length",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Gives no dollar total or provider prices and says plainly it can't give a figure without volume and prices."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Asks for meetings per month, meeting length, and the model with its input and output prices. Summary length is assumed and stated, not asked."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Gives a fill-in formula and a cost-by-line worksheet with input, output, email and hosting lines, ready to fill in."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "Flags email and reasoning tokens, but not transcription cost or chunking/multiple calls for long transcripts."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    },
+    {
+      "task": "T1-per-1k-mislabelled-as-per-1m",
+      "condition": "baseline",
+      "repeat": 1,
+      "blindId": "da33c8ccce",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 17126,
+      "numTurns": 4,
+      "costUsd": 0.0415718,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6672,
+        "cacheRead": 22918,
+        "output": 1258
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "T1-unit-error-caught",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-current",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-tripled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-no-uncorrected-tripled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-unit-price",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Identifies the per-1K quote versus per-1M column mismatch and the 1,000x understatement. Does not triple $1.872."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Gives $3/1M, $15/1M, $252 + $1,620 = $1,872, and $756 + $4,860 = $5,616 next quarter."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Raises the error alongside the headline number. Could not edit, offers specific corrected rows, and supplies a row to paste."
+        },
+        {
+          "id": "R4",
+          "score": 0,
+          "reason": "Does not mention output's ~87% cost share, the same-tokens-per-listing assumption, or the no-volume-discount assumption."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "T1-per-1k-mislabelled-as-per-1m",
+      "condition": "baseline",
+      "repeat": 2,
+      "blindId": "e2080eae48",
+      "skillAvailable": false,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 13718,
+      "numTurns": 4,
+      "costUsd": 0.0400384,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6581,
+        "cacheRead": 22924,
+        "output": 1141
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "T1-unit-error-caught",
+          "pass": false,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-current",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-tripled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-no-uncorrected-tripled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-unit-price",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 0.75,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Identifies the per-1K quote vs per-1M column mismatch, says costs are 1000x too low, and does not triple $1.872."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Gives $3/$15 per 1M, $252+$1,620=$1,872 current, and $756+$4,860=$5,616 next quarter."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "States the unit error right next to the requested number. It did not edit, citing a disabled tool, and offers to fix the sheet."
+        },
+        {
+          "id": "R4",
+          "score": 0,
+          "reason": "Does not mention the ~87% output share, the same-tokens-per-listing assumption, or the no-volume-discount assumption."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.75
+    },
+    {
+      "task": "T1-per-1k-mislabelled-as-per-1m",
+      "condition": "skill",
+      "repeat": 1,
+      "blindId": "8d4e61519c",
+      "skillAvailable": true,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 15626,
+      "numTurns": 4,
+      "costUsd": 0.0427406,
+      "tokens": {
+        "input": 6,
+        "cacheCreate": 6967,
+        "cacheRead": 23406,
+        "output": 1252
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "T1-unit-error-caught",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-current",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-tripled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-no-uncorrected-tripled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-unit-price",
+          "pass": true,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly identifies per-1K vs per-1M mismatch, 1000x understatement; gives $5,616 not $5.616."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "States $3/1M and $15/1M, $1,872 current with 252/1620, and $5,616 next quarter with breakdown."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Error flagged in the opening paragraph alongside the number; couldn't edit, but gave corrected row values and offered fixes."
+        },
+        {
+          "id": "R4",
+          "score": 0,
+          "reason": "No mention of output share (~87%) or assumptions about constant tokens per listing and no volume discount."
+        }
+      ],
+      "rubricScore": 0.75,
+      "falseClaims": [],
+      "combined": 0.875
+    },
+    {
+      "task": "T1-per-1k-mislabelled-as-per-1m",
+      "condition": "skill",
+      "repeat": 2,
+      "blindId": "dcd1d23e68",
+      "skillAvailable": true,
+      "skillInvoked": false,
+      "skillFilesRead": 0,
+      "durationMs": 14811,
+      "numTurns": 3,
+      "costUsd": 0.0361309,
+      "tokens": {
+        "input": 4,
+        "cacheCreate": 6215,
+        "cacheRead": 13329,
+        "output": 993
+      },
+      "exitCode": 0,
+      "timedOut": false,
+      "filesChanged": [],
+      "outsideWrites": [],
+      "permissionDenials": [],
+      "checks": [
+        {
+          "id": "T1-unit-error-caught",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-current",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-tripled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-no-uncorrected-tripled",
+          "pass": true,
+          "soft": false
+        },
+        {
+          "id": "T1-corrected-unit-price",
+          "pass": false,
+          "soft": true
+        }
+      ],
+      "checkFraction": 1,
+      "rubricItems": [
+        {
+          "id": "R1",
+          "score": 1,
+          "reason": "Explicitly identifies the per-1K quote versus the per-1M column label, says costs are 1,000x too low, and avoids $5.616."
+        },
+        {
+          "id": "R2",
+          "score": 1,
+          "reason": "Gives $252, $1,620, $1,872 and $5,616 correctly. Prices stay per 1K instead of being restated as $3/$15 per 1M, which is equivalent."
+        },
+        {
+          "id": "R3",
+          "score": 1,
+          "reason": "Flags the error up front next to the number. It can't edit, so it gives exact cell fixes and the row to append."
+        },
+        {
+          "id": "R4",
+          "score": 0.5,
+          "reason": "States the same-tokens-per-listing and unchanged-price assumptions, but omits that output is about 87% of cost and doesn't mention volume discounts explicitly."
+        }
+      ],
+      "rubricScore": 0.875,
+      "falseClaims": [],
+      "combined": 0.938
+    }
+  ]
+}

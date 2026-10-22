@@ -7,22 +7,23 @@ a prompt or a guide before you ship it, and more. Every skill has a full guide, 
 review at [aicraftbook.com/skills](https://aicraftbook.com/skills).
 
 [![validate](https://github.com/aicraftbook/aicraftbook-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/aicraftbook/aicraftbook-skills/actions/workflows/validate.yml)
+[![install-test](https://github.com/aicraftbook/aicraftbook-skills/actions/workflows/install-test.yml/badge.svg)](https://github.com/aicraftbook/aicraftbook-skills/actions/workflows/install-test.yml)
 License: MIT · Publisher: AI Craftbook · Releases: [GitHub Releases](https://github.com/aicraftbook/aicraftbook-skills/releases)
 
 ## Available skills
 
 | Skill | What it does | Works with | Version | Source | Full guide |
 |---|---|---|---|---|---|
-| **Answer Ready** | Make a web page easier for search and AI answers to use | Claude Code, Claude apps | 1.0.2 | [skills/answer-ready](skills/answer-ready/) | [aicraftbook.com/skills/answer-ready](https://aicraftbook.com/skills/answer-ready) |
-| **Blueprint Probe** | Find the flaws in an AI automation before you build it | Claude Code, Claude apps, Cursor | 1.0.1 | [skills/blueprint-probe](skills/blueprint-probe/) | [aicraftbook.com/skills/blueprint-probe](https://aicraftbook.com/skills/blueprint-probe) |
-| **Context Trim** | Audit and tighten an agent's CLAUDE.md or AGENTS.md | Claude Code, Claude apps | 1.1.2 | [skills/context-trim](skills/context-trim/) | [aicraftbook.com/skills/context-trim](https://aicraftbook.com/skills/context-trim) |
-| **Cost Compass** | Estimate what an AI feature or automation will cost to run | Claude Code, Claude apps, Cursor | 1.0.2 | [skills/cost-compass](skills/cost-compass/) | [aicraftbook.com/skills/cost-compass](https://aicraftbook.com/skills/cost-compass) |
-| **First Reply** | Draft the first reply to a new real-estate lead | Claude Code, Claude apps, Codex CLI, Gemini CLI, VS Code (Copilot) | 1.1.1 | [skills/first-reply](skills/first-reply/) | [aicraftbook.com/skills/first-reply](https://aicraftbook.com/skills/first-reply) |
-| **Flow Medic** | Diagnose a failed automation run from its error and logs | Claude Code, Claude apps, Cursor | 1.0.2 | [skills/flow-medic](skills/flow-medic/) | [aicraftbook.com/skills/flow-medic](https://aicraftbook.com/skills/flow-medic) |
-| **Guide Proof** | Check that a setup guide can actually be followed | Claude Code, Claude apps, Cursor | 1.1.1 | [skills/guide-proof](skills/guide-proof/) | [aicraftbook.com/skills/guide-proof](https://aicraftbook.com/skills/guide-proof) |
-| **MCP Mechanic** | Set up and fix MCP servers without exposing secrets | Claude Code, Claude apps, Cursor | 1.0.1 | [skills/mcp-mechanic](skills/mcp-mechanic/) | [aicraftbook.com/skills/mcp-mechanic](https://aicraftbook.com/skills/mcp-mechanic) |
-| **Prompt Proof** | Find weak spots in a prompt and write tests for it | Claude Code, Claude apps, Cursor | 1.0.2 | [skills/prompt-proof](skills/prompt-proof/) | [aicraftbook.com/skills/prompt-proof](https://aicraftbook.com/skills/prompt-proof) |
-| **Source Sieve** | Check every claim in a draft against its sources | Claude Code, Claude apps | 1.1.2 | [skills/source-sieve](skills/source-sieve/) | [aicraftbook.com/skills/source-sieve](https://aicraftbook.com/skills/source-sieve) |
+| **Answer Ready** | Make a web page easier for search and AI answers to use | Claude Code, Claude apps | 1.0.2 | [skills/answer-ready](skills/answer-ready/) | [aicraftbook.com/skills/answer-ready](https://aicraftbook.com/skills/answer-ready?utm_source=github&utm_medium=referral&utm_campaign=answer-ready) |
+| **Blueprint Probe** | Find the flaws in an AI automation before you build it | Claude Code, Claude apps, Cursor | 1.0.1 | [skills/blueprint-probe](skills/blueprint-probe/) | [aicraftbook.com/skills/blueprint-probe](https://aicraftbook.com/skills/blueprint-probe?utm_source=github&utm_medium=referral&utm_campaign=blueprint-probe) |
+| **Context Trim** | Audit and tighten an agent's CLAUDE.md or AGENTS.md | Claude Code, Claude apps | 1.1.2 | [skills/context-trim](skills/context-trim/) | [aicraftbook.com/skills/context-trim](https://aicraftbook.com/skills/context-trim?utm_source=github&utm_medium=referral&utm_campaign=context-trim) |
+| **Cost Compass** | Estimate what an AI feature or automation will cost to run | Claude Code, Claude apps, Cursor | 1.0.2 | [skills/cost-compass](skills/cost-compass/) | [aicraftbook.com/skills/cost-compass](https://aicraftbook.com/skills/cost-compass?utm_source=github&utm_medium=referral&utm_campaign=cost-compass) |
+| **First Reply** | Draft the first reply to a new real-estate lead | Claude Code, Claude apps, Codex CLI, Gemini CLI, VS Code (Copilot) | 1.2.0 | [skills/first-reply](skills/first-reply/) | [aicraftbook.com/skills/first-reply](https://aicraftbook.com/skills/first-reply?utm_source=github&utm_medium=referral&utm_campaign=first-reply) |
+| **Flow Medic** | Diagnose a failed automation run from its error and logs | Claude Code, Claude apps, Cursor | 1.0.2 | [skills/flow-medic](skills/flow-medic/) | [aicraftbook.com/skills/flow-medic](https://aicraftbook.com/skills/flow-medic?utm_source=github&utm_medium=referral&utm_campaign=flow-medic) |
+| **Guide Proof** | Check that a setup guide can actually be followed | Claude Code, Claude apps, Cursor | 1.1.1 | [skills/guide-proof](skills/guide-proof/) | [aicraftbook.com/skills/guide-proof](https://aicraftbook.com/skills/guide-proof?utm_source=github&utm_medium=referral&utm_campaign=guide-proof) |
+| **MCP Mechanic** | Set up and fix MCP servers without exposing secrets | Claude Code, Claude apps, Cursor | 1.0.1 | [skills/mcp-mechanic](skills/mcp-mechanic/) | [aicraftbook.com/skills/mcp-mechanic](https://aicraftbook.com/skills/mcp-mechanic?utm_source=github&utm_medium=referral&utm_campaign=mcp-mechanic) |
+| **Prompt Proof** | Find weak spots in a prompt and write tests for it | Claude Code, Claude apps, Cursor | 1.0.2 | [skills/prompt-proof](skills/prompt-proof/) | [aicraftbook.com/skills/prompt-proof](https://aicraftbook.com/skills/prompt-proof?utm_source=github&utm_medium=referral&utm_campaign=prompt-proof) |
+| **Source Sieve** | Check every claim in a draft against its sources | Claude Code, Claude apps | 1.1.2 | [skills/source-sieve](skills/source-sieve/) | [aicraftbook.com/skills/source-sieve](https://aicraftbook.com/skills/source-sieve?utm_source=github&utm_medium=referral&utm_campaign=source-sieve) |
 
 "Works with" lists only the agents each skill's `skill.json` declares. 
 
@@ -54,7 +55,36 @@ have not checked.
 
 ## How do I install a skill?
 
-### Claude Code
+### Skills CLI (Claude Code, Cursor, Codex and other agents)
+
+```bash
+npx skills add aicraftbook/aicraftbook-skills --skill mcp-mechanic
+```
+
+Replace `mcp-mechanic` with the skill you want, or run `npx skills add aicraftbook/aicraftbook-skills --list` to see them all. The
+[Skills CLI](https://skills.sh/docs/cli) asks which agents to install for; add `-a claude-code` (or `-a cursor`,
+`-a codex`) to choose up front and `-g` to install for all your projects. `npx skills update` updates installed
+skills later.
+
+The `install-test` workflow installs every skill this way for Claude Code, Cursor and Codex in a clean runner
+and checks the installed files against `skills-index.json`
+([latest run](https://github.com/aicraftbook/aicraftbook-skills/actions/workflows/install-test.yml)). Those test installs run with
+telemetry off, so they are not counted on skills.sh.
+
+### Claude Code plugin
+
+A few skills that passed an extra review round are also packaged as Claude Code plugins in `plugins/`:
+
+```bash
+claude plugin marketplace add aicraftbook/aicraftbook-skills
+claude plugin install cost-compass@aicraftbook
+```
+
+Each plugin holds one skill, byte-identical to the copy in `skills/`, and nothing else (no MCP servers, hooks or
+scripts). The same folders carry a Cursor plugin manifest (`.cursor-plugin/plugin.json`); we have not yet tested
+them inside Cursor.
+
+### Claude Code (manual copy)
 
 ```bash
 # 1. Get the repository (or download one skill's zip from its release page).

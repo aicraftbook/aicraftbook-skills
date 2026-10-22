@@ -7,7 +7,7 @@ using only the lead's own form fields, for you to review and send. It never send
 real estate agents and teams who want help writing first replies but want to stay the one who presses
 send.
 
-Version 1.1.1 · License MIT · Publisher AI Craftbook · Docs: https://aicraftbook.com/skills/first-reply
+Version 1.2.0 · License MIT · Publisher AI Craftbook · Docs: https://aicraftbook.com/skills/first-reply
 
 ## What does First Reply do?
 
@@ -16,7 +16,7 @@ and `lead_source`. It asks for your name and brokerage for the sign-off instead 
 Then it writes three drafts:
 
 1. **SMS**: plain text, at most 300 characters, no emoji or links, ending with exactly
-   `Reply STOP to opt out.` It states the character count.
+   `Reply STOP to opt out.` It does not state a character count (since 1.2.0): counts written by a model are often wrong.
 2. **Email subject**: under 70 characters, naming the listing address when there is one.
 3. **Email body**: plain text, 60 to 150 words, signed with your name and brokerage.
 
@@ -137,7 +137,7 @@ Paste the lead and give your name and brokerage once:
 - "Draft first replies for today's new leads in HubSpot." (with a CRM MCP connection)
 - "Give me the drafts as JSON."
 
-For one lead, the answer shows the three drafts, the SMS character count, then `Needs human: yes/no`
+For one lead, the answer shows the three drafts, then `Needs human: yes/no`
 with a one-line reason. For JSON it returns, per lead:
 
 ```json
@@ -152,7 +152,7 @@ read every draft before it goes out.
 
 Two illustrative cases from the [docs page](https://aicraftbook.com/skills/first-reply).
 
-**A routine enquiry.** For Dana's message above, the agent returns the SMS with its character count,
+**A routine enquiry.** For Dana's message above, the agent returns the SMS,
 the email subject and body, then `Needs human: no`. The text names 14 Elm Street, does not claim the
 home is available, asks whether a Saturday morning viewing would suit, and ends with
 "Reply STOP to opt out."
@@ -170,8 +170,8 @@ not in English and asks about neighbourhood safety.
 - **The skill does not load.** The folder must be named `first-reply`, sit directly in your agent's
   skills folder, and contain `SKILL.md`. The `name` in the `SKILL.md` frontmatter must equal the folder
   name. Start a new session or restart the client.
-- **The SMS is over 300 characters.** The agent counts characters itself and can be off. Check long
-  texts before sending.
+- **The SMS is over 300 characters.** The agent keeps the SMS short but does not count characters, so check long drafts with a
+  counter before sending.
 - **It asks for your name and brokerage.** It will not invent a sign-off. Give them once per
   conversation.
 - **It will not send the message.** By design it only drafts. Copy the drafts into your phone, email

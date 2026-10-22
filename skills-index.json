@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T15:13:35.433Z",
+  "generated": "2026-10-22T16:24:45.316Z",
   "site": "https://aicraftbook.com",
   "repo": "https://github.com/aicraftbook/aicraftbook-skills",
   "pending": {},
@@ -55,9 +55,9 @@
     "first-reply": {
       "displayName": "First Reply",
       "subtitle": "Draft the first reply to a new real-estate lead",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "status": "released",
-      "fingerprint": "1c101ae6538c86537932633966d639205f548c39a0daa3ee0d6e6c23c0bc636a",
+      "fingerprint": "6b3dcf7ff0f4bc7ee19276492e5bc74c65ceec99ae7ef49d583d2acb78c4a114",
       "sitePath": "/skills/first-reply",
       "download": {
         "url": "https://aicraftbook.com/skills/first-reply#skill-md"

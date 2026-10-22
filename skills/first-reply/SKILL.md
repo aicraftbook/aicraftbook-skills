@@ -4,7 +4,6 @@ description: Drafts the first SMS and email reply to a new real estate lead from
 license: MIT
 metadata:
   author: AI Craftbook
-  version: "1.1.0"
   source: https://aicraftbook.com/skills/first-reply
 ---
 
@@ -64,7 +63,7 @@ Mark a lead **needs human** (and still draft your best reply) when:
 
 ## Step 6: Present the result
 
-For a single lead, show the three drafts, then `Needs human: yes/no` and a one-line reason. Count the SMS characters and state the count.
+For a single lead, show the three drafts, then `Needs human: yes/no` and a one-line reason. Keep the SMS well inside the limit, but do not state a character or word count: counts written by a model are often wrong, and the reviewer checks length before sending.
 
 When the user asks for machine-readable output, return only this JSON per lead:
 

@@ -18,5 +18,6 @@
   "displayName": "First Reply",
   "icon": "./assets/logo.svg",
   "documentationUrl": "https://aicraftbook.com/skills/first-reply?utm_source=claude&utm_medium=referral&utm_campaign=first-reply",
-  "supportUrl": "https://github.com/aicraftbook/aicraftbook-skills/issues/new/choose"
+  "supportUrl": "https://github.com/aicraftbook/aicraftbook-skills/issues/new/choose",
+  "privacyPolicyUrl": "https://aicraftbook.com/privacy#skills"
 }

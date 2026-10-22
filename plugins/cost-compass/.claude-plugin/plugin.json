@@ -18,5 +18,6 @@
   "displayName": "Cost Compass",
   "icon": "./assets/logo.svg",
   "documentationUrl": "https://aicraftbook.com/skills/cost-compass?utm_source=claude&utm_medium=referral&utm_campaign=cost-compass",
-  "supportUrl": "https://github.com/aicraftbook/aicraftbook-skills/issues/new/choose"
+  "supportUrl": "https://github.com/aicraftbook/aicraftbook-skills/issues/new/choose",
+  "privacyPolicyUrl": "https://aicraftbook.com/privacy#skills"
 }
